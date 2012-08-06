@@ -1,0 +1,315 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% UNSW SENG2020 2012S2 GROUP 6 REPORT TEMPLATE
+%% CREATED BY VINCENT WONG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{article}
+\usepackage{a4wide}
+\usepackage{longtable}
+\usepackage[normalem]{ulem}     %% gives strikeout capability with \sout{}
+\usepackage{graphicx}
+\usepackage{gantt}
+\usepackage{rotating}
+\usepackage{float}
+\usepackage[usenames,dvipsnames]{color}
+\RequirePackage{bsymb,b2latex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT MACROS -- DO NOT DELETE
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TITLE PAGE
+\thispagestyle{empty}      % turn off page numbering
+\begin{center}
+\Large\textbf{$\odot\int$ Sale} %%\odot \int Sale
+
+\Large\textbf{Specification Improvement and Design Critique Report}
+
+%%%% MAKE SURE YOU SPECIFY YOUR GROUP NUMBER
+\bigskip\large\textbf{Group Number: 06}
+\end{center}
+
+\vspace*{16.5cm}
+\begin{tabular}{|l|l|}
+  \hline
+  Version         & 1.0\\\hline
+  Print Date      & 07/08/2012 13:37\\\hline
+  Release Date    & 07/08/2012\\\hline
+  Release State   & Final\\\hline
+  Approval State  & Pending\\\hline
+  Approved by     & Chris, Dylan, Lasath, Vincent\\\hline
+  Prepared by     & Chris, Dylan, Lasath, Vincent\\\hline
+  Reviewed by     & Chris, Dylan, Lasath, Vincent\\\hline
+  Confidentiality Category  & Public\\\hline
+\end{tabular}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% REVISION CONTROL PAGE
+\thispagestyle{plain}     % Turn on page numbering
+\setcounter{page}{1}      % set page number counter
+\renewcommand{\thepage}{\roman{page}}  % set page number to roman
+
+\noindent{\Large\textbf{Document Revision Control}}\\[2ex]
+\begin{tabular}{|l|l|l|l|}
+  \hline
+  Version & Date & Authors & Summary of Changes\\\hline\hline
+  0.1 & 03/08/2012     &    Vincent     &    Created initial report template              \\\hline
+  1.0 & 04/06/2012     &      Chris, Vincent  &    Added Requirement critique               \\\hline
+  1.1 & 05/06/2012     &      Dylan,Chris, Lasath, Vincent,   &    Added model, animation,presentation critique     \\\hline
+   1.2 & 05/06/2012     &      Dylan,Chris, Lasath, Vincent,   &    Added specification summary \\\hline
+    1.3 & 05/06/2012     &      Dylan,Chris, Lasath, Vincent,   &    Added project plan \\\hline
+     1.4 & 05/06/2012     &      Dylan,Chris, Lasath, Vincent,   &    Added Gantt chart \\\hline
+      1.5 & 05/06/2012     &      Dylan,Chris, Lasath, Vincent,   &    Went over report, fixed errors \\\hline
+\end{tabular}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TABLE OF CONTENTS AND FIGURES
+
+\tableofcontents
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MAIN DOCUMENT
+\setcounter{page}{1}     % Set page number counter
+\renewcommand{\thepage}{\arabic{page}}  % print page number as arabic
+
+%%%%%%%%%%%%%%  THIS IS WHERE YOU PUT YOUR CONTENT %%%%%%%%%%%%%%%%%%
+\section{Introduction}
+In the following report we critique ours and also 3 other group's requirement report for our Point of Sale/Warehouse System. This is followed by any new requirements we have decided to add into our report which we believe we have missed. Then it is our groups project plan for the actual implementation of our point of sale/warehouse system.
+\\\\
+In our critique report, we have separated their report into 3 distinct parts 
+\begin{itemize}
+\item Requirement
+\item Model
+\item Animation
+\item Presentation
+
+\end{itemize}
+
+And we have also set a guideline to each section which will give us a more consistent approach in our critiques. 
+\\\\
+In the new requirement section, we talk about any requirement which we forgot or any requirements we found interesting from other group's report which we believe we can incorporate into our report and model. 
+\\\\
+Lastly will be our plan on how we will approach this implementation, such as how we separate the stages and what type of language we will be implementing it in. 
+\\\
+
+
+\pagebreak
+\section{Specification Critique}
+\subsection{Group 4}
+\subsubsection{Requirements}
+Group 4 have a very precise requirements document which not only meets the core specifications needed for the point of sale system, but includes numerous innovative ideas. Their requirements focus greatly on the diverse list potential situations where the point of sale system may be of benefit such as promotions, courier deliveries etc.
+\\\\
+They have done very well overall but the customer reward program is something that really differentiates their group. The requirements are well thought out to include various features that would improve the customers’ experience with the vendor. For example, DN-1.5 (The System will Provide a QR code on Receipts which Link to a Digital Copy). While simple, this drastically improves the ease of various tasks such as tracking receipts, or aiding in product returns. A further example is PD-1.3.7 (Purchases made by Customers are Linked to Unique ID Code or Card). This feature ties in nicely with the previous example, and will allow the customer to be able to access their transactions and receipts online. This also has the potential to increase the efficiency of the returns department; instead of customers explaining why/how they have lost their receipt, customers will can provide their customer number to produce a list of all their transactions. Another good feature is PD-1.3.9 (The System will Produce Mailout Lists of Customer Contact Details).  as that will be vital to send brochures to various target audiences.
+\\\\
+Some other well thought features include to increasing popular coupon codes “PD-2.6.1 System allows for Coupon Codes”. This is a great way to promote as will enable to ability to only discount certain products (as most coupon codes only apply to a list of products). “PD-2.2.3 Transaction History Can Not be Altered” is also a very good requirement as it ensures data integrity. Not only that but it is also a security measure against financial fraud due to the transparency of transactions. Lastly, “PD-3.1.12 When stock is disposed of by staff, it is dequeued for disposal”. The idea of having a disposal area is great cause for most systems the stock is just taken off the shelf, but there is no detail description on where the product will go and how the product will be eliminated from the system. This introduces a “recycle bin” where all the disposable are gathered then empty out of the system. 
+\\\\
+However, there are certain requirements in the report which we found to be strange and overly detail. Firstly is “DN-1.4 System will Manage Shift Changes”. This requirement assumes that all staff work in shifts, but not all shops and warehouse uses a shift system. It could be a extra non functional requirement however by putting it as a design level requirement seems a bit too restrictive in our opinion. The Product level that follows such as “PD-1.4.1 Managers can Require Cash Draw Changes after Shifts” also is overly detailed. A better way to list such requirement would be “managers having the ability to change shift drawers” since the system meant to provide the security for the employees but not forcing the the employee to complete tasks in order to increase security. Another example is like “ PD-1.4.3 Managers will balance each till at the end of the business day” again this does not really conform to what the client requirement wanted.
+In the report, PD – 3.2.2, PD – 3.2.3 and PD – 3.2.4 seem to be missing the requirements descriptions. They also seem to have a large number of design level requirements, although most of them doesn’t restrict the implementation of the system, we believe most of them can be product level requirements instead of design level. A way this can be solved is to be a bit more detail in the requirements in upper tiers such that the requirement hierarchy can show mostly in 3 tiers. 
+\\\\
+\subsubsection{Model}
+
+Their model did not appear to be as complete as the other groups, and did not cover 79 of their requirements, which is a very high number (and a significant number of their total requirements). 
+While this could indicate that event B is not the most appropriate tool for modelling their system, it may also be the case that some of their requirements were not necessary for a software POS system.
+Leaving out such a high number of requirements could be dangerous, as it may be possible for some of them to be internally inconsistent, which will cause issues during the implementation stage.
+However, their model itself appears to be of a very high standard. They:
+\begin{itemize}
+\item have a discussion explaining what each machine performs and describing how they relate to their requirements at a high level.
+\item have a description for each event explaining its function, constraints as well as stating the associated requirement for it.
+
+\end{itemize}
+
+Despite having a very large model (156 pages long), their extensive documentation has resulted in it being intuitive and easy to understand/follow. In conclusion, if this were complete and modelled all their requirements, it would easily have become their most valuable asset during the implementation stage, and is something we should all strive to do in future. 
+\\\\
+\subsubsection{Animation}
+Group 4 were one of the few groups to have a solid animation to show the capabilities of their point of sale system. They split their animations into four smaller sections, which was really useful in reducing confusion of the requirements they were attempting to demonstrate. 
+The examples they used made it easy to identify what they were trying to animate and exactly how they went about it with clear sections showing the initialisation procedures, and the actual steps.
+\\\\
+\subsubsection{Presentation}
+Their report is fairly well presented. The content is separated into categories and arranged in a logical order allowing for easy location of specific information. Their requirements are listed in tables, and uses various formatting tools (such as color) to easily distinguish between functional/non-functional as well as core and extension requirements. Overall it’s visually appealing and feels professional. 
+\\\\
+
+\pagebreak
+\subsection{Group 5}
+\subsubsection{Requirements}
+Group 5’s requirements specification is done in very high level of detail as it covers almost everything what a point of sale system needs to be done. What we found was their goal level requirement to be too abstract which lead to a high amount of design level requirements that should belong to the product level tier.
+\\\\
+However they also have a few interesting design which our group enjoyed such as “PD-1.1.6 The system must allow for importing of product information.”. This could be very beneficial in the long run as when starting a new store, data can just be exported and imported into the new store to get it up and running. Also product makers can also create these product information for the stores so when a store starts selling their products it can just be imported straight into the system. Another interesting feature is “PD-1.3.3 The system must be able to predict seasonal/special occasion stock flow (including discount periods).”. This is very important as the POS system will be smart enough to order what is actually needed instead of just ordering to a constant figure. For example customers will buy a lot more ice cream and such products during summer than winter, so during winter periods the warehouse supply should be increase to compensate for the increase in demand in such product. 
+\\\\
+But their system also have a few flaws which we found. First being “GL-3 The system must assist in promoting the store.” This is confusing as how would the system be able to promote the store? But looking at the domain and product level it looks like this requirement is more focused on customer loyalty and marketing requirements (such at membership cards and promotion catalogues), so a reword of the requirement to “the system must handle customer loyality program and marketing needs”. “Pd-1.1.9 The base price of products may only be changed while the store is closed.” Is a very restrictive requirement. I understand they are trying to keep data integrity, but this requirement will restrict the working of a store by a great deal. For example, if the price was entered wrong and only found out during the store’s operating hours, it will need to wait till the closing hours of the store before the rise can be corrected. PD-1.3.3 The system must be able to predict seasonal/special occasion stock flow (including discount periods).”. which we said was an interesting feature is also hard to achieve, as it is very hard to predict what is actually “in season” and what is not.  “Pd-2.2.4 The system must be able to accept a product price change over a period of time.” Is very confusing. we understood it as the system must be able to automatically increase/ decrease a products price over a set length of time in a set percentage, which still doesn’t make much sense. “PD-2.2.5 Non-point-of-sale discounts may only be assigned and removed while the store is closed.” Is also badly worded, but the assumption that the non point of sale discounts meaning various in-store discount makes the system very restrictive (much like PD1.1.9), as it is not really needed.
+ \\\\
+There is also a mix up between the functional and non-functional requirements by this group as it is clear they haven’t truly grasp the idea between functional and non-functional requirements. For example “PD- 3.3.5 The system must be able to generate promotions in an appropriate format.” Should be a functional requirement because if the system generate the promotion in the incorrect format, the system will not function.
+\\\\
+Other than that they also have far too many design level requirements which will greatly restrict their flexibility during the actual creation. They also only have long titles but no descriptions for any of the requirements. 
+\\\\
+\subsubsection{Model}
+Their model was reasonably well laid out and -most importantly- easy to understand. They’ve tied their requirements to their model via the extensive use of comments. Virtually all their events have an associated comment stating the requirement that it models. E.g : ‘RemoveStock // DN-2.5 - The system must be able to record losses’. 
+\\\\
+Their invariants also have this property, and even the ones don’t have a requirement directly associated to them still had some justification as to why they were there. E.g: ‘inv10 : inBasket ∈ products → N //
+(assists GL-2) The amount of each product which is currently in the customer’s basket’.
+\\\\
+At first glance, their model appeared to be incomplete, as requirements 3.2, 3.3, 2.4, 1.1.6, 1.3.1, 2.3.1 and 2.3.3 were missing. However, the reasons for each of them being omitted was detailed in a table at the end of their eventB discussion. 
+\\\\
+Overall they have a sound model, which is complete and easy to understand. While theirs isn’t as fancy as some of the others, it’s well rounded which will probably make it more useful overall.
+\\\\
+\subsubsection{Animation}
+This groups model did not play friendly with the animator, this was mainly due to errors with animb in which it would not turn an event green but the event could still be mainly run. Though on another note, there animation was very well thought out as it clearly demonstrated how the requirements they chose to animate are able to be fulfilled by their Point of Sales system. 
+They also clearly explained what preconditions were needed before they could demonstrate the requirements, with the reasons given for each event. 
+Overall their model was able to be animated and was able to fulfill the requirements.  
+\\\\
+\subsubsection{Presentation}
+
+This is one of the better laid out reports that we critiqued, it divided the report into suitable sections which were easy to follow. One of the stronger points of there report was that of the animations, section which used a combination of lists and tables to show exactly what requirements and how they were going to be animated. 
+Although a place in which the presentation of the final report could have been improved is that of the status column, this column could have been emitted and a key used to identify them instead. 
+
+
+
+
+
+\pagebreak
+\subsection{Group 8}
+\subsubsection{Requirements}
+Group 8's requirements were substantially more simplistic than other groups such as group four. It focused establishing the core requirements, and had no memorable features. While there are merits to keeping the requirements simple, it should also be noted that a system implemented with such minimal functionality would find it hard to be compete in the market. This is especially so if there are alternative systems available with more attractive and useful features, although the reasons for this are beyond the scope of this document.
+\\\\
+Generally the requirements of group eight were a bit vague and hard to understand. This can be seen in requirements such as DN-1.5 (Store-space adjustments); there is no explanation as to what this actually means. While the requirements intention can potentially be assumed from the child product level requirements, such assumptions are highly dangerous and void the purpose of the report. This lack of clarity is common amongst many other requirements in their report and is mainly due to the lack of requirement descriptions. As such there is a significant risk that the implemented system will be flawed due to difficulties understanding requirements, and hence the report does not ensure that implementation will covers all aspects of a POS. 
+\\\\
+Another criticism of group eights requirements is the occasional definition of strict implementation details. For example, PD-1.1.3 use the term database. Such descriptions would infer that a database be required in the implementation, which would rule out a number of other potential magical data stores. While subtle, it can make a huge difference to the final materialised system and so it would be advised to leave such implementation details to be decided later in the development cycle.
+\\\\
+Overall group 8 has a weak set of requirements which only focus on the bare minimum of the system. Unfortunately this will meant hat we will not add any of there requirements in our new requirements specification. 
+\\\\
+\subsubsection{Model}
+While their model isn’t poor, it does not stand up to the high standard set by the previous two. While their model isn’t as large as the other two (95 pages in their report, with 230 events in total), it’s nowhere near as understandable as the other two. They have comments on most their events however, some of their comments aren’t particularly useful or relate to a requirement. E.g: ‘NewKart // Adding a cart’.
+\\\\
+They did not provide a screenshot, or any indication that their POs could be discharged. This is also rather dangerous, as it means their requirements (and model) could be internally inconsistent and cause major issues during implementation. 
+\\\\
+\subsubsection{Animation}
+Although their rodin model was animatable, their actual animations were not the best. Group 8 glossed over the requirements that they were animated only briefly explaining actual steps taking place in their animation. The had only had  6 scenarios which were very simple and is a weak point to their report, it in a way indicates that their model was not thorough enough and didn't include all of their requirements. 
+\\\\
+\subsubsection{Presentation}
+What Group 8 have is very simple. They follow the template to separate different levels of requirement but failed to distinguish between functional and nonfunctional requirements. The description column of the requirements table is left blank and is incomplete. The use of capital letters and punctuation at unsuitable location only adds further confusion while reading the report. The animation and event B description part of the report could be done using tables to show the order instead of having large paragraphs.
+
+
+
+
+\pagebreak
+\subsection{Group 6 (Our Group)}
+\subsubsection{Requirements}
+We believe our report was done well, as we have covered all the requirements that we believe a point of sale system will encounter. We also have very well layout for our requirements as the requirements are spread quite evenly (there aren’t too many design level requirements) which makes our model flexible yet still satisfies the client’s requirements. However there are areas of our requirements which we found need improvement. Such as a few extension systems that could be core systems, also more requirements on the payment and customer loyalty branch.
+One requirement that we believe is very well done was our reporting requirement. “GL – 3 To build a system capable of reporting” is an extension requirement which deals with all requirement for our system. We believe this is good because rather than having reporting requirements at separate goal level branches, we believe grouping them together will lead to a more clear look into how the system will function.  “PD-1.3.2 Warranties and repairs for sold items” is also an interesting feature as the system has the ability to track where certain products are at different stage, this leads to better micromanagement for users with low volume, high value warehouses. The loyalty program is also thought well, as “DN-2.4.1 The system will be able to allocate membership discounts to appropriate customers” is a good feature for a point of sales system since most business now have a customer loyalty discount program to increase the incentive for users to visit their business. And by having a customer loyalty program build into the system, the client can choose to have different levels of discount depending on the amount the customer have shopped.
+ 
+However there are areas which we think we should improve. Firstly, many core requirements are being treated as extensions. For example “DN 3.1 Include the ability to report on current stock levels” and “DN 3.2 The system must have the ability to provide sales reports for management.” May be extension as it is not essential for a point of sale system. However, it is almost vital for a fully functioning point of sale system as what is the point of managing stock levels when the users are unable to access how much stock is in the warehouse. This also goes with “ DN 1.2 To provide a system which can log damage, loss, and theft”. This should be made core because what if someone stole something from store. If it is said to be “sold” then that will ruin the sales system as there wasn’t any monetary input for that product.
+ 
+We also believe we should improve more on some of our requirements. As we have missed out some key ones such as a few design level requirements to deal with payment types will give us an extra level of foundation for the requirements to be structured off. Some requirements are also combined a few functionality into one instead of separating them into multiple requirements. For example “DN 2.4. The system will allow the revision of a customer's details and cancellation of customer account” can be easily split into multiple different requirements.
+\pagebreak
+\subsubsection{Model}
+
+\subsubsection{Animation}
+The rodin model that we created was able to be animated, although bugs in animb resulted in some of the animations having to be manually triggered. The list of requirements we showed were clearly laid out, in an easy to read format. The animation was split into sections similar to group 4 and an explanation was given to each which showed the process of animation, as well as which animation was being demonstrated
+\\\\
+\subsubsection{Presentation}
+The presentation of the final document, was well laid out and easy to follow, one thing that we did really well was that of our requirements table it had a clear key  which differentiated functional non functional, new requirements core and extension requirements. It also had a well formmated section for the animation and model discussion. 
+\\\\
+
+
+
+
+\pagebreak
+
+\section{New Specification Summary}
+Through careful analysis of the requirements laid out by the three groups being critiqued, we were able to generate our final specification to be used to produce a solution.
+\\\\
+Our group universally agreed that one strength of our requirements was that our system covered all the essentials of a point of sales system. However through critiquing the requirements of other groups, we realised there were a number of desirable extensions (particularly from group four) that we would like to include in our own specification. One such extension is digitised receipts that can easily be accessed from a QR code. 
+\\\\
+Group five’s extensions have also influenced our final specification. One feature we liked was the ability to import product details, a feature we believe would give us an advantage over many other groups.
+\\\\
+Overall you can see our new requirements outlined in the table below:
+\begin{longtable}{|l|p{5cm}|p{8cm}|}
+  \caption{Table of New Specification Requirements}\\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{ReqID}}  &
+  \multicolumn{1}{|c|}{\textbf{Requirement}} &
+  \textbf{Short Description}\\
+  \hline\hline
+  \endfirsthead
+  \caption[]{Table of Goal-Level Requirements \textit{Continued}}\\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{ReqID}} &
+  \multicolumn{1}{|c|}{\textbf{Requirement}} &
+  \textbf{Short Description}\\
+  \hline\hline
+  \endhead
+  \hline
+  \multicolumn{3}{r}{\textit{continued on next page\ldots}}\\
+  \endfoot
+  \hline
+  \endlastfoot
+  %% List all your Goal-Level requirements here
+  \textcolor{blue}{}  &  The system will provide a QR code on receipts which link to a digital copy     & \textbf{[Extension] }Receipts will be available in digital format and users can access this through a unique code printed on each receipt.\\
+  \hline
+ \textcolor{blue}{ }  &  Purchases made by customers are linked to unique ID code or card & \textbf{[Extension] }Each purchase by a customer in the loyalty program will be linked to their unique account number for storing transaction history. \\
+  \hline
+  \textcolor{blue}{}  & The system must allow for importing of product information. & \textbf{[Extension] }Product information can be bulk imported into the system when necessary, rather than being entered individually.\\
+  \hline
+ 
+\end{longtable}
+
+We decided not change our rodin model as we believed that the few additional extension requirements did not need to be modelled. We also thought that the model we had submitted before still meets all our requirements as we had previously ensured it did.
+\pagebreak
+\section{Project Plan}
+The plan for the project is to begin by constructing the core system first; which we believe is the authentication part of the system. This is one of the goal level requirements and it is crucial to ensure the system functions as required. Following that we will implement the basis for stock control management; we will implement CRUD for products and stock levels for various locations. We will also work on the ability to reallocate stock within our system. After this we will begin to focus on the client facing features, such as the sales and user accounts aspect of our system. The final stage will involve perfecting an intuitive and polished user interface, and enhancing the system with extensions that we had decided on. Testing and debugging will be done throughout the implementation stage to ensure we have a bug free functioning system which meet our set requirements. 
+\\\
+The system will be coded using python as a webapp, we will use google app engine’s datastore as the basis for the backend’s persistent data. To ensure we keep to our plan we will be using a project management tool known as mavenlink in combination with github to enable us to rollback to working code if we modify something incorrectly.
+\\\\
+\textsc{ \emph{See appendix for Gantt chart}} 
+\\\\
+As you can see from the chart the general plan is to release new features into our code every week. We plan to spend around 6 weeks to quickly implement our core system, while spending the last 4 week to implement our extensions. Task will be allocated to different team members so some tasks can be done parallel with other tasks. As mentioned above testing and debugging will be run throughout the whole implementation process to ensure us having an error free system. 
+\pagebreak
+\section{Appendix}
+
+\appendix
+
+ \begin{sideways}
+\begin{gantt}[xunitlength=1.1cm,fontsize=\small,titlefontsize=\small,drawledgerline=true]{12}{20}
+ 
+ \begin{ganttitle}
+      \titleelement{August}{8}
+      \titleelement{September}{8}
+       \titleelement{October}{4}
+   \end{ganttitle}
+
+    \begin{ganttitle}
+      \titleelement{Week 4}{2}
+      \titleelement{Week 5}{2}
+      \titleelement{Week 6}{2}
+      \titleelement{Week 7}{2}
+      \titleelement{Midsem Break}{2}
+      \titleelement{Week 8}{2}
+      \titleelement{Week 9}{2}
+      \titleelement{Week 10}{2}
+      \titleelement{Week 11}{2}
+      \titleelement{Week 12}{2}
+      
+    \end{ganttitle}
+
+	\ganttbar[color=red]{authentication}{0}{3}
+	\ganttbarcon[color=red]{backend database}{3}{5}
+	\ganttbarcon[color=red]{frontend system}{4}{6}
+	\ganttbar[color=red]{Testing and debugging - core system}{0}{16}
+	\ganttbar[color=blue]{Extension implementation}{8}{6}
+	\ganttbar[color=blue]{Testing and debugging - extension}{8}{8}
+	\ganttbar{Prototype release}{16}{2}
+	\ganttbar{Presentation and Final release}{18}{2}
+	
+ 
+\end{gantt}
+ \end{sideways}
+
+\end{document}
+
