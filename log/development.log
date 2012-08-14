@@ -5791,3 +5791,5 @@ Migrating to CreateProducts (20120814044936)
  WHERE a.attrelid = 24661
  AND a.attnum IN (4)
 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  product: 
+  stock_location: 
+  quanity: 1
+  threshold: 1
+
+two:
+  product: 
+  stock_location: 
+  quanity: 1
+  threshold: 1

@@ -1,5 +1,7 @@
 Pos::Application.routes.draw do
 
+  resources :stock_locations
+
   resources :products
 
   devise_scope :user do
