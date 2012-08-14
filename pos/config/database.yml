@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: pos_d
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: pos_t
+  pool: 5
+
+production:
+  adapter: postgresql
+  host: /tmp
+  encoding: unicode
+  database: pos_p
+  pool: 5
