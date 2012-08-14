@@ -24,10 +24,6 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :stock_levels %><br />
-    <%= f.text_area :stock_levels %>
-  </div>
-  <div class="field">
     <%= f.label :cost %><br />
     $ <%= f.text_field :cost %>
   </div>
@@ -35,6 +31,13 @@
     <%= f.label :price %><br />
     $ <%= f.text_field :price %>
   </div>
+  <h3>Stock Levels</h3>
+  <% StockLocation.all.each  do |s| %>
+    <div class="field">
+      <%=s.name%><br>
+
+    </div>
+  <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>

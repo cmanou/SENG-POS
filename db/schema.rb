@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(:version => 20120814045625) do
 
   create_table "products", :force => true do |t|
+    t.string   "barcode"
     t.string   "name"
     t.text     "description"
     t.decimal  "cost"
