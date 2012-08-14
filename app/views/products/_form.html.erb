@@ -32,12 +32,18 @@
     $ <%= f.text_field :price %>
   </div>
   <h3>Stock Levels</h3>
-  <% StockLocation.all.each  do |s| %>
-    <div class="field">
-      <%=s.name%><br>
-
-    </div>
+ 
+<!-- Here we call fields_for on the project_form builder instance.
+       The block is called for each member of the tasks collection. -->
+  <%= f.fields_for :stock_levels do |ff| %>
+      <p>
+        <div>
+          <%= ff.label :name %>
+        </div>
+      </p>
   <% end %>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
