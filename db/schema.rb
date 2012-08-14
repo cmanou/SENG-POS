@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120814044936) do
+ActiveRecord::Schema.define(:version => 20120814045625) do
 
   create_table "products", :force => true do |t|
     t.string   "name"
@@ -20,6 +20,24 @@ ActiveRecord::Schema.define(:version => 20120814044936) do
     t.decimal  "price"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "stock_levels", :force => true do |t|
+    t.integer  "product_id"
+    t.integer  "stock_location_id"
+    t.integer  "quanity"
+    t.integer  "threshold"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  add_index "stock_levels", ["product_id"], :name => "index_stock_levels_on_product_id"
+  add_index "stock_levels", ["stock_location_id"], :name => "index_stock_levels_on_stock_location_id"
+
+  create_table "stock_locations", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|

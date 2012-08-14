@@ -1,19 +1,15 @@
-<h1>Listing stock_locations</h1>
+<h1>Listing Stock Locations</h1>
 
-<table>
+<table class="table table-bordered table-striped">
   <tr>
     <th>Name</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
 <% @stock_locations.each do |stock_location| %>
   <tr>
     <td><%= stock_location.name %></td>
-    <td><%= link_to 'Show', stock_location %></td>
-    <td><%= link_to 'Edit', edit_stock_location_path(stock_location) %></td>
-    <td><%= link_to 'Destroy', stock_location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', stock_location %> - <%= link_to 'Edit', edit_stock_location_path(stock_location) %> - <%= link_to 'Destroy', stock_location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
