@@ -1,0 +1,33 @@
+<%= form_for(@stock_level) do |f| %>
+  <% if @stock_level.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stock_level.errors.count, "error") %> prohibited this stock_level from being saved:</h2>
+
+      <ul>
+      <% @stock_level.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="field">
+    <%= f.label :product %><br />
+    <%= f.text_field :product %>
+  </div>
+  <div class="field">
+    <%= f.label :stock_location %><br />
+    <%= f.text_field :stock_location %>
+  </div>
+  <div class="field">
+    <%= f.label :quanity %><br />
+    <%= f.number_field :quanity %>
+  </div>
+  <div class="field">
+    <%= f.label :threshold %><br />
+    <%= f.number_field :threshold %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

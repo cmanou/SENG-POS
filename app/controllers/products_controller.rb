@@ -26,6 +26,10 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
 
+    StockLocation.all.each do |s|
+      @product.stock_levels.build(:stock_location => s)
+    end
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @product }
