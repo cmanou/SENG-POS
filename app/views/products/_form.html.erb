@@ -1,3 +1,7 @@
+<% @product.stock_levels.each do |f| %>
+<%= f.stock_location.inspect %>
+<% end %>
+
 <%= form_for(@product) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
@@ -32,19 +36,16 @@
     $ <%= f.text_field :price %>
   </div>
   <h3>Stock Levels</h3>
-  <%= f.fields_for :stock_levels do |builder| %>
-      <p>
-        <div>
-          <%= builder.label :stock_location %>
-          <%= builder.text_field :stock_location %>
 
+  <% @product.stock_levels.each do |s| %>
+    <%= fields_for "stock_level[#{s.stock_location.id}]", s do |builder| %>
+          <%= s.stock_location.name %>
           <%= builder.label :quanity, 'Quantity' %><br />
           <%= builder.text_field :quanity %>
 
           <%= builder.label :threshold %><br />
           <%= builder.text_field :threshold %>
-        </div>
-      </p>
+    <% end %>
   <% end %>
 
 

@@ -44,7 +44,12 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
+    #raise params.inspect
     @product = Product.new(params[:product])
+
+    params[:stock_level].each do |sl_id, sl|
+      @product.stock_levels.build(:stock_location => StockLocation.find(sl_id.to_i), :quanity =>sl[:quanity], :threshold => sl[:threshold])
+    end
 
     respond_to do |format|
       if @product.save

@@ -13,8 +13,8 @@
 
 <% @stock_levels.each do |stock_level| %>
   <tr>
-    <td><%= stock_level.product %></td>
-    <td><%= stock_level.stock_location %></td>
+    <td><%= stock_level.product.name %></td>
+    <td><%= stock_level.stock_location.name %></td>
     <td><%= stock_level.quanity %></td>
     <td><%= stock_level.threshold %></td>
     <td><%= link_to 'Show', stock_level %></td>
