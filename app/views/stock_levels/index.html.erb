@@ -1,13 +1,11 @@
-<h1>Listing stock_levels</h1>
+<h1>Listing Stock Levels</h1>
 
-<table>
+<table class="table table-bordered table-striped">
   <tr>
     <th>Product</th>
     <th>Stock location</th>
     <th>Quanity</th>
     <th>Threshold</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
@@ -17,13 +15,11 @@
     <td><%= stock_level.stock_location.name %></td>
     <td><%= stock_level.quanity %></td>
     <td><%= stock_level.threshold %></td>
-    <td><%= link_to 'Show', stock_level %></td>
-    <td><%= link_to 'Edit', edit_stock_level_path(stock_level) %></td>
-    <td><%= link_to 'Destroy', stock_level, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', stock_level %> - <%= link_to 'Edit', edit_stock_level_path(stock_level) %> - <%= link_to 'Destroy', stock_level, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Stock level', new_stock_level_path %>
+<%= link_to 'New Stock level', new_stock_level_path, :class=>"btn btn-primary" %>
