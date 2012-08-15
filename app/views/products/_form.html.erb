@@ -32,9 +32,12 @@
     $ <%= f.text_field :price %>
   </div>
   <h3>Stock Levels</h3>
-  <% f.fields_for :stock_levels do |builder| %>
+  <%= f.fields_for :stock_levels do |builder| %>
       <p>
         <div>
+          <%= builder.label :stock_location %>
+          <%= builder.text_field :stock_location %>
+
           <%= builder.label :quanity, 'Quantity' %><br />
           <%= builder.text_field :quanity %>
 
