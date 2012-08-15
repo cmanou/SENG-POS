@@ -39,6 +39,13 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
     @product = Product.find(params[:id])
+
+    StockLocation.all.each do |s|
+      if !StockLevel.exists?(:product_id => params[:id].to_i, :stock_location_id =>s.id)
+        @product.stock_levels.build(:stock_location => s)
+      end
+    end
+
   end
 
   # POST /products
@@ -66,6 +73,15 @@ class ProductsController < ApplicationController
   # PUT /products/1.json
   def update
     @product = Product.find(params[:id])
+
+    params[:stock_level].each do |sl_id, sl|
+      begin
+      @stock_id = StockLevel.find(:first, :conditions => {:product_id => params[:id].to_i, :stock_location_id =>sl_id.to_i})
+        @product.stock_levels.update(@stock_id, :quanity =>sl[:quanity], :threshold => sl[:threshold])
+      rescue ActiveRecord::RecordNotFound
+        @product.stock_levels.build(:stock_location => StockLocation.find(sl_id.to_i), :quanity =>sl[:quanity], :threshold => sl[:threshold])
+      end
+    end
 
     respond_to do |format|
       if @product.update_attributes(params[:product])

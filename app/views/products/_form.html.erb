@@ -29,22 +29,22 @@
   </div>
   <div class="field">
     <%= f.label :cost %><br />
-    $ <%= f.text_field :cost %>
+    $ <%= f.text_field number_with_precision(:cost, :precision => 2, :significant => true) %>
   </div>
   <div class="field">
     <%= f.label :price %><br />
-    $ <%= f.text_field :price %>
+    $ <%= f.text_field number_with_precision(:price, :precision => 2, :significant => true) %>
   </div>
   <h3>Stock Levels</h3>
 
   <% @product.stock_levels.each do |s| %>
     <%= fields_for "stock_level[#{s.stock_location.id}]", s do |builder| %>
-          <%= s.stock_location.name %>
+          <h4><%= s.stock_location.name %></h4>
           <%= builder.label :quanity, 'Quantity' %><br />
-          <%= builder.text_field :quanity %>
+          <%= builder.number_field :quanity %>
 
           <%= builder.label :threshold %><br />
-          <%= builder.text_field :threshold %>
+          <%= builder.number_field :threshold %>
     <% end %>
   <% end %>
 
