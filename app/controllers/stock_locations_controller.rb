@@ -1,5 +1,5 @@
 class StockLocationsController < ApplicationController
-    #before_filter :authenticate_user! #this just checks they are a user doesnt check there priv levels
+  skip_before_filter  :authenticate_user!, :only => [:index, :show]
 
   # GET /stock_locations
   # GET /stock_locations.json

@@ -1,7 +1,3 @@
-<% @product.stock_levels.each do |f| %>
-<%= f.stock_location.inspect %>
-<% end %>
-
 <%= form_for(@product) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
@@ -29,11 +25,11 @@
   </div>
   <div class="field">
     <%= f.label :cost %><br />
-    $ <%= f.text_field number_with_precision(:cost, :precision => 2, :significant => true) %>
+    $ <%= f.text_field number_with_precision(:cost, :precision => 2) %>
   </div>
   <div class="field">
     <%= f.label :price %><br />
-    $ <%= f.text_field number_with_precision(:price, :precision => 2, :significant => true) %>
+    $ <%= f.text_field number_with_precision(:price, :precision => 2) %>
   </div>
   <h3>Stock Levels</h3>
 

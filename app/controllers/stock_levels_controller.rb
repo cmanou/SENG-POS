@@ -1,4 +1,5 @@
 class StockLevelsController < ApplicationController
+  skip_before_filter  :authenticate_user!, :only => [:index, :show]
   # GET /stock_levels
   # GET /stock_levels.json
   def index

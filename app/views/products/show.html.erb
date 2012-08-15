@@ -18,13 +18,20 @@
 
 <p>
   <b>Cost:</b>
-  <%= @product.cost %>
+  $ <%= number_with_precision(@product.cost, :precision => 2) %>
 </p>
 
 <p>
   <b>Price:</b>
-  <%= @product.price %>
+  $ <%= number_with_precision(@product.price, :precision => 2) %>
 </p>
+
+<h3>Stock Levels</h3>
+<% @product.stock_levels.each do |s| %>
+    <h4><%= s.stock_location.name %></h4>
+    Quantity: <%= s.quanity %><br>
+    Threshold: <%= s.threshold %><br><br>
+<% end %>
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
