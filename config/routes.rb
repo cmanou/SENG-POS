@@ -13,6 +13,8 @@ Pos::Application.routes.draw do
 
 
   root :to => "home#index"
+
+  match "stock_control" => "home#stock_control"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
