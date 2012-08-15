@@ -40,6 +40,12 @@ class StockLevelsController < ApplicationController
   # POST /stock_levels
   # POST /stock_levels.json
   def create
+    @product = Product.find(Integer(params[:stock_level][:product]))
+    @stock_location = StockLocation.find(Integer(params[:stock_level][:stock_location]))
+
+    params[:stock_level][:product] = @product
+    params[:stock_level][:stock_location] = @stock_location
+
     @stock_level = StockLevel.new(params[:stock_level])
 
     respond_to do |format|
