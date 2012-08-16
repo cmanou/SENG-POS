@@ -8,13 +8,13 @@
 	  	
 		<% if user_signed_in? %>
 		<% if current_user.can_checkout %>
-		<a class="btn btn-large" href="#cash-register">Cash Register</a>
+		<a class="btn btn-super" href="#cash-register">Cash Register</a>
 		<% end %>
 		<% if current_user.can_manage_stock %>
-		<a class="btn btn-large" href="/stock_control">Stock Control</a>
+		<a class="btn btn-super" href="/stock_control">Stock Control</a>
 		<% end %>
 		<% if current_user.can_report %>
-		<a class="btn btn-large" href="#reporting">Reporting</a>
+		<a class="btn btn-super" href="#reporting">Reporting</a>
 		<% end %>
 		<% end %>
 

@@ -10,3 +10,17 @@ html, body {
 .wrapper > .container {
 	padding-top: 60px;
 }
+
+.btn-super {
+  padding: 25px 35px;
+  min-width: 130px;
+  font-size: 20px;
+  line-height: normal;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.btn-super [class^="icon-"] {
+  margin-top: 1px;
+}

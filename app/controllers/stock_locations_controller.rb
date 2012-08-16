@@ -4,7 +4,7 @@ class StockLocationsController < ApplicationController
   # GET /stock_locations
   # GET /stock_locations.json
   def index
-    @stock_locations = StockLocation.all
+    @stock_locations = StockLocation.order("id")
 
     respond_to do |format|
       format.html # index.html.erb
