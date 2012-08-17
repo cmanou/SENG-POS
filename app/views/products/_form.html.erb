@@ -11,39 +11,52 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :barcode %><br />
-    <%= f.text_field :barcode %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :cost %><br />
-    $ <%= f.text_field number_with_precision(:cost, :precision => 2) %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br />
-    $ <%= f.text_field number_with_precision(:price, :precision => 2) %>
-  </div>
-  <h3>Stock Levels</h3>
+  
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <th><%= f.label :name %></th>
+        <td><%= f.text_field :name %></td>
+      </tr>
+      <tr>
+        <th><%= f.label :description %></th>
+        <td><%= f.text_area :description,:rows => "5" %></td>
+      </tr>
+      <tr>
+        <th><%= f.label :cost %></th>
+        <td>$ <%= f.text_field number_with_precision(:cost, :precision => 2) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label :price %></th>
+        <td>$ <%= f.text_field number_with_precision(:price, :precision => 2) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label :barcode %></th>
+        <td><%= f.text_field :barcode %></td>
+      </tr>
 
-  <% @product.stock_levels.each do |s| %>
-    <%= fields_for "stock_level[#{s.stock_location.id}]", s do |builder| %>
-          <h4><%= s.stock_location.name %></h4>
-          <%= builder.label :quanity, 'Quantity' %><br />
-          <%= builder.number_field :quanity %>
+      <tr>
+        <td colspan="2"><h3>Stock Levels</h3></td>
+      </tr>
 
-          <%= builder.label :threshold %><br />
-          <%= builder.number_field :threshold %>
+    <% @product.stock_levels.each do |s| %>
+      <%= fields_for "stock_level[#{s.stock_location.id}]", s do |builder| %>
+        <tr>
+          <td colspan="2"> <h4><%= s.stock_location.name %></h4></td>
+        </tr>
+        <tr>
+          <th><%= builder.label :quanity, 'Quantity' %></th>
+          <td><%= builder.number_field :quanity %></th>
+        </tr>
+        <tr>
+          <th><%= builder.label :threshold %></th>
+          <td><%= builder.number_field :threshold %></td>
+        </tr>
     <% end %>
   <% end %>
 
+    </tbody>
+  </table>
 
   <div class="actions">
     <%= f.submit :class=>"btn btn-primary"%>

@@ -1,7 +1,6 @@
-<h1>Editing product</h1>
+<% title "Edit Product" %>
+
+<%= link_to raw('<i class="icon-chevron-left"></i>'), products_path, :class=>"btn btn-large" %>
+<h1>Edit Product</h1>
 
 <%= render 'form' %>
-<div class="btn-group">
-	<%= link_to 'Show', @product, :class=>"btn" %>
-	<%= link_to 'Back', products_path, :class=>"btn"%>
-</div>

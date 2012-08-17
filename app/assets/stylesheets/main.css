@@ -24,3 +24,7 @@ html, body {
 .btn-super [class^="icon-"] {
   margin-top: 1px;
 }
+
+.hide-this-shit {
+  margin-top: -40px;
+}
