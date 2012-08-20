@@ -1,5 +1,7 @@
 Pos::Application.routes.draw do
 
+  resources :suppliers
+
   resources :stock_locations
   resources :stock_levels
   resources :products
