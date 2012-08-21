@@ -7,8 +7,8 @@
 <table class="table table-bordered table-striped">
   <tr>
     <th>Name</th>
-    <th>Cost</th>
-    <th>Price</th>
+    <th>Cost Price</th>
+    <th>Retail Price</th>
     <% StockLocation.order("id").each do |s| %>
       <th><%= s.name %></th>
     <% end %>
@@ -18,8 +18,8 @@
 <% @products.each do |product| %>
   <tr>
     <td><%= product.name %></td>
-    <td><%= product.cost %></td>
-    <td><%= product.price %></td>
+    <td>$<%= product.cost %></td>
+    <td>$<%= product.price %></td>
     
       <% product.stock_levels.order("stock_location_id").each do |s| %>
       <td>

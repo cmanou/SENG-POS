@@ -1,3 +1,5 @@
+<% title "Stock Locations" %>
+
 <a href="/stock_control" class="btn btn-large" ><i class="icon-chevron-left"></i></a>
 <h1 style="display:inline">Listing Stock Locations</h1>
 
@@ -10,7 +12,10 @@
 <% @stock_locations.each do |stock_location| %>
   <tr>
     <td><%= stock_location.name %></td>
-    <td><%= link_to 'Show', stock_location %> - <%= link_to 'Edit', edit_stock_location_path(stock_location) %> - <%= link_to 'Destroy', stock_location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+   <td class="btn-group"><%= link_to 'Show', stock_location, :class=>"btn btn-success"%>
+      <%= link_to 'Edit', edit_stock_location_path(stock_location), :class=>"btn btn-warning" %>
+      <%= link_to 'Destroy', stock_location, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
   </tr>
 <% end %>
 </table>

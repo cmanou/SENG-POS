@@ -1,37 +1,40 @@
+
 <p id="notice"><%= notice %></p>
+<%= title "Product Details" %>
+<table class="table table-bordered table-striped">
+<tr>
+  <th>Name:</th>
+  <td><%= @product.name %></td>
+</tr>
+<tr>
+  <th>Barcode:</th>
+  <td><%= @product.barcode %></td>
+</tr>
+<tr>
+  <th>Description:</th>
+  <td><%= @product.description %></td>
+</tr>
+<tr>
+  <th>Cost:</th>
+  <td>$ <%= number_with_precision(@product.cost, :precision => 2) %></td>
+</tr>
 
+<tr>
+  <th>Price:</th>
+  <td>$ <%= number_with_precision(@product.price, :precision => 2) %></td>
+</tr>
 
-<p>
-  <b>Name:</b>
-  <%= @product.name %>
-</p>
-
-<p>
-  <b>Barcode:</b>
-  <%= @product.barcode %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @product.description %>
-</p>
-
-<p>
-  <b>Cost:</b>
-  $ <%= number_with_precision(@product.cost, :precision => 2) %>
-</p>
-
-<p>
-  <b>Price:</b>
-  $ <%= number_with_precision(@product.price, :precision => 2) %>
-</p>
-
-<h3>Stock Levels</h3>
+<tr><th colspan=2>Stock Levels</th></tr>
 <% @product.stock_levels.each do |s| %>
-    <h4><%= s.stock_location.name %></h4>
-    Quantity: <%= s.quanity %><br>
-    Threshold: <%= s.threshold %><br><br>
+<tr>
+    <th><%= s.stock_location.name %></th>
+    <td>Quantity: <%= s.quanity %><br>
+    Threshold: <%= s.threshold %></td>
+</tr>
 <% end %>
+</table>
+
+
 
 <div class="btn-group">
 <%= link_to 'Edit', edit_product_path(@product), :class=>"btn"%>
