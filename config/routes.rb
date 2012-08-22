@@ -4,17 +4,16 @@ Pos::Application.routes.draw do
   resources :stock_levels
   resources :products
 
+  devise_for :users, :skip => [:sessions]
   devise_scope :user do
-    get "login", :to => "devise/sessions#new", :as => :login
-    get "logout", :to => "devise/sessions#destroy", :as => :logout
-    get "signup", :to => "devise/registrations#new", :as => :signup
+    get 'login' => 'devise/sessions#new', :as => :new_user_session
+    post 'login' => 'devise/sessions#create', :as => :user_session
+    get 'logout' => 'devise/sessions#destroy', :as => :destroy_user_session
+    get 'signup', :to => 'devise/registrations#new', :as => :new_user_registration
   end  
-  devise_for :users
-
 
   root :to => "home#index"
 
-  match "stock_control" => "home#stock_control"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

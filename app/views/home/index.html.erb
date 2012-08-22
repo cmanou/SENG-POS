@@ -13,7 +13,7 @@
 		<a class="btn btn-super" href="#cash-register">Cash Register</a>
 		<% end %>
 		<% if current_user.can_manage_stock %>
-		<a class="btn btn-super" href="/stock_control">Stock Control</a>
+		<%= link_to "Stock Control", stock_levels_path, :class => 'btn btn-super' %>
 		<% end %>
 		<% if current_user.can_report %>
 		<a class="btn btn-super" href="#reporting">Reporting</a>
