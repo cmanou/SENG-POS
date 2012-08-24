@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120820111910) do
+ActiveRecord::Schema.define(:version => 20120822002800) do
 
   create_table "products", :force => true do |t|
     t.string   "barcode"
@@ -22,6 +22,18 @@ ActiveRecord::Schema.define(:version => 20120820111910) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  create_table "sales", :force => true do |t|
+    t.integer  "product_id"
+    t.integer  "transaction_id"
+    t.integer  "quantity"
+    t.decimal  "discount"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "sales", ["product_id"], :name => "index_sales_on_product_id"
+  add_index "sales", ["transaction_id"], :name => "index_sales_on_transaction_id"
 
   create_table "stock_levels", :force => true do |t|
     t.integer  "product_id"
@@ -48,6 +60,17 @@ ActiveRecord::Schema.define(:version => 20120820111910) do
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
+
+  create_table "transactions", :force => true do |t|
+    t.integer  "sale_id"
+    t.decimal  "amount"
+    t.string   "method"
+    t.boolean  "approved"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "transactions", ["sale_id"], :name => "index_transactions_on_sale_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

@@ -27,7 +27,7 @@
 
 <body>
 
-  <div class="navbar navbar-fixed-top hide-this-shit">
+  <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -77,19 +77,23 @@
             <li> 
               <a href="/">Home</a> 
             </li>
-            <li class="dropdown"> 
-              <a href="#">About</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">History</a></li> 
-                <li><a href="#">FAQ</a></li>
-              </ul>
-            </li> 
+            <% if false %>
             <li class="dropdown"> 
               <a href="#">Portal</a> 
               <ul class="dropdown-menu">
                 <li><a href="#">POS</a></li>
                 <li><a href="#">My Purchase History</a></li>
               </ul> 
+            </li>
+            <% end %>
+            <li>
+              <a href="#">Sales</a>
+            </li>
+            <li>
+              <a href="#">Stock Control</a>
+            </li>
+            <li>
+              <a href="#">Reports</a>
             </li>
             <li>
               <a href="#">Help</a>

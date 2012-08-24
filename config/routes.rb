@@ -1,9 +1,7 @@
 Pos::Application.routes.draw do
 
   resources :sales
-
   resources :transactions
-
   resources :suppliers
 
   resources :stock_locations
