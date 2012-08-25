@@ -1,0 +1,915 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (10.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (6.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (15.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to DeviseCreateUsers (20120814015105)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (17.5ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "confirmation_token" character varying(255), "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying(255), "authentication_token" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (12.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (2.7ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_users_on_email on users (1.0ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16394
+ AND a.attnum IN (2)
+
+  [1m[36m (18.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (2.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_users_on_email on users (23.4ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16394
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index index_users_on_reset_password_token on users (0.8ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16394
+ AND a.attnum IN (4)
+
+  [1m[36m (19.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (2.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_users_on_confirmation_token on users (0.7ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16394
+ AND a.attnum IN (12)
+[0m
+  [1m[35mColumns for index index_users_on_email on users (0.4ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16394
+ AND a.attnum IN (2)
+
+  [1m[36mColumns for index index_users_on_reset_password_token on users (0.7ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16394
+ AND a.attnum IN (4)
+[0m
+  [1m[35m (12.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_authentication_token" ON "users" ("authentication_token")
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120814015105')[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+Migrating to AddFieldsToUser (20120814040109)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "users" ADD COLUMN "name" character varying(255)
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "users" ADD COLUMN "role" character varying(255)[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120814040109')
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProducts (20120814044936)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (14.8ms)[0m  [1mCREATE TABLE "products" ("id" serial primary key, "barcode" character varying(255), "name" character varying(255), "description" text, "cost" decimal, "price" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120814044936')
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateStockLocations (20120814045328)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (22.7ms)[0m  [1mCREATE TABLE "stock_locations" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120814045328')
+  [1m[36m (12.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateStockLevels (20120814045625)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (21.2ms)[0m  [1mCREATE TABLE "stock_levels" ("id" serial primary key, "product_id" integer, "stock_location_id" integer, "quanity" integer, "threshold" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'stock_levels'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (18.2ms)[0m  [1mCREATE INDEX "index_stock_levels_on_product_id" ON "stock_levels" ("product_id")[0m
+  [1m[35m (2.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'stock_levels'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_stock_levels_on_product_id on stock_levels (0.7ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16431
+ AND a.attnum IN (2)
+[0m
+  [1m[35m (19.1ms)[0m  CREATE INDEX "index_stock_levels_on_stock_location_id" ON "stock_levels" ("stock_location_id")
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120814045625')[0m
+  [1m[35m (9.2ms)[0m  COMMIT
+Migrating to CreateSuppliers (20120820111910)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (35.9ms)[0m  CREATE TABLE "suppliers" ("id" serial primary key, "name" character varying(255), "contact_person" character varying(255), "contact_number" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120820111910')[0m
+  [1m[35m (9.3ms)[0m  COMMIT
+Migrating to CreateTransactions (20120822002700)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (43.0ms)[0m  CREATE TABLE "transactions" ("id" serial primary key, "sale_id" integer, "amount" decimal, "method" character varying(255), "approved" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.6ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'transactions'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (20.8ms)[0m  CREATE INDEX "index_transactions_on_sale_id" ON "transactions" ("sale_id")
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120822002700')[0m
+  [1m[35m (10.3ms)[0m  COMMIT
+Migrating to CreateSales (20120822002800)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (46.0ms)[0m  CREATE TABLE "sales" ("id" serial primary key, "product_id" integer, "transaction_id" integer, "quantity" integer, "discount" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.5ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'sales'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (22.7ms)[0m  CREATE INDEX "index_sales_on_product_id" ON "sales" ("product_id")
+  [1m[36m (2.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'sales'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_sales_on_product_id on sales (0.7ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16464
+ AND a.attnum IN (2)
+
+  [1m[36m (27.0ms)[0m  [1mCREATE INDEX "index_sales_on_transaction_id" ON "sales" ("transaction_id")[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120822002800')
+  [1m[36m (9.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mPK and serial sequence (3.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"products"'::regclass
+[0m
+  [1m[35m (5.4ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'products'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mPK and serial sequence (5.1ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"sales"'::regclass
+[0m
+  [1m[35m (3.2ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'sales'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_sales_on_product_id on sales (0.4ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16464
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index index_sales_on_transaction_id on sales (0.3ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16464
+ AND a.attnum IN (3)
+
+  [1m[36mPK and serial sequence (5.1ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"stock_levels"'::regclass
+[0m
+  [1m[35m (3.2ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'stock_levels'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_stock_levels_on_product_id on stock_levels (0.4ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16431
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index index_stock_levels_on_stock_location_id on stock_levels (0.3ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16431
+ AND a.attnum IN (3)
+
+  [1m[36mPK and serial sequence (1.5ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"stock_locations"'::regclass
+[0m
+  [1m[35m (0.8ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'stock_locations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mPK and serial sequence (1.8ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"suppliers"'::regclass
+[0m
+  [1m[35m (2.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'suppliers'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mPK and serial sequence (5.2ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"transactions"'::regclass
+[0m
+  [1m[35m (3.0ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'transactions'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_transactions_on_sale_id on transactions (0.7ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16452
+ AND a.attnum IN (2)
+[0m
+  [1m[35mPK and serial sequence (5.1ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"users"'::regclass
+
+  [1m[36m (3.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_users_on_authentication_token on users (0.4ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16394
+ AND a.attnum IN (16)
+
+  [1m[36mColumns for index index_users_on_confirmation_token on users (0.6ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16394
+ AND a.attnum IN (12)
+[0m
+  [1m[35mColumns for index index_users_on_email on users (0.7ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16394
+ AND a.attnum IN (2)
+
+  [1m[36mColumns for index index_users_on_reset_password_token on users (0.6ms)[0m  [1m SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16394
+ AND a.attnum IN (4)
+[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-26 00:49:02 +1000
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 4ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-08-26 00:49:02 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.9ms)
+Compiled jquery.js  (6ms)  (pid 25258)
+Compiled jquery_ujs.js  (0ms)  (pid 25258)
+Compiled application.js  (23ms)  (pid 25258)
+Completed 200 OK in 178ms (Views: 96.0ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2012-08-26 00:49:03 +1000
+Served asset /bootstrap.min.css - 200 OK (63ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2012-08-26 00:49:03 +1000
+Served asset /bootstrap-responsive.min.css - 200 OK (4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-08-26 00:49:03 +1000
+Served asset /main.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-26 00:49:03 +1000
+Served asset /jquery.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-26 00:49:03 +1000
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-26 00:49:03 +1000
+Served asset /application.js - 200 OK (12ms)
+
+
+Started GET "/img/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-08-26 00:49:03 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings-white.png"):
+  actionpack (3.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.7) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.7) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.7) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.7) lib/rails/engine.rb:479:in `call'
+  railties (3.2.7) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.7) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/icon.png" for 127.0.0.1 at 2012-08-26 00:49:04 +1000
+Served asset /icon.png - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-26 00:49:07 +1000
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-08-26 00:49:07 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-08-26 00:49:13 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-08-26 00:49:35 +1000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5OS2nlzbBJrs5oVcnhXj+3FzImLciuY4sKsKYTMuc7I=", "user"=>{"email"=>"noreply@lasath.org", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (2.4ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'noreply@lasath.org' LIMIT 1
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "users" ("authentication_token", "confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "name", "remember_created_at", "reset_password_sent_at", "reset_password_token", "role", "sign_in_count", "unconfirmed_email", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19) RETURNING "id"[0m  [["authentication_token", nil], ["confirmation_sent_at", nil], ["confirmation_token", nil], ["confirmed_at", nil], ["created_at", Sat, 25 Aug 2012 14:49:35 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "noreply@lasath.org"], ["encrypted_password", "$2a$10$Y6nGevuYsUmWMkXRojFG0u8I/C42TKe.ADKMhipdxv.R/iAob62PS"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["name", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["role", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Sat, 25 Aug 2012 14:49:35 UTC +00:00]]
+  [1m[35m (9.5ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2012-08-25 14:49:35.586624', "current_sign_in_at" = '2012-08-25 14:49:35.586624', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2012-08-25 14:49:35.589646' WHERE "users"."id" = 1
+  [1m[36m (9.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 164ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-26 00:49:35 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 13ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2012-08-26 00:49:35 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (3.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.7) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.7) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.7) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.7) lib/rails/engine.rb:479:in `call'
+  railties (3.2.7) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.7) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stock_levels" for 127.0.0.1 at 2012-08-26 00:49:39 +1000
+Processing by StockLevelsController#index as HTML
+  [1m[36mStockLevel Load (0.9ms)[0m  [1mSELECT "stock_levels".* FROM "stock_levels" [0m
+  Rendered stock_levels/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 47ms (Views: 35.4ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2012-08-26 00:49:41 +1000
+Processing by ProductsController#index as HTML
+  [1m[36mStockLocation Load (1.2ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" ORDER BY id[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered products/index.html.erb within layouts/application (24.8ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 38ms (Views: 23.5ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2012-08-26 00:49:42 +1000
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mStockLocation Load (0.5ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" [0m
+  Rendered products/_form.html.erb (36.0ms)
+  Rendered products/new.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 61ms (Views: 41.0ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2012-08-26 00:50:12 +1000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5OS2nlzbBJrs5oVcnhXj+3FzImLciuY4sKsKYTMuc7I=", "product"=>{"name"=>"p1", "description"=>"signature product", "cost"=>"2", "price"=>"9001", "barcode"=>"0987654567"}, "commit"=>"Create Product"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/controllers/products_controller.rb:58:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-26 00:50:31 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stock_levels" for 127.0.0.1 at 2012-08-26 00:50:35 +1000
+Processing by StockLevelsController#index as HTML
+  [1m[35mStockLevel Load (0.7ms)[0m  SELECT "stock_levels".* FROM "stock_levels" 
+  Rendered stock_levels/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/stock_locations" for 127.0.0.1 at 2012-08-26 00:50:36 +1000
+Processing by StockLocationsController#index as HTML
+  [1m[35mStockLocation Load (0.6ms)[0m  SELECT "stock_locations".* FROM "stock_locations" ORDER BY id
+  Rendered stock_locations/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/stock_locations/new" for 127.0.0.1 at 2012-08-26 00:50:37 +1000
+Processing by StockLocationsController#new as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered stock_locations/_form.html.erb (2.6ms)
+  Rendered stock_locations/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 24ms (Views: 7.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/stock_locations" for 127.0.0.1 at 2012-08-26 00:50:44 +1000
+Processing by StockLocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5OS2nlzbBJrs5oVcnhXj+3FzImLciuY4sKsKYTMuc7I=", "stock_location"=>{"name"=>"Warehouse"}, "commit"=>"Create Stock location"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "stock_locations" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Sat, 25 Aug 2012 14:50:44 UTC +00:00], ["name", "Warehouse"], ["updated_at", Sat, 25 Aug 2012 14:50:44 UTC +00:00]]
+  [1m[35m (2.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/stock_locations/1
+Completed 302 Found in 10ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/stock_locations/1" for 127.0.0.1 at 2012-08-26 00:50:44 +1000
+Processing by StockLocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStockLocation Load (0.9ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" WHERE "stock_locations"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered stock_locations/show.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 22ms (Views: 17.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/stock_locations" for 127.0.0.1 at 2012-08-26 00:50:46 +1000
+Processing by StockLocationsController#index as HTML
+  [1m[36mStockLocation Load (0.6ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" ORDER BY id[0m
+  Rendered stock_locations/index.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/stock_locations/1" for 127.0.0.1 at 2012-08-26 00:50:48 +1000
+Processing by StockLocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStockLocation Load (0.5ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" WHERE "stock_locations"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered stock_locations/show.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/stock_locations" for 127.0.0.1 at 2012-08-26 00:50:49 +1000
+Processing by StockLocationsController#index as HTML
+  [1m[36mStockLocation Load (0.8ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" ORDER BY id[0m
+  Rendered stock_locations/index.html.erb within layouts/application (5.8ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-26 00:50:51 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stock_levels" for 127.0.0.1 at 2012-08-26 00:50:54 +1000
+Processing by StockLevelsController#index as HTML
+  [1m[35mStockLevel Load (0.5ms)[0m  SELECT "stock_levels".* FROM "stock_levels" 
+  Rendered stock_levels/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/stock_levels/new" for 127.0.0.1 at 2012-08-26 00:50:56 +1000
+Processing by StockLevelsController#new as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered stock_levels/_form.html.erb (3.2ms)
+  Rendered stock_levels/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 63ms (Views: 8.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/stock_levels" for 127.0.0.1 at 2012-08-26 00:50:57 +1000
+Processing by StockLevelsController#index as HTML
+  [1m[36mStockLevel Load (0.4ms)[0m  [1mSELECT "stock_levels".* FROM "stock_levels" [0m
+  Rendered stock_levels/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2012-08-26 00:50:59 +1000
+Processing by ProductsController#index as HTML
+  [1m[36mStockLocation Load (0.6ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" ORDER BY id[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2012-08-26 00:51:00 +1000
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mStockLocation Load (0.6ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" [0m
+  Rendered products/_form.html.erb (3.5ms)
+  Rendered products/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 52ms (Views: 32.7ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2012-08-26 00:51:23 +1000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5OS2nlzbBJrs5oVcnhXj+3FzImLciuY4sKsKYTMuc7I=", "product"=>{"name"=>"p1", "description"=>"signature product", "cost"=>"2", "price"=>"9001", "barcode"=>"0987654567"}, "stock_level"=>{"1"=>{"quanity"=>"5", "threshold"=>"2"}}, "commit"=>"Create Product"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mStockLocation Load (0.4ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" WHERE "stock_locations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "products" ("barcode", "cost", "created_at", "description", "name", "price", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["barcode", "0987654567"], ["cost", #<BigDecimal:7f9a2c6623f8,'0.2E1',9(18)>], ["created_at", Sat, 25 Aug 2012 14:51:23 UTC +00:00], ["description", "signature product"], ["name", "p1"], ["price", #<BigDecimal:7f9a2c662308,'0.9001E4',9(18)>], ["updated_at", Sat, 25 Aug 2012 14:51:23 UTC +00:00]]
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "stock_levels" ("created_at", "product_id", "quanity", "stock_location_id", "threshold", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Sat, 25 Aug 2012 14:51:23 UTC +00:00], ["product_id", 1], ["quanity", 5], ["stock_location_id", 1], ["threshold", 2], ["updated_at", Sat, 25 Aug 2012 14:51:23 UTC +00:00]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 15ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2012-08-26 00:51:23 +1000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mStockLevel Load (0.4ms)[0m  [1mSELECT "stock_levels".* FROM "stock_levels" WHERE "stock_levels"."product_id" = 1[0m
+  [1m[35mStockLocation Load (0.3ms)[0m  SELECT "stock_locations".* FROM "stock_locations" WHERE "stock_locations"."id" = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 15.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2012-08-26 00:52:56 +1000
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mStockLocation Load (0.5ms)[0m  SELECT "stock_locations".* FROM "stock_locations" 
+  [1m[36mStockLevel Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "stock_levels" WHERE "stock_levels"."product_id" = 1 AND "stock_levels"."stock_location_id" = 1 LIMIT 1[0m
+  [1m[35mStockLevel Load (0.7ms)[0m  SELECT "stock_levels".* FROM "stock_levels" WHERE "stock_levels"."product_id" = 1
+  [1m[36mStockLocation Load (0.6ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" WHERE "stock_locations"."id" = 1 LIMIT 1[0m
+  Rendered products/_form.html.erb (7.8ms)
+  Rendered products/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 20ms (Views: 12.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-26 00:52:56 +1000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-26 00:52:56 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2012-08-26 00:52:58 +1000
+Processing by ProductsController#index as HTML
+  [1m[35mStockLocation Load (0.6ms)[0m  SELECT "stock_locations".* FROM "stock_locations" ORDER BY id
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+  [1m[35mStockLevel Load (0.7ms)[0m  SELECT "stock_levels".* FROM "stock_levels" WHERE "stock_levels"."product_id" = 1 ORDER BY stock_location_id
+  Rendered products/index.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-26 00:52:58 +1000
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-26 00:52:58 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/stock_control" for 127.0.0.1 at 2012-08-26 00:53:00 +1000
+
+ActionController::RoutingError (No route matches [GET] "/stock_control"):
+  actionpack (3.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.7) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.7) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.7) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.7) lib/rails/engine.rb:479:in `call'
+  railties (3.2.7) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.7) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/stock_control" for 127.0.0.1 at 2012-08-26 00:53:04 +1000
+
+ActionController::RoutingError (No route matches [GET] "/stock_control"):
+  actionpack (3.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.7) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.7) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.7) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.7) lib/rails/engine.rb:479:in `call'
+  railties (3.2.7) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.7) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-26 00:53:10 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-26 00:53:10 +1000
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-26 00:53:10 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/stock_levels" for 127.0.0.1 at 2012-08-26 00:53:12 +1000
+Processing by StockLevelsController#index as HTML
+  [1m[36mStockLevel Load (0.7ms)[0m  [1mSELECT "stock_levels".* FROM "stock_levels" [0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1
+  [1m[36mStockLocation Load (0.7ms)[0m  [1mSELECT "stock_locations".* FROM "stock_locations" WHERE "stock_locations"."id" = 1 LIMIT 1[0m
+  Rendered stock_levels/index.html.erb within layouts/application (11.7ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 29ms (Views: 22.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-26 00:53:12 +1000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-26 00:53:12 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-26 00:53:15 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-26 00:53:15 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-26 00:53:15 +1000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/stock_levels" for 127.0.0.1 at 2012-08-26 00:53:22 +1000
+Processing by StockLevelsController#index as HTML
+  [1m[35mStockLevel Load (0.7ms)[0m  SELECT "stock_levels".* FROM "stock_levels" 
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1[0m
+  [1m[35mStockLocation Load (0.7ms)[0m  SELECT "stock_locations".* FROM "stock_locations" WHERE "stock_locations"."id" = 1 LIMIT 1
+  Rendered stock_levels/index.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-26 00:53:22 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-26 00:53:22 +1000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-26 00:53:24 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-26 00:53:24 +1000
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-26 00:53:24 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)

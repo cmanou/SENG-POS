@@ -4,6 +4,6 @@
 *.pid
 
 log/**/*
-tmp/**/*
+tmp/*
 db/schema.rb
 
