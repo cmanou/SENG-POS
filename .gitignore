@@ -3,4 +3,7 @@
 
 *.pid
 
-log/development.log
+log/**/*
+tmp/**/*
+db/schema.rb
+
