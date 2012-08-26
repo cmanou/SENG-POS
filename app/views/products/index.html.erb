@@ -1,7 +1,6 @@
 <% title "Product Listing" %>
 
-
-<a href="/stock_control" class="btn btn-large" ><i class="icon-chevron-left"></i></a>
+<%= link_to raw('<i class="icon-chevron-left"></i>'), stock_levels_path, :class=>"btn btn-large" %>
 <h1 style="display:inline">Listing Products</h1>
 
 <table class="table table-bordered table-striped">
