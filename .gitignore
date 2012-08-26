@@ -1,9 +1,10 @@
 
 .DS_Store
+*~
 
 *.pid
 
-log/**/*
+log/*
 tmp/*
 db/schema.rb
 
