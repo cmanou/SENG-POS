@@ -5,14 +5,14 @@
 \contentsline {subsection}{\numberline {4.1}NewORder, EditOrder, UpdateOrderToDelivering, UpdateOrderToComplete, CompleteOrder, CancelOrder}{4}
 \contentsline {subsection}{\numberline {4.2}NewProduct, UpdateProduct, ActivateProduct, DeactivateProduct, AutoMoveStockToFloor, AutoMoveStockToBackroom, SetProductMaxThreshol, SetProductThreshold, MoveStockToBackroom, MoveStockToFloor}{4}
 \contentsline {subsection}{\numberline {4.3}SetProductLevel, RemoveStock, AddStock}{4}
-\contentsline {subsection}{\numberline {4.4}NewMember, SetMemberDiscount, RemoveCreditToMemberAccount, addCredit to MemberAccount, DeactivateMembers, ActivateMembers,NewUser, EditUserPriveleges}{4}
+\contentsline {subsection}{\numberline {4.4}NewMember, SetMemberDiscount, RemoveCreditToMemberAccount, addCredit to MemberAccount, DeactivateMembers, ActivateMembers,NewUser, EditUserPriveleges}{5}
 \contentsline {subsection}{\numberline {4.5}NewCart, CalculateTotalCart , AddProductToCart, CancelCheckOut}{5}
 \contentsline {subsection}{\numberline {4.6}PayForCartCash, PayForCartOtherPaymentType, PayCash}{5}
-\contentsline {subsection}{\numberline {4.7}ProceedToPayment, ProceedToCheckout}{5}
-\contentsline {section}{\numberline {5}System Architecture}{6}
-\contentsline {subsection}{\numberline {5.1}View}{6}
-\contentsline {subsection}{\numberline {5.2}Controller}{6}
-\contentsline {subsection}{\numberline {5.3}Model}{6}
-\contentsline {section}{\numberline {6}Sequence Diagrams and Use Cases}{7}
-\contentsline {section}{\numberline {7}Design Discussion}{8}
-\contentsline {section}{\numberline {8}Appendix}{9}
+\contentsline {subsection}{\numberline {4.7}ProceedToPayment, ProceedToCheckout}{6}
+\contentsline {section}{\numberline {5}System Architecture}{7}
+\contentsline {subsection}{\numberline {5.1}View}{7}
+\contentsline {subsection}{\numberline {5.2}Controller}{7}
+\contentsline {subsection}{\numberline {5.3}Model}{7}
+\contentsline {section}{\numberline {6}Sequence Diagrams and Use Cases}{9}
+\contentsline {section}{\numberline {7}Design Discussion}{10}
+\contentsline {section}{\numberline {8}Appendix}{11}

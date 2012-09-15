@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[a4paper]{article}
-\usepackage{a4wide}
+%\usepackage{a4wide}
 \usepackage{longtable}
 \usepackage[normalem]{ulem}     %% gives strikeout capability with \sout{}
 \usepackage{graphicx}
@@ -79,7 +79,7 @@
 
 The Point of Sale/Warehouse System (PosWare) is designed to be a simple yet sophisticated system which provides extensive sales and logistics management functionality to all kinds of businesses from large to small. 
 
-Our system has to be able to be deployed across multiple machines to suit the needs of medium to large businesses. This allows for cashiers and stock controllers to be in separate locations while working on the same system and also allows multiple cashiers to be active at once (as stated by requirement DN {{@requirement_id}}. However this does contrast to the capabilities of EventB, which models a single system with a state and purely atomic operations and would be difficult to implement whilst spread over multiple machines. 
+Our system has to be able to be deployed across multiple machines to suit the needs of medium to large businesses. This allows for cashiers and stock controllers to be in separate locations while working on the same system and also allows multiple cashiers to be active at once, as stated by requirement DN requirementid. However this does contrast to the capabilities of EventB, which models a single system with a state and purely atomic operations and would be difficult to implement whilst spread over multiple machines. 
 
 In an attempt to stick as close to the model as possible, we decided to store all state in a database. Since all machines can access this database it essentially allows for a single shared state between the machines.
 
@@ -112,7 +112,7 @@ The workers and the customers in the system are represented as users, and all th
 
 \begin{figure}[h]
 \centering
-  \includegraphics[scale=0.5]{Class diagram.svg}
+  \includegraphics[scale=0.5]{Class diagram.pdf}
 	\caption{Standard ARM instruction encoding pattern}
 \end{figure}
 
@@ -122,7 +122,7 @@ All our invariants, which took one of our sets defined in the contexts and provi
 
 \subsection{NewORder, EditOrder, UpdateOrderToDelivering, UpdateOrderToComplete, CompleteOrder, CancelOrder}
 
-Our event-b refinement which dealt with the ordering of products to suppliers was decomposed into a variety of classes. The main class was the 'supplier stock order' which dealt with all the attributes related to the stock orders, while the class methods were of direct correlation to the events. The attributes we extracted from the invariants were product_id, quantity, status and date. The two key invarients were \("orders ∈ activeProducts ⇸ ℕ1" and "orderStatus ∈ activeProducts ⇸ ORDER_STATUS"; \) the first shows how an order involved a product and a quantity, the second showed how orders had a status. The data attribute was simply added as metadata to provide ease of use sorting for the end-user. The events that involved ordering were converted to methods with a one to one correlation, although the events which dealt with updating the status and editing the order were merged into one method called update order. Cancel and delete were equivielant.
+Our event-b refinement which dealt with the ordering of products to suppliers was decomposed into a variety of classes. The main class was the supplier stock order which dealt with all the attributes related to the stock orders, while the class methods were of direct correlation to the events. The attributes we extracted from the invariants were product\_id, quantity, status and date. The two key invarients were \(orders ∈ activeProducts ⇸ ℕ1 and orderStatus ∈ activeProducts ⇸ ORDER_STATUS; \) the first shows how an order involved a product and a quantity, the second showed how orders had a status. The data attribute was simply added as metadata to provide ease of use sorting for the end-user. The events that involved ordering were converted to methods with a one to one correlation, although the events which dealt with updating the status and editing the order were merged into one method called update order. Cancel and delete were equivielant.
 
 \subsection{NewProduct, UpdateProduct, ActivateProduct, DeactivateProduct, AutoMoveStockToFloor, AutoMoveStockToBackroom, SetProductMaxThreshol, SetProductThreshold, MoveStockToBackroom, MoveStockToFloor}
 
@@ -131,7 +131,7 @@ The initial refinements which dealt with the generalisation of products was deco
 
 \subsection{SetProductLevel, RemoveStock, AddStock}
 
-The Stocklevel class mainly came about from the invariants in our event-b model which were used to show the relation between the products and stock_locations. This invariant "productlevels ∈ products →(STOCK_LOCATION → ℕ)"  was the cause for the main attribute of the class, although additional attributes were added as a form of metadata. The main events which were ported to this class as methods were the events to do with directly altering product levels, ie settproductlevel, removestock and addstock. These are all merged into a private manual override method.
+The Stocklevel class mainly came about from the invariants in our event-b model which were used to show the relation between the products and stock\_locations. This invariant \(productlevels ∈ products →(STOCK_LOCATION → ℕ); \)  was the cause for the main attribute of the class, although additional attributes were added as a form of metadata. The main events which were ported to this class as methods were the events to do with directly altering product levels, ie settproductlevel, removestock and addstock. These are all merged into a private manual override method.
 
 \subsection{NewMember, SetMemberDiscount, RemoveCreditToMemberAccount, addCredit to MemberAccount, DeactivateMembers, ActivateMembers,NewUser, EditUserPriveleges}
 
