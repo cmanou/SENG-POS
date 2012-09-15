@@ -196,3 +196,18 @@ So, the Product model essentially looks after the products and activeProducts va
 
 \end{document}
 
+---------------------------------
+\subsection{NewOrder, EditOrder, UpdateOrderToDelivering, UpdateOrderToComplete, CompleteOrder, CancelOrder}
+
+\subsection{NewProduct, UpdateProduct, ActivateProduct, DeactivateProduct, AutoMoveStockToFloor, AutoMoveStockToBackroom, SetProductMaxThreshol, SetProductThreshold, MoveStockToBackroom, MoveStockToFloor}
+
+\subsection{SetProductLevel, RemoveStock, AddStock}
+
+\subsection{NewMember, SetMemberDiscount, RemoveCreditToMemberAccount, addCredit to MemberAccount, DeactivateMembers, ActivateMembers,NewUser, EditUserPriveleges}
+
+\subsection{NewCart, CalculateTotalCart , AddProductToCart, CancelCheckOut}
+
+\subsection{PayForCartCash, PayForCartOtherPaymentType, PayCash}
+
+\subsection{ProceedToPayment, ProceedToCheckout}
+---------------------------------

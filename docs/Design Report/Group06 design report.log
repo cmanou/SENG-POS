@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.3.19)  15 SEP 2012 19:17
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.3.19)  15 SEP 2012 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -25,43 +25,70 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/local/texlive/2011basic/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2011basic/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2011basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2011basic/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2011basic/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
 (/usr/local/texlive/2011basic/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip43
 \LTright=\skip44
 \LTpre=\skip45
 \LTpost=\skip46
-\LTchunksize=\count87
-\LTcapwidth=\dimen103
+\LTchunksize=\count90
+\LTcapwidth=\dimen111
 \LT@head=\box26
 \LT@firsthead=\box27
 \LT@foot=\box28
 \LT@lastfoot=\box29
-\LT@cols=\count88
-\LT@rows=\count89
-\c@LT@tables=\count90
-\c@LT@chunks=\count91
-\LT@p@ftn=\toks14
+\LT@cols=\count91
+\LT@rows=\count92
+\c@LT@tables=\count93
+\c@LT@chunks=\count94
+\LT@p@ftn=\toks16
 )
 (/usr/local/texlive/2011basic/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box30
 \UL@hyphenbox=\box31
 \UL@skip=\skip47
-\UL@hook=\toks15
-\UL@height=\dimen104
-\UL@pe=\count92
-\UL@pixel=\dimen105
+\UL@hook=\toks17
+\UL@height=\dimen112
+\UL@pe=\count95
+\UL@pixel=\dimen113
 \ULC@box=\box32
 Package: ulem 2011/03/18
-\ULdepth=\dimen106
+\ULdepth=\dimen114
 )
 (/usr/local/texlive/2011basic/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2011basic/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks16
-)
 (/usr/local/texlive/2011basic/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
@@ -82,17 +109,17 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
 (/usr/local/texlive/2011basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count93
+\Gread@gobject=\count96
 ))
-\Gin@req@height=\dimen107
-\Gin@req@width=\dimen108
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
 )
 (/usr/local/texlive/2011basic/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count94
-\float@exts=\toks17
+\c@float@type=\count97
+\float@exts=\toks18
 \float@box=\box33
-\@float@everytoks=\toks18
+\@float@everytoks=\toks19
 \@floatcapt=\box34
 )
 (/usr/local/texlive/2011basic/texmf-dist/tex/latex/graphics/color.sty
@@ -114,7 +141,7 @@ Package: amssymb 2009/06/22 v3.00
 
 (/usr/local/texlive/2011basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
-\@emptytoks=\toks19
+\@emptytoks=\toks20
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -123,42 +150,72 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (./b2latex.sty) (./Group06 design report.aux)
 \openout1 = `"Group06 design report.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 380.69788pt, 108.405pt)
+* v-part:(T,H,B)=(108.405pt, 628.23685pt, 108.405pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=380.69788pt
+* \textheight=628.23685pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-0.86499pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (/usr/local/texlive/2011basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count95
-\scratchdimen=\dimen109
+\scratchcounter=\count98
+\scratchdimen=\dimen117
 \scratchbox=\box35
-\nofMPsegments=\count96
-\nofMParguments=\count97
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count98
-\MPscratchDim=\dimen110
-\MPnumerator=\count99
-\makeMPintoPDFobject=\count100
-\everyMPtoPDFconversion=\toks21
+\nofMPsegments=\count99
+\nofMParguments=\count100
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count101
+\MPscratchDim=\dimen118
+\MPnumerator=\count102
+\makeMPintoPDFobject=\count103
+\everyMPtoPDFconversion=\toks22
 ) (/usr/local/texlive/2011basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
 
 (/usr/local/texlive/2011basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2011basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -195,11 +252,11 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
  (/usr/local/texlive/2011basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 (/usr/local/texlive/2011basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -212,124 +269,130 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 \openout3 = `"Group06 design report.toc"'.
 
  [2]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- [1]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- [2]
+Underfull \hbox (badness 10000) in paragraph at lines 80--92
 
-LaTeX Warning: File `Class diagram.pdf' not found on input line 115.
-
-<Class diagram.pdf, id=25, 1517.67pt x 1437.37pt>
-File: Class diagram.pdf Graphic file (type pdf)
- <use Class diagram.pdf>
-Package pdftex.def Info: Class diagram.pdf used on input line 115.
-(pdftex.def)             Requested size: 758.83315pt x 718.68324pt.
-
-Overfull \hbox (469.9722pt too wide) in paragraph at lines 115--116
- [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 144.62769pt on input line 117.
+Underfull \hbox (badness 10000) in paragraph at lines 80--92
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3]
-Overfull \hbox (9.3028pt too wide) in paragraph at lines 123--123
-[]\OT1/cmr/bx/n/12 NewORder, Ed-i-tOrder, Up-da-te-Order-ToDe-liv-er-ing, Up-
- []
-
-Missing character: There is no â in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no ‡ in font cmr10!
-Missing character: There is no ¸ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no „ in font cmr10!
-Missing character: There is no • in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no ‡ in font cmr10!
-Missing character: There is no ¸ in font cmr10!
-
-Overfull \hbox (62.46289pt too wide) in paragraph at lines 125--126
-\OT1/cmr/m/n/10 key in-vari-ents were $\OML/cmm/m/it/10 ordersactiveProducts\OT
-1/cmr/m/n/10 1\OML/cmm/m/it/10 andorderStatusactiveProductsORDER[]TATUS\OT1/cmr
-/m/n/10 ;$
  []
 
 
-Overfull \hbox (1.2042pt too wide) in paragraph at lines 127--127
-\OT1/cmr/bx/n/12 ac-ti-vateProd-uct, Au-to-Move-Stock-ToFloor, Au-to-Move-
- []
+Underfull \hbox (badness 10000) in paragraph at lines 80--92
 
-Missing character: There is no â in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no † in font cmr10!
-Missing character: There is no ’ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no † in font cmr10!
-Missing character: There is no ’ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no „ in font cmr10!
-Missing character: There is no • in font cmr10!
-[4]
-Overfull \hbox (30.4667pt too wide) in paragraph at lines 136--136
-[]\OT1/cmr/bx/n/12 NewMember, Set-Mem-berDis-count, Re-move-Cred-it-ToMem-
  []
 
 
-Overfull \hbox (10.05005pt too wide) in paragraph at lines 147--147
-[]\OT1/cmr/bx/n/12 PayForCartCash, Pay-For-Car-tOther-Pay-ment-Type, Pay-
+Underfull \hbox (badness 10000) in paragraph at lines 80--92
+
  []
 
-[5] [6]
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--92
+
+ []
+
+[1]
+Overfull \hbox (12.74721pt too wide) in paragraph at lines 94--110
+\OT1/cmr/m/n/10 rate lo-ca-tions while work-ing on the same sys-tem and also al
+-lows mul-ti-ple cashiers/customers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--110
+
+ []
+
+[2]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ˜ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- [7] [8] [9] [10] [11] [12 <./Class diagram.pdf>]
-(./Group06 design report.aux) ) 
+Missing character: There is no ¦ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--125
+
+ []
+
+[3] <ClassDiagram.pdf, id=30, 1517.67pt x 1437.37pt>
+File: ClassDiagram.pdf Graphic file (type pdf)
+ <use ClassDiagram.pdf>
+Package pdftex.def Info: ClassDiagram.pdf used on input line 130.
+(pdftex.def)             Requested size: 455.30452pt x 431.21432pt.
+
+Overfull \hbox (55.14764pt too wide) in paragraph at lines 129--131
+ []|  [] 
+ []
+
+[4 <./ClassDiagram.pdf>] [5] [6] [7] [8] [9] [10] (./Group06 design report.aux)
+ ) 
 Here is how much of TeX's memory you used:
- 2336 strings out of 494752
- 32144 string characters out of 3171020
- 87590 words of memory out of 3000000
- 5515 multiletter control sequences out of 15000+200000
- 7902 words of font info for 32 fonts, out of 3000000 for 9000
+ 2815 strings out of 494752
+ 39255 string characters out of 3171020
+ 101478 words of memory out of 3000000
+ 5983 multiletter control sequences out of 15000+200000
+ 8210 words of font info for 33 fonts, out of 3000000 for 9000
  166 hyphenation exceptions out of 8191
- 38i,7n,26p,1016b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011basic/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011basic/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2011basic/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011basic/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2011basic/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011basic/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Group06 design report.pdf" (16 pages, 123623 bytes).
+ 38i,7n,32p,635b,225s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb></usr/local/texlive/2011basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/local/texlive/2011basic/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/local/texlive/2011basic/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/local/texlive/2011basic/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb>
+Output written on "Group06 design report.pdf" (14 pages, 112819 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
