@@ -3,11 +3,20 @@
 \contentsline {section}{\numberline {3}Class Overview }{3}
 \contentsline {section}{\numberline {4}Class Diagram}{4}
 \contentsline {section}{\numberline {5}EventB to Class Mapping}{5}
-\contentsline {section}{\numberline {6}EventB Events to Methods}{6}
-\contentsline {section}{\numberline {7}System Architecture}{7}
-\contentsline {subsection}{\numberline {7.1}Model}{7}
-\contentsline {subsection}{\numberline {7.2}View}{7}
-\contentsline {subsection}{\numberline {7.3}Controller}{7}
-\contentsline {section}{\numberline {8}Sequence Diagrams and Use Cases}{8}
-\contentsline {section}{\numberline {9}Design Discussion}{9}
-\contentsline {section}{\numberline {10}Appendix}{10}
+\contentsline {section}{\numberline {6}EventB Events to Methods}{9}
+\contentsline {subsection}{\numberline {6.1}PRODUCT}{9}
+\contentsline {subsection}{\numberline {6.2}SALEITEM}{10}
+\contentsline {subsection}{\numberline {6.3}SUPPLIER}{11}
+\contentsline {subsection}{\numberline {6.4}STOCK LEVEL}{11}
+\contentsline {subsection}{\numberline {6.5}STOCK TRANSFER}{12}
+\contentsline {subsection}{\numberline {6.6}SUPPLIER STOCK ORDER}{12}
+\contentsline {subsection}{\numberline {6.7}TRANSACTION}{12}
+\contentsline {subsection}{\numberline {6.8}STOCK LOCATION}{13}
+\contentsline {subsection}{\numberline {6.9}USER}{13}
+\contentsline {section}{\numberline {7}System Architecture}{15}
+\contentsline {subsection}{\numberline {7.1}Model}{15}
+\contentsline {subsection}{\numberline {7.2}View}{15}
+\contentsline {subsection}{\numberline {7.3}Controller}{15}
+\contentsline {section}{\numberline {8}Sequence Diagrams and Use Cases}{17}
+\contentsline {section}{\numberline {9}Design Discussion}{18}
+\contentsline {section}{\numberline {10}Appendix}{19}
