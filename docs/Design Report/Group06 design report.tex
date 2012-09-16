@@ -7,7 +7,7 @@
 \usepackage[margin=1.5in]{geometry}
 %\usepackage{a4wide}
 \usepackage{longtable}
-\usepackage[normalem]{ulem}     %% gives strikeout capability with \sout{}
+%\usepackage[normalem]{ulem}     %% gives strikeout capability with \sout{}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[usenames,dvipsnames]{color}
@@ -57,6 +57,7 @@
   Version & Date & Authors & Summary of Changes\\\hline\hline
   0.1 & 03/08/2012     &    Vincent     &    Created initial report               \\\hline
    0.2 & 03/08/2012     &    Lasath     &    Added Architecture section               \\\hline
+    0.9 & 14/08/2012     &    ALL     &    Added in rest               \\\hline
  
 \end{tabular}
 
@@ -140,7 +141,7 @@ Within our EventB model, most of the sets defined in our contexts were converted
 \\\\
 The main class was supplier stock order which dealt with all the attributes related to the stock orders, while the class methods were of direct correlation to the events. The attributes extracted from the invariants were product\_id, quantity, status and date. The date attribute was added as metadata to provide ease of use sorting for the end-user. Events that involved ordering were converted to methods with a one to one correlation, although the events which dealt with updating the status and editing the order were merged into one method called update order. Cancel and delete were equivalent. This all represents our requirement DN - 1.4
 \\\\
-The two key variables were orders \(orders ∈ activeProducts ⇸ ℕ1;\) and \(orderStatus orderStatus ∈ activeProducts ⇸ ORDER_STATUS;\).
+The two key variables were orders \(orders ∈ activeProducts ⇸ ℕ1;\) and\\\\ \(orderStatus orderStatus ∈ activeProducts ⇸ ORDER_STATUS;\).\\\\
 The first shows how an order involved a product and a quantity, the second showed how orders had a status, which were implicitly stated by [DN-1.4] and explicitly by [DN-3.1]. These generated attributes for the order class quantity and status. The invariant \(∀p · p ∈ activeProducts ∧ p ∈ dom(orders) ⇒ p ∈ dom(orderStatus);\) clearly showed the link between products and orders status and the need for the status attribute.
 \\\\
 This refinement StockControl\_R1 added numerous events which dealt with the creation of stock orders to suppliers and editing of orders. The NewOrder event took three parameters this was converted to a method called createStockOrder in the class, it did not take the additional user parameter as this will be handled by the authentication controller in our system [PD-1.4.1]. EditOrder was also nearly a direct conversion from the event-b model into the class diagram as a method named EditStockOrder which was similar to new order in which it didn't take a user as this is handled elsewhere in the system. [PD-1.4.3]
@@ -169,7 +170,7 @@ Overall it is evident that although they were modelled independently in EventB, 
 \\\\
 Our EventB model had the notion of carts and receipts, during the design process we decided that the best way to convert it into class diagram was to split these into two objects: one of which was a the sale class, and the other sale item class. The newCart event was added to the sale class as a method named create new sale, similarly addProductToCart was replaced by a method with the name add sale item, and finally calculateTotalCart [PD-2.2.3], was just simply shortened and added as a method name calculate total. All invariants involving sales were also added as attributes, although a few additional attributes were added as a form of metadata. CancelCheckout from our event-b model was also renamed as a method of sale and it was renamed to cancelSale, but still provided the same functionality and consistency. Additionally the returnProduct  event was added to this class as a method to ensure that integrity was kept between our design and our event b model.
 \\\\
-The final refinement of the context evolved the notion of a [PD-2.1.2] \(CART = CART = PRODUCT ⇸ ℕ; \), this was used to modelled in our class diagram as a SaleItem, its attributes are directly derived from the definition with product being the product\_id and the number being the quantity. THe next immediate class that was derived from our refinement was that of sales, this was derived from the invariant \(carts ∈ members ⇸ CART; \). The customer\_id attribute was derived from the definition of the invariant which had a members and return a cart i.e. a sale item. The cartTotal invariant  was the invariant behind the total attribute of the sale, similarly the discountedCartTotal  was converted from the model into the discount, although this wasn't a direct correlation, the discountedCartTotal [PD-2.1.3] from the model can be calculated in the class from the total-discount. SaleDate was just added as a form of metadata to increase ease of use  for the user. 
+The final refinement of the context evolved the notion of a [PD-2.1.2] \(CART = CART = PRODUCT ⇸ ℕ; \), this was used to modelled in our class diagram as a SaleItem, its attributes are directly derived from the definition with product being the product\_id and the number being the quantity. The next immediate class that was derived from our refinement was that of sales, this was derived from the invariant \(carts ∈ members ⇸ CART; \). The customer\_id attribute was derived from the definition of the invariant which had a members and return a cart i.e. a sale item. The cartTotal invariant  was the invariant behind the total attribute of the sale, similarly the discountedCartTotal  was converted from the model into the discount, although this wasn't a direct correlation, the discountedCartTotal [PD-2.1.3] from the model can be calculated in the class from the total-discount. SaleDate was just added as a form of metadata to increase ease of use  for the user. 
 \\\\
 The amount\_paid class attribute was not modelled for each cart in the EventB model due to limitations in rodin, so it was used as a global attribute in the model that was reset at the end of each purchase. However in the design of our class we stored it as a local attribute. This will allow us to have multiple purchases happening simultaneously.
 \\\\
@@ -209,8 +210,7 @@ Deactivate product accomplishes the functional equivalent of the deactivateProdu
 {\bf -createSaleItem(product, quantity)}
 Create Sale Item translates to the event add product to cart. Its guards exist to ensure that the current product levels are sufficient to complete the sale.
 \\\\
-SALE
-\\\\
+\subsection{SALE}
 {\bf + createNewSale(customer)}
 This method is derived from the NewCart event in our final refinement. Its guards required that the member be an active member of the store, and that there wasn’t already a transaction happening for that user. Similarly, this method checks that the given member’s active attribute, and checks that a Sale instance doesn’t already exist for the given customer before proceeding. If those checks pass, it then creates an instance of Sale.
 \\\\
@@ -232,14 +232,14 @@ The cancelSale method was derived from the cancelCheckout event as described bel
 The apply payment as described above was a combination of a few events. The parameters mainly remained the same, the method takes a payment amount and a payment, the guards basically remained the same, with checks to see whether the  payment was valid, also to verify that the payment amount was the correct amount. 
 \\\\
 {\bf +returnProduct()}
-The returnProduct method was converted directly from the event and hence most of the parameters remained the same. The guards of the  event will be represented in the code through the use of checks in the method, ie if statements to verify that the amountPaid is valid, and also that the receipt for the product was valid.
+The returnProduct method was converted directly from the event and hence most of the parameters remained the same. The guards of the  event will be represented in the code through the use of checks in the method, i.e. if statements to verify that the amountPaid is valid, and also that the receipt for the product was valid.
 \\\\
 \subsection{SUPPLIER}
 {\bf + createSupplier()}\\\\
 {\bf + editSupplier()}\\\\
 {\bf + deleteSupplier()}\\\\
 \\\\
-These methods were created to edit the supplier set that we had in one of the contexts. The main guards that these methods encompassed were, that the supplier were being added, were unique. THe deleteSupplier method was will use if statements to represent the guards which, were to ensure that the supplier existed, and was being delete by a verified users. 
+These methods were created to edit the supplier set that we had in one of the contexts. The main guards that these methods encompassed were, that the supplier were being added, were unique. The deleteSupplier method was will use if statements to represent the guards which, were to ensure that the supplier existed, and was being delete by a verified users. 
 \\\\
 \subsection{STOCK LEVEL}
 {\bf - createStockLevel(product, location)}
@@ -327,14 +327,87 @@ A controller is what responds to the requests created by the views and actually 
 \\\\
 Continuing the above example, if a user presses the button to deactivate a product, the deactivate method of the product controller will mark that product as inactive, just as the deactivateProduct event would.
 \pagebreak
-\section{Sequence Diagrams and Use Cases}
-
-\pagebreak
-\section{Design Discussion}
-
-\pagebreak
 
 \section{Appendix}
+
+\subsection{Domain-Level Requirements}
+
+\begin{longtable}{|l|p{5cm}|p{8cm}|}
+  \caption{Table of Referenced Domain-Level Requirements}\\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{ReqID}}  &
+  \multicolumn{1}{|c|}{\textbf{Requirement}} &
+  \textbf{Short Description}\\
+  \hline\hline
+  \endfirsthead
+  \caption[]{Table of Referenced Domain-Level Requirements \textit{Continued}}\\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{ReqID}} &
+  \multicolumn{1}{|c|}{\textbf{Requirement}} &
+  \textbf{Short Description}\\
+  \hline\hline
+  \endhead
+  \hline
+  \multicolumn{3}{r}{\textit{continued on next page\ldots}}\\
+  \endfoot
+  \hline
+  \endlastfoot
+  %% List all your Domain-Level requirements here
+  \textcolor{blue}{DN-1.4} & Handle reordering and relocation of stock. & \textbf{[Core] }When floor stock levels for any product falls below a specified threshold, the system should automatically be able to request extra stock from a warehouse or another location.\\
+  \hline
+\end{longtable}
+
+\subsection{Product-Level Requirements}
+
+\begin{longtable}{|l|p{5cm}|p{8cm}|}
+  \caption{Table of Product-Level Requirements}\\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{ReqID}}  &
+  \multicolumn{1}{|c|}{\textbf{Requirement}} &
+  \textbf{Short Description}\\
+  \hline\hline
+  \endfirsthead
+  \caption[]{Table of Product-Level Requirements \textit{Continued}}\\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{ReqID}} &
+  \multicolumn{1}{|c|}{\textbf{Requirement}} &
+  \textbf{Short Description}\\
+  \hline\hline
+  \endhead
+  \hline
+  \multicolumn{3}{r}{\textit{continued on next page\ldots}}\\
+  \endfoot
+  \hline
+  \endlastfoot
+  %% List all your Product-Level requirements here
+\textcolor{blue}{PD-1.1.1} & Ability to add/remove stock from a location. & \textbf{[Core] }Stock can be rearranged from different locations i.e. when stock levels are low on the floor stock should be moved from the store rooms or the warehouse\\
+\textcolor{blue}{PD-1.1.2} & Add new products to the database & \textbf{[Core] }When the store decides to sell a new product, the staff should be able to enter the product into the system, and record any relevant details.\\
+\textcolor{blue}{PD-1.1.3} & Update a products details & \textbf{[Core] }The products recorded in the system should be editable. For example, current stock levers, unit price, product description, etc.\\
+\textcolor{blue}{PD-1.1.4} & Remove a product from the system & \textbf{[Core] }If the store decides to discontinue the sale of a particular product, functionality to remove it will be provided so that the system will cease to manage the stock.\\
+\hline
+\textcolor{blue}{PD-1.4.1} & Function to order new stock from supplier & \textbf{[Core] }When stock is below the threshold for warehouse stock, a purchase order must be placed with the respective supplier.\\
+\textcolor{blue}{PD-1.4.3} & Ability to raise a stock order as high priority & \textbf{[Core] }If an order is placed within the system, an authorised staff member flag it as a high priority order. For example A spot sale of item X was very well received by customers and sells out quickly. The duty manager raises an urgent replenishment request for item X through the PoSWare system, which then sets in train an extraordinary delivery.\\
+\textcolor{blue}{PD-1.4.4} & Allow stock level thresholds to be set & \textbf{[Core] }Allow an authorised user to set the stock level threshold for an item. For example, item X should have a minimum threshold of m and a maximum threshold of n on the store's floor shelves.\\
+\hline
+\textcolor{blue}{PD-2.1.2} & The system will be able to process the sale of goods updating the appropriate stock levels & \textbf{[Core] }When a product is sold, the system will reduce stock levels of the particular product. If stock level then falls below a predetermined threshold, triggers relevant actions within the system.\\
+\textcolor{blue}{PD-2.1.3} & The system will calculate total purchasing price of stock & \textbf{[Core] }Calculates the cost of the purchased items in stock, including the ability to account for any specials on the item being purchased.\\
+\hline
+\textcolor{blue}{PD-2.2.1} & Refund provision for returned stock & \textbf{[Core] }When stock is returned and is still in purchasable condition, it may be added back to the current stock.\\
+\textcolor{blue}{PD-2.2.3} & The system will handle exchange of stock for cash refund & \textbf{[Core] }The item may be returned and exchanged for cash where applicable.\\
+\hline
+\textcolor{blue}{PD-2.3.1} & The system will have a customer payment system for orders and sales & \textbf{[Core] }The payment will be validated and then recorded as a transaction within the system\\
+\hline
+\textcolor{blue}{PD-2.4.1} & The system will be able to allocate membership discounts to appropriate customers & \textbf{[Extension] }Where applicable for certain loyalty memberships discounts will be applied to their transactions\\
+\textcolor{blue}{PD-2.4.2} & The system will handle customer account creation & \textbf{[Extension] }Users will be able to create a new account for a customer.\\
+\hline
+\textcolor{blue}{PD-3.1.2} & The system needs to be capable of generating reports based on products & \textbf{[Core] }At the request of a manager (or anyone with sufficient privileges), the system should be able to generate a report outlining the most and least profitable products.\\
+\hline
+\textcolor{blue}{PD-4.1.2} & Provide various levels of access control to the system. & \textbf{[Core] }Create ACLs to restrict functionality to specified groups of users. For example, a customer should not be able to modify the price of a product.\\
+\textcolor{blue}{PD-4.1.3} & Allow modification of access rights & \textbf{[Core] }The rights defined in the previous requirement should be modifiable by someone with sufficient rights. For example, if a cashier gets promoted to a manager, they will now have access to more functions within the system.\\
+\hline
+
+  \hline
+\end{longtable}
 
 \appendix
 
