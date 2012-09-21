@@ -40,6 +40,19 @@
       </tr>
 
       <tr>
+        <th><%= f.label :brand %></th>
+        <td><%= f.text_field :brand %></td>
+      </tr>
+      <tr>
+        <th><%= f.label :size %></th>
+        <td><%= f.text_field number_with_precision(:size, :precision => 2) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label :active %></th>
+        <td><%= f.check_box :active %></td>
+      </tr>
+
+      <tr>
         <td colspan="2"><h3>Stock Levels</h3></td>
       </tr>
 

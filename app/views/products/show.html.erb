@@ -28,6 +28,19 @@
   <td>$ <%= number_with_precision(@product.price, :precision => 2) %></td>
 </tr>
 
+  <tr>
+    <th>Brand</th>
+    <td><%= @product.brand %></td>
+  </tr>
+  <tr>
+    <th>Size</th>
+    <td><%= number_with_precision(@product.size, :precision => 2) %></td>
+  </tr>
+  <tr>
+    <th>Active</th>
+    <td><%= @product.active %></td>
+  </tr>
+
 <tr><th colspan=2>Stock Levels</th></tr>
 <% @product.stock_levels.each do |s| %>
 <tr>
