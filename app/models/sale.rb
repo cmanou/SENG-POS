@@ -1,3 +1,4 @@
 class Sale < ActiveRecord::Base
-  # attr_accessible :title, :body
+    has_many :sale_items
+    has_many :products, :through => :sale_items
 end
