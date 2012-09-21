@@ -1,5 +1,7 @@
 Pos::Application.routes.draw do
 
+  resources :sale_items
+
   resources :sales
 
   resources :stock_transfers
