@@ -3,4 +3,8 @@ class SaleItem < ActiveRecord::Base
     belongs_to :product
 
   attr_accessible :quantity, :product
+
+  def sub_total
+    product.cost * quantity
+  end
 end
