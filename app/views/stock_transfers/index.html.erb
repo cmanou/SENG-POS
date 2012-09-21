@@ -1,11 +1,13 @@
 <%= title "Listing Stock Transfers" %>
 
-<table class="table table-bordered">
+<table class="table table-bordered table-striped">
   <tr>
     <th>Product</th>
     <th>Transfer To</th>
     <th>Quantity</th>
     <th>Complete</th>
+    <th>Created On</th>
+    <th>Last Updated</th>
     <th></th>
 
   </tr>
@@ -15,7 +17,16 @@
     <td><%= stock_transfer.product.name %></td>
     <td><%= stock_transfer.stock_location.name %></td>
     <td><%= stock_transfer.quantity %></td>
-    <td><%= stock_transfer.complete %></td>
+    <td>
+      <% if stock_transfer.complete %>
+      <i class="icon-ok"></i>
+      <% else %>
+      <i class="icon-remove"></i>
+      <% end %>
+    </td>
+    <td><%= stock_transfer.updated_at.localtime.to_formatted_s(:short)   %></td>
+    <td><%= stock_transfer.created_at.localtime.to_formatted_s(:short)   %></td>
+
     <td class="btn-group"><%= link_to 'Show', stock_transfer, :class=>"btn btn-success"%>
       <%= link_to 'Edit', edit_stock_transfer_path(stock_transfer), :class=>"btn btn-warning" %>
       <%= link_to 'Destroy', stock_transfer, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>

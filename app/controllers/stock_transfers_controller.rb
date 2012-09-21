@@ -64,9 +64,15 @@ class StockTransfersController < ApplicationController
   # PUT /stock_transfers/1
   # PUT /stock_transfers/1.json
   def update
+
     @stock_transfer = StockTransfer.find(params[:id])
 
     respond_to do |format|
+      @product = Product.find(Integer(params[:stock_transfer][:product]))
+      @stock_location = StockLocation.find(Integer(params[:stock_transfer][:stock_location]))
+
+      params[:stock_transfer][:product] = @product
+      params[:stock_transfer][:stock_location] = @stock_location
       if @stock_transfer.update_attributes(params[:stock_transfer])
         format.html { redirect_to @stock_transfer, notice: 'Stock transfer was successfully updated.' }
         format.json { head :no_content }
