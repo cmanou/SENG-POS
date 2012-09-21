@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-
-<%= @sale.products %>
+<%= render :template => 'sale_items/index' %>
 
 <%= link_to 'Edit', edit_sale_path(@sale) %> |
 <%= link_to 'Back', sales_path %>

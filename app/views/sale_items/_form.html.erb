@@ -1,4 +1,4 @@
-<%= form_for(@sale_item) do |f| %>
+<%= form_for([@sale, @sale_item]) do |f| %>
   <% if @sale_item.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@sale_item.errors.count, "error") %> prohibited this sale_item from being saved:</h2>
@@ -11,6 +11,10 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= f.label :product %><br />
+    <%= f.collection_select :product, Product.where(:active => true), :id, :name %>
+  </div>
   <div class="field">
     <%= f.label :quantity %><br />
     <%= f.number_field :quantity %>
