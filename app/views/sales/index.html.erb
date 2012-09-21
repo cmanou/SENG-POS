@@ -4,6 +4,7 @@
   <tr>
     <th>Date</th>
     <th>Customer</th>
+    <th>Total Price</th>
     <th>Checkout User</th>
     <th>Tools</th>
   </tr>
@@ -15,6 +16,9 @@
       </td>
       <td>
 	<%= sale.customer.email %>
+      </td>
+      <td>
+	$<%= sale.total %>
       </td>
       <td>
 	<%= sale.checkout_user.email %>
