@@ -11,8 +11,17 @@
     </div>
   <% end %>
 
-  <h2>Add a sale item</h2>
+  <div class="field">
+    <%= f.label :customer %>
+    <%= f.collection_select :customer, User.all, :id, :email %>
+  </div>
+  <div class="field">
+    <%= f.label :checkout_user %>
+    <%= f.select :checkout_user, [[current_user.email, current_user.id]], {}, :disabled => 'disabled' %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+

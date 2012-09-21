@@ -40,6 +40,9 @@ class SalesController < ApplicationController
   # POST /sales
   # POST /sales.json
   def create
+    @customer = User.find(params[:sale][:customer])
+    params[:sale][:customer] = @customer
+    params[:sale][:checkout_user] = current_user
     @sale = Sale.new(params[:sale])
 
     respond_to do |format|
