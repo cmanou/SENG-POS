@@ -1,8 +1,11 @@
 Pos::Application.routes.draw do
-
-  resources :sales
+<<<<<<< HEAD
 
   resources :stock_transfers
+
+  resources :sales
+=======
+>>>>>>> Delete Sale
   resources :transactions
   resources :suppliers
 
