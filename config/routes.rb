@@ -1,8 +1,6 @@
 Pos::Application.routes.draw do
 
   resources :stock_transfers
-
-  resources :sales
   resources :transactions
   resources :suppliers
 
