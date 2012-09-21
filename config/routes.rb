@@ -9,6 +9,8 @@ Pos::Application.routes.draw do
   resources :stock_locations
   resources :stock_levels
   resources :products
+  
+  resources :reports
 
   devise_for :users, :skip => [:sessions]
   devise_scope :user do

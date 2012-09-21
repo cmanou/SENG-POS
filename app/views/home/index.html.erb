@@ -9,13 +9,13 @@
       <div class="well">
         <% if user_signed_in? %>
         <% if current_user.can_checkout %>
-        <a class="btn btn-super" href="#cash-register">Cash Register</a>
+        <%= link_to "Cash Register", new_sale_path, :class => 'btn btn-super' %>
         <% end %>
         <% if current_user.can_manage_stock %>
         <%= link_to "Stock Control", stock_levels_path, :class => 'btn btn-super' %>
         <% end %>
         <% if current_user.can_report %>
-        <a class="btn btn-super" href="#reporting">Reporting</a>
+        <%= link_to "Reporting", reports_path, :class => 'btn btn-super' %>
         <% end %>
         <% end %>
       </div>

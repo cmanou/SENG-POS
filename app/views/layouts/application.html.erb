@@ -86,24 +86,20 @@
               </ul> 
             </li>
             <% end %>
-            <li>
-              <a href="#">Sales</a>
-            </li>
+            <li><%= link_to "Sales", sales_path %></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Stock Control
                     <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="/stock_levels">Stock Levels</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/suppliers">Suppliers</a></li>
-                <li><a href="/stock_locations">Stock Locations</a></li>
-                <li><a href="/stock_transfers">Stock Transfers</a></li>
+                <li><%= link_to "Stock Levels", stock_levels_path %><a href="/stock_levels">Stock Levels</a></li>
+                <li><%= link_to "Products", products_path %></a></li>
+                <li><%= link_to "Suppliers", suppliers_path %></a></li>
+                <li><%= link_to "Stock Locations", stock_locations_path %></a></li>
+                <li><%= link_to "Stock Transfers", stock_transfers_path %></li>
               </ul> 
             </li>
-            <li>
-              <a href="#">Reports</a>
-            </li>
+            <li><%= link_to "Reports", reports_path %></li>
             <li>
               <a href="#">Help</a>
             </li>
