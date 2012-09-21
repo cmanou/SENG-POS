@@ -5,6 +5,6 @@ class SaleItem < ActiveRecord::Base
   attr_accessible :quantity, :product
 
   def sub_total
-    product.cost * quantity
+    product.price * quantity
   end
 end
