@@ -53,6 +53,11 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     #raise params.inspect
+
+    @supplier = Supplier.find(Integer(params[:product][:supplier]))
+
+    params[:product][:supplier] = @supplier
+
     @product = Product.new(params[:product])
 
     params[:stock_level].each do |sl_id, sl|
@@ -85,6 +90,8 @@ class ProductsController < ApplicationController
     end
 
     respond_to do |format|
+      @supplier = Supplier.find(Integer(params[:product][:supplier]))
+      params[:product][:supplier] = @supplier
       if @product.update_attributes(params[:product])
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
         format.json { head :no_content }

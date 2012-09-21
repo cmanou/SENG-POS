@@ -23,6 +23,10 @@
         <td><%= f.text_area :description,:rows => "5" %></td>
       </tr>
       <tr>
+        <th><%= f.label :supplier %></th>
+        <td><%= f.collection_select :supplier, Supplier.all, :id, :name %></td>
+      </tr>
+      <tr>
         <th><%= f.label :cost %></th>
         <td>$ <%= f.text_field number_with_precision(:cost, :precision => 2) %></td>
       </tr>
