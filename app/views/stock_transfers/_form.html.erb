@@ -13,11 +13,12 @@
 
   <div class="field">
     <%= f.label :product %><br />
-    <%= f.text_field :product %>
+    <%= f.collection_select :product, Product.all, :id, :name %>
+
   </div>
   <div class="field">
-    <%= f.label :stock_location %><br />
-    <%= f.text_field :stock_location %>
+    <%= f.label :stock_location, "Transfer To" %><br />
+    <%= f.collection_select :stock_location, StockLocation.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :quantity %><br />

@@ -40,6 +40,14 @@ class StockTransfersController < ApplicationController
   # POST /stock_transfers
   # POST /stock_transfers.json
   def create
+    
+
+    @product = Product.find(Integer(params[:stock_transfer][:product]))
+    @stock_location = StockLocation.find(Integer(params[:stock_transfer][:stock_location]))
+
+    params[:stock_transfer][:product] = @product
+    params[:stock_transfer][:stock_location] = @stock_location
+
     @stock_transfer = StockTransfer.new(params[:stock_transfer])
 
     respond_to do |format|
