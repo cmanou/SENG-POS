@@ -1,5 +1,5 @@
 class Sale < ActiveRecord::Base
-    has_many :sale_items
+    has_many :sale_items, :dependent => :destroy
     has_many :products, :through => :sale_items
 
     belongs_to :customer, :class_name => 'User'
