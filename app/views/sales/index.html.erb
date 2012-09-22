@@ -1,5 +1,7 @@
 <% title "Sales Listing" %>
 
+<h2>Checking Out</h2>
+
 <table class="table table-bordered table-striped">
   <tr>
     <th>Date</th>
@@ -11,29 +13,41 @@
 
   <% @sales.each do |sale| %>
     <tr>
-      <td>
-	<%= sale.created_at %>
-      </td>
-      <td>
-	<%= sale.customer.email %>
-      </td>
-      <td>
-	$<%= sale.total %>
-      </td>
-      <td>
-	<%= sale.checkout_user.email %>
-      </td>
+      <td><%= sale.created_at %></td>
+      <td><%= sale.customer.email %></td>
+      <td>$<%= sale.total %></td>
+      <td><%= sale.checkout_user.email %></td>
       <td class="btn-group">
-	<%= link_to 'Show', sale, :class=>"btn btn-success"%>
-<!-- can't modify sales
-	<%= link_to 'Edit', edit_sale_path(sale), :class=>"btn btn-warning" %>
-	<%= link_to 'Destroy', sale, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
--->
+<!-- 	<%= link_to 'Show', sale, :class=>"btn btn-success"%> -->
+	<%= link_to 'Continue', sale_sale_items_path(sale), :class=>"btn" %>
+	<%= link_to 'Cancel', sale, :class=>"btn", method: :delete, data: { confirm: 'Are you sure?' } %>
       </td>
     </tr>
   <% end %>
 </table>
-
-<br />
-
 <%= link_to 'New Sale', new_sale_path %>
+
+<h2>Payment In Progress</h2>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Date</th>
+    <th>Customer</th>
+    <th>Total Price</th>
+    <th>Checkout User</th>
+    <th>Tools</th>
+  </tr>
+</table>
+
+<h2>Complete</h2>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Date</th>
+    <th>Customer</th>
+    <th>Total Price</th>
+    <th>Checkout User</th>
+    <th>Tools</th>
+  </tr>
+</table>
+

@@ -50,7 +50,7 @@ class SaleItemsController < ApplicationController
 
     respond_to do |format|
       if @sale_item.save
-        format.html { redirect_to @sale_item.sale, notice: 'Sale item was successfully created.' }
+        format.html { redirect_to sale_sale_items_path(@sale_item.sale), notice: 'Sale item was successfully created.' }
         format.json { render json: @sale_item.sale, status: :created, location: @sale_item }
       else
         format.html { render action: "new" }
