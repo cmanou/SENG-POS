@@ -1,27 +1,37 @@
-<h1>Listing sales</h1>
+<% title "Sales Listing" %>
 
-<table>
+<table class="table table-bordered table-striped">
   <tr>
-    <th>Product</th>
-    <th>Transaction</th>
-    <th>Quantity</th>
-    <th>Discount</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Date</th>
+    <th>Customer</th>
+    <th>Total Price</th>
+    <th>Checkout User</th>
+    <th>Tools</th>
   </tr>
 
-<% @sales.each do |sale| %>
-  <tr>
-    <td><%= sale.product %></td>
-    <td><%= sale.transaction %></td>
-    <td><%= sale.quantity %></td>
-    <td><%= sale.discount %></td>
-    <td><%= link_to 'Show', sale %></td>
-    <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
-    <td><%= link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <% @sales.each do |sale| %>
+    <tr>
+      <td>
+	<%= sale.created_at %>
+      </td>
+      <td>
+	<%= sale.customer.email %>
+      </td>
+      <td>
+	$<%= sale.total %>
+      </td>
+      <td>
+	<%= sale.checkout_user.email %>
+      </td>
+      <td class="btn-group">
+	<%= link_to 'Show', sale, :class=>"btn btn-success"%>
+<!-- can't modify sales
+	<%= link_to 'Edit', edit_sale_path(sale), :class=>"btn btn-warning" %>
+	<%= link_to 'Destroy', sale, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+-->
+      </td>
+    </tr>
+  <% end %>
 </table>
 
 <br />

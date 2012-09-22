@@ -12,22 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :product %><br />
-    <%= f.text_field :product %>
+    <%= f.label :customer %>
+    <%= f.collection_select :customer, User.all, :id, :email %>
   </div>
   <div class="field">
-    <%= f.label :transaction %><br />
-    <%= f.text_field :transaction %>
-  </div>
-  <div class="field">
-    <%= f.label :quantity %><br />
-    <%= f.number_field :quantity %>
-  </div>
-  <div class="field">
-    <%= f.label :discount %><br />
-    <%= f.text_field :discount %>
+    <%= f.label :checkout_user %>
+    <%= f.select :checkout_user, [[current_user.email, current_user.id]], {}, :disabled => 'disabled' %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+

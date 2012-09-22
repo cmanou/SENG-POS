@@ -14,6 +14,7 @@ class SalesController < ApplicationController
   # GET /sales/1.json
   def show
     @sale = Sale.find(params[:id])
+    @sale_items = @sale.sale_items
 
     respond_to do |format|
       format.html # show.html.erb
@@ -40,6 +41,9 @@ class SalesController < ApplicationController
   # POST /sales
   # POST /sales.json
   def create
+    @customer = User.find(params[:sale][:customer])
+    params[:sale][:customer] = @customer
+    params[:sale][:checkout_user] = current_user
     @sale = Sale.new(params[:sale])
 
     respond_to do |format|
