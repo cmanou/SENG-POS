@@ -17,10 +17,9 @@
     <td>
       <%= sale_item.sub_total %>
     </td>
-<!--     <td><%= link_to 'Show', sale_item %></td> -->
-    <td>
-      <%= link_to 'Edit', edit_sale_sale_item_path(@sale, sale_item) %>
-      <%= link_to 'Remove', [@sale, sale_item], method: :delete, data: { confirm: 'Are you sure?' } %>
+    <td class="btn-group">
+      <%= link_to 'Edit', edit_sale_sale_item_path(@sale, sale_item), :class => "btn" %>
+      <%= link_to 'Remove', [@sale, sale_item], method: :delete, data: { confirm: 'Are you sure?' }, :class=> "btn" %>
     </td>
   </tr>
 <% end %>
