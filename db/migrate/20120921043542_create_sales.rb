@@ -1,8 +1,8 @@
 class CreateSales < ActiveRecord::Migration
   def change
     create_table :sales do |t|
-      t.integer :customer_id
-      t.integer :checkout_user_id
+      t.belongs_to :customer
+      t.belongs_to :checkout_user
 
       t.timestamps
     end
