@@ -25,8 +25,10 @@ class SalesController < ApplicationController
   # GET /sales/new
   # GET /sales/new.json
   def new
-    @sale = Sale.new
-
+    @sale = Sale.new(:checkout_user  => current_user)
+    @sale.status = 'Adding to Cart'
+    @sale.save
+    @sale_items = @sale.sale_items
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @sale }
@@ -36,19 +38,20 @@ class SalesController < ApplicationController
   # GET /sales/1/edit
   def edit
     @sale = Sale.find(params[:id])
+    @sale_items = @sale.sale_items
   end
 
   # POST /sales
   # POST /sales.json
   def create
-    @customer = User.find(params[:sale][:customer])
-    params[:sale][:customer] = @customer
-    params[:sale][:checkout_user] = current_user
+    #@customer = User.find(params[:sale][:customer])
+    #params[:sale][:customer] = @customer
+    #params[:sale][:checkout_user] = current_user
     @sale = Sale.new(params[:sale])
-
+    
     respond_to do |format|
       if @sale.save
-        format.html { redirect_to sale_sale_items_path(@sale), notice: 'Sale was successfully created.' }
+        format.html { redirect_to sale_path(@sale), notice: 'Sale was successfully created.' }
         format.json { render json: @sale, status: :created, location: @sale }
       else
         format.html { render action: "new" }

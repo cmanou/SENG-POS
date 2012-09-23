@@ -4,24 +4,20 @@
 
 <table class="table table-bordered table-striped">
   <tr>
-    <th>Customer:</th>
-    <td><%= @sale.customer.email %></td>
-  </tr>
-  <tr>
     <th>Checkout User:</th>
     <td><%= @sale.checkout_user.email %></td>
   </tr>
   <tr>
     <th>Total:</th>
-    <td><%= @sale.total %></td>
+    <td><%= number_to_currency(@sale.total) %></td>
   </tr>
   <tr>
     <th>Discount:</th>
-    <td></td>
+    <td><%= @sale.discount %>%</td>
   </tr>
   <tr>
     <th>Amount Paid:</th>
-    <td></td>
+    <td><%= number_to_currency(@sale.total) %></td>
   </tr>
   <tr>
     <th>Sale Date:</th>
@@ -30,10 +26,28 @@
 </table>
 
 <h2>Items</h2>
-<%= render :partial => 'sale_items/sale_items' %>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Sub Total</th>
+  </tr>
+
+<% @sale_items.each do |sale_item| %>
+  <tr>
+    <td>
+      <%= sale_item.product.name %>
+    </td>
+    <td>
+      <%= sale_item.quantity %>
+    </td>
+    <td>
+      <%= number_to_currency(sale_item.sub_total) %>
+    </td>
+  </tr>
+<% end %>
+</table>
 
 <br />
 
-<!-- can't edit sales
-<%= link_to 'Edit', edit_sale_path(@sale) %> | -->
 <%= link_to 'Back', sales_path %>

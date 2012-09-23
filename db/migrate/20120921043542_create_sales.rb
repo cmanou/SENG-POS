@@ -4,6 +4,7 @@ class CreateSales < ActiveRecord::Migration
       t.references :customer
       t.references :checkout_user
       t.decimal :discount
+      t.string :status
       
       t.timestamps
     end
