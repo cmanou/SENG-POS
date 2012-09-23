@@ -19,7 +19,7 @@
       <td><%= sale.checkout_user.email %></td>
       <td class="btn-group">
 <!-- 	<%= link_to 'Show', sale, :class=>"btn btn-success"%> -->
-	<%= link_to 'Continue', sale_sale_items_path(sale), :class=>"btn" %>
+	<%= link_to 'Continue', sale_path(sale), :class=>"btn" %>
 	<%= link_to 'Cancel', sale, :class=>"btn", method: :delete, data: { confirm: 'Are you sure?' } %>
       </td>
     </tr>
