@@ -9,7 +9,7 @@ class Sale < ActiveRecord::Base
        :inclusion  => { :in => [ 'Adding to Cart', 'Checking Out', 'Finished'],
        :message    => "%{value} is not a valid status" }
 
-    attr_accessible :customer, :checkout_user, :discount
+    attr_accessible :customer, :checkout_user, :discount, :status
 
     def total
       sale_items.sum(&:sub_total)
