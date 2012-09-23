@@ -39,7 +39,7 @@
                     <td></td>
                     <td></td>
                     <td><b>Total</b></td>
-                    <td><b>$10.00</b></td>
+                    <td><b><%= number_to_currency(@sale.total) %></b></td>
                  </tr>
 
               </tbody>
@@ -52,8 +52,8 @@
      <div class="span4">
         <div class="well">
            <h4>Cart Details</h4>
-           <span>2 items</span><br/><br/>
-           <b>Total - $10.00</b>
+           <span><%= @sale.products.size %> items</span><br/><br/>
+           <b>Total - <%= number_to_currency(@sale.total) %></b>
         </div>
         <%= button_to 'Proceed to Payment', sales_path, :class => "btn btn-success" %>      
      </div>
