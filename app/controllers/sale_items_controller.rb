@@ -68,7 +68,7 @@ class SaleItemsController < ApplicationController
 
     respond_to do |format|
       if @sale_item.update_attributes(params[:sale_item])
-        format.html { redirect_to @sale_item.sale, notice: 'Sale item was successfully updated.' }
+        format.html { redirect_to sale_sale_items_path(@sale_item.sale), notice: 'Sale item was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -85,7 +85,7 @@ class SaleItemsController < ApplicationController
     @sale_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to @sale }
+      format.html { redirect_to sale_sale_items_path(@sale) }
       format.json { head :no_content }
     end
   end
