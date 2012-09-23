@@ -1,25 +1,39 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Product:</b>
-  <%= @sale.product %>
-</p>
+<!-- <h2>Sale</h2> -->
 
-<p>
-  <b>Transaction:</b>
-  <%= @sale.transaction %>
-</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Customer:</th>
+    <td><%= @sale.customer.email %></td>
+  </tr>
+  <tr>
+    <th>Checkout User:</th>
+    <td><%= @sale.checkout_user.email %></td>
+  </tr>
+  <tr>
+    <th>Total:</th>
+    <td><%= @sale.total %></td>
+  </tr>
+  <tr>
+    <th>Discount:</th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Amount Paid:</th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Sale Date:</th>
+    <td><%= @sale.created_at %></td>
+  </tr>
+</table>
 
-<p>
-  <b>Quantity:</b>
-  <%= @sale.quantity %>
-</p>
+<h2>Items</h2>
+<%= render :partial => 'sale_items/sale_items' %>
 
-<p>
-  <b>Discount:</b>
-  <%= @sale.discount %>
-</p>
+<br />
 
-
-<%= link_to 'Edit', edit_sale_path(@sale) %> |
+<!-- can't edit sales
+<%= link_to 'Edit', edit_sale_path(@sale) %> | -->
 <%= link_to 'Back', sales_path %>

@@ -1,18 +1,17 @@
 Pos::Application.routes.draw do
-
-  resources :sales do
-    resources :sale_items
-  end
+<<<<<<< HEAD
 
   resources :stock_transfers
+
+  resources :sales
+=======
+>>>>>>> Delete Sale
   resources :transactions
   resources :suppliers
 
   resources :stock_locations
   resources :stock_levels
   resources :products
-  
-  resources :reports
 
   devise_for :users, :skip => [:sessions]
   devise_scope :user do
