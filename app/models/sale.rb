@@ -8,7 +8,7 @@ class Sale < ActiveRecord::Base
     validates :status,
        :inclusion  => { :in => [ 'Adding to Cart', 'Checking Out', 'Finished'],
        :message    => "%{value} is not a valid status" }
-       
+
     attr_accessible :customer, :checkout_user, :discount
 
     def total
