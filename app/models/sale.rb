@@ -5,7 +5,7 @@ class Sale < ActiveRecord::Base
     belongs_to :customer, :class_name => 'User'
     belongs_to :checkout_user, :class_name => 'User'
 
-    attr_accessible :customer, :checkout_user
+    attr_accessible :customer, :checkout_user, :discount
 
     def total
       sale_items.sum(&:sub_total)
