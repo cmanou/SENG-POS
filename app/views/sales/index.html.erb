@@ -2,7 +2,7 @@
 
 <%= link_to 'New Sale', new_sale_path, :class  => 'btn btn-large' %>
 
-<% @sales.group_by(&:status).each do |status, sales| %>
+<% @sales.sort{|a,b| a.status <=> b.status}.group_by(&:status).each do |status, sales| %>
   <h2><%= status %></h2>
 
   <table class="table table-bordered table-striped">
