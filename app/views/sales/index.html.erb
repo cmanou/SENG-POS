@@ -22,8 +22,8 @@
 	  <% if status == 'Finished' %>
 	    <%= link_to 'Show', sale, :class=>"btn btn-success"%>
 	  <% else %>
-	    <%= link_to 'Continue', edit_sale_path(sale), :class=>"btn" %>
-	    <%= link_to 'Cancel', sale, :class=>"btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %>
+	    <%= link_to 'Continue', edit_sale_path(sale), :class=>"btn btn-warning" %>
+	    <%= link_to 'Cancel', sale, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
 	  <% end %>
 	</td>
       </tr>
