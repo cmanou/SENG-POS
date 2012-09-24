@@ -1,5 +1,5 @@
 json.name @sale_item.product.name
-json.price @sale_item.product.price
+json.price number_to_currency(@sale_item.product.price)
 json.quantity @sale_item.quantity
 json.sub_total number_to_currency(@sale_item.sub_total)
 

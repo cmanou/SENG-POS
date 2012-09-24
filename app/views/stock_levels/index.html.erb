@@ -23,7 +23,7 @@
   </tr>
 
 <% @stock_levels.each do |stock_level| %>
-  <tr>
+  <tr <%= "style=background:red;" if stock_level.below %>>
     <td><%= stock_level.product.name %></td>
     <td><%= stock_level.stock_location.name %></td>
     <td><%= stock_level.quanity %></td>

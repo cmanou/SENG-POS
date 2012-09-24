@@ -29,7 +29,7 @@
 
                    <tr>
                        <td><%= sale_item.product.name %></td>
-                       <td><%= sale_item.product.price %></td>
+                       <td><%= number_to_currency(sale_item.product.price) %></td>
                        <td><%= sale_item.quantity %></td>
                        <td><%= number_to_currency(sale_item.sub_total) %></td>
                      </tr>
