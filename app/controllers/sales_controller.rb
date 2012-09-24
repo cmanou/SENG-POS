@@ -55,13 +55,18 @@ class SalesController < ApplicationController
   def update
     @sale = Sale.find(params[:id])
 
-    respond_to do |format|
-      if @sale.save
-        format.html { redirect_to @sale, notice: 'Sale was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @sale.errors, status: :unprocessable_entity }
+    next_status = { 'Adding to Cart' => 'Checking Out', 'Checking Out' => 'Finished' }
+    if params[:commit]
+      @sale.status = next_status[@sale.status]
+
+      respond_to do |format|
+        if @sale.save
+          format.html { redirect_to @sale, notice: 'Sale was successfully updated.' }
+          format.json { head :no_content }
+        else
+          format.html { render action: "edit" }
+          format.json { render json: @sale.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
