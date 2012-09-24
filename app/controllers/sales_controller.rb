@@ -39,13 +39,14 @@ class SalesController < ApplicationController
     @sale = Sale.find(params[:id])
 
     case @sale.status
-        when 'Adding to Cart'
-            @sale_item = SaleItem.new({:sale => @sale})
-            render 'edit' #rename this
-        when 'Checking out'
-            render 'edit'
-        when 'Finished'
-            redirect_to edit_sale_path(@sale), :error => "Can't edit a finished sale"
+    when 'Adding to Cart'
+      @sale_item = SaleItem.new({:sale => @sale})
+      render 'edit' #rename this
+    when 'Checking Out'
+      @sale_item = SaleItem.new({:sale => @sale})
+      render 'edit'
+    when 'Finished'
+      redirect_to edit_sale_path(@sale), :error => "Can't edit a finished sale"
     end
   end
 
