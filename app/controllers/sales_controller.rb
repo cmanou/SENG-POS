@@ -28,17 +28,19 @@ class SalesController < ApplicationController
     @sale = Sale.new(:checkout_user  => current_user)
     @sale.status = 'Adding to Cart'
     @sale.save
-    @sale_items = @sale.sale_items
+    @sale_item = SaleItem.new({:sale => @sale})
+
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @sale }
+      format.json { render json: @sale}
     end
   end
 
   # GET /sales/1/edit
   def edit
     @sale = Sale.find(params[:id])
-    @sale_items = @sale.sale_items
+    @sale_item = SaleItem.new({:sale => @sale})
+
   end
 
   # POST /sales

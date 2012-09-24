@@ -2,9 +2,7 @@ class SaleItemsController < ApplicationController
   # GET /sale_items
   # GET /sale_items.json
   def index
-    @sale = Sale.find(params[:sale_id])
-    @sale_items = @sale.sale_items
-
+    @sale_items = SaleItem.all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @sale_items }
@@ -25,7 +23,7 @@ class SaleItemsController < ApplicationController
   # GET /sale_items/new
   # GET /sale_items/new.json
   def new
-    @sale = Sale.find(params[:sale_id])
+    @sale = params[:sale]
     @sale_item = @sale.sale_items.build
 
     respond_to do |format|
@@ -43,15 +41,20 @@ class SaleItemsController < ApplicationController
   # POST /sale_items
   # POST /sale_items.json
   def create
-    @product = Product.find(params[:sale_item][:product])
+    @product = Product.find_by_barcode(params[:sale_item][:product])
     params[:sale_item][:product] = @product;
+
+    @sale = Sale.find(params[:sale_item][:sale])
+    params[:sale_item][:sale] = @sale;
+
     @sale_item = SaleItem.new(params[:sale_item])
-    @sale_item.sale = Sale.find(params[:sale_id])
+    @sale_item.sub_total = @sale_item.quantity * @sale_item.product.price
 
     respond_to do |format|
       if @sale_item.save
-        format.html { redirect_to sale_sale_items_path(@sale_item.sale), notice: 'Sale item was successfully created.' }
-        format.json { render json: @sale_item.sale, status: :created, location: @sale_item }
+        format.html { redirect_to sale_items_path(@sale_item.sale), notice: 'Sale item was successfully created.' }
+        format.json { render json: @sale_item, status: :created, location: @sale_item }
+
       else
         format.html { render action: "new" }
         format.json { render json: @sale_item.errors, status: :unprocessable_entity }
