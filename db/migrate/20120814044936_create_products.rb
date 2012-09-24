@@ -1,7 +1,6 @@
 class CreateProducts < ActiveRecord::Migration
   def change
     create_table :products do |t|
-      t.references :supplier
       t.string :barcode
       t.string :name
       t.string :brand

@@ -54,11 +54,13 @@ class ProductsController < ApplicationController
   def create
     #raise params.inspect
 
+    @product = Product.new(params[:product])
+    
     @supplier = Supplier.find(Integer(params[:product][:supplier]))
 
     params[:product][:supplier] = @supplier
 
-    @product = Product.new(params[:product])
+
 
     params[:stock_level].each do |sl_id, sl|
       @product.stock_levels.build(:stock_location => StockLocation.find(sl_id.to_i), :quanity =>sl[:quanity], :threshold => sl[:threshold])
