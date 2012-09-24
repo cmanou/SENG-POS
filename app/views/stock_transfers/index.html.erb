@@ -24,8 +24,8 @@
       <i class="icon-remove"></i>
       <% end %>
     </td>
-    <td><%= stock_transfer.updated_at.localtime.to_formatted_s(:short)   %></td>
     <td><%= stock_transfer.created_at.localtime.to_formatted_s(:short)   %></td>
+    <td><%= stock_transfer.updated_at.localtime.to_formatted_s(:short)   %></td>
 
     <td class="btn-group"><%= link_to 'Show', stock_transfer, :class=>"btn btn-success"%>
       <%= link_to 'Edit', edit_stock_transfer_path(stock_transfer), :class=>"btn btn-warning" %>

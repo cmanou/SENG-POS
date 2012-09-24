@@ -6,4 +6,7 @@ class Product < ActiveRecord::Base
   has_many :transactions, :through => :sales
   belongs_to :supplier
   attr_accessible :cost, :description, :name, :price, :barcode, :supplier, :brand, :size, :active
+
+  validates_uniqueness_of :barcode
+
 end
