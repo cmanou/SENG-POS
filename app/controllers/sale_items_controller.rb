@@ -5,7 +5,7 @@ class SaleItemsController < ApplicationController
     @sale_items = SaleItem.all
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @sale_items }
+      format.json { render json: @sale_items.to_json }
     end
   end
 
@@ -15,8 +15,7 @@ class SaleItemsController < ApplicationController
     @sale_item = SaleItem.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @sale_item }
+      format.json { render :json => @sale_item.to_json }
     end
   end
 
@@ -52,11 +51,10 @@ class SaleItemsController < ApplicationController
 
     respond_to do |format|
       if @sale_item.save
-        format.html { redirect_to sale_items_path(@sale_item.sale), notice: 'Sale item was successfully created.' }
-        format.json { render json: @sale_item, status: :created, location: @sale_item }
+
+        format.json { render :show }
 
       else
-        format.html { render action: "new" }
         format.json { render json: @sale_item.errors, status: :unprocessable_entity }
       end
     end

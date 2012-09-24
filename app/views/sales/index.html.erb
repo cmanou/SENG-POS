@@ -15,7 +15,7 @@
 
     <% sales.each do |sale| %>
       <tr>
-	<td><%= sale.created_at %></td>
+	<td><%= sale.created_at.localtime.to_formatted_s(:short) %></td>
 	<td><%= number_to_currency(sale.total) %></td>
 	<td><%= sale.checkout_user.email %></td>
 	<td class="btn-group">

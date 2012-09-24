@@ -1,6 +1,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.min
+//= require mustache
 
 $(document).ready(function() {
     $('.global-flash .alert').click(function() {
@@ -33,4 +34,21 @@ $(document).ready(function() {
 			}, 1000);
 		}
 	);
+
+
+
+
+  $("#new_sale_item")
+    .bind("ajax:success", function(e, data, xhr) {
+    	console.log(data);
+    	var newRow = $(Mustache.render("<tr><td>{{name}}</td><td>{{price}}</td><td>{{quantity}}</td><td>{{sub_total}}</td></tr>", data));
+      	newRow.insertBefore("#totals");
+
+      	$("#total-bottom").html(Mustache.render("Total: {{total}}",data))
+      	$("#total-top").html(Mustache.render("{{total}}",data))
+      	$("#num_items").html(Mustache.render("{{num_items}}",data))
+    });
+
+
+
 });
