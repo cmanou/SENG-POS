@@ -13,28 +13,20 @@
   </div>
 </div>
 
-<table class="table table-bordered table-striped">
+<table class="table table-bordered">
   <tr>
     <th>Product</th>
     <th>Stock location</th>
     <th>Quanity</th>
     <th>Threshold</th>
-    <!--<th></th>-->
   </tr>
 
 <% @stock_levels.each do |stock_level| %>
-  <tr <%= "style=background:red;" if stock_level.below %>>
+  <tr <%= "style=background:#b94a48" if stock_level.below %>>
     <td><%= stock_level.product.name %></td>
     <td><%= stock_level.stock_location.name %></td>
     <td><%= stock_level.quanity %></td>
     <td><%= stock_level.threshold %></td>
-   <!--<<td class="btn-group"><%= link_to 'Show', stock_level, :class=>"btn btn-success"%>
-      <%= link_to 'Edit', edit_stock_level_path(stock_level), :class=>"btn btn-warning" %>
-      <%= link_to 'Destroy', stock_level, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
-    </td>-->
     </tr>
 <% end %>
 </table>
-
-<br />
-<!--<%= link_to 'New Stock level', new_stock_level_path, :class=>"btn btn-primary" %>-->
