@@ -17,7 +17,7 @@
   <tr>
     <th>Product</th>
     <th>Stock location</th>
-    <th>Quanity</th>
+    <th>quantity</th>
     <th>Threshold</th>
   </tr>
 
@@ -25,7 +25,7 @@
   <tr <%= "style=background:#b94a48" if stock_level.below %>>
     <td><%= stock_level.product.name %></td>
     <td><%= stock_level.stock_location.name %></td>
-    <td><%= stock_level.quanity %></td>
+    <td><%= stock_level.quantity %></td>
     <td><%= stock_level.threshold %></td>
     </tr>
 <% end %>

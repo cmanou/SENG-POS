@@ -50,7 +50,7 @@ StockLocation.all.each do |location|
         StockLevel.create({
             :product => product,
             :stock_location => location,
-            :quanity => 20,
+            :quantity => 20,
             :threshold => 20
         })
     end
@@ -80,12 +80,12 @@ Sale.create([{
 
 Product.all.each do |product|
     Sale.all.each do |sale|
-        quanity = rand(6) + 1
+        quantity = rand(6) + 1
         SaleItem.create({
             :sale => sale,
             :product => product,
-            :quantity => quanity,
-            :sub_total => quanity * product.price
+            :quantity => quantity,
+            :sub_total => quantity * product.price
         })
     end
 end

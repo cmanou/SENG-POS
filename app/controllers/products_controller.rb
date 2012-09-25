@@ -58,7 +58,7 @@ class ProductsController < ApplicationController
     @product = Product.new(params[:product])
     
     params[:stock_level].each do |sl_id, sl|
-      @product.stock_levels.build(:stock_location => StockLocation.find(sl_id.to_i), :quanity =>sl[:quanity], :threshold => sl[:threshold])
+      @product.stock_levels.build(:stock_location => StockLocation.find(sl_id.to_i), :quantity =>sl[:quantity], :threshold => sl[:threshold])
     end
 
     respond_to do |format|
@@ -80,9 +80,9 @@ class ProductsController < ApplicationController
     params[:stock_level].each do |sl_id, sl|
       begin
       @stock_id = StockLevel.find(:first, :conditions => {:product_id => params[:id].to_i, :stock_location_id =>sl_id.to_i})
-        @product.stock_levels.update(@stock_id, :quanity =>sl[:quanity], :threshold => sl[:threshold])
+        @product.stock_levels.update(@stock_id, :quantity =>sl[:quantity], :threshold => sl[:threshold])
       rescue ActiveRecord::RecordNotFound
-        @product.stock_levels.build(:stock_location => StockLocation.find(sl_id.to_i), :quanity =>sl[:quanity], :threshold => sl[:threshold])
+        @product.stock_levels.build(:stock_location => StockLocation.find(sl_id.to_i), :quantity =>sl[:quantity], :threshold => sl[:threshold])
       end
     end
 

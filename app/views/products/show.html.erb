@@ -45,7 +45,7 @@
 <% @product.stock_levels.each do |s| %>
 <tr>
     <th><%= s.stock_location.name %></th>
-    <td>Quantity: <%= s.quanity %><br>
+    <td>Quantity: <%= s.quantity %><br>
     Threshold: <%= s.threshold %></td>
 </tr>
 <% end %>

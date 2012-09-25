@@ -3,7 +3,7 @@ class CreateStockLevels < ActiveRecord::Migration
     create_table :stock_levels do |t|
       t.references :product
       t.references :stock_location
-      t.integer :quanity
+      t.integer :quantity
       t.integer :threshold
 
       t.timestamps

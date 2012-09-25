@@ -1,4 +1,4 @@
-<% title "Product Listing" %>
+s<% title "Product Listing" %>
 
 <%= link_to raw('<i class="icon-chevron-left"></i>'), stock_levels_path, :class=>"btn btn-large" %>
 <h1 style="display:inline">Listing Products</h1>
@@ -25,7 +25,7 @@
 
       <% product.stock_levels.order("stock_location_id").each do |s| %>
       <td>
-          Quantity: <%= s.quanity %><br>
+          Quantity: <%= s.quantity %><br>
           Threshold: <%= s.threshold %><br><br>
       </td>
       <% end %>
