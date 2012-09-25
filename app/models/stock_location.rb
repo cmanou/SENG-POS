@@ -1,5 +1,8 @@
 class StockLocation < ActiveRecord::Base
   has_many :stock_levels, :dependent => :destroy
   has_many :products, :through => :stock_levels
-  attr_accessible :name
+
+  has_one :previous_location, :class_name => 'StockLocation'
+
+  attr_accessible :name, :previous_location
 end
