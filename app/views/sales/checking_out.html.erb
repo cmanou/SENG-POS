@@ -1,0 +1,18 @@
+<% if @sale.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@sale.errors.count, "error") %> prohibited this sale from being saved:</h2>
+
+    <ul>
+      <% @sale.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<h3>Amazing Transactions Ui</h3>
+
+<%= form_for(@sale) do |f| %>
+  <%= f.hidden_field :status, :value => 'Finished' %>
+  <%= f.submit 'Finish', :class => "btn btn-success" %>
+<% end %>
