@@ -39,14 +39,11 @@ class SalesController < ApplicationController
     @sale = Sale.find(params[:id])
 
     case @sale.status
-    when 'Adding to Cart'
+    when 'Adding to Cart', 'Checking Out'
       @sale_item = SaleItem.new({:sale => @sale})
-      render 'edit' #rename this
-    when 'Checking Out'
-      @sale_item = SaleItem.new({:sale => @sale})
-      render 'edit'
+      render @sale.status.parameterize.underscore
     when 'Finished'
-      redirect_to edit_sale_path(@sale), :error => "Can't edit a finished sale"
+      redirect_to sale_path(@sale), :error => "Can't edit a finished sale"
     end
   end
 
@@ -55,18 +52,13 @@ class SalesController < ApplicationController
   def update
     @sale = Sale.find(params[:id])
 
-    next_status = { 'Adding to Cart' => 'Checking Out', 'Checking Out' => 'Finished' }
-    if params[:commit]
-      @sale.status = next_status[@sale.status]
-
-      respond_to do |format|
-        if @sale.save
-          format.html { redirect_to @sale, notice: 'Sale was successfully updated.' }
-          format.json { head :no_content }
-        else
-          format.html { render action: "edit" }
-          format.json { render json: @sale.errors, status: :unprocessable_entity }
-        end
+    respond_to do |format|
+      if @sale.update_attributes(params[:sale])
+	format.html { redirect_to @sale, notice: 'Sale was successfully updated.' }
+	format.json { head :no_content }
+      else
+	format.html { render action: "edit" }
+	format.json { render json: @sale.errors, status: :unprocessable_entity }
       end
     end
   end
