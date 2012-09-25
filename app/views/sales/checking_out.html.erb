@@ -12,6 +12,49 @@
 
 <h3>Amazing Transactions Ui</h3>
 
+<div class="row">
+  <div class="span8">
+    <div class="well">
+      <table class="table table-hover" id="sale_items">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Amount</th>
+            <th>Approved</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @sale.transactions.each do |tr| %>
+            <tr>
+              <td><%= tr.method %></td>
+              <td><%= number_to_currency(tr.amount) %></td>
+              <td><%= tr.approved %></td>
+            </tr>
+          <% end %>
+
+          <tr id="totals">
+            <td></td>
+            <td><b>Amount Due</b></td>
+            <td><b id="total-top"><%= number_to_currency(@sale.total - @sale.amount_paid) %></b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div class="span4">
+    <div class="well">
+      <h4>Cart Details</h4>
+      <br/><br/>
+      <b>Total: <%= number_to_currency(@sale.total) %></b><br />
+      <b>Paid : <%= number_to_currency(@sale.amount_paid) %></b><br />
+      <b>Due  : <%= number_to_currency(@sale.total - @sale.amount_paid) %></b><br />
+    </div>
+  </div>
+</div>
+
+
 <%= form_for(@sale) do |f| %>
   <%= f.hidden_field :status, :value => 'Finished' %>
   <%= f.submit 'Finish', :class => "btn btn-success" %>

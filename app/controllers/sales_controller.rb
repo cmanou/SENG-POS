@@ -39,9 +39,12 @@ class SalesController < ApplicationController
     @sale = Sale.find(params[:id])
 
     case @sale.status
-    when 'Adding to Cart', 'Checking Out'
-      @sale_item = SaleItem.new({:sale => @sale})
-      render @sale.status.parameterize.underscore
+    when 'Adding to Cart'
+      @sale_item = SaleItem.new :sale => @sale
+      render 'adding_to_cart'
+    when 'Checking Out'
+      @transaction = Transaction.new :sale => @sale
+      render 'checking_out'
     when 'Finished'
       redirect_to sale_path(@sale), alert: "Can't edit a finished sale"
     end
