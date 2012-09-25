@@ -43,7 +43,7 @@ class SalesController < ApplicationController
       @sale_item = SaleItem.new({:sale => @sale})
       render @sale.status.parameterize.underscore
     when 'Finished'
-      redirect_to sale_path(@sale), :error => "Can't edit a finished sale"
+      redirect_to sale_path(@sale), alert: "Can't edit a finished sale"
     end
   end
 
