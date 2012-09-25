@@ -1,5 +1,5 @@
 class Transaction < ActiveRecord::Base
-  has_many :sales
-  has_many :products, :through => :sales
-  attr_accessible :amount, :approved, :method
+  belongs_to :sale
+
+  attr_accessible :amount, :approved, :method, :sale
 end
