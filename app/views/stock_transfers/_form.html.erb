@@ -18,16 +18,16 @@
   </div>
   <div class="field">
     <%= f.label :stock_location, "Transfer To" %><br />
-    <%= f.collection_select :stock_location, StockLocation.all, :id, :name %>
+    <%= f.collection_select :stock_location, StockLocation.where("previous_location_id is NOT NULL"), :id, :name %>
   </div>
   <div class="field">
     <%= f.label :quantity %><br />
-    <%= f.number_field :quantity %>
+    <%= f.number_field :quantity, :value=> 1%>
   </div>
-  <div class="field">
+<!--   <div class="field">
     <%= f.label :complete %><br />
     <%= f.check_box :complete %>
-  </div>
+  </div> -->
   <div class="actions">
     <%= f.submit %>
   </div>

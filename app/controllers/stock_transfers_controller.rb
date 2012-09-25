@@ -94,4 +94,19 @@ class StockTransfersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # COMPLETE /stock_transfers/1
+  # COMPLETE /stock_transfers/1.json
+  def complete
+    @stock_transfer = StockTransfer.find(params[:id])
+    @stock_transfer.update_attribute(:complete,true)
+    @stock_transfer.save
+
+    respond_to do |format|
+      format.html { redirect_to stock_transfers_url }
+      format.json { head :no_content }
+    end
+  end
+
+
 end

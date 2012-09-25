@@ -3,7 +3,13 @@ Pos::Application.routes.draw do
   resources :sales
   resources :sale_items
 
-  resources :stock_transfers
+  resources :stock_transfers do
+    member do
+        get :complete
+      end
+  end
+
+
   resources :transactions
   resources :suppliers
 

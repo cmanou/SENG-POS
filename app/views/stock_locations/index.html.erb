@@ -6,12 +6,14 @@
 <table class="table table-bordered table-striped">
   <tr>
     <th>Name</th>
+    <th>Previous Location</th>
     <th></th>
   </tr>
 
 <% @stock_locations.each do |stock_location| %>
   <tr>
     <td><%= stock_location.name %></td>
+    <td><%= stock_location.previous_location ? stock_location.previous_location.name : "No Previous Location" %></td>
    <td class="btn-group"><%= link_to 'Show', stock_location, :class=>"btn btn-success"%>
       <%= link_to 'Edit', edit_stock_location_path(stock_location), :class=>"btn btn-warning" %>
       <%= link_to 'Destroy', stock_location, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>

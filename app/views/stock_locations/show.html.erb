@@ -7,7 +7,7 @@
 
 <p>
   <b>Previous Location:</b>
-  <%= @stock_location.previous_location.name %>
+  <%= @stock_location.previous_location ? @stock_location.previous_location.name : "No Previous Location" %>
 </p>
 
 

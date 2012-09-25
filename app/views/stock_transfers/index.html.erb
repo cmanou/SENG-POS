@@ -1,5 +1,6 @@
 <%= title "Listing Stock Transfers" %>
 
+<% if StockTransfer.all.size > 0 %>
 <table class="table table-bordered table-striped">
   <tr>
     <th>Product</th>
@@ -27,14 +28,16 @@
     <td><%= stock_transfer.created_at.localtime.to_formatted_s(:short)   %></td>
     <td><%= stock_transfer.updated_at.localtime.to_formatted_s(:short)   %></td>
 
-    <td class="btn-group"><%= link_to 'Show', stock_transfer, :class=>"btn btn-success"%>
+    <td class="btn-group"><%= link_to 'Show', stock_transfer, :class=>"btn btn-success"%><%= link_to 'Complete', complete_stock_transfer_path(stock_transfer), :class=>"btn btn-primary", data: { confirm: 'Are you sure?' }%>
       <%= link_to 'Edit', edit_stock_transfer_path(stock_transfer), :class=>"btn btn-warning" %>
       <%= link_to 'Destroy', stock_transfer, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
     </td>
   </tr>
 <% end %>
 </table>
-
+<% else %>
+<p>No Stock Transfers</p>
+<% end %>
 <br />
 
 <%= link_to 'New Stock transfer', new_stock_transfer_path %>
