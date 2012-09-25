@@ -16,9 +16,18 @@ User.create([{
     :password => '1337haxor',
     :password_confirmation => '1337haxor',
     :remember_me => false
+},{
+    :email => 'chris@chris.com',
+    :password => 'christopher',
+    :password_confirmation => 'christopher',
+    :remember_me => true
 }])
 
-StockLocation.create([{ :name => 'Floor' }, { :name => 'Backroom' }, { :name => 'Warehouse' }])
+StockLocation.create([{ :name => 'Warehouse' }])
+StockLocation.create([{:name => 'Backroom', :previous_location => StockLocation.last}])
+StockLocation.create([{:name => 'Floor', :previous_location => StockLocation.last}])
+
+
 Supplier.create({
     :name => 'ChinWorks',
     :contact_person => 'Chin Wang',

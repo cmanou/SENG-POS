@@ -5,6 +5,11 @@
   <%= @stock_location.name %>
 </p>
 
+<p>
+  <b>Previous Location:</b>
+  <%= @stock_location.previous_location.name %>
+</p>
+
 
 <%= link_to 'Edit', edit_stock_location_path(@stock_location) %> |
 <%= link_to 'Back', stock_locations_path %>
