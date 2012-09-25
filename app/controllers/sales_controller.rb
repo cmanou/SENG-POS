@@ -54,7 +54,7 @@ class SalesController < ApplicationController
 
     respond_to do |format|
       if @sale.update_attributes(params[:sale])
-	format.html { redirect_to @sale, notice: 'Sale was successfully updated.' }
+	format.html { redirect_to sales_path, notice: 'Sale was successfully updated.' }
 	format.json { head :no_content }
       else
 	format.html { render action: "edit" }
