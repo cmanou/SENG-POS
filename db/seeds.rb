@@ -26,9 +26,9 @@ Supplier.create({
 })
 
 Product.create([{
-    :name => 'p1',
+    :name => 'Bread',
     :cost => 2.43,
-    :size => 7,
+    :size => '750g',
     :price => 49.99,
     :active => true,
     :barcode => 12093812,
@@ -37,7 +37,7 @@ Product.create([{
 },{
     :name => 'Wen Di',
     :cost => 9001.00,
-    :size => 1,
+    :size => '38kg',
     :price => 2.99,
     :active => true,
     :barcode => 29034983,
