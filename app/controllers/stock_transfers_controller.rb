@@ -2,7 +2,7 @@ class StockTransfersController < ApplicationController
   # GET /stock_transfers
   # GET /stock_transfers.json
   def index
-    @stock_transfers = StockTransfer.all
+    @stock_transfers = StockTransfer.order("complete DESC")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -99,8 +99,26 @@ class StockTransfersController < ApplicationController
   # COMPLETE /stock_transfers/1.json
   def complete
     @stock_transfer = StockTransfer.find(params[:id])
+    @product = @stock_transfer.product
+    @locationto = @stock_transfer.stock_location
+    @locationfrom = @locationto.previous_location
+
+
+    #Mark as complete
     @stock_transfer.update_attribute(:complete,true)
     @stock_transfer.save
+
+    #Update Stock Levels to 
+    @stock_level_to = StockLevel.find_by_product_id_and_stock_location_id(@product,@locationto)
+    @stock_level_to.update_attribute(:quantity, (@stock_level_to.quantity + @stock_transfer.quantity))
+    @stock_level_to.save
+
+    @stock_level_from = StockLevel.find_by_product_id_and_stock_location_id(@product,@locationfrom)
+    @stock_level_from.update_attribute(:quantity, (@stock_level_from.quantity - @stock_transfer.quantity))
+    @stock_level_from.save
+
+
+
 
     respond_to do |format|
       format.html { redirect_to stock_transfers_url }

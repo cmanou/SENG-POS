@@ -1,43 +1,46 @@
 <%= title "Listing Stock Transfers" %>
 
-<% if StockTransfer.all.size > 0 %>
+
+<% @stock_transfers.group_by(&:complete).each do |complete, stock_transfers| %>
+  <h2><%= complete ? "Complete" : "In Progress" %></h2>
+
+
+<% if stock_transfers.size > 0 %>
 <table class="table table-bordered table-striped">
   <tr>
     <th>Product</th>
     <th>Transfer To</th>
     <th>Quantity</th>
-    <th>Complete</th>
     <th>Created On</th>
     <th>Last Updated</th>
-    <th></th>
+
+    <%= raw("<th></th>") if !complete %>
 
   </tr>
 
-<% @stock_transfers.each do |stock_transfer| %>
+<% stock_transfers.each do |stock_transfer| %>
   <tr>
     <td><%= stock_transfer.product.name %></td>
     <td><%= stock_transfer.stock_location.name %></td>
     <td><%= stock_transfer.quantity %></td>
-    <td>
-      <% if stock_transfer.complete %>
-      <i class="icon-ok"></i>
-      <% else %>
-      <i class="icon-remove"></i>
-      <% end %>
-    </td>
+
     <td><%= stock_transfer.created_at.localtime.to_formatted_s(:short)   %></td>
     <td><%= stock_transfer.updated_at.localtime.to_formatted_s(:short)   %></td>
 
+    <% if  not complete %>
     <td class="btn-group"><%= link_to 'Complete', complete_stock_transfer_path(stock_transfer), :class=>"btn btn-primary", data: { confirm: 'Are you sure?' }%>
       <%= link_to 'Edit', edit_stock_transfer_path(stock_transfer), :class=>"btn btn-warning" %>
       <%= link_to 'Destroy', stock_transfer, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
     </td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 <% else %>
 <p>No Stock Transfers</p>
 <% end %>
+<% end %>
+
 <br />
 
-<%= link_to 'New Stock transfer', new_stock_transfer_path %>
+<%= link_to 'New Stock transfer', new_stock_transfer_path, :class=>"btn btn-primary" %>
