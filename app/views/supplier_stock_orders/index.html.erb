@@ -1,0 +1,27 @@
+<h1>Listing supplier_stock_orders</h1>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @supplier_stock_orders.each do |supplier_stock_order| %>
+  <tr>
+    <td><%= supplier_stock_order.product %></td>
+    <td><%= supplier_stock_order.quantity %></td>
+    <td><%= supplier_stock_order.status %></td>
+    <td><%= link_to 'Show', supplier_stock_order %></td>
+    <td><%= link_to 'Edit', edit_supplier_stock_order_path(supplier_stock_order) %></td>
+    <td><%= link_to 'Destroy', supplier_stock_order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Supplier stock order', new_supplier_stock_order_path %>

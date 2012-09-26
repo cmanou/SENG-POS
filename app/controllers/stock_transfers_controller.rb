@@ -52,7 +52,7 @@ class StockTransfersController < ApplicationController
 
     respond_to do |format|
       if @stock_transfer.save
-        format.html { redirect_to @stock_transfer, notice: 'Stock transfer was successfully created.' }
+        format.html { redirect_to stock_transfers_path, notice: 'Stock transfer was successfully created.' }
         format.json { render json: @stock_transfer, status: :created, location: @stock_transfer }
       else
         format.html { render action: "new" }

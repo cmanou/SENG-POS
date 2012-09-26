@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product:</b>
+  <%= @supplier_stock_order.product %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @supplier_stock_order.quantity %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @supplier_stock_order.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_supplier_stock_order_path(@supplier_stock_order) %> |
+<%= link_to 'Back', supplier_stock_orders_path %>
