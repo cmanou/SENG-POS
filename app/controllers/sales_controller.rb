@@ -82,6 +82,35 @@ class SalesController < ApplicationController
     end
   end
 
+  def complete
+    @sale = Sale.find(params[:id])
+
+    if @sale.status != 'Checking Out'
+      redirect_to sales_path, alert: 'You can only finish a sale during checkout.'
+      return
+    end
+
+    if @sale.total != @sale.amount_paid
+      redirect_to edit_sale_path(@sale), alert: 'You must finish payment before completing a sale.'
+      return
+    end
+
+    @sale.status = 'Finished'
+    @sale.save!
+
+    floor = StockLocation.where :name => 'Floor' #maybe this should be configurable?
+    @sale.sale_items.each do |sale_item|
+      level = StockLevel.find_by_product_id_and_stock_location_id(sale_item.product, floor)
+      level.quantity -= sale_item.quantity
+      level.save!
+    end
+
+    respond_to do |format|
+      format.html { redirect_to sales_url, notice: 'Sale complete.' }
+      format.json { head :no_content }
+    end
+  end
+
   # DELETE /sales/1
   # DELETE /sales/1.json
   def destroy

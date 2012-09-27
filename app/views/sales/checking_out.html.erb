@@ -51,11 +51,7 @@
       <b>Paid : <%= number_to_currency(@sale.amount_paid) %></b><br />
       <b>Due  : <%= number_to_currency(@sale.total - @sale.amount_paid) %></b><br />
     </div>
+
+    <%= link_to 'Finish', complete_sale_path(@sale), :class => "btn btn-success" %>
   </div>
 </div>
-
-
-<%= form_for(@sale) do |f| %>
-  <%= f.hidden_field :status, :value => 'Finished' %>
-  <%= f.submit 'Finish', :class => "btn btn-success" %>
-<% end %>
