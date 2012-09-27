@@ -66,6 +66,22 @@ class SalesController < ApplicationController
     end
   end
 
+  def checkout
+    @sale = Sale.find(params[:id])
+
+    if @sale.status != 'Adding to Cart'
+      redirect_to sales_path, alert: 'You can only proceed to payment from adding to cart'
+    end
+
+    @sale.status = 'Checking Out'
+    @sale.save!
+
+    respond_to do |format|
+      format.html { redirect_to edit_sale_path(@sale) }
+      format.json { head :no_content }
+    end
+  end
+
   # DELETE /sales/1
   # DELETE /sales/1.json
   def destroy
