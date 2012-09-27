@@ -1,6 +1,11 @@
 Pos::Application.routes.draw do
 
-  resources :supplier_stock_orders
+  resources :supplier_stock_orders do
+    member do
+      get :complete
+      get :process_order
+    end
+  end
 
   resources :sales
   resources :sale_items

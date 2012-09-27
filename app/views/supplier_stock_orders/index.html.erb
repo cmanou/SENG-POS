@@ -1,27 +1,34 @@
-<h1>Listing supplier_stock_orders</h1>
+<%= title "Listing Supplier Stock Orders" %>
 
-<table>
-  <tr>
+<% @supplier_stock_orders.sort{|a,b| a.status <=> b.status}.group_by(&:status).each do |status, supplier_stock_orders| %>
+  <h2><%= status %></h2>
+
+  <table class="table table-bordered table-striped">
+    <tr>
     <th>Product</th>
     <th>Quantity</th>
-    <th>Status</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
-<% @supplier_stock_orders.each do |supplier_stock_order| %>
-  <tr>
-    <td><%= supplier_stock_order.product %></td>
+    <% supplier_stock_orders.each do |supplier_stock_order| %>
+      <tr>
+    <td><%= supplier_stock_order.product.name %></td>
     <td><%= supplier_stock_order.quantity %></td>
-    <td><%= supplier_stock_order.status %></td>
-    <td><%= link_to 'Show', supplier_stock_order %></td>
-    <td><%= link_to 'Edit', edit_supplier_stock_order_path(supplier_stock_order) %></td>
-    <td><%= link_to 'Destroy', supplier_stock_order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+    <td class="btn-group"><%= link_to 'View Purchase Order', supplier_stock_order, :class => "btn btn-success" %>
 
-<br />
+      <% if status=="Created" %>
+      <%= link_to 'Adjust Quantity', edit_supplier_stock_order_path(supplier_stock_order), :class => "btn btn-warning" %>
+      <%= link_to 'Process', process_order_supplier_stock_order_path(supplier_stock_order), :class => "btn btn-primary" %><%= link_to 'Cancel', supplier_stock_order, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"btn btn-danger" %>
+     <% elsif status=="Processed" %>
+        <%= link_to 'Complete', complete_supplier_stock_order_path(supplier_stock_order), :class => "btn btn-primary" %>
+
+      <% end %>
+
+    </td>
+
+  </tr>
+    <% end %>
+  </table>
+<% end %>
 
 <%= link_to 'New Supplier stock order', new_supplier_stock_order_path %>

@@ -95,8 +95,7 @@ class StockTransfersController < ApplicationController
     end
   end
 
-  # COMPLETE /stock_transfers/1
-  # COMPLETE /stock_transfers/1.json
+  
   def complete
     @stock_transfer = StockTransfer.find(params[:id])
     @product = @stock_transfer.product
