@@ -14,31 +14,50 @@
 
 <div class="row">
   <div class="span8">
-    <div class="well">
-      <table class="table table-hover" id="sale_items">
-        <thead>
-          <tr>
-            <th>Method</th>
-            <th>Amount</th>
-            <th>Approved</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @sale.transactions.each do |tr| %>
+    <div class="row">
+      <div class="well">
+        <table class="table table-hover" id="sale_items">
+          <thead>
             <tr>
-              <td><%= tr.method %></td>
-              <td><%= number_to_currency(tr.amount) %></td>
-              <td><%= tr.approved %></td>
+              <th>Method</th>
+              <th>Amount</th>
+              <th>Approved</th>
             </tr>
-          <% end %>
+          </thead>
+          <tbody>
+            <% @sale.transactions.each do |tr| %>
+              <tr>
+                <td><%= tr.method %></td>
+                <td><%= number_to_currency(tr.amount) %></td>
+                <td><%= tr.approved %></td>
+              </tr>
+            <% end %>
 
-          <tr id="totals">
-            <td></td>
-            <td><b>Amount Due</b></td>
-            <td><b id="total-top"><%= number_to_currency(@sale.total - @sale.amount_paid) %></b></td>
-          </tr>
-        </tbody>
-      </table>
+            <tr id="totals">
+              <td></td>
+              <td><b>Amount Due</b></td>
+              <td><b id="total-top"><%= number_to_currency(@sale.total - @sale.amount_paid) %></b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <div class="span8">
+          <ul class="nav nav-tabs">
+            <li><a href="#payment-cash" data-toggle="tab">Cash Payment</a></li>
+            <li><a href="#payment-other" data-toggle="tab">Other Payment</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane" id="payment-cash">
+            <h1>herpderp</h1>
+            </div>
+            <div class="tab-pane" id="payment-other">
+            <h1>derpherp</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -55,3 +74,4 @@
     <%= link_to 'Finish', complete_sale_path(@sale), :class => "btn btn-success" %>
   </div>
 </div>
+
