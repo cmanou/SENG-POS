@@ -7,7 +7,12 @@ Pos::Application.routes.draw do
     end
   end
 
-  resources :sales
+  resources :sales do
+    member do
+      get :checkout
+      get :complete
+    end
+  end
   resources :sale_items
 
   resources :stock_transfers do
