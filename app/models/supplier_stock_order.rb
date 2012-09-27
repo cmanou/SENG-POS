@@ -5,4 +5,8 @@ class SupplierStockOrder < ActiveRecord::Base
   validates :status,
        :inclusion  => { :in => [ 'Created', 'Processed', 'Completed'],
        :message    => "%{value} is not a valid status" }
+
+  def total
+  	quantity * product.cost
+  end
 end
