@@ -43,6 +43,7 @@
       </div>
       <div class="row">
         <div class="span8">
+
           <ul class="nav nav-tabs">
             <li><a href="#payment-cash" data-toggle="tab">Cash Payment</a></li>
             <li><a href="#payment-other" data-toggle="tab">Other Payment</a></li>
@@ -50,12 +51,25 @@
 
           <div class="tab-content">
             <div class="tab-pane" id="payment-cash">
-            <h1>herpderp</h1>
+              <%= form_for @transaction do |tr| %>
+                <%= tr.hidden_field :sale, :value => @sale.id %>
+                <%= tr.hidden_field :method, :value => 'Cash' %>
+                <%= tr.hidden_field :approved, :value => true %>
+                <div class="field">
+                  <%= tr.label :amount %>
+                  <%= tr.number_field :amount %>
+                </div>
+                <div class="actions">
+                  <%= tr.submit 'Pay Cash', :class => "btn btn-success" %>
+                </div>
+              <% end %>
             </div>
+
             <div class="tab-pane" id="payment-other">
-            <h1>derpherp</h1>
+              <h1>derpherp</h1>
             </div>
           </div>
+
         </div>
       </div>
     </div>
