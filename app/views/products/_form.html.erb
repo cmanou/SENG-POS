@@ -47,11 +47,6 @@
         <td>$ <%= f.text_field number_with_precision(:price, :precision => 2) %></td>
       </tr>
       <tr>
-        <th><%= f.label :active %></th>
-        <td><%= f.check_box :active %></td>
-      </tr>
-
-      <tr>
         <td colspan="2"><h3>Stock Levels</h3></td>
       </tr>
       <% @product.stock_levels.each do |s| %>
@@ -71,6 +66,7 @@
       <% end %>
     </tbody>
   </table>
+<%= f.hidden_field :active %></td>
 
   <div class="actions">
     <%= f.submit :class=>"btn btn-primary"%>

@@ -22,7 +22,13 @@ Pos::Application.routes.draw do
 
   resources :stock_locations
   resources :stock_levels
-  resources :products
+
+  resources :products do 
+    member do
+      get :activate
+      get :deactivate
+ end
+end
   
   resources :reports
 
