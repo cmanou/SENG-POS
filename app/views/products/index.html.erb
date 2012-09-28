@@ -1,7 +1,5 @@
 <%= title "Product Listing" %>
 
-
-
 <table class="table table-bordered table-striped">
   <tr>
     <th>Name</th>
@@ -19,8 +17,8 @@
 <% @products.each do |product| %>
   <tr>
     <td><%= product.name %></td>
-    <td>$<%= product.cost %></td>
-    <td>$<%= product.price %></td>
+    <td><%= number_to_currency(product.cost) %></td>
+    <td><%= number_to_currency(product.price) %></td>
 
       <% product.stock_levels.order("stock_location_id").each do |s| %>
       <td>
