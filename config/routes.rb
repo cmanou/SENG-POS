@@ -1,6 +1,18 @@
 Pos::Application.routes.draw do
 
-  resources :sales
+  resources :supplier_stock_orders do
+    member do
+      get :complete
+      get :process_order
+    end
+  end
+
+  resources :sales do
+    member do
+      get :checkout
+      get :complete
+    end
+  end
   resources :sale_items
 
   resources :stock_transfers do
@@ -15,7 +27,13 @@ Pos::Application.routes.draw do
 
   resources :stock_locations
   resources :stock_levels
-  resources :products
+
+  resources :products do 
+    member do
+      get :activate
+      get :deactivate
+ end
+end
   
   resources :reports
 

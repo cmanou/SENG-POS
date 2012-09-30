@@ -40,11 +40,12 @@ class TransactionsController < ApplicationController
   # POST /transactions
   # POST /transactions.json
   def create
+    params[:transaction][:sale] = Sale.find params[:transaction][:sale]
     @transaction = Transaction.new(params[:transaction])
 
     respond_to do |format|
       if @transaction.save
-        format.html { redirect_to @transaction, notice: 'Transaction was successfully created.' }
+        format.html { redirect_to edit_sale_path(@transaction.sale), notice: 'Transaction was successfully created.' }
         format.json { render json: @transaction, status: :created, location: @transaction }
       else
         format.html { render action: "new" }

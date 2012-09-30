@@ -9,6 +9,7 @@
       <a class="btn btn-large" href="/suppliers">Suppliers</a>
       <a class="btn btn-large" href="/stock_locations">Stock Locations</a>
       <a class="btn btn-large" href="/stock_transfers">Stock Transfers</a>
+      <a class="btn btn-large" href="/supplier_stock_orders">Supplier Stock Orders</a>
     </div>
   </div>
 </div>
@@ -22,7 +23,7 @@
   </tr>
 
 <% @stock_levels.each do |stock_level| %>
-  <tr <%= "style=background:#b94a48" if stock_level.below %>>
+  <tr <%= "style=background:#f2dede;" if stock_level.below %>>
     <td><%= stock_level.product.name %></td>
     <td><%= stock_level.stock_location.name %></td>
     <td><%= stock_level.quantity %></td>

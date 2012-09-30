@@ -1,7 +1,4 @@
-s<% title "Product Listing" %>
-
-<%= link_to raw('<i class="icon-chevron-left"></i>'), stock_levels_path, :class=>"btn btn-large" %>
-<h1 style="display:inline">Listing Products</h1>
+<%= title "Product Listing" %>
 
 <table class="table table-bordered table-striped">
   <tr>
@@ -20,8 +17,8 @@ s<% title "Product Listing" %>
 <% @products.each do |product| %>
   <tr>
     <td><%= product.name %></td>
-    <td>$<%= product.cost %></td>
-    <td>$<%= product.price %></td>
+    <td><%= number_to_currency(product.cost) %></td>
+    <td><%= number_to_currency(product.price) %></td>
 
       <% product.stock_levels.order("stock_location_id").each do |s| %>
       <td>
@@ -31,7 +28,7 @@ s<% title "Product Listing" %>
       <% end %>
       <td><%= product.supplier.name %></td>
       <td>
-      <% if product.active %>
+      <% if product.active=='t' %>
       <i class="icon-ok"></i>
       <% else %>
       <i class="icon-remove"></i>
@@ -40,7 +37,12 @@ s<% title "Product Listing" %>
     <td class="btn-group">
       <%= link_to 'Show', product, :class=>"btn btn-success"%>
       <%= link_to 'Edit', edit_product_path(product), :class=>"btn btn-warning" %>
-      <%= link_to 'Destroy', product, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+
+      <% if product.active == 't' %>
+        <%= link_to 'Deactivate', deactivate_product_path(product), :class=>"btn btn-danger" %>
+      <% else %>
+        <%= link_to 'Activate', activate_product_path(product), :class=>"btn btn-warning" %>
+      <% end %>
     </td>
   </tr>
 <% end %>

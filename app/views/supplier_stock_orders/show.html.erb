@@ -1,0 +1,92 @@
+<p id="notice"><%= notice %></p>
+
+<%= title "Purchase Order" %>
+<div class="row-fluid">
+<div class="span6">
+To:
+<div class="well">
+  <%= @supplier_stock_order.product.supplier.name %>
+</div>
+</div>
+
+<div class="span6">
+
+
+</div>
+</div>
+
+<div class="row-fluid">
+<div class="span6">
+Ship To:
+<div class="well">
+</div>
+</div>
+
+<div class="span6">
+
+
+</div>
+</div>
+
+<div class="row-fluid">
+<div class="span4">
+<div class="well">
+<b>Order #:</b>
+<%= @supplier_stock_order.id %>
+</div>
+</div>
+
+<div class="span4">
+<div class="well">
+<b>Delivery Via:</b>
+
+</div>
+</div>
+
+<div class="span4">
+<div class="well">
+<b>Routing:</b>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="row-fluid">
+Please Ship the following items as specified
+<div class="span12">
+	<div class="well">
+<table class="table table-bordered">
+<thead>
+	<tr>
+
+<th>Item</th>
+<th>Quantity</th>
+<th>Description</th>
+<th>Unit Count</th>
+<th>Unit Price</th>
+<th>Total Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><%= @supplier_stock_order.product.name %></td>
+<td><%= @supplier_stock_order.quantity %></td>
+<td><%= @supplier_stock_order.product.description %></td>
+<td><%= @supplier_stock_order.product.size %></td>
+<td><%= number_to_currency(@supplier_stock_order.product.cost) %></td>
+<td><%= number_to_currency(@supplier_stock_order.total) %></td>
+
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+<%= link_to 'Edit', edit_supplier_stock_order_path(@supplier_stock_order) %> |
+<%= link_to 'Back', supplier_stock_orders_path %>

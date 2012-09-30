@@ -58,17 +58,13 @@
       <% end %>
     </div>
 
-    <%= form_for(@sale) do |f| %>
-      <div class="well">
-          <h4>Cart Details</h4>
-          <span id="num_items"><%= @sale.products.sum(:quantity) %> item(s)</span><br/><br/>
-          <b id="total-bottom">Total: <%= number_to_currency(@sale.total) %></b>
-      </div>
+    <div class="well">
+        <h4>Cart Details</h4>
+        <span id="num_items"><%= @sale.products.sum(:quantity) %> item(s)</span><br/><br/>
+        <b id="total-bottom">Total: <%= number_to_currency(@sale.total) %></b>
+    </div>
+    <%= link_to 'Proceed to Payment', checkout_sale_path(@sale), :class => "btn btn-success" %>
 
-      <%= f.hidden_field :id %>
-      <%= f.hidden_field :status, :value => 'Checking Out' %>
-      <%= f.submit 'Proceed to Payment', :class => "btn btn-success" %>
-    <% end %>
   </div>
 </div>
 

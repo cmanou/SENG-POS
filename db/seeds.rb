@@ -28,11 +28,19 @@ StockLocation.create([{:name => 'Backroom', :previous_location => StockLocation.
 StockLocation.create([{:name => 'Floor', :previous_location => StockLocation.last}])
 
 
-Supplier.create({
+Supplier.create([{
     :name => 'ChinWorks',
     :contact_person => 'Chin Wang',
     :contact_number => '61-2-8339-9188'
-})
+},{
+    :name => 'VincentWorks',
+    :contact_person => 'Vincent Wong',
+    :contact_number => '61-2-9999-8888'
+},{
+    :name => 'Sams Organic Sex Supplies',
+    :contact_person => 'Sam Li',
+    :contact_number => '61-2-9385-5356'
+}])
 
 Product.create([{
     :name => 'Bread',
@@ -50,8 +58,17 @@ Product.create([{
     :price => 2.99,
     :active => true,
     :barcode => 29034983,
-    :supplier => Supplier.first,
+    :supplier => Supplier.last,
     :description => '...'
+},{
+    :name => 'Speed',
+    :cost => 10.00,
+    :size => '10 g',
+    :price => 99.99,
+    :active => true,
+    :barcode => 69696969,
+    :supplier => Supplier.last,
+    :description => 'Get that high on'
 }])
 
 StockLocation.all.each do |location|

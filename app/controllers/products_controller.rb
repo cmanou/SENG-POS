@@ -110,4 +110,31 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # GET /products/1/activate
+  def activate
+    @product = Product.find(params[:id])
+
+    @product.update_attribute(:active,true)
+    @product.save
+
+    respond_to do |format|
+      format.html { redirect_to products_url }
+      format.json { head :no_content }
+    end
+  end
+
+  # GET /products/1/deactivate
+  def deactivate
+    @product = Product.find(params[:id])
+
+    @product.update_attribute(:active,false)
+    @product.save
+
+    respond_to do |format|
+      format.html { redirect_to products_url }
+      format.json { head :no_content }
+    end
+  end
+
 end
