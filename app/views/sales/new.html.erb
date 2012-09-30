@@ -2,10 +2,10 @@
 
 <h1>Your have uncompleted sales</h1>
 
-
+<p>Please review your any current uncompleted sales. If you like you can also start a new sale.</p>
 <%= link_to 'New Sale', new_sale_path, :class  => 'btn btn-large' %>
 
-<% @sales.sort{|a,b| a.status <=> b.status}.group_by(&:status).each do |status, sales| %>
+<% @current_sales.sort{|a,b| a.status <=> b.status}.group_by(&:status).each do |status, current_sales| %>
   <h2><%= status %></h2>
 
   <table class="table table-bordered table-striped">
@@ -16,7 +16,7 @@
       <th>Tools</th>
     </tr>
 
-    <% sales.each do |sale| %>
+    <% current_sales.each do |sale| %>
       <tr>
 	<td><%= sale.created_at.localtime.to_formatted_s(:short) %></td>
 	<td><%= number_to_currency(sale.total) %></td>

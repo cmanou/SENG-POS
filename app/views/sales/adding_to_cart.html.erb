@@ -27,7 +27,7 @@
         </thead>
         <tbody>
           <% @sale.sale_items.each do |sale_item| %>
-            <tr>
+            <tr id="sale-item-<%= sale_item.id %>">
               <td><%= sale_item.product.name %> (<%= sale_item.product.size %>)</td>
               <td><%= number_to_currency(sale_item.product.price) %></td>
               <td><%= sale_item.quantity %></td>
@@ -61,7 +61,7 @@
     <%= form_for(@sale) do |f| %>
       <div class="well">
           <h4>Cart Details</h4>
-          <span id="num_items"><%= @sale.products.size %> items</span><br/><br/>
+          <span id="num_items"><%= @sale.products.sum(:quantity) %> item(s)</span><br/><br/>
           <b id="total-bottom">Total: <%= number_to_currency(@sale.total) %></b>
       </div>
 

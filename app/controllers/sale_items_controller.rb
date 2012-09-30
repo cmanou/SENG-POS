@@ -46,14 +46,18 @@ class SaleItemsController < ApplicationController
     @sale = Sale.find(params[:sale_item][:sale])
     params[:sale_item][:sale] = @sale;
 
-    @sale_item = SaleItem.new(params[:sale_item])
+    @sale_item = SaleItem.find_by_sale_id(@sale.id)
+    if @sale_item.nil?
+      @sale_item = SaleItem.new(params[:sale_item])
+    else
+      @sale_item.quantity += params[:sale_item][:quantity].to_i
+    end
+      
     @sale_item.sub_total = @sale_item.quantity * @sale_item.product.price
 
     respond_to do |format|
       if @sale_item.save
-
         format.json { render :show }
-
       else
         format.json { render json: @sale_item.errors, status: :unprocessable_entity }
       end
