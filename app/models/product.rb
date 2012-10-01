@@ -7,6 +7,13 @@ class Product < ActiveRecord::Base
   belongs_to :supplier
   attr_accessible :cost, :description, :name, :price, :barcode, :supplier, :brand, :size, :active
 
-  validates_uniqueness_of :barcode
+
+  validates :name, :description, :price,:brand, :size, :cost, :barcode, :supplier, :presence => true
+
+  validates :price, :cost, :numericality => {:greater_than_or_equal_to => 0}
+
+  validates :barcode, :uniqueness => true
+
+  validates_associated :stock_levels
 
 end

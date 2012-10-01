@@ -1,14 +1,14 @@
 <%= form_for(@product) do |f| %>
   <% if @product.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
 
-      <ul>
+  <div class="global-flash">
+
+          <div class="alert alert-error"><h1>Oh Noes</h1><ul>
       <% @product.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
-      </ul>
-    </div>
+      </ul></div>
+        </div>
   <% end %>
 
   
