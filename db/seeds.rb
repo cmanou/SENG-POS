@@ -25,17 +25,17 @@ User.create([{
   :remember_me => true,
   :role => 'Stock Control'
 },{
-  :email => 'checkout@pos.com',
+  :email => 'cashier@pos.com',
   :password => '123123',
   :password_confirmation => '123123',
   :remember_me => true,
-  :role => 'Checkout'
+  :role => 'Cashier'
 },{
-  :email => 'customer@pos.com',
+  :email => 'default@pos.com',
   :password => '123123',
   :password_confirmation => '123123',
   :remember_me => true,
-  :role => 'Customer'
+  :role => 'Default'
 }])
 
 StockLocation.create([{ :name => 'Warehouse' }])
