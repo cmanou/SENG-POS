@@ -36,6 +36,12 @@ User.create([{
   :password_confirmation => '123123',
   :remember_me => true,
   :role => 'Default'
+},{
+  :email => 'chris.manouvrier@gmail.com',
+  :password => '123123',
+  :password_confirmation => '123123',
+  :remember_me => true,
+  :role => 'Default'
 }])
 
 StockLocation.create([{ :name => 'Warehouse' }])
@@ -44,17 +50,21 @@ StockLocation.create([{:name => 'Floor', :previous_location => StockLocation.las
 
 
 Supplier.create([{
-    :name => 'ChinWorks',
+    :name => 'Organic Grocers',
     :contact_person => 'Chin Wang',
     :contact_number => '61-2-8339-9188'
 },{
-    :name => 'VincentWorks',
-    :contact_person => 'Vincent Wong',
+    :name => 'Black & Gold',
+    :contact_person => 'Mr BG',
     :contact_number => '61-2-9999-8888'
 },{
-    :name => 'Sams Organic Sex Supplies',
-    :contact_person => 'Sam Li',
+    :name => "Chris' Fruit",
+    :contact_person => 'Chris',
     :contact_number => '61-2-9385-5356'
+},{
+    :name => "Vincents Meat Supply",
+    :contact_person => 'Vincent Wong',
+    :contact_number => '61-2-9696-9696'
 }])
 
 Product.create([{
