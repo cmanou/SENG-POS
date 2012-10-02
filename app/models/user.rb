@@ -41,4 +41,8 @@ class User < ActiveRecord::Base
   def total_sales
     sales_checkout.sum(&:total)
   end
+
+  def total_purchases
+    sales_customer.sum(&:total)
+  end
 end
