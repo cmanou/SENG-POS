@@ -3,6 +3,11 @@ class ReportsController < ApplicationController
   end
 
   def sale
+    @sales = Sale.all
+
+    respond_to do |format|
+      format.html # sale.html.erb
+    end
   end
 
   def stock
