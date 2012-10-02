@@ -11,6 +11,12 @@ class ReportsController < ApplicationController
   end
 
   def stock
+    @products = Product.all
+
+    respond_to do |format|
+      format.html # suppliers.html.erb
+    end
+
   end
 
   def financial

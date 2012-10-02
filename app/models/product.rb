@@ -4,6 +4,7 @@ class Product < ActiveRecord::Base
   has_many :sale_items
   has_many :sales, :through => :sale_items
   has_many :transactions, :through => :sales
+  has_many :supplier_stock_orders
   belongs_to :supplier
   attr_accessible :cost, :description, :name, :price, :barcode, :supplier, :brand, :size, :active
 
@@ -15,5 +16,17 @@ class Product < ActiveRecord::Base
   validates :barcode, :uniqueness => true
 
   validates_associated :stock_levels
+
+  def total_stock
+      stock_levels.sum(&:quantity)
+  end
+
+  def total_sold
+    sale_items.sum(&:quantity)
+  end
+
+  def total_ordered
+    supplier_stock_orders.sum(&:quantity)
+  end
 
 end
