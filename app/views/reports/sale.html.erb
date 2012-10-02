@@ -1,0 +1,19 @@
+<%= title "Sales Report" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Date</th>
+    <th>Employee</th>
+    <th>Customer</th>
+    <th>Amount</th>
+  </tr>
+
+<% @sales.each do |sale| %>
+  <tr>
+    <td><%= sale.updated_at.localtime.to_formatted_s(:short) %></td>
+    <td><%= sale.checkout_user.email %></td><!--should be changed to name -->
+    <td><%= sale.checkout_user.email %></td>
+    <td><%= number_to_currency(sale.total) %>
+  </tr>
+<% end %>
+</table>

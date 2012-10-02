@@ -1,5 +1,19 @@
 Pos::Application.routes.draw do
 
+  get "reports/index"
+
+  get "reports/sale"
+
+  get "reports/stock"
+
+  get "reports/financial"
+
+  get "reports/staff"
+
+  get "reports/supplier"
+
+  get "reports/customer"
+
   resources :supplier_stock_orders do
     member do
       get :complete
