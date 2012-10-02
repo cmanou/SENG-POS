@@ -11,8 +11,8 @@
 <% @sales.each do |sale| %>
   <tr>
     <td><%= sale.updated_at.localtime.to_formatted_s(:short) %></td>
-    <td><%= sale.checkout_user.email %></td><!--should be changed to name -->
-    <td><%= sale.checkout_user.email %></td>
+    <td><%= sale.checkout_user.name %></td><!--should be changed to name -->
+    <td><%= sale.customer.name %></td>
     <td><%= number_to_currency(sale.total) %>
   </tr>
 <% end %>

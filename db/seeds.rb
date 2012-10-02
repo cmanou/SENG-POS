@@ -7,41 +7,53 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 # ['Owner', 'Manager', 'Stock Control', 'Checkout', 'Customer'],
 User.create([{
+  :name => 'Mr Owner',
   :email => 'owner@pos.com',
   :password => '123123',
   :password_confirmation => '123123',
   :remember_me => true,
-  :role => 'Owner'
+  :role => 'Owner',
+  :active => true
 },{  
+  :name => 'Mr Manager',
   :email => 'manager@pos.com',
   :password => '123123',
   :password_confirmation => '123123',
   :remember_me => true,
-  :role => 'Manager'
+  :role => 'Manager',
+  :active => true
 },{
+  :name => 'Mr Stock Guy',
   :email => 'stock@pos.com',
   :password => '123123',
   :password_confirmation => '123123',
   :remember_me => true,
-  :role => 'Stock Control'
+  :role => 'Stock Control',
+  :active => true
 },{
+  :name => 'Ms Cashier',
   :email => 'cashier@pos.com',
   :password => '123123',
   :password_confirmation => '123123',
   :remember_me => true,
-  :role => 'Cashier'
+  :role => 'Cashier',
+  :active => true
 },{
+  :name => 'Mr Normal',
   :email => 'default@pos.com',
   :password => '123123',
   :password_confirmation => '123123',
   :remember_me => true,
-  :role => 'Default'
+  :role => 'Default',
+  :active => true
 },{
+  :name => 'Chris',
   :email => 'chris.manouvrier@gmail.com',
   :password => '123123',
   :password_confirmation => '123123',
   :remember_me => true,
-  :role => 'Default'
+  :role => 'Default',
+  :active => true
 }])
 
 StockLocation.create([{ :name => 'Warehouse' }])
