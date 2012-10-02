@@ -7,19 +7,24 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create([{
-    :email => 'support@derpinasoft.com',
-    :password => 'outsourced',
-    :password_confirmation => 'outsourced',
+    :email => 'manager@pos.com',
+    :password => '123123',
+    :password_confirmation => '123123',
     :remember_me => true
 },{
-    :email => 'ck.vincentwong@gmail.com',
-    :password => '1337haxor',
-    :password_confirmation => '1337haxor',
-    :remember_me => false
+    :email => 'checkout@pos.com',
+    :password => '123123',
+    :password_confirmation => '123123',
+    :remember_me => true
 },{
-    :email => 'chris@chris.com',
-    :password => 'christopher',
-    :password_confirmation => 'christopher',
+    :email => 'stock@pos.com',
+    :password => '123123',
+    :password_confirmation => '123123',
+    :remember_me => true
+},{
+    :email => 'report@pos.com',
+    :password => '123123',
+    :password_confirmation => '123123',
     :remember_me => true
 }])
 

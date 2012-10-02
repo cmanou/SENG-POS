@@ -27,7 +27,7 @@ class SalesController < ApplicationController
   def new
     @current_sales = Sale.find_all_by_checkout_user_id_and_status(current_user.id, 'Adding to Cart')
     
-    if @current_sales.nil?
+    if @current_sales.empty?
       @sale = Sale.new(:checkout_user  => current_user, :status => 'Adding to Cart')
       @sale.save
       
@@ -40,8 +40,7 @@ class SalesController < ApplicationController
         format.html # new.html.erb
         format.json { render json: @current_sales }
       end
-    end
-      
+    end      
   end
 
   # GET /sales/1/edit
@@ -57,6 +56,18 @@ class SalesController < ApplicationController
     end
   end
 
+  # POST /sales
+  # POST /sales.json
+  def create
+    @sale = Sale.new(:checkout_user  => current_user, :status => 'Adding to Cart')
+    @sale.save
+    
+    respond_to do |format|
+      format.html { redirect_to edit_sale_path(@sale) }
+      format.json { render json: @sale}
+    end
+  end
+  
   # PUT /sales/1
   # PUT /sales/1.json
   def update

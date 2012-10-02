@@ -3,33 +3,27 @@
 <h1>Your have uncompleted sales</h1>
 
 <p>Please review your any current uncompleted sales. If you like you can also start a new sale.</p>
-<%= link_to 'New Sale', new_sale_path, :class  => 'btn btn-large' %>
+<%= button_to 'New Sale', sales_path, :class  => 'btn btn-large' %>
 
-<% @current_sales.sort{|a,b| a.status <=> b.status}.group_by(&:status).each do |status, current_sales| %>
-  <h2><%= status %></h2>
-
-  <table class="table table-bordered table-striped">
-    <tr>
+<table class="table table-bordered table-striped">
+   <tr>
       <th>Date</th>
       <th>Total Price</th>
       <th>Checkout User</th>
       <th>Tools</th>
-    </tr>
+   </tr>
 
-    <% current_sales.each do |sale| %>
-      <tr>
-	<td><%= sale.created_at.localtime.to_formatted_s(:short) %></td>
-	<td><%= number_to_currency(sale.total) %></td>
-	<td><%= sale.checkout_user.email %></td>
-	<td class="btn-group">
-	  <% if status == 'Finished' %>
-	    <%= link_to 'Show', sale, :class=>"btn btn-success"%>
-	  <% else %>
-	    <%= link_to 'Continue', edit_sale_path(sale), :class=>"btn btn-warning" %>
-	    <%= link_to 'Cancel', sale, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
-	  <% end %>
-	</td>
-      </tr>
-    <% end %>
-  </table>
+   <% @current_sales.each do |sale| %>
+
+   <tr>
+      <td><%= sale.created_at.localtime.to_formatted_s(:short) %></td>
+      <td><%= number_to_currency(sale.total) %></td>
+      <td><%= sale.checkout_user.email %></td>
+      <td class="btn-group">
+         <%= link_to 'Continue', edit_sale_path(sale), :class=>"btn btn-warning" %>
+         <%= link_to 'Cancel', sale, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+   </tr>
+
+</table>
 <% end %>
