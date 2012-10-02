@@ -1,2 +1,19 @@
-<h1>Reports#supplier</h1>
-<p>Find me in app/views/reports/supplier.html.erb</p>
+<%= title "Supplier Report" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+  	<th>Supplier</th>
+    <th>Date</th>
+    <th>Product</th>
+    <th>QTY</th>
+    <th>Cost</th>
+  </tr>
+
+<% @supplier_stock_orders.each do |supplier_stock_order| %>
+  <tr>
+  	<td><%= supplier_stock_orders.supplier.name %></td>
+    <td><%= supplier_stock_orders.updated_at.localtime.to_formatted_s(:short) %></td>
+    <td><%= supplier_stock_orders.product.name %></td>
+  </tr>
+<% end %>
+</table>
