@@ -1,2 +1,17 @@
-<h1>Reports#customer</h1>
-<p>Find me in app/views/reports/customer.html.erb</p>
+<%= title "Customer Report" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Customer</th>
+    <th>Number of Purchases</th>
+    <th>Total of Purchases</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.email %></td>
+    <td><%= user.num_purchases %></td>
+    <td><%= number_to_currency(user.total_purchases) %></td>
+  </tr>
+<% end %>
+</table>

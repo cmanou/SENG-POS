@@ -22,7 +22,7 @@ class ReportsController < ApplicationController
   end
 
   def staff
-    @users = User.all
+    @users = User.where(:role => [ 'Owner', 'Manager', 'Stock Control', 'Cashier'])
 
     respond_to do |format|
       format.html # suppliers.html.erb
@@ -38,5 +38,9 @@ class ReportsController < ApplicationController
   end
 
   def customer
+    @users = User.all
+    respond_to do |format|
+      format.html # suppliers.html.erb
+    end
   end
 end

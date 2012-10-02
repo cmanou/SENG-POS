@@ -3,11 +3,17 @@
 <table class="table table-bordered table-striped">
   <tr>
     <th>Employee</th>
+    <th>Role</th>
+    <th>Number of Sales</th>
+    <th>Total of Sales</th>
   </tr>
 
 <% @users.each do |user| %>
   <tr>
     <td><%= user.email %></td>
+    <td><%= user.role %></td>
+    <td><%= user.num_sales %></td>
+    <td><%= number_to_currency(user.total_sales) %></td>
   </tr>
 <% end %>
 </table>
