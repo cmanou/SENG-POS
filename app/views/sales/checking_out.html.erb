@@ -51,7 +51,20 @@
 
           <div class="tab-content">
             <div class="tab-pane" id="payment-cash">
-              <%= form_for @transaction do |tr| %>
+              <%= form_for @transaction, :remote => true do |tr| %>
+                <% if @transaction.errors.any? %>
+                  <div class="global-flash">
+                    <div class="alert alert-error">
+                      <h1>Oh Noes</h1>
+                      <ul>
+                        <% @transaction.errors.full_messages.each do |msg| %>
+                          <li><%= msg %></li>
+                        <% end %>
+                      </ul>
+                    </div>
+                  </div>
+                <% end %>
+
                 <%= tr.hidden_field :sale, :value => @sale.id %>
                 <%= tr.hidden_field :method, :value => 'Cash' %>
                 <%= tr.hidden_field :approved, :value => true %>
