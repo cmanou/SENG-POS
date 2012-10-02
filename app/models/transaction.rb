@@ -2,11 +2,15 @@ class Transaction < ActiveRecord::Base
   belongs_to :sale
 
   attr_accessible :amount, :approved, :method, :sale
+  validates_presence_of :amount, :approved, :method, :sale
 
-  validates :amount, :presence => true,
-      :exclusion => { :in => [0], :message => "Must be non-zero amount." }
+  validates :amount, :exclusion =>
+  	{:in => [0], :message => "Must be non-zero amount." }
 
-  validates :method, :presence => true, :inclusion => { :in => ['Cash', 'Other']}
+  validates :method,  :inclusion => { :in => ['Cash', 'Other']}
 
-  validates_associated :sale
+  validates :amount, :if => Proc.new {method == 'Cash'},
+  	:inclusion => {:in => [0.05, 0.10, 0.20, 0.50, 1.00, 2.00, 5.00, 10.00, 20.00, 50.00, 100.00]}
+
+  validates :approved, :acceptance => true
 end
