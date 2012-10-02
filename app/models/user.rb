@@ -5,18 +5,24 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :token_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :timeoutable, :validatable
 
+  #userPrivileges(user) ∈ {Stock_Control,Manager,Owner}
+  validates :role,
+    :inclusion  => { :in => [ 'Owner', 'Manager', 'Stock Control'],
+    :message    => "%{value} is not a valid status" }
+  
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
-  #userPrivileges(user) ∈ {Stock_Control,Manager,Owner}
+  
+
 
   def can_checkout
     return true
   end
   def can_manage_stock
-    return true
+    role == "Owner" or role == "Manager"
   end
   def can_report
-    return true
+    role == "Owner"
   end
 end
