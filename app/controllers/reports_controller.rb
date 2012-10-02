@@ -20,10 +20,10 @@ class ReportsController < ApplicationController
   end
 
   def supplier
-    @supplier_stock_orders = SupplierStockOrders.all
+    @supplier_stock_orders = SupplierStockOrder.all
 
     respond_to do |format|
-      format.html # sale.html.erb
+      format.html # suppliers.html.erb
     end
   end
 
