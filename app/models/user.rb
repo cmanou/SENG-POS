@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
     :message    => "%{value} is not a valid status" }
   
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :role, :email, :password, :password_confirmation, :remember_me
+  attr_accessible :role, :name, :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
   
 
