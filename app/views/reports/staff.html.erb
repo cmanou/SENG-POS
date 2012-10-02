@@ -1,2 +1,13 @@
-<h1>Reports#staff</h1>
-<p>Find me in app/views/reports/staff.html.erb</p>
+<%= title "Staff Report" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Employee</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.email %></td>
+  </tr>
+<% end %>
+</table>
