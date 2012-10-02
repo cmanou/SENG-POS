@@ -78,235 +78,206 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'signature product.'
 },{
-    :name => 'Wen Di',
-    :cost => 9001.00,
-    :size => '38kg',
-    :brand => "Lim's Home made people",
-    :price => 2.99,
+    :name => 'Donec',
+    :cost =>70,
+    :size => '143g',
+    :price => 35,
+    :brand => 'Dante Dudley',
+    :active => false,
+    :barcode => 'FQN69YTW1DP',
+    :supplier => Supplier.first,
+    :description => 'nec orci. Donec nibh. Quisque nonummy ipsum non arcu. Vivamus'
+},{
+    :name => 'pellentesque',
+    :cost =>14,
+    :size => '509g',
+    :price => 55,
+    :brand => 'David Chapman',
     :active => true,
-    :barcode => 29034983,
-    :supplier => Supplier.last,
-    :description => '...'
+    :barcode => 'AGI69MAF7HK',
+    :supplier => Supplier.first,
+    :description => 'aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum enim'
 },{
-    :name => 'Speed',
-    :cost => 10.00,
-    :size => '10 g',
-    :brand => 'Streets',
-    :price => 99.99,
+    :name => 'ac',
+    :cost =>77,
+    :size => '742g',
+    :price => 16,
+    :brand => 'Warren Whitfield',
     :active => true,
-    :barcode => 69696969,
+    :barcode => 'KYW60LFJ5SJ',
     :supplier => Supplier.last,
-    :description => 'Get that high on'
+    :description => 'eget'
 },{
-:name => 'Donec',
-:cost =>70,
-:size => '143g',
-:price => 35,
-:brand => 'Dante Dudley',
-:active => false,
-:barcode => 'FQN69YTW1DP',
-:supplier => Supplier.first,
-:description => '
-nec orci. Donec nibh. Quisque nonummy ipsum non arcu. Vivamus
-'
+    :name => 'Etiam',
+    :cost =>50,
+    :size => '44g',
+    :price => 98,
+    :brand => 'Colorado Glover',
+    :active => false,
+    :barcode => 'OEM89HAX2UH',
+    :supplier => Supplier.first,
+    :description => 'elit, pharetra ut, pharetra sed, hendrerit a'
 },{
-:name => 'pellentesque',
-:cost =>14,
-:size => '509g',
-:price => 55,
-:brand => 'David Chapman',
-:active => true,
-:barcode => 'AGI69MAF7HK',
-:supplier => Supplier.first,
-:description => '
-aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum enim
-'
+    :name => 'Morbi',
+    :cost =>7,
+    :size => '153g',
+    :price => 64,
+    :brand => 'Macon Stevenson',
+    :active => true,
+    :barcode => 'MXA23BGQ4QF',
+    :supplier => Supplier.last,
+    :description => 'scelerisque'
 },{
-:name => 'ac',
-:cost =>77,
-:size => '742g',
-:price => 16,
-:brand => 'Warren Whitfield',
-:active => true,
-:barcode => 'KYW60LFJ5SJ',
-:supplier => Supplier.last,
-:description => 'eget'
+    :name => 'Donec',
+    :cost =>39,
+    :size => '55g',
+    :price => 40,
+    :brand => 'Louis Shepherd',
+    :active => true,
+    :barcode => 'VMR15VTF7TR',
+    :supplier => Supplier.last,
+    :description => 'Nunc sollicitudin commodo ipsum. Suspendisse non leo. Vivamus'
 },{
-:name => 'Etiam',
-:cost =>50,
-:size => '44g',
-:price => 98,
-:brand => 'Colorado Glover',
-:active => false,
-:barcode => 'OEM89HAX2UH',
-:supplier => Supplier.first,
-:description => 'elit, pharetra ut, pharetra sed, hendrerit a'
+    :name => 'nec',
+    :cost =>84,
+    :size => '165g',
+    :price => 63,
+    :brand => 'Damon Salazar',
+    :active => true,
+    :barcode => 'VXW32YTY7LT',
+    :supplier => Supplier.first,
+    :description => 'enim'
 },{
-:name => 'Morbi',
-:cost =>7,
-:size => '153g',
-:price => 64,
-:brand => 'Macon Stevenson',
-:active => true,
-:barcode => 'MXA23BGQ4QF',
-:supplier => Supplier.last,
-:description => 'scelerisque'
+    :name => 'pellentesque',
+    :cost =>92,
+    :size => '572g',
+    :price => 99,
+    :brand => 'Leonard Hall',
+    :active => true,
+    :barcode => 'FDP29UWG6RB',
+    :supplier => Supplier.last,
+    :description => 'magna. Phasellus dolor elit, pellentesque a,'
 },{
-:name => 'Donec',
-:cost =>39,
-:size => '55g',
-:price => 40,
-:brand => 'Louis Shepherd',
-:active => true,
-:barcode => 'VMR15VTF7TR',
-:supplier => Supplier.last,
-:description => '
-Nunc sollicitudin commodo ipsum. Suspendisse non leo. Vivamus
-'
+    :name => 'Etiam',
+    :cost =>48,
+    :size => '143g',
+    :price => 71,
+    :brand => 'Curran Mcfadden',
+    :active => false,
+    :barcode => 'MRJ26ZGF3YL',
+    :supplier => Supplier.last,
+    :description => 'magna nec quam. Curabitur vel lectus.'
 },{
-:name => 'nec',
-:cost =>84,
-:size => '165g',
-:price => 63,
-:brand => 'Damon Salazar',
-:active => true,
-:barcode => 'VXW32YTY7LT',
-:supplier => Supplier.first,
-:description => 'enim'
+    :name => 'lectus',
+    :cost =>34,
+    :size => '470g',
+    :price => 74,
+    :brand => 'Valentine Compton',
+    :active => true,
+    :barcode => 'LTF22KYL9KY',
+    :supplier => Supplier.last,
+    :description => 'Duis sit amet diam eu dolor egestas rhoncus.'
 },{
-:name => 'pellentesque,',
-:cost =>92,
-:size => '572g',
-:price => 99,
-:brand => 'Leonard Hall',
-:active => true,
-:barcode => 'FDP29UWG6RB',
-:supplier => Supplier.last,
-:description => 'magna. Phasellus dolor elit, pellentesque a,'
+    :name => 'nostra',
+    :cost =>75,
+    :size => '455g',
+    :price => 49,
+    :brand => 'Bradley Hood',
+    :active => true,
+    :barcode => 'QZP13DWG3RR',
+    :supplier => Supplier.first,
+    :description => 'sit amet luctus vulputate, nisi sem semper erat, in'
 },{
-:name => 'Etiam',
-:cost =>48,
-:size => '143g',
-:price => 71,
-:brand => 'Curran Mcfadden',
-:active => false,
-:barcode => 'MRJ26ZGF3YL',
-:supplier => Supplier.last,
-:description => 'magna nec quam. Curabitur vel lectus.'
+    :name => 'faucibus.',
+    :cost =>28,
+    :size => '754g',
+    :price => 73,
+    :brand => 'Dane Dillard',
+    :active => true,
+    :barcode => 'XAX17LRW8PM',
+    :supplier => Supplier.last,
+    :description => 'pretium aliquet, metus'
 },{
-:name => 'lectus',
-:cost =>34,
-:size => '470g',
-:price => 74,
-:brand => 'Valentine Compton',
-:active => true,
-:barcode => 'LTF22KYL9KY',
-:supplier => Supplier.last,
-:description => 'Duis sit amet diam eu dolor egestas rhoncus.'
+    :name => 'quis',
+    :cost =>36,
+    :size => '427g',
+    :price => 41,
+    :brand => 'Micah Campbell',
+    :active => false,
+    :barcode => 'TAZ03VTO0LM',
+    :supplier => Supplier.first,
+    :description => 'fringilla ornare placerat, orci'
 },{
-:name => 'nostra,',
-:cost =>75,
-:size => '455g',
-:price => 49,
-:brand => 'Bradley Hood',
-:active => true,
-:barcode => 'QZP13DWG3RR',
-:supplier => Supplier.first,
-:description => '
-sit amet luctus vulputate, nisi sem semper erat, in
-'
+    :name => 'ipsum',
+    :cost =>78,
+    :size => '306g',
+    :price => 69,
+    :brand => 'Logan Weaver',
+    :active => false,
+    :barcode => 'MEU65HBF4DZ',
+    :supplier => Supplier.first,
+    :description => 'purus, accumsan'
 },{
-:name => 'faucibus.',
-:cost =>28,
-:size => '754g',
-:price => 73,
-:brand => 'Dane Dillard',
-:active => true,
-:barcode => 'XAX17LRW8PM',
-:supplier => Supplier.last,
-:description => 'pretium aliquet, metus'
+    :name => 'congue',
+    :cost =>95,
+    :size => '676g',
+    :price => 32,
+    :brand => 'Addison Cohen',
+    :active => true,
+    :barcode => 'COL93UPY7UL',
+    :supplier => Supplier.last,
+    :description => 'fames ac turpis egestas. Fusce aliquet'
 },{
-:name => 'quis',
-:cost =>36,
-:size => '427g',
-:price => 41,
-:brand => 'Micah Campbell',
-:active => false,
-:barcode => 'TAZ03VTO0LM',
-:supplier => Supplier.first,
-:description => 'fringilla ornare placerat, orci'
+    :name => 'convallis',
+    :cost =>85,
+    :size => '96g',
+    :price => 69,
+    :brand => 'Damon Dejesus',
+    :active => true,
+    :barcode => 'SJR42KTI5OK',
+    :supplier => Supplier.first,
+    :description => 'arcu.'
 },{
-:name => 'ipsum',
-:cost =>78,
-:size => '306g',
-:price => 69,
-:brand => 'Logan Weaver',
-:active => false,
-:barcode => 'MEU65HBF4DZ',
-:supplier => Supplier.first,
-:description => 'purus, accumsan'
+    :name => 'amet',
+    :cost =>81,
+    :size => '802g',
+    :price => 41,
+    :brand => 'Kadeem Newton',
+    :active => true,
+    :barcode => 'MGX90AQI2HA',
+    :supplier => Supplier.last,
+    :description => 'molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris.'
 },{
-:name => 'congue,',
-:cost =>95,
-:size => '676g',
-:price => 32,
-:brand => 'Addison Cohen',
-:active => true,
-:barcode => 'COL93UPY7UL',
-:supplier => Supplier.last,
-:description => 'fames ac turpis egestas. Fusce aliquet'
+    :name => 'ultricies',
+    :cost =>36,
+    :size => '208g',
+    :price => 20,
+    :brand => 'Wallace Rivers',
+    :active => true,
+    :barcode => 'CUX55UYD4TP',
+    :supplier => Supplier.last,
+    :description => 'sed libero. Proin sed turpis nec mauris'
 },{
-:name => 'convallis',
-:cost =>85,
-:size => '96g',
-:price => 69,
-:brand => 'Damon Dejesus',
-:active => true,
-:barcode => 'SJR42KTI5OK',
-:supplier => Supplier.first,
-:description => 'arcu.'
+    :name => 'Nulla',
+    :cost =>68,
+    :size => '162g',
+    :price => 10,
+    :brand => 'Trevor Jacobs',
+    :active => false,
+    :barcode => 'NKP37VOS6EV',
+    :supplier => Supplier.first,
+    :description => 'dui,'
 },{
-:name => 'amet,',
-:cost =>81,
-:size => '802g',
-:price => 41,
-:brand => 'Kadeem Newton',
-:active => true,
-:barcode => 'MGX90AQI2HA',
-:supplier => Supplier.last,
-:description => '
-molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris.
-'
-},{
-:name => 'ultricies',
-:cost =>36,
-:size => '208g',
-:price => 20,
-:brand => 'Wallace Rivers',
-:active => true,
-:barcode => 'CUX55UYD4TP',
-:supplier => Supplier.last,
-:description => 'sed libero. Proin sed turpis nec mauris'
-},{
-:name => 'Nulla',
-:cost =>68,
-:size => '162g',
-:price => 10,
-:brand => 'Trevor Jacobs',
-:active => false,
-:barcode => 'NKP37VOS6EV',
-:supplier => Supplier.first,
-:description => 'dui,'
-},{
-:name => 'neque',
-:cost =>83,
-:size => '248g',
-:price => 12,
-:brand => 'Dante Barrera',
-:active => true,
-:barcode => 'YSH63LUH9YU',
-:supplier => Supplier.first,
-:description => 'malesuada ut, sem. Nulla interdum. Curabitur'}])
+    :name => 'neque',
+    :cost =>83,
+    :size => '248g',
+    :price => 12,
+    :brand => 'Dante Barrera',
+    :active => true,
+    :barcode => 'YSH63LUH9YU',
+    :supplier => Supplier.first,
+    :description => 'malesuada ut, sem. Nulla interdum. Curabitur'
+}])
 
 StockLocation.all.each do |location|
     Product.all.each do |product|
@@ -319,26 +290,26 @@ StockLocation.all.each do |location|
     end
 end
 
-Sale.create([{
+Sale.create!([{
     :status => 'Finished',
     :discount => 0,
-    :customer => User.offset(rand(User.count)).first,
-    :checkout_user => User.offset(rand(User.count)).first
+    :customer => User.where(:role => [ 'Default']).first,
+    :checkout_user => User.where(:role => ['Manager']).first
 },{
     :status => 'Finished',
     :discount => 0,
-    :customer => User.offset(rand(User.count)).first,
-    :checkout_user => User.offset(rand(User.count)).first
+    :customer => User.where(:role => [ 'Default']).last,
+    :checkout_user => User.where(:role => [ 'Owner']).first
 },{
     :status => 'Adding to Cart',
     :discount => 0,
-    :customer => User.offset(rand(User.count)).first,
-    :checkout_user => User.offset(rand(User.count)).first
+    :customer => User.where(:role => [ 'Default','Cashier']).first,
+    :checkout_user => User.where(:role => ['Stock Control']).first
 },{
     :status => 'Checking Out',
     :discount => 0,
-    :customer => User.offset(rand(User.count)).first,
-    :checkout_user => User.offset(rand(User.count)).first
+    :customer => User.where(:role => [ 'Default','Cashier']).first,
+    :checkout_user => User.where(:role => ['Cashier']).first
 }])
 
 Product.all.each do |product|
@@ -352,3 +323,37 @@ Product.all.each do |product|
         })
     end
 end
+
+StockTransfer.create([{
+    :product => Product.offset(rand(Product.count)).first,
+    :stock_location => StockLocation.where("previous_location_id is NOT NULL").first,
+    :quantity => rand(20),
+    :complete => true,
+},{
+    :product => Product.offset(rand(Product.count)).first,
+    :stock_location => StockLocation.where("previous_location_id is NOT NULL").last,
+    :quantity => rand(20),
+    :complete => true,
+},{
+    :product => Product.offset(rand(Product.count)).first,
+    :stock_location => StockLocation.where("previous_location_id is NOT NULL").last,
+    :quantity => rand(20),
+    :complete => false,
+}])
+
+SupplierStockOrder.create([{
+    :product => Product.offset(rand(Product.count)).first,
+    :quantity => rand(20),
+    :status => 'Created',
+},{
+    :product => Product.offset(rand(Product.count)).first,
+    :quantity => rand(20),
+    :status => 'Processed',
+},{
+    :product => Product.offset(rand(Product.count)).first,
+    :quantity => rand(20),
+    :status => 'Completed',
+}])
+
+
+
