@@ -7,16 +7,14 @@ class User < ActiveRecord::Base
 
   has_many :sales_checkout, :class_name => 'Sale', :foreign_key => "checkout_user_id"
   has_many :sales_customer, :class_name => 'Sale', :foreign_key => "customer_id"
-
+  
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :role, :name, :postcode, :discount, :membership, :active, :email, :password, :password_confirmation, :remember_me
 
   #userPrivileges(user) ∈ {Stock_Control,Manager,Owner, Cashier}
   validates :role,
     :inclusion  => { :in => [ 'Owner', 'Manager', 'Stock Control', 'Cashier', 'Default'],
     :message    => "%{value} is not a valid status" }
-  
-  # Setup accessible (or protected) attributes for your model
-  attr_accessible :role, :name, :email, :password, :password_confirmation, :remember_me
-  # attr_accessible :title, :body
   
 
 
