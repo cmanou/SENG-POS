@@ -46,7 +46,7 @@ class SaleItemsController < ApplicationController
     @sale = Sale.find(params[:sale_item][:sale])
     params[:sale_item][:sale] = @sale;
 
-    @sale_item = SaleItem.find_by_sale_id(@sale.id)
+    @sale_item = SaleItem.find_by_sale_id_and_product_id(@sale.id, @product.id)
     if @sale_item.nil?
       @sale_item = SaleItem.new(params[:sale_item])
     else

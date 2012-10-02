@@ -14,7 +14,6 @@
    </tr>
 
    <% @current_sales.each do |sale| %>
-
    <tr>
       <td><%= sale.created_at.localtime.to_formatted_s(:short) %></td>
       <td><%= number_to_currency(sale.total) %></td>
@@ -24,6 +23,6 @@
          <%= link_to 'Cancel', sale, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
       </td>
    </tr>
-
+   <% end %>
 </table>
-<% end %>
+
