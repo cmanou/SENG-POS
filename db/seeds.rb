@@ -5,27 +5,37 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
+# ['Owner', 'Manager', 'Stock Control', 'Checkout', 'Customer'],
 User.create([{
-    :email => 'manager@pos.com',
-    :password => '123123',
-    :password_confirmation => '123123',
-    :remember_me => true
+  :email => 'owner@pos.com',
+  :password => '123123',
+  :password_confirmation => '123123',
+  :remember_me => true,
+  :role => 'Owner'
+},{  
+  :email => 'manager@pos.com',
+  :password => '123123',
+  :password_confirmation => '123123',
+  :remember_me => true,
+  :role => 'Manager'
 },{
-    :email => 'checkout@pos.com',
-    :password => '123123',
-    :password_confirmation => '123123',
-    :remember_me => true
+  :email => 'stock@pos.com',
+  :password => '123123',
+  :password_confirmation => '123123',
+  :remember_me => true,
+  :role => 'Stock Control'
 },{
-    :email => 'stock@pos.com',
-    :password => '123123',
-    :password_confirmation => '123123',
-    :remember_me => true
+  :email => 'checkout@pos.com',
+  :password => '123123',
+  :password_confirmation => '123123',
+  :remember_me => true,
+  :role => 'Checkout'
 },{
-    :email => 'report@pos.com',
-    :password => '123123',
-    :password_confirmation => '123123',
-    :remember_me => true
+  :email => 'customer@pos.com',
+  :password => '123123',
+  :password_confirmation => '123123',
+  :remember_me => true,
+  :role => 'Customer'
 }])
 
 StockLocation.create([{ :name => 'Warehouse' }])

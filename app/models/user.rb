@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   #userPrivileges(user) ∈ {Stock_Control,Manager,Owner}
   validates :role,
-    :inclusion  => { :in => [ 'Owner', 'Manager', 'Stock Control'],
+    :inclusion  => { :in => ['Owner', 'Manager', 'Stock Control', 'Checkout', 'Customer'],
     :message    => "%{value} is not a valid status" }
   
   # Setup accessible (or protected) attributes for your model
