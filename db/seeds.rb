@@ -6,25 +6,29 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create([{
+User.create!([{
     :email => 'manager@pos.com',
-    :password => '123123',
-    :password_confirmation => '123123',
+    :password => '123123123',
+    :password_confirmation => '123123123',
+    :role => 'Owner',
     :remember_me => true
 },{
     :email => 'checkout@pos.com',
-    :password => '123123',
-    :password_confirmation => '123123',
+    :password => '123123123',
+    :password_confirmation => '123123123',
+    :role => 'Manager',
     :remember_me => true
 },{
     :email => 'stock@pos.com',
-    :password => '123123',
-    :password_confirmation => '123123',
+    :password => '123123123',
+    :password_confirmation => '123123123',
+    :role => 'Manager',
     :remember_me => true
 },{
     :email => 'report@pos.com',
-    :password => '123123',
-    :password_confirmation => '123123',
+    :password => '123123123',
+    :password_confirmation => '123123123',
+    :role => 'Manager',
     :remember_me => true
 }])
 
