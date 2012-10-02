@@ -11,9 +11,11 @@
 
 <% @supplier_stock_orders.each do |supplier_stock_order| %>
   <tr>
-  	<td><%= supplier_stock_orders.supplier.name %></td>
-    <td><%= supplier_stock_orders.updated_at.localtime.to_formatted_s(:short) %></td>
-    <td><%= supplier_stock_orders.product.name %></td>
+  	<td><%= supplier_stock_order.product.supplier.name %></td>
+    <td><%= supplier_stock_order.updated_at.localtime.to_formatted_s(:short) %></td>
+    <td><%= supplier_stock_order.product.name %></td>
+    <td><%= supplier_stock_order.quantity %></td>
+    <td><%= number_to_currency(supplier_stock_order.total) %></td>
   </tr>
 <% end %>
 </table>

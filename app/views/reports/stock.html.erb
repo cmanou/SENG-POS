@@ -1,2 +1,20 @@
-<h1>Reports#stock</h1>
-<p>Find me in app/views/reports/stock.html.erb</p>
+<%= title "Stock Report" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+  	<th>Product</th>
+  	<th>Total Stock Remaining</th>
+  	<th>Total Sold</th>
+	<th>Total Ordered</th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+  	<td><%= product.name %></td>
+  	<td><%= product.total_stock %></td>
+  	<td><%= product.total_sold %></td>
+	<td><%= product.total_ordered %></td>
+
+  </tr>
+<% end %>
+</table>
