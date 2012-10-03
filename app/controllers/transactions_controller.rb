@@ -48,7 +48,8 @@ class TransactionsController < ApplicationController
         format.html { redirect_to edit_sale_path(@transaction.sale), notice: 'Transaction was successfully created.' }
         format.json { render json: @transaction, status: :created, location: @transaction }
       else
-        format.html { render action: "new" }
+        @sale = @transaction.sale
+        format.html { render :action => "../sales/checking_out" }
         format.json { render json: @transaction.errors, status: :unprocessable_entity }
       end
     end
