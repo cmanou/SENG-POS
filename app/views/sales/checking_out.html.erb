@@ -68,7 +68,7 @@
               <%= form_for @transaction do |tr| %>
                 <%= tr.hidden_field :sale, :value => @sale.id %>
                 <%= tr.hidden_field :method, :value => 'Cash' %>
-                <%= tr.hidden_field :approved, :value => true %>
+                <%= tr.hidden_field :approved, :value => 1 %>
 
                 <div class="field">
                   <%= tr.label :amount %>
