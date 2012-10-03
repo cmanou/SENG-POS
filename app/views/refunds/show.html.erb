@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Sale item:</b>
+  <%= @refund.sale_item.product.name %>
+</p>
+
+<p>
+  <b>Checkout user:</b>
+  <%= @refund.checkout_user.name %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @refund.quantity %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%= @refund.reason %>
+</p>
+
+<p>
+  <b>Total:</b>
+  <%= @refund.total %>
+</p>
+
+<%= link_to 'Sale', sale_path(@refund.sale_item.sale) %> |
+<%= link_to 'Edit', edit_refund_path(@refund) %> |
+<%= link_to 'Back', refunds_path %>

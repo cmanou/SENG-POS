@@ -1,17 +1,11 @@
 Pos::Application.routes.draw do
 
   get "reports/index"
-
   get "reports/sale"
-
   get "reports/stock"
-
   get "reports/financial"
-
   get "reports/staff"
-
   get "reports/supplier"
-
   get "reports/customer"
 
   resources :supplier_stock_orders do
@@ -28,6 +22,7 @@ Pos::Application.routes.draw do
     end
   end
   resources :sale_items
+  resources :refunds
 
   resources :stock_transfers do
     member do

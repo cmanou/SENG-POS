@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sale_item: 
+  checkout_user: 
+  quantity: 1
+  reason: MyText
+  total: 9.99
+
+two:
+  sale_item: 
+  checkout_user: 
+  quantity: 1
+  reason: MyText
+  total: 9.99

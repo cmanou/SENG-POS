@@ -44,6 +44,9 @@
     <td>
       <%= number_to_currency(sale_item.sub_total) %>
     </td>
+    <td>
+      <%= link_to "Refund Item", new_refund_path(:sale_item => sale_item.id), :class => 'btn btn-danger  ' %>
+    </td>
   </tr>
 <% end %>
 </table>

@@ -1,0 +1,31 @@
+<h1>Listing refunds</h1>
+
+<table>
+  <tr>
+    <th>Sale item</th>
+    <th>Checkout user</th>
+    <th>Quantity</th>
+    <th>Reason</th>
+    <th>Total</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @refunds.each do |refund| %>
+  <tr>
+    <td><%= refund.sale_item.product.name %></td>
+    <td><%= refund.checkout_user.name %></td>
+    <td><%= refund.quantity %></td>
+    <td><%= refund.reason %></td>
+    <td><%= refund.total %></td>
+    <td><%= link_to 'Show', refund %></td>
+    <td><%= link_to 'Edit', edit_refund_path(refund) %></td>
+    <td><%= link_to 'Destroy', refund, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Refund (does not work yet, find the product in an existing sale)', new_refund_path %>
