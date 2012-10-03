@@ -10,7 +10,7 @@
 
 <% @users.each do |user| %>
   <tr>
-    <td><%= user.email %></td>
+    <td><%= user.name %></td>
     <td><%= user.role %></td>
     <td><%= user.num_sales %></td>
     <td><%= number_to_currency(user.total_sales) %></td>
