@@ -72,7 +72,7 @@
 
                 <div class="field">
                   <%= tr.label :amount %>
-                  <%= tr.number_field :amount %>
+                  <%= tr.select :amount, [0.05, 0.10, 0.20, 0.50, 1.00, 2.00, 5.00, 10.00, 20.00, 50.00, 100.00] %>
                 </div>
                 <div class="actions">
                   <%= tr.submit 'Pay Cash', :class => "btn btn-success" %>
