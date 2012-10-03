@@ -5,13 +5,19 @@ class Sale < ActiveRecord::Base
 
     belongs_to :customer, :class_name => 'User'
     belongs_to :checkout_user, :class_name => 'User'
+    
+    attr_accessible :customer, :checkout_user, :discount, :status
+
+    #Event-B: transactionInProcess ∈ members ⇸TRANSACTIONTYPE 
+    #         axm3: partition(TRANSACTIONTYPE, {ADDINGTOCART},{CHECKINGOUT},{FINISHED})
+    #Comment: These was just renamed but serves the exact same person.
 
     validates :status,
        :inclusion  => { :in => [ 'Adding to Cart', 'Checking Out', 'Finished'],
        :message    => "%{value} is not a valid status" }
 
-    attr_accessible :customer, :checkout_user, :discount, :status
 
+    # Various other methods.
     def total
       sale_items.sum(&:sub_total)
     end
@@ -21,6 +27,6 @@ class Sale < ActiveRecord::Base
     end
 
     def discount
-      0
+      customer.discount
     end
 end
