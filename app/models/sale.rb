@@ -5,10 +5,10 @@ class Sale < ActiveRecord::Base
 
     belongs_to :customer, :class_name => 'User'
     belongs_to :checkout_user, :class_name => 'User'
-    
+
     attr_accessible :customer, :checkout_user, :discount, :status
 
-    #Event-B: transactionInProcess ∈ members ⇸TRANSACTIONTYPE 
+    #Event-B: transactionInProcess ∈ members ⇸TRANSACTIONTYPE
     #         axm3: partition(TRANSACTIONTYPE, {ADDINGTOCART},{CHECKINGOUT},{FINISHED})
     #Comment: These was just renamed but serves the exact same person.
 
@@ -28,5 +28,9 @@ class Sale < ActiveRecord::Base
 
     def discount
       customer.discount
+    end
+
+    def change_given
+      [amount_paid - total, 0].max
     end
 end

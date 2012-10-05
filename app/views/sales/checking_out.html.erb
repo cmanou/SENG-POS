@@ -74,6 +74,10 @@
                   <%= tr.label :amount %>
                   <%= tr.select :amount, [0.05, 0.10, 0.20, 0.50, 1.00, 2.00, 5.00, 10.00, 20.00, 50.00, 100.00] %>
                 </div>
+                <% if @sale.change_given > 0 %>
+                  <br />
+                  <b>Change Due: <%= @sale.change_given %></b>
+                <% end %>
                 <div class="actions">
                   <%= tr.submit 'Pay Cash', :class => "btn btn-success" %>
                 </div>

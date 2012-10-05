@@ -20,6 +20,9 @@
     <td><%= number_to_currency(@sale.total) %></td>
   </tr>
   <tr>
+    <th>Change Given:</th>
+    <td><%= @sale.change_given == 0 ? 'Exact' : number_to_currency(@sale.change_given) %></td>
+  <tr>
     <th>Sale Date:</th>
     <td><%= @sale.created_at %></td>
   </tr>
