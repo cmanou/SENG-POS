@@ -2,31 +2,4 @@
 
 <%= link_to 'New Sale', new_sale_path, :class  => 'btn btn-large' %>
 
-<% @sales.sort{|a,b| a.status <=> b.status}.group_by(&:status).each do |status, sales| %>
-  <h2><%= status %></h2>
-
-  <table class="table table-bordered table-striped">
-    <tr>
-      <th>Date</th>
-      <th>Total Price</th>
-      <th>Checkout User</th>
-      <th>Tools</th>
-    </tr>
-
-    <% sales.each do |sale| %>
-      <tr>
-	<td><%= sale.created_at.localtime.to_formatted_s(:short) %></td>
-	<td><%= number_to_currency(sale.total) %></td>
-	<td><%= sale.checkout_user.email %></td>
-	<td class="btn-group">
-	  <% if status == 'Finished' %>
-	    <%= link_to 'Show', sale, :class=>"btn btn-success"%>
-	  <% else %>
-	    <%= link_to 'Continue', edit_sale_path(sale), :class=>"btn btn-warning" %>
-	    <%= link_to 'Cancel', sale, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
-	  <% end %>
-	</td>
-      </tr>
-    <% end %>
-  </table>
-<% end %>
+<%= render :partial => 'sales/list', :locals => { :sales => @sales } %>
