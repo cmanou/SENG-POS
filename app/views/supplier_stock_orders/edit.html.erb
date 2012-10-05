@@ -1,8 +1,8 @@
-<h1>Editing supplier_stock_order</h1>
+<%= title "Editing Supplier Stock Order" %>
 
-<%= form_for(@supplier_stock_order) do |f| %>
   <% if @supplier_stock_order.errors.any? %>
-    <div id="error_explanation">
+        <div class="global-flash">
+    <div class="alert alert-error">
       <h2><%= pluralize(@supplier_stock_order.errors.count, "error") %> prohibited this supplier_stock_order from being saved:</h2>
 
       <ul>
@@ -11,24 +11,31 @@
       <% end %>
       </ul>
     </div>
+  </div>
   <% end %>
-      <%= f.hidden_field :product, :value => @supplier_stock_order.product.id %>
 
-
-  <div class="field">
-    <%= "Product" %><br />
+<%= form_for @supplier_stock_order , :html => {:class => "form-horizontal"} do |f| %>
+<legend>Attributes</legend>
+  <div class="control-group">
+    <%= f.label :product, :class => "control-label" %>
+    <div class="controls">
     <%= @supplier_stock_order.product.name %>
-  </div>
-  <div class="field">
-    <%= f.label :quantity %><br />
-    <%= f.number_field :quantity %>
+    </div>
   </div>
 
-    <%= f.hidden_field :status, :value => @supplier_stock_order.status%>
-  <div class="actions">
-    <%= f.submit "Update Supplier Stock Order" , :class=>"btn btn-primary" %>
+  <div class="control-group">
+    <%= f.label :quantity, :class => "control-label" %>
+    <div class="controls">
+    <%= f.number_field :quantity%>
+    </div>
   </div>
+
+  <%= f.hidden_field :status, :value => @supplier_stock_order.status%>
+
+  <div class="form-actions">
+    <%= f.submit :class => "btn btn-primary"%>
+    <%= link_to 'Show', @supplier_stock_order, :class => "btn btn-success" %>
+    <%= link_to 'Cancel', supplier_stock_orders_path, :class => "btn" %>
+  </div>
+
 <% end %>
-
-<%= link_to 'Show', @supplier_stock_order %> |
-<%= link_to 'Back', supplier_stock_orders_path %>
