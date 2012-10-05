@@ -1,8 +1,7 @@
 <%= title "Edit Stock Transfer Quantity" %>
-
-<%= form_for(@stock_transfer) do |f| %>
   <% if @stock_transfer.errors.any? %>
-    <div id="error_explanation">
+  <div class="global-flash">
+    <div class="alert alert-error">
       <h2><%= pluralize(@stock_transfer.errors.count, "error") %> prohibited this stock_transfer from being saved:</h2>
 
       <ul>
@@ -11,30 +10,38 @@
       <% end %>
       </ul>
     </div>
+  </div>
   <% end %>
 
+<%= form_for @stock_transfer , :html => {:class => "form-horizontal"} do |f| %>
+<legend>Attributes</legend>
     <%= f.hidden_field :product, :value => @stock_transfer.product.id %>
     <%= f.hidden_field :stock_location, :value => @stock_transfer.stock_location.id %>
 
-   <table class="table table-bordered">
-   <tr>
-	    <th>Product</th>
-	    <td><%= @stock_transfer.product.name %></td>
-	</tr>
-	<tr>
-	    <th>Transfer To</th>
-	    <td><%= @stock_transfer.stock_location.name %></td>
-	</tr>
-   	<tr>
-	    <th>Quantity</th>
-	    <td><%= f.number_field :quantity, :value=> 1%></td>
-	</tr>
-</table>
+  <div class="control-group">
+    <%= f.label :product, :class => "control-label" %>
+    <div class="controls">
+    <%= @stock_transfer.product.name %>
+    </div>
+  </div>
 
-  <div class="actions">
-    <%= f.submit "Update Stock Transfer", :class=>"btn btn-primary"%>
+  <div class="control-group">
+   <%= f.label :stock_location, "Transfer To", :class => "control-label" %>
+    <div class="controls">
+      <%= @stock_transfer.stock_location.name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+   <%= f.label :quantity, :class => "control-label" %>
+    <div class="controls">
+    <%= f.number_field :quantity%>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit :class=>"btn btn-primary"%>
+    <%= link_to 'Back', stock_transfers_path, :class => "btn" %>
+
   </div>
 <% end %>
-
-<%= link_to 'Show', @stock_transfer %> |
-<%= link_to 'Back', stock_transfers_path %>

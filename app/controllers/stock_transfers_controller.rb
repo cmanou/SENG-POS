@@ -74,7 +74,7 @@ class StockTransfersController < ApplicationController
       params[:stock_transfer][:product] = @product
       params[:stock_transfer][:stock_location] = @stock_location
       if @stock_transfer.update_attributes(params[:stock_transfer])
-        format.html { redirect_to @stock_transfer, notice: 'Stock transfer was successfully updated.' }
+        format.html { redirect_to stock_transfers_path, notice: 'Stock transfer was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
