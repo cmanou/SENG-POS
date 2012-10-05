@@ -1,9 +1,6 @@
-<% title "Suppliers" %>
+<%= title "Listing Suppliers" %>
 
-<%= link_to raw('<i class="icon-chevron-left"></i>'), stock_levels_path, :class=>"btn btn-large" %>
-<h1 style="display:inline">Listing Suppliers</h1>
-
-<table class="table table-bordered">
+<table class="table table-bordered table-striped">
   <tr>
     <th>Name</th>
     <th>Contact person</th>
@@ -24,7 +21,5 @@
   </tr>
 <% end %>
 </table>
-
-<br />
 
 <%= link_to 'New Supplier', new_supplier_path , :class=>"btn btn-primary" %>
