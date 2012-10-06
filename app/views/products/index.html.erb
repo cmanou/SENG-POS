@@ -41,7 +41,7 @@
       <% if product.active == 't' %>
         <%= link_to 'Deactivate', deactivate_product_path(product), :class=>"btn btn-danger" %>
       <% else %>
-        <%= link_to 'Activate', activate_product_path(product), :class=>"btn btn-warning" %>
+        <%= link_to raw('&nbsp;&nbsp;Activate&nbsp;&nbsp;'), activate_product_path(product), :class=>"btn btn-primary" %>
       <% end %>
     </td>
   </tr>
