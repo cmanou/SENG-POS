@@ -5,7 +5,7 @@ class StockLocation < ActiveRecord::Base
   has_one :previous_location
   belongs_to :previous_location, :class_name => 'StockLocation'
 
-  attr_accessible :name, :previous_location
+  attr_accessible :id,:name, :previous_location
 
   validates :name, :presence => true, :uniqueness => true
 

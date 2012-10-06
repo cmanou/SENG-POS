@@ -44,10 +44,11 @@ class StockLocationsController < ApplicationController
   # POST /stock_locations.json
   def create
     @previous_location = nil
-    if(params[:stock_location][:previous_location] != "") 
-      @previous_location = StockLocation.find(Integer(params[:stock_location][:previous_location]))
+    if(params[:stock_location][:previous_location_id] != "") 
+      @previous_location = StockLocation.find(Integer(params[:stock_location][:previous_location_id]))
     end
     params[:stock_location][:previous_location] = @previous_location
+    params[:stock_location].delete :previous_location_id
 
 
     @stock_location = StockLocation.new(params[:stock_location])
@@ -67,10 +68,13 @@ class StockLocationsController < ApplicationController
   # PUT /stock_locations/1.json
   def update
     @previous_location = nil
-    if(params[:stock_location][:previous_location] != "") 
-      @previous_location = StockLocation.find(Integer(params[:stock_location][:previous_location]))
+    if(params[:stock_location][:previous_location_id] != "") 
+      @previous_location = StockLocation.find(Integer(params[:stock_location][:previous_location_id]))
     end
+
     params[:stock_location][:previous_location] = @previous_location
+    params[:stock_location].delete :previous_location_id
+
     @stock_location = StockLocation.find(params[:id])
 
     respond_to do |format|

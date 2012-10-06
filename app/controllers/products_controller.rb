@@ -53,8 +53,13 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     #raise params.inspect
+    @supplier = nil
+    if(params[:product][:supplier] != "") 
     @supplier = Supplier.find_by_id(Integer(params[:product][:supplier]))
+    end
+
     params[:product][:supplier] = @supplier
+
     @product = Product.new(params[:product])
     
     params[:stock_level].each do |sl_id, sl|
