@@ -74,15 +74,16 @@ class SalesController < ApplicationController
   # PUT /sales/1
   # PUT /sales/1.json
   def update
+    params[:sale][:customer] = User.find_by_id(params[:sale][:customer])
     @sale = Sale.find(params[:id])
 
     respond_to do |format|
       if @sale.update_attributes(params[:sale])
-	format.html { redirect_to @sale, notice: 'Sale was successfully updated.' }
-	format.json { head :no_content }
+        format.html { redirect_to edit_sale_path(@sale), notice: 'Sale was successfully updated.' }
+        format.json { head :no_content }
       else
-	format.html { render action: "edit" }
-	format.json { render json: @sale.errors, status: :unprocessable_entity }
+        format.html { render action: "edit" }
+        format.json { render json: @sale.errors, status: :unprocessable_entity }
       end
     end
   end
