@@ -115,6 +115,14 @@
 
   <div class="span4">
     <div class="well">
+      <%= form_for @sale do |ff| %>
+        <%= ff.label :customer, 'Select Customer' %>
+        <%= ff.collection_select :customer, User.all, :id, :email %>
+        <%= ff.submit 'Calculate Discount', :class => "btn btn-success" %>
+      <% end %>
+    </div>
+
+    <div class="well">
       <h4>Cart Details</h4>
       <br/><br/>
       <b>Total: <%= number_to_currency(@sale.total) %></b><br />
