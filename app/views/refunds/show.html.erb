@@ -1,30 +1,47 @@
-<p id="notice"><%= notice %></p>
+<%= title "Showing Refund" %>
 
-<p>
-  <b>Sale item:</b>
+<div class ="form-horizontal">
+<legend>Attributes</legend>
+
+<div class="control-group">
+   <label class = "control-label">Sale item:</label>
+    <div class="controls">
   <%= @refund.sale_item.product.name %>
-</p>
+    </div>
+  </div>
 
-<p>
-  <b>Checkout user:</b>
+  <div class="control-group">
+   <label class = "control-label">Checkout user:</label>
+    <div class="controls">
   <%= @refund.checkout_user.name %>
-</p>
+    </div>
+  </div>
 
-<p>
-  <b>Quantity:</b>
-  <%= @refund.quantity %>
-</p>
 
-<p>
-  <b>Reason:</b>
-  <%= @refund.reason %>
-</p>
+  <div class="control-group">
+   <label class = "control-label">Quantity:</label>
+    <div class="controls">
+    <%= @refund.quantity %>
+    </div>
+  </div>
 
-<p>
-  <b>Total:</b>
-  <%= @refund.total %>
-</p>
+  <div class="control-group">
+   <label class = "control-label">Reason:</label>
+    <div class="controls">
+    <%= @refund.reason %>
+    </div>
+  </div>
 
-<%= link_to 'Sale', sale_path(@refund.sale_item.sale) %> |
-<%= link_to 'Edit', edit_refund_path(@refund) %> |
-<%= link_to 'Back', refunds_path %>
+  <div class="control-group">
+   <label class = "control-label">Total:</label>
+    <div class="controls">
+    <%= @refund.total %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= link_to 'Sale', sale_path(@refund.sale_item.sale), :class=>"btn btn-primary" %>
+    <%= link_to 'Edit', edit_refund_path(@refund), :class=>"btn btn-success" %>
+    <%= link_to 'Back', refunds_path, :class => "btn" %>
+  </div>
+</div>
