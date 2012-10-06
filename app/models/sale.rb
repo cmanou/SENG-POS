@@ -27,7 +27,11 @@ class Sale < ActiveRecord::Base
     end
 
     def discount
-      customer.discount / 100 * total if customer
+      if customer && customer.discount
+        customer.discount / 100 * total
+      else
+        0
+      end
     end
 
     def change_given
