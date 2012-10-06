@@ -124,9 +124,39 @@
 
     <div class="well">
       <h4>Cart Details</h4>
-      <br/><br/>
-      <b>Total: <%= number_to_currency(@sale.total) %></b><br />
-      <b>Paid : <%= number_to_currency(@sale.amount_paid) %></b><br />
+      <table class="table table-bordered table-striped">
+      <tr>
+        <th>Sub Total</th>
+        <td><%= number_to_currency(@sale.total) %></td>
+      </tr>
+      <% if @sale.customer %>
+        <tr>
+          <th>Customer</th>
+          <td><%= @sale.customer.name %></td>
+        </tr>
+        <tr>
+          <th>Customer<br/>Discount</th>
+          <td><%= @sale.customer.discount or 0 %>%</td>
+        </tr>
+        <tr>
+          <th>Discount<br/>Amount</th>
+          <td><%= number_to_currency(@sale.discount || 0) %></td>
+        </tr>
+      <% end %>
+      <tr>
+        <th>GST</th>
+        <td><%= number_to_currency((@sale.total - @sale.discount) * 0.1)%></td>
+      </tr>
+      <tr>
+        <th>Total</th>
+        <td><%= number_to_currency(@sale.total - @sale.discount)%></td>
+      </tr>
+      <tr>
+        <th>Paid So Far</th>
+        <td><%= number_to_currency(@sale.amount_paid) %></td>
+      </tr>
+
+      </table>
       <b>Due  : <%= number_to_currency(@sale.total - @sale.amount_paid) %></b><br />
     </div>
 
