@@ -58,6 +58,8 @@ end
 
   root :to => "home#index"
 
+  match 'help' => "home#help"
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

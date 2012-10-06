@@ -72,8 +72,8 @@
 
             <div class="nav-collapse">
                <ul class="nav">
-                  <li> 
-                     <a href="/">Home</a> 
+                  <li>
+                     <a href="/">Home</a>
                   </li>
                   <% if user_signed_in? %>
                   <% if current_user.can_checkout %>
@@ -97,7 +97,7 @@
                         <li><%= link_to "Stock Locations", stock_locations_path %></li>
                         <li><%= link_to "Stock Transfers", stock_transfers_path %></li>
                         <li><%= link_to "Supplier Stock Orders", supplier_stock_orders_path %></li>
-                     </ul> 
+                     </ul>
                   </li>
                   <% end %>
                   <% if current_user.can_report %>
@@ -116,7 +116,7 @@
                   <% end %>
                   <% end %>
                   <li>
-                     <a href="#">Help</a>
+                     <a href="/help">Help</a>
                   </li>
                </ul>
             </div><!--/.nav-collapse -->
@@ -145,7 +145,7 @@
    ================================================== -->
    <!-- Placed at the end of the document so the pages load faster -->
    <%= javascript_include_tag "application" %>
-   
+
 
 </body>
 </html>
