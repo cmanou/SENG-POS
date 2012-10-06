@@ -37,3 +37,4 @@ gem 'jbuilder'
 
 # To use debugger
 # gem 'debugger'
+gem 'lazy_high_charts'
