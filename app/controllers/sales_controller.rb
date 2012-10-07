@@ -112,7 +112,7 @@ class SalesController < ApplicationController
       return
     end
 
-    if @sale.total > @sale.amount_paid
+    if @sale.total > @sale.amount_paid + @sale.discount
       redirect_to edit_sale_path(@sale), alert: 'You must finish payment before completing a sale.'
       return
     end

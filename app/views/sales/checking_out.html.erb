@@ -50,7 +50,7 @@
             <tr id="totals">
               <td></td>
               <td><b>Amount Due</b></td>
-              <td><b id="total-top"><%= number_to_currency(@sale.total - @sale.amount_paid) %></b></td>
+              <td><b id="total-top"><%= number_to_currency(@sale.total - @sale.discount - @sale.amount_paid) %></b></td>
             </tr>
           </tbody>
         </table>

@@ -3,7 +3,7 @@ class ReportsController < ApplicationController
   end
 
   def sale
-    @sales = Sale.all
+    @sales = Sale.where(:status =>"Finished")
 
     @users = User.all
 
@@ -15,7 +15,7 @@ class ReportsController < ApplicationController
 
       @users.each do |u| 
         f.series(:name=>u.name,
-          :data=>u.sales_customer.pluck(:updated_at).zip(u.sales_customer.map(&:total).map(&:to_f))
+          :data=>u.sales_customer.where(:status =>"Finished").pluck(:updated_at).zip(u.sales_customer.where(:status =>"Finished").map(&:total).map(&:to_f))
         #User.find(4).sales_customer.pluck(:updated_at).zip(User.find(4).sales_customer.map(&:total).map(&:to_f))
           )
       end
