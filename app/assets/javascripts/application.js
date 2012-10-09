@@ -2,6 +2,7 @@
 //= require jquery_ujs
 //= require bootstrap.min
 //= require mustache
+//= require highcharts
 
 $(document).ready(function() {
    $('.global-flash .alert').click(function() {

@@ -40,7 +40,7 @@ class User < ActiveRecord::Base
   end
 
   def num_purchases
-    sales_customer.countv
+    sales_customer.count
   end
 
   def total_sales

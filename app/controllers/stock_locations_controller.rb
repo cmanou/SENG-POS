@@ -37,16 +37,25 @@ class StockLocationsController < ApplicationController
   # GET /stock_locations/1/edit
   def edit
     @stock_location = StockLocation.find(params[:id])
+
   end
 
   # POST /stock_locations
   # POST /stock_locations.json
   def create
+    @previous_location = nil
+    if(params[:stock_location][:previous_location_id] != "") 
+      @previous_location = StockLocation.find(Integer(params[:stock_location][:previous_location_id]))
+    end
+    params[:stock_location][:previous_location] = @previous_location
+    params[:stock_location].delete :previous_location_id
+
+
     @stock_location = StockLocation.new(params[:stock_location])
 
     respond_to do |format|
       if @stock_location.save
-        format.html { redirect_to @stock_location, notice: 'Stock location was successfully created.' }
+        format.html { redirect_to stock_locations_path, notice: 'Stock location was successfully created.' }
         format.json { render json: @stock_location, status: :created, location: @stock_location }
       else
         format.html { render action: "new" }
@@ -58,11 +67,19 @@ class StockLocationsController < ApplicationController
   # PUT /stock_locations/1
   # PUT /stock_locations/1.json
   def update
+    @previous_location = nil
+    if(params[:stock_location][:previous_location_id] != "") 
+      @previous_location = StockLocation.find(Integer(params[:stock_location][:previous_location_id]))
+    end
+
+    params[:stock_location][:previous_location] = @previous_location
+    params[:stock_location].delete :previous_location_id
+
     @stock_location = StockLocation.find(params[:id])
 
     respond_to do |format|
       if @stock_location.update_attributes(params[:stock_location])
-        format.html { redirect_to @stock_location, notice: 'Stock location was successfully updated.' }
+        format.html { redirect_to stock_locations_path, notice: 'Stock location was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

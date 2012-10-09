@@ -1,4 +1,3 @@
-<%= form_for(@product) do |f| %>
   <% if @product.errors.any? %>
 
   <div class="global-flash">
@@ -11,64 +10,100 @@
         </div>
   <% end %>
 
-  
-  <table class="table table-bordered">
-    <tbody>
-       <tr>
-         <th><%= f.label :supplier %></th>
-         <td><%= f.collection_select :supplier, Supplier.all, :id, :name %></td>
-       </tr>
-       <tr>
-         <th><%= f.label :barcode %></th>
-         <td><%= f.text_field :barcode %></td>
-       </tr>
-      <tr>
-        <th><%= f.label :name %></th>
-        <td><%= f.text_field :name %></td>
-      </tr>
-      <tr>
-        <th><%= f.label :brand %></th>
-        <td><%= f.text_field :brand %></td>
-      </tr>
-      <tr>
-        <th><%= f.label :size %></th>
-        <td><%= f.text_field number_with_precision(:size, :precision => 2) %></td>
-      </tr>
-      <tr>
-        <th><%= f.label :description %></th>
-        <td><%= f.text_area :description,:rows => "5" %></td>
-      </tr>
-      <tr>
-        <th><%= f.label :cost %></th>
-        <td>$ <%= f.text_field number_with_precision(:cost, :precision => 2) %></td>
-      </tr>
-      <tr>
-        <th><%= f.label :price %></th>
-        <td>$ <%= f.text_field number_with_precision(:price, :precision => 2) %></td>
-      </tr>
-      <tr>
-        <td colspan="2"><h3>Stock Levels</h3></td>
-      </tr>
-      <% @product.stock_levels.each do |s| %>
-         <%= fields_for "stock_level[#{s.stock_location.id}]", s do |builder| %>
-         <tr>
-            <td colspan="2"> <h4><%= s.stock_location.name %></h4></td>
-         </tr>
-         <tr>
-            <th><%= builder.label :quantity, 'Quantity' %></th>
-            <td><%= builder.number_field :quantity %></td>
-         </tr>
-         <tr>
-            <th><%= builder.label :threshold %></th>
-            <td><%= builder.number_field :threshold %></td>
-         </tr>
-         <% end %>
-      <% end %>
-    </tbody>
-  </table>
-<%= f.hidden_field :active %></td>
+<%= form_for @product, :html => {:class => "form-horizontal"} do |f| %>
 
-  <div class="actions">
+<legend>Attributes</legend>
+
+  <div class="control-group">
+    <%= f.label :supplier, :class => "control-label" %>
+    <div class="controls">
+    <%= f.collection_select :supplier, Supplier.all, :id, :name, {:prompt => 'Select Supplier'}%>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :barcode, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :barcode %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :name, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :brand, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :brand %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :size, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :size %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :description, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_area :description,:rows => "5" %>
+    </div>
+  </div>
+
+<legend>Pricing</legend>
+  <div class="control-group">
+   <%= f.label :cost, :class => "control-label" %>
+    <div class="controls">
+      <div class="input-prepend">
+        <span class="add-on">$</span><%= f.text_field number_with_precision(:cost, :precision => 2) %>
+        </div>
+    </div>
+  </div>
+
+  <div class="control-group">
+   <%= f.label :price, :class => "control-label" %>
+    <div class="controls">
+      <div class="input-prepend">
+        <span class="add-on">$</span><%= f.text_field number_with_precision(:price, :precision => 2) %>
+        </div>
+    </div>
+  </div>
+
+  <% @product.stock_levels.each do |s| %>
+    <%= fields_for "stock_level[#{s.stock_location.id}]", s do |builder| %>
+    <legend>Stock Levels - <%= s.stock_location.name %></legend>
+      <div class="control-group">
+        <%= builder.label :quantity, :class => "control-label" %>
+        <div class="controls">
+        <%= builder.number_field :quantity%>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= builder.label :threshold, :class => "control-label" %>
+        <div class="controls">
+        <%= builder.number_field :threshold%>
+        </div>
+      </div>
+
+     <% end %>
+  <% end %>
+
+ 
+
+<%= f.hidden_field :active, :default=>false %></td>
+
+  <div class="form-actions">
     <%= f.submit :class=>"btn btn-primary"%>
+    <% if @product.id %>
+    <%= link_to 'Show', @product, :class => "btn btn-success" %>
+    <% end %>
+    <%= link_to 'Back', products_path, :class => "btn" %>
   </div>
 <% end %>

@@ -1,7 +1,4 @@
-<% title "Stock Locations" %>
-
-<%= link_to raw('<i class="icon-chevron-left"></i>'), stock_levels_path, :class=>"btn btn-large" %>
-<h1 style="display:inline">Listing Stock Locations</h1>
+<%= title "Listing Stock Locations" %>
 
 <table class="table table-bordered table-striped">
   <tr>
@@ -14,14 +11,12 @@
   <tr>
     <td><%= stock_location.name %></td>
     <td><%= stock_location.previous_location ? stock_location.previous_location.name : "No Previous Location" %></td>
-   <td class="btn-group"><%= link_to 'Show', stock_location, :class=>"btn btn-success"%>
+   <td class="btn-group">
       <%= link_to 'Edit', edit_stock_location_path(stock_location), :class=>"btn btn-warning" %>
       <%= link_to 'Destroy', stock_location, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
     </td>
   </tr>
 <% end %>
 </table>
-
-<br />
 
 <%= link_to 'New Stock location', new_stock_location_path, :class=>"btn btn-primary" %>

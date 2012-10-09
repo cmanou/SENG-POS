@@ -90,7 +90,7 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'signature product.'
 },{
-    :name => 'Donec',
+    :name => 'Butter',
     :cost =>70,
     :size => '143g',
     :price => 35,
@@ -100,7 +100,7 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'nec orci. Donec nibh. Quisque nonummy ipsum non arcu. Vivamus'
 },{
-    :name => 'pellentesque',
+    :name => 'Cheese',
     :cost =>14,
     :size => '509g',
     :price => 55,
@@ -110,7 +110,7 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum enim'
 },{
-    :name => 'ac',
+    :name => 'Orange Juice',
     :cost =>77,
     :size => '742g',
     :price => 16,
@@ -120,7 +120,7 @@ Product.create([{
     :supplier => Supplier.last,
     :description => 'eget'
 },{
-    :name => 'Etiam',
+    :name => 'Apple Juice',
     :cost =>50,
     :size => '44g',
     :price => 98,
@@ -130,7 +130,7 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'elit, pharetra ut, pharetra sed, hendrerit a'
 },{
-    :name => 'Morbi',
+    :name => 'Ham',
     :cost =>7,
     :size => '153g',
     :price => 64,
@@ -140,7 +140,7 @@ Product.create([{
     :supplier => Supplier.last,
     :description => 'scelerisque'
 },{
-    :name => 'Donec',
+    :name => 'Beef',
     :cost =>39,
     :size => '55g',
     :price => 40,
@@ -150,7 +150,7 @@ Product.create([{
     :supplier => Supplier.last,
     :description => 'Nunc sollicitudin commodo ipsum. Suspendisse non leo. Vivamus'
 },{
-    :name => 'nec',
+    :name => 'Salad',
     :cost =>84,
     :size => '165g',
     :price => 63,
@@ -160,7 +160,7 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'enim'
 },{
-    :name => 'pellentesque',
+    :name => 'Red Frogs',
     :cost =>92,
     :size => '572g',
     :price => 99,
@@ -170,7 +170,7 @@ Product.create([{
     :supplier => Supplier.last,
     :description => 'magna. Phasellus dolor elit, pellentesque a,'
 },{
-    :name => 'Etiam',
+    :name => 'Coca Cola',
     :cost =>48,
     :size => '143g',
     :price => 71,
@@ -180,7 +180,7 @@ Product.create([{
     :supplier => Supplier.last,
     :description => 'magna nec quam. Curabitur vel lectus.'
 },{
-    :name => 'lectus',
+    :name => 'Mentos',
     :cost =>34,
     :size => '470g',
     :price => 74,
@@ -190,7 +190,7 @@ Product.create([{
     :supplier => Supplier.last,
     :description => 'Duis sit amet diam eu dolor egestas rhoncus.'
 },{
-    :name => 'nostra',
+    :name => 'Fanta',
     :cost =>75,
     :size => '455g',
     :price => 49,
@@ -200,7 +200,7 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'sit amet luctus vulputate, nisi sem semper erat, in'
 },{
-    :name => 'faucibus.',
+    :name => 'Pasta',
     :cost =>28,
     :size => '754g',
     :price => 73,
@@ -210,7 +210,7 @@ Product.create([{
     :supplier => Supplier.last,
     :description => 'pretium aliquet, metus'
 },{
-    :name => 'quis',
+    :name => 'Rice',
     :cost =>36,
     :size => '427g',
     :price => 41,
@@ -220,7 +220,7 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'fringilla ornare placerat, orci'
 },{
-    :name => 'ipsum',
+    :name => 'Beef Sausages',
     :cost =>78,
     :size => '306g',
     :price => 69,
@@ -230,7 +230,7 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'purus, accumsan'
 },{
-    :name => 'congue',
+    :name => 'Vanilla Icecream',
     :cost =>95,
     :size => '676g',
     :price => 32,
@@ -240,7 +240,7 @@ Product.create([{
     :supplier => Supplier.last,
     :description => 'fames ac turpis egestas. Fusce aliquet'
 },{
-    :name => 'convallis',
+    :name => 'Smiths Chips',
     :cost =>85,
     :size => '96g',
     :price => 69,
@@ -250,7 +250,7 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'arcu.'
 },{
-    :name => 'amet',
+    :name => 'Pringles',
     :cost =>81,
     :size => '802g',
     :price => 41,
@@ -260,7 +260,7 @@ Product.create([{
     :supplier => Supplier.last,
     :description => 'molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris.'
 },{
-    :name => 'ultricies',
+    :name => 'Nutella',
     :cost =>36,
     :size => '208g',
     :price => 20,
@@ -270,7 +270,7 @@ Product.create([{
     :supplier => Supplier.last,
     :description => 'sed libero. Proin sed turpis nec mauris'
 },{
-    :name => 'Nulla',
+    :name => 'Jam',
     :cost =>68,
     :size => '162g',
     :price => 10,
@@ -280,7 +280,7 @@ Product.create([{
     :supplier => Supplier.first,
     :description => 'dui,'
 },{
-    :name => 'neque',
+    :name => 'Carrots',
     :cost =>83,
     :size => '248g',
     :price => 12,
@@ -306,12 +306,73 @@ Sale.create!([{
     :status => 'Finished',
     :discount => 0,
     :customer => User.where(:role => [ 'Default']).first,
+    :checkout_user => User.where(:role => ['Manager']).first,
+    :updated_at => Time.now + 501000
+},{
+    :status => 'Finished',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default']).last,
+    :checkout_user => User.where(:role => [ 'Owner']).first,
+    :updated_at => Time.now + 301000
+},{
+    :status => 'Finished',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default']).last,
+    :checkout_user => User.where(:role => [ 'Owner']).first,
+    :updated_at => Time.now + 401000
+},{
+    :status => 'Finished',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default','Cashier']).first,
+    :checkout_user => User.where(:role => ['Stock Control']).first,
+    :updated_at => Time.now + 501000
+},{
+    :status => 'Finished',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default']).first,
+    :checkout_user => User.where(:role => ['Manager']).first,
+    :updated_at => Time.now + 201000
+},{
+    :status => 'Finished',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default']).last,
+    :checkout_user => User.where(:role => [ 'Owner']).first,
+    :updated_at => Time.now + 901000
+},{
+    :status => 'Finished',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default']).last,
+    :checkout_user => User.where(:role => [ 'Owner']).first
+},{
+    :status => 'Finished',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default','Cashier']).first,
+    :checkout_user => User.where(:role => ['Stock Control']).first
+},{
+    :status => 'Finished',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default']).first,
     :checkout_user => User.where(:role => ['Manager']).first
 },{
     :status => 'Finished',
     :discount => 0,
     :customer => User.where(:role => [ 'Default']).last,
     :checkout_user => User.where(:role => [ 'Owner']).first
+},{
+    :status => 'Finished',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default']).last,
+    :checkout_user => User.where(:role => [ 'Owner']).first
+},{
+    :status => 'Finished',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default','Cashier']).first,
+    :checkout_user => User.where(:role => ['Stock Control']).first
+},{
+    :status => 'Adding to Cart',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default','Cashier']).first,
+    :checkout_user => User.where(:role => ['Cashier']).first
 },{
     :status => 'Adding to Cart',
     :discount => 0,
@@ -322,11 +383,16 @@ Sale.create!([{
     :discount => 0,
     :customer => User.where(:role => [ 'Default','Cashier']).first,
     :checkout_user => User.where(:role => ['Cashier']).first
+},{
+    :status => 'Checking Out',
+    :discount => 0,
+    :customer => User.where(:role => [ 'Default','Cashier']).last,
+    :checkout_user => User.where(:role => ['Cashier']).last
 }])
 
 Product.all.each do |product|
     Sale.all.each do |sale|
-        quantity = rand(6) + 1
+        quantity = rand(2) + 1
         SaleItem.create({
             :sale => sale,
             :product => product,
@@ -351,12 +417,25 @@ StockTransfer.create([{
     :stock_location => StockLocation.where("previous_location_id is NOT NULL").last,
     :quantity => rand(20),
     :complete => false,
+},{
+    :product => Product.offset(rand(Product.count)).first,
+    :stock_location => StockLocation.where("previous_location_id is NOT NULL").last,
+    :quantity => rand(20),
+    :complete => false,
 }])
 
 SupplierStockOrder.create([{
     :product => Product.offset(rand(Product.count)).first,
     :quantity => rand(20),
     :status => 'Created',
+},{
+    :product => Product.offset(rand(Product.count)).first,
+    :quantity => rand(20),
+    :status => 'Processed',
+},{
+    :product => Product.offset(rand(Product.count)).first,
+    :quantity => rand(20),
+    :status => 'Completed',
 },{
     :product => Product.offset(rand(Product.count)).first,
     :quantity => rand(20),

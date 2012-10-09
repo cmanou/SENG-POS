@@ -22,7 +22,9 @@ Pos::Application.routes.draw do
     end
   end
   resources :sale_items
+
   resources :refunds
+  match 'refunds/search' => 'refunds#search', :via => :post
 
   resources :stock_transfers do
     member do
@@ -55,6 +57,8 @@ end
   end  
 
   root :to => "home#index"
+
+  match 'help' => "home#help"
 
   
   # The priority is based upon order of creation:

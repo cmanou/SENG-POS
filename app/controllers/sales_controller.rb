@@ -25,12 +25,12 @@ class SalesController < ApplicationController
   # GET /sales/new
   # GET /sales/new.json
   def new
-    @current_sales = Sale.find_all_by_checkout_user_id_and_status(current_user.id, 'Adding to Cart')
-    
+    @current_sales = Sale.find_all_by_checkout_user_id_and_status(current_user.id, ['Adding to Cart', 'Checking Out'])
+
     if @current_sales.empty?
       @sale = Sale.new(:checkout_user  => current_user, :status => 'Adding to Cart')
       @sale.save
-      
+
       respond_to do |format|
         format.html { redirect_to edit_sale_path(@sale) }
         format.json { render json: @sale}
@@ -40,7 +40,7 @@ class SalesController < ApplicationController
         format.html # new.html.erb
         format.json { render json: @current_sales }
       end
-    end      
+    end
   end
 
   # GET /sales/1/edit
@@ -64,25 +64,26 @@ class SalesController < ApplicationController
   def create
     @sale = Sale.new(:checkout_user  => current_user, :status => 'Adding to Cart')
     @sale.save
-    
+
     respond_to do |format|
       format.html { redirect_to edit_sale_path(@sale) }
       format.json { render json: @sale}
     end
   end
-  
+
   # PUT /sales/1
   # PUT /sales/1.json
   def update
+    params[:sale][:customer] = User.find_by_id(params[:sale][:customer])
     @sale = Sale.find(params[:id])
 
     respond_to do |format|
       if @sale.update_attributes(params[:sale])
-	format.html { redirect_to @sale, notice: 'Sale was successfully updated.' }
-	format.json { head :no_content }
+        format.html { redirect_to edit_sale_path(@sale), notice: 'Sale was successfully updated.' }
+        format.json { head :no_content }
       else
-	format.html { render action: "edit" }
-	format.json { render json: @sale.errors, status: :unprocessable_entity }
+        format.html { render action: "edit" }
+        format.json { render json: @sale.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -111,7 +112,7 @@ class SalesController < ApplicationController
       return
     end
 
-    if @sale.total > @sale.amount_paid
+    if @sale.total > @sale.amount_paid + @sale.discount
       redirect_to edit_sale_path(@sale), alert: 'You must finish payment before completing a sale.'
       return
     end

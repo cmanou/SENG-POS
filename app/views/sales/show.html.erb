@@ -1,6 +1,4 @@
-<p id="notice"><%= notice %></p>
-
-<!-- <h2>Sale</h2> -->
+<%= title "Reciept" %>
 
 <table class="table table-bordered table-striped">
   <tr>
@@ -20,6 +18,9 @@
     <td><%= number_to_currency(@sale.total) %></td>
   </tr>
   <tr>
+    <th>Change Given:</th>
+    <td><%= @sale.change_given == 0 ? 'Exact' : number_to_currency(@sale.change_given) %></td>
+  <tr>
     <th>Sale Date:</th>
     <td><%= @sale.created_at %></td>
   </tr>
@@ -31,6 +32,7 @@
     <th>Product</th>
     <th>Quantity</th>
     <th>Sub Total</th>
+    <th></th>
   </tr>
 
 <% @sale_items.each do |sale_item| %>

@@ -46,7 +46,7 @@ class RefundsController < ApplicationController
     @refund.checkout_user = current_user
     @refund.total = (@refund.sale_item.sub_total / @refund.sale_item.quantity) * @refund.quantity
     # Verify quantity is not greater than sale_item quantity
-    
+
     respond_to do |format|
       if @refund.save
         # Update stock levels
@@ -100,6 +100,15 @@ class RefundsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to refunds_url }
       format.json { head :no_content }
+    end
+  end
+
+  def search
+    matches = Sale.where(:id => params[:sale_id])
+    if matches.any?
+      redirect_to matches.first
+    else
+      redirect_to refunds_path, alert: 'Invalid Sale ID'
     end
   end
 end

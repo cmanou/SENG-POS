@@ -1,59 +1,98 @@
-
-<p id="notice"><%= notice %></p>
 <%= title "Product Details" %>
-<table class="table table-bordered table-striped">
-<tr>
-  <th>Name:</th>
-  <td><%= @product.name %></td>
-</tr>
-<tr>
-  <th>Supplier:</th>
-  <td><%= @product.supplier.name %></td>
-</tr>
-<tr>
-  <th>Barcode:</th>
-  <td><%= @product.barcode %></td>
-</tr>
-<tr>
-  <th>Description:</th>
-  <td><%= @product.description %></td>
-</tr>
-<tr>
-  <th>Cost:</th>
-  <td>$ <%= number_with_precision(@product.cost, :precision => 2) %></td>
-</tr>
-
-<tr>
-  <th>Price:</th>
-  <td>$ <%= number_with_precision(@product.price, :precision => 2) %></td>
-</tr>
-
-  <tr>
-    <th>Brand</th>
-    <td><%= @product.brand %></td>
-  </tr>
-  <tr>
-    <th>Size</th>
-    <td><%= number_with_precision(@product.size, :precision => 2) %></td>
-  </tr>
-  <tr>
-    <th>Active</th>
-    <td><%= @product.active %></td>
-  </tr>
-
-<tr><th colspan=2>Stock Levels</th></tr>
-<% @product.stock_levels.each do |s| %>
-<tr>
-    <th><%= s.stock_location.name %></th>
-    <td>Quantity: <%= s.quantity %><br>
-    Threshold: <%= s.threshold %></td>
-</tr>
-<% end %>
-</table>
 
 
 
-<div class="btn-group">
-<%= link_to 'Edit', edit_product_path(@product), :class=>"btn"%>
-<%= link_to 'Back', products_path, :class=>"btn" %>
+<div class="form-horizontal">
+
+<legend>Attributes</legend>
+
+  <div class="control-group">
+    <label class="control-label">Supplier:</label>
+    <div class="controls">
+    <%= @product.supplier.name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Barcode:</label>
+    <div class="controls">
+    <%= @product.barcode %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Name:</label>
+    <div class="controls">
+    <%= @product.name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Brand:</label>
+    <div class="controls">
+    <%= @product.brand %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Size:</label>
+    <div class="controls">
+    <%= @product.size %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Description:</label>
+    <div class="controls">
+    <%= @product.description %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Active:</label>
+    <div class="controls">
+    <% if @product.active=='t' %>
+      <i class="icon-ok"></i>
+      <% else %>
+      <i class="icon-remove"></i>
+      <% end %>
+    </div>
+  </div>
+
+<legend>Pricing</legend>
+  <div class="control-group">
+    <label class="control-label">Cost:</label>
+    <div class="controls">
+          <%= number_to_currency(@product.cost) %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Price:</label>
+    <div class="controls">
+      <%= number_to_currency(@product.price) %>
+    </div>
+  </div>
+
+  <% @product.stock_levels.each do |s| %>
+    <legend>Stock Levels - <%= s.stock_location.name %></legend>
+      <div class="control-group">
+        <label class="control-label">Quantity:</label>
+        <div class="controls">
+          <%= s.quantity %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Threshold:</label>
+        <div class="controls">
+          <%= s.threshold %>
+        </div>
+      </div>
+  <% end %>
+
+  <div class="form-actions">
+    <%= link_to 'Edit', edit_product_path(@product), :class=>"btn btn-success"%>
+    <%= link_to 'Back', products_path, :class => "btn" %>
+  </div>
 </div>
