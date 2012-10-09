@@ -11,7 +11,9 @@ class ReportsController < ApplicationController
       f.options[:chart][:defaultSeriesType] = "area"
       f.options[:title][:text] = "Sales By Customer"
       f.options[:yAxis][:title][:text] = "Total of Sale"
-      f.options[:xAxis][:type] = 'datetime'
+      f.options[:xAxis] = { :title=>{:text=>"Date"}, :type => 'datetime',:dateTimeLabelFormats=>{:month=>'%e. %b',:year=>'%b'}}
+
+
 
       @users.each do |u| 
         f.series(:name=>u.name,

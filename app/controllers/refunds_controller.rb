@@ -49,6 +49,12 @@ class RefundsController < ApplicationController
 
     respond_to do |format|
       if @refund.save
+        # Update stock levels
+        @stock_location = StockLocation.where("previous_location_id is NULL")
+        @stock_level = @refund.sale_item.product.stock_levels.find_by_id(@stock_location)
+        @stock_level.quantity += @refund.quantity
+        @stock_level.save
+        
         format.html { redirect_to @refund, notice: 'Refund was successfully created.' }
         format.json { render json: @refund, status: :created, location: @refund }
       else
@@ -63,10 +69,19 @@ class RefundsController < ApplicationController
   def update
     @refund = Refund.find(params[:id])
     @refund.total = (@refund.sale_item.sub_total / @refund.sale_item.quantity) * params[:refund][:quantity].to_i
-    # Verify quantity is not greater than sale_item quantity
-
+    # Verify quantity is not greater than sale_item quantity    
+    
+    # Get previous quantity
+    @previous_quantity = @refund.quantity
+    
     respond_to do |format|
       if @refund.update_attributes(params[:refund])
+        # Update stock levels
+        @stock_location = StockLocation.where("previous_location_id is NULL")
+        @stock_level = @refund.sale_item.product.stock_levels.find_by_id(@stock_location)
+        @stock_level.quantity += (@refund.quantity - @previous_quantity)
+        @stock_level.save
+        
         format.html { redirect_to @refund, notice: 'Refund was successfully updated.' }
         format.json { head :no_content }
       else
