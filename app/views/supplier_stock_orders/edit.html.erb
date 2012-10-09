@@ -29,7 +29,7 @@
     <%= f.number_field :quantity%>
     </div>
   </div>
-
+  <%= f.hidden_field :product, :value => @supplier_stock_order.product.id%>
   <%= f.hidden_field :status, :value => @supplier_stock_order.status%>
 
   <div class="form-actions">
