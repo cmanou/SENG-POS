@@ -31,15 +31,24 @@ class ReportsController < ApplicationController
 
   def stock
     @products = Product.all
-    
-    
-
+ 
     respond_to do |format|
       format.html # suppliers.html.erb
     end
   end
 
   def financial
+    @products = Product.all
+    @revenue = @products.sum(&:revenue)
+    @cost = @products.sum(&:total_cost)
+    @profit = @revenue - @cost 
+
+    @gst = @revenue * -0.1
+    @tax =  @gst*0.3
+
+    @income = @profit + @gst + @tax
+
+
   end
 
   def staff

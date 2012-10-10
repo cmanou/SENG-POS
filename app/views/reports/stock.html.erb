@@ -5,7 +5,7 @@
   	<th>Product</th>
   	<th>Total Stock Remaining</th>
   	<th>Total Sold</th>
-	<th>Total Ordered</th>
+	<th>Total On Order</th>
   </tr>
 
 <% @products.each do |product| %>
@@ -13,7 +13,7 @@
   	<td><%= product.name %></td>
   	<td><%= product.total_stock %></td>
   	<td><%= product.total_sold %></td>
-	<td><%= product.total_ordered %></td>
+	<td><%= product.total_on_order %></td>
 
   </tr>
 <% end %>

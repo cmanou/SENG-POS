@@ -1,2 +1,67 @@
-<h1>Reports#financial</h1>
-<p>Find me in app/views/reports/financial.html.erb</p>
+<%= title "Financial Report" %>
+
+<div class="row-fluid">
+<div class="span8">
+<table class="table table-bordered table-striped">
+  <tr>
+  	<th>Product</th>
+  	<th>Purchase Price</th>
+  	<th>Sold Price</th>
+	<th>Amount Sold</th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+  	<td><%= product.name %></td>
+  	<td><%= number_to_currency(product.cost) %></td>
+  	<td><%= number_to_currency(product.price) %></td>
+	<td><%= product.total_sold %></td>
+
+  </tr>
+<% end %>
+</table>
+</div>
+
+<div class="span4">
+<table class="table table-bordered table-striped">
+
+  <tr>
+  	<th>Revenue</th>
+  	<td><%= number_to_currency(@revenue) %></td>
+  </tr>
+  <tr>
+  	<th>Cost of good sold</th>
+  	<td><%= number_to_currency(@cost) %></td>
+  </tr>
+  <tr>
+  	<th>Gross Profit</th>
+  	<td><%= number_to_currency(@profit) %></td>
+  </tr>
+
+</table>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th colspan="2">
+TAX
+</th>
+	<tr>
+  <tr>
+  	<th>GST</th>
+  	<td><%= number_to_currency(@gst) %></td>
+  </tr>
+  <tr>
+  	<th>Corporate Tax</th>
+  	<td><%= number_to_currency(@tax) %></td>
+  </tr>
+  <tr>
+  	<th>Net Income</th>
+  	<td><%= number_to_currency(@income) %></td>
+  </tr>
+
+</table>
+
+
+
+
+</div></div>

@@ -25,8 +25,16 @@ class Product < ActiveRecord::Base
     sale_items.sum(&:quantity)
   end
 
-  def total_ordered
+  def total_on_order
     supplier_stock_orders.where(:status => ['Created', 'Processed']).sum(&:quantity)
+  end
+
+  def revenue
+    sale_items.sum(&:quantity).to_f * price.to_f
+  end
+
+  def total_cost
+    sale_items.sum(&:quantity).to_f * cost.to_f
   end
 
 end
