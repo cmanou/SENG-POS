@@ -128,7 +128,7 @@ class SalesController < ApplicationController
     end
 
     respond_to do |format|
-      format.html { redirect_to sales_url, notice: 'Sale complete.' }
+      format.html { redirect_to @sale, notice: 'Sale complete.' }
       format.json { head :no_content }
     end
   end
