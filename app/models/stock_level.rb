@@ -6,13 +6,12 @@ class StockLevel < ActiveRecord::Base
   belongs_to :stock_location
   attr_accessible :quantity, :threshold, :product, :stock_location
 
+  # Event-B: ∀p,l · p∈ activeProducts ∧ l ∈ STOCK_LOCATION ⇒ productmaxthreshold(p)(l) ≥ productthreshold(p)(l)
+  # Validate that stock_level is above miniumum threshold, and automatically reorder if quantity falls below threshold
   validates :quantity, :threshold, :numericality => {:greater_than_or_equal_to => 0}
-  validates :quantity, :numericality => {:less_than_or_equal_to => :threshold}
-
   after_save :automatic_reorder
 
-  #Event-B: ∀p,l · p∈ activeProducts ∧ l ∈ STOCK_LOCATION ⇒ productmaxthreshold(p)(l) ≥ productthreshold(p)(l)
-  #Need to do it still
+  
 
 
   def below
