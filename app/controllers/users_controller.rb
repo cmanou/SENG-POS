@@ -16,11 +16,10 @@ class UsersController < ApplicationController
     end
   end
   
-  def account
-    @user = current_user
-
+  def members_edit
+    @user = User.find(params[:id])
     respond_to do |format|
-      format.html
+      format.html { render 'devise/registrations/edit' }
       format.json { render json: @user }
     end
   end
