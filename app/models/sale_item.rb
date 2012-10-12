@@ -5,6 +5,11 @@ class SaleItem < ActiveRecord::Base
   belongs_to :product
 
   attr_accessible :sale, :product, :quantity, :sub_total
-#This has to be fixed
-  #validates :product_active, :inclusion  => { :in => [true, false], :message    => "%{product} is not active" }
+  validates_presence_of :sale, :product, :quantity
+
+  validate :product_is_active
+
+  def product_is_active
+      errors.add(:product, "is not active") unless product.active == 't'
+  end
 end
