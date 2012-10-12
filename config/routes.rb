@@ -33,8 +33,7 @@ Pos::Application.routes.draw do
     end
   end
 
-  resources :reports
-  get "reports/index"
+  get "reports" => 'reports#index'
   get "reports/sale"
   get "reports/stock"
   get "reports/financial"
