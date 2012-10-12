@@ -52,7 +52,7 @@ class SaleItemsController < ApplicationController
     else
       @sale_item.quantity += params[:sale_item][:quantity].to_i
     end
-      
+
     @sale_item.sub_total = @sale_item.quantity * @sale_item.product.price
 
     respond_to do |format|
