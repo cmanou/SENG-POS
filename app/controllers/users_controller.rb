@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
-  def index
+  def members_index
     @users = User.all
-
     respond_to do |format|
       format.html
       format.json { render json: @users }
@@ -9,7 +8,7 @@ class UsersController < ApplicationController
   end
 
   def staff_index
-    @users = User.all
+    @users = User.where(:role  => ['Owner', 'Manager', 'Stock Control', 'Cashier'])
 
     respond_to do |format|
       format.html

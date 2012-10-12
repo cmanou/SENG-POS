@@ -50,7 +50,7 @@ Pos::Application.routes.draw do
     get 'logout' => 'devise/sessions#destroy', :as => :destroy_user_session
     get 'signup', :to => 'devise/registrations#new', :as => :new_user_registration
   end
-  match 'members' => 'users#index', :via => :get
+  match 'members' => 'users#members_index', :via => :get
   match 'staff' => 'users#staff_index', :via => :get
   match 'account' => 'users#account', :via => :get
 
