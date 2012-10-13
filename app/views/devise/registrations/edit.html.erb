@@ -17,9 +17,16 @@
   </div>
 </div>
 
+<div class="control-group">
+    <%= f.label :current_password, :class => "control-label" %>
+    <div class="controls">
+    <%= f.password_field :current_password %>
+        <i>(we need your current password to confirm your changes)</i>
+  </div>
+</div>
 
 <div class="control-group">
-    <%= f.label :password, :class => "control-label" %>
+    <%= f.label :password, "New Password", :class => "control-label" %>
     <div class="controls">
     <%= f.password_field :password, :autocomplete => "off" %>
         <i>(leave blank if you don't want to change it)</i>
@@ -27,17 +34,9 @@
 </div>
 
 <div class="control-group">
-    <%= f.label :password_confirmation, :class => "control-label" %>
+    <%= f.label :password_confirmation, "Confirm New Password", :class => "control-label" %>
     <div class="controls">
     <%= f.password_field :password_confirmation %>
-  </div>
-</div>
-
-<div class="control-group">
-    <%= f.label :current_password, :class => "control-label" %>
-    <div class="controls">
-    <%= f.password_field :current_password %>
-        <i>(we need your current password to confirm your changes)</i>
   </div>
 </div>
 

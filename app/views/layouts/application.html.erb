@@ -114,6 +114,15 @@
                      </ul>
                   </li>
                   <% end %>
+                  <% if current_user.can_checkout %>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Management<b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="/members">Customer Memberships</a></li>
+                        <li><a href="/staff">Staff Management</a></li>
+                     </ul>
+                  </li>
+                  <% end %>
                   <% end %>
                   <li>
                      <a href="/help">Help</a>
