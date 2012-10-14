@@ -62,10 +62,13 @@ class StockLevelsController < ApplicationController
 
   # PUT /stock_levels/1
   # PUT /stock_levels/1.json
+  # Event-b: SetProductLevel
   def update
+    #Event-b: grd1: product ∈ activeProducts, 
     @stock_level = StockLevel.find(params[:id])
 
     respond_to do |format|
+      #Event-b: act1: productlevels(product) ≔ {Floor ↦ floor,Backroom ↦ backroom,Warehouse ↦ warehouse}
       if @stock_level.update_attributes(params[:stock_level])
         format.html { redirect_to @stock_level, notice: 'Stock level was successfully updated.' }
         format.json { head :no_content }
