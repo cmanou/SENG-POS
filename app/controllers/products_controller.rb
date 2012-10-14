@@ -51,6 +51,7 @@ class ProductsController < ApplicationController
 
   # POST /products
   # POST /products.json
+  # Event-b: NewProduct
   def create
     #raise params.inspect
     @supplier = nil
@@ -60,6 +61,7 @@ class ProductsController < ApplicationController
 
     params[:product][:supplier] = @supplier
 
+    # Event-b: grd1:  product ∈ PRODUCT∖products
     @product = Product.new(params[:product])
     
     params[:stock_level].each do |sl_id, sl|
@@ -67,6 +69,8 @@ class ProductsController < ApplicationController
     end
 
     respond_to do |format|
+      # Event-b: act1: products ≔ products ∪ {product}
+      # Event-b: act2:  productprice(product) ≔ price
       if @product.save
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
         format.json { render json: @product, status: :created, location: @product }
@@ -79,7 +83,9 @@ class ProductsController < ApplicationController
 
   # PUT /products/1
   # PUT /products/1.json
+  # Event-b: UpdateProduct
   def update
+    # Event-b: grd1:  product ∈ products
     @product = Product.find(params[:id])
 
     params[:stock_level].each do |sl_id, sl|
@@ -94,6 +100,8 @@ class ProductsController < ApplicationController
     respond_to do |format|
       @supplier = Supplier.find(Integer(params[:product][:supplier]))
       params[:product][:supplier] = @supplier
+
+      # Event-b: act1:  productprice(product) ≔ price
       if @product.update_attributes(params[:product])
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
         format.json { head :no_content }
@@ -117,11 +125,15 @@ class ProductsController < ApplicationController
   end
 
   # GET /products/1/activate
+  # Event-b: ActivateProduct
   def activate
+    # Event-b: grd1: product ∈ products
     @product = Product.find(params[:id])
 
+    # Event-b: act1:  activeProducts ≔ activeProducts ∪ {product}
     @product.update_attribute(:active,true)
     @product.save
+
 
     respond_to do |format|
       format.html { redirect_to products_url }
@@ -130,9 +142,12 @@ class ProductsController < ApplicationController
   end
 
   # GET /products/1/deactivate
+  # Event-b: DeactivateProduct
   def deactivate
+    # Event-b: grd1: product ∈ products
     @product = Product.find(params[:id])
 
+    # Event-b: act1:  activeProducts ≔ activeProducts ∪ {product}
     @product.update_attribute(:active,false)
     @product.save
 
