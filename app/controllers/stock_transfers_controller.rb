@@ -96,9 +96,11 @@ class StockTransfersController < ApplicationController
   end
 
   
+  # Event-b: MoveStockToFloor & MoveStockToBackroom
   def complete
     @stock_transfer = StockTransfer.find(params[:id])
     @product = @stock_transfer.product
+    # Event-b: product ∈ activeProducts
     @locationto = @stock_transfer.stock_location
     @locationfrom = @locationto.previous_location
 
@@ -107,7 +109,7 @@ class StockTransfersController < ApplicationController
     @stock_transfer.update_attribute(:complete,true)
     @stock_transfer.save
 
-    #Update Stock Levels to 
+    #Event-b : act1: productlevels(product) ≔ productlevels(product) <+ {Floor ↦ (productlevels(product)(Floor) + amount),Backroom ↦ (productlevels(product)(Backroom) − amount)}
     @stock_level_to = StockLevel.find_by_product_id_and_stock_location_id(@product,@locationto)
     @stock_level_to.update_attribute(:quantity, (@stock_level_to.quantity + @stock_transfer.quantity))
     @stock_level_to.save
