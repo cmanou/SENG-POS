@@ -26,20 +26,20 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    @user.role = params[:user][:role]
-    @user.discount = params[:user][:discount]
-    @user.membership = params[:user][:membership]
+    @user.role = params[:role]
+    @user.discount = params[:discount]
+    @user.membership = params[:membership]
 
-    if @user.save
-      respond_to do |format|
+    respond_to do |format|
+      if @user.save     
         format.html { 
           flash[:notice] = 'User was successfully updated.'
           render :edit
         }
         format.json { render json: @user }
-      end
-    else
+      else
         format.html { render action: "edit" }
+      end
     end
   end
 end
