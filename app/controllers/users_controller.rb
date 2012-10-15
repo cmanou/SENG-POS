@@ -26,9 +26,9 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    @user.role = params[:role]
-    @user.discount = params[:discount]
-    @user.membership = params[:membership]
+    @user.role = params[:user][:role]
+    @user.discount = params[:user][:discount]
+    @user.membership = params[:user][:membership]
 
     respond_to do |format|
       if @user.save     
