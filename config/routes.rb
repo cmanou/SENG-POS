@@ -52,7 +52,7 @@ Pos::Application.routes.draw do
   end
   match 'members' => 'users#members_index', :via => :get
   match 'staff' => 'users#staff_index', :via => :get
-  match 'members/:id' => 'users#members_edit', :via => :get
+  match 'members/:id' => 'users#members_edit', :via => :get, :as => :edit_member
 
   root :to => "home#index"
 
