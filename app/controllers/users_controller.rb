@@ -17,14 +17,9 @@ class UsersController < ApplicationController
   end
   
   def members_edit
-    @user = User.find(params[:id])
     respond_to do |format|
-      format.html { render 'devise/registrations/edit', 
-                        :locals => { 
-                          :resource => @user, 
-                          :resource_name => "user" } }
+      format.html { render 'devise/registrations/edit' }
       format.json { render json: @user }
     end
   end
-
 end
