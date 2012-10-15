@@ -6,6 +6,8 @@ class Sale < ActiveRecord::Base
     belongs_to :customer, :class_name => 'User'
     belongs_to :checkout_user, :class_name => 'User'
 
+    before_save :check_customer
+
     attr_accessible :customer, :checkout_user, :discount, :status, :updated_at
 
     #Event-B: transactionInProcess ∈ members ⇸TRANSACTIONTYPE
@@ -36,5 +38,11 @@ class Sale < ActiveRecord::Base
 
     def change_given
       [amount_paid - total, 0].max
+    end
+
+    def check_customer
+      if customer.nil?
+        customer = User.find_by_email('default@pos.com')
+      end
     end
 end
