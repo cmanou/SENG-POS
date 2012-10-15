@@ -1,0 +1,63 @@
+<%= title "Edit User" %>
+<% if @user.errors.any? %>
+  <div class="global-flash">
+    <div class="alert alert-error"><h1>Error</h1>
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+<%= form_for(@user, :as => 'Users' , :html => { :method => :put, :class => "form-horizontal" }) do |f| %>
+  
+<legend>User Details</legend>
+<div class="control-group">
+    <%= f.label :name, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :name %>
+  </div>
+</div>
+
+<div class="control-group">
+    <%= f.label :email, :class => "control-label" %>
+    <div class="controls">
+    <%= f.email_field :email, :disabled => true %>
+  </div>
+</div>
+
+<div class="control-group">
+    <%= f.label :role, :class => "control-label" %>
+    <div class="controls">
+    <%= f.select :role, [ 'Owner', 'Manager', 'Stock Control', 'Cashier', 'Default'] %>
+  </div>
+</div>
+
+<% if current_user.can_checkout %>
+<div class="control-group">
+    <%= f.label :discount, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :discount %>
+  </div>
+</div>
+
+<div class="control-group">
+    <%= f.label :membership, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :membership %>
+  </div>
+</div>
+<% end %>
+
+  <div class="form-actions">
+  <%= f.submit "Update" , :class=>"btn btn-primary"%>
+
+
+<%= link_to "Back", :back,:class=>"btn" %>
+
+  </div>
+
+<% end %>
+
+

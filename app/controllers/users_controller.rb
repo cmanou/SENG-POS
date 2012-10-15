@@ -16,9 +16,21 @@ class UsersController < ApplicationController
     end
   end
   
-  def members_edit
+  def edit
+    @user = User.find(params[:id])
     respond_to do |format|
-      format.html { render 'devise/registrations/edit' }
+      format.html
+      format.json { render json: @user }
+    end
+  end
+
+  def update
+    @user = User.find(params[:id])
+    respond_to do |format|
+      format.html { 
+        flash[:notice] = 'User was successfully updated.'
+        render :edit
+      }
       format.json { render json: @user }
     end
   end
