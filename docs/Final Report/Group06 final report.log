@@ -1,23 +1,24 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.2.4)  21 OCT 2012 23:59
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  22 OCT 2012 00:05
 entering extended mode
-**Group06*final*report.tex
-
-("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\Group06 final re
-port.tex"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Group06 final report.tex"
+(./Group06 final report.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -32,22 +33,22 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -62,9 +63,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip43
 \LTright=\skip44
@@ -82,35 +82,35 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count94
 \LT@p@ftn=\toks16
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count95
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count96
 \float@exts=\toks17
@@ -118,10 +118,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks18
 \@floatcapt=\box31
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks19
 \symAMSa=\mathgroup4
@@ -129,25 +129,24 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\bsymb.sty"
+(./bsymb.sty
 Package: bsymb 2006/02/06 v1.7 Symbols for the B language
-)
-("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\b2latex.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+) (./b2latex.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -162,17 +161,17 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fix-cm.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2006/09/13 v1.1m fixes to LaTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyvrb\fancyvrb.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
@@ -183,9 +182,9 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count98
 \FV@StepNumber=\count99
 \FV@OutFile=\write3
-)
-("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\Group06 final re
-port.aux")
+) (./Group06 final report.aux)
+\openout1 = `"Group06 final report.aux"'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
@@ -235,7 +234,7 @@ LaTeX Font Info:    ... okay on input line 24.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
 \scratchdimen=\dimen114
@@ -248,29 +247,76 @@ LaTeX Font Info:    ... okay on input line 24.
 \MPnumerator=\count104
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks21
+) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    Try loading font information for U+msa on input line 30.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [1]
-("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\Group06 final re
-port.toc" [2])
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [1]
+
+(./Group06 final report.toc [2])
 \tf@toc=\write4
- [3] [4]
-("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\Group06 final re
-port.lof")
+\openout4 = `"Group06 final report.toc"'.
+
+ [3] [4] (./Group06 final report.lof)
 \tf@lof=\write5
+\openout5 = `"Group06 final report.lof"'.
+
  [5]
-("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\Group06 final re
-port.lot")
+(./Group06 final report.lot)
 \tf@lot=\write6
+\openout6 = `"Group06 final report.lot"'.
+
  [6]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -983,7 +1029,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 533--536
 
 LaTeX Warning: File `Class diagram.png' not found on input line 539.
 
-<Class diagram.png, id=99, 2007.5pt x 1900.09875pt>
+<Class diagram.png, id=100, 2007.5pt x 1900.09875pt>
 File: Class diagram.png Graphic file (type png)
  <use Class diagram.png>
 Package pdftex.def Info: Class diagram.png used on input line 539.
@@ -996,8 +1042,7 @@ File: Class diagram.png Graphic file (type png)
 <use Class diagram.png>
 Package pdftex.def Info: Class diagram.png used on input line 548.
 (pdftex.def)             Requested size: 20.06392pt x 18.9905pt.
- [22 <C:/Users/Vincent/Documents/GitHub/SENG-POS/docs/Final Report/Class diagra
-m.png>]
+ [22 <./Class diagram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 559--575
 
  []
@@ -1355,7 +1400,7 @@ Overfull \hbox (0.1493pt too wide) in paragraph at lines 732--733
 ]p \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 activeProducts \OMS/cmsy/m/n/10 ^ \OT1/c
 mr/m/it/10 l \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 STOCK[]LOCATION \OMS/cmsy/m/n/
 10 ) \OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 p\OT1/cmr/
-m/n/10 )(\OT1/cmr/m/it/10 l\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 $
+m/n/10 )(\OT1/cmr/m/it/10 l\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
  []
 
 
@@ -1371,7 +1416,7 @@ Overfull \hbox (47.12538pt too wide) in paragraph at lines 733--734
 t/10 activeProducts \OMS/cmsy/m/n/10 ^ \OT1/cmr/m/it/10 l \OMS/cmsy/m/n/10 2 \O
 T1/cmr/m/it/10 STOCK[]LOCATION \OMS/cmsy/m/n/10 ) \OT1/cmr/m/it/10 productlevel
 s\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 p\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 l\OT1/cm
-r/m/n/10 ) =$
+r/m/n/10 ) =
  []
 
 
@@ -1640,9 +1685,9 @@ Package xcolor Warning: Incompatible color definition on input line 819.
 Overfull \hbox (61.73093pt too wide) in paragraph at lines 819--820
 [][]$\OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product
 \OT1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 Floor \OMS/cmsy/m/n/10 
-7! \OT1/cmr/m/it/10 oor\OML/cmm/m/it/10 ; \OT1/cmr/m/it/10 Backroom \OMS/cmsy/
-m/n/10 7! \OT1/cmr/m/it/10 backroom\OML/cmm/m/it/10 ; \OT1/cmr/m/it/10 Warehous
-e \OMS/cmsy/m/n/10 7!$
+7! \OT1/cmr/m/it/10 ^^Moor\OML/cmm/m/it/10 ; \OT1/cmr/m/it/10 Backroom \OMS/cms
+y/m/n/10 7! \OT1/cmr/m/it/10 backroom\OML/cmm/m/it/10 ; \OT1/cmr/m/it/10 Wareho
+use \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -1724,9 +1769,9 @@ Package xcolor Warning: Incompatible color definition on input line 844.
 Overfull \hbox (45.80183pt too wide) in paragraph at lines 844--845
 [][]$\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
 1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 Floor \OMS/cmsy/m/n/10 7! 
-\OT1/cmr/m/it/10 oor\OML/cmm/m/it/10 ; \OT1/cmr/m/it/10 Backroom \OMS/cmsy/m/n
-/10 7! \OT1/cmr/m/it/10 backroom\OML/cmm/m/it/10 ; \OT1/cmr/m/it/10 Warehouse \
-OMS/cmsy/m/n/10 7!$
+\OT1/cmr/m/it/10 ^^Moor\OML/cmm/m/it/10 ; \OT1/cmr/m/it/10 Backroom \OMS/cmsy/m
+/n/10 7! \OT1/cmr/m/it/10 backroom\OML/cmm/m/it/10 ; \OT1/cmr/m/it/10 Warehouse
+ \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -1767,9 +1812,9 @@ Package xcolor Warning: Incompatible color definition on input line 859.
 Overfull \hbox (83.13951pt too wide) in paragraph at lines 859--860
 [][]$\OT1/cmr/m/it/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -1781,9 +1826,9 @@ Package xcolor Warning: Incompatible color definition on input line 860.
 
 Overfull \hbox (30.23553pt too wide) in paragraph at lines 860--861
 [][]$\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -1808,7 +1853,7 @@ Overfull \hbox (101.23848pt too wide) in paragraph at lines 865--866
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 Floor \OMS/cm
 sy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\O
 T1/cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 )
- +$
+ +
  []
 
 
@@ -1849,8 +1894,8 @@ Overfull \hbox (92.58577pt too wide) in paragraph at lines 880--881
 [][]$\OT1/cmr/m/it/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product
 \OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
-  \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
+^^@ \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\
+OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -1862,9 +1907,9 @@ Package xcolor Warning: Incompatible color definition on input line 881.
 
 Overfull \hbox (39.6818pt too wide) in paragraph at lines 881--882
 [][]$\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \
-OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/c
-mr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
+ \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1
+/cmr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -1876,9 +1921,9 @@ Package xcolor Warning: Incompatible color definition on input line 882.
 
 Overfull \hbox (22.45773pt too wide) in paragraph at lines 882--883
 [][]$\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -1897,7 +1942,7 @@ Overfull \hbox (140.4864pt too wide) in paragraph at lines 886--887
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 Backroom \OMS
 /cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 
 (\OT1/cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/
-n/10 ) +$
+n/10 ) +
  []
 
 
@@ -1940,9 +1985,9 @@ Package xcolor Warning: Incompatible color definition on input line 902.
 Overfull \hbox (64.20631pt too wide) in paragraph at lines 902--903
 [][]$\OT1/cmr/m/it/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmr/m/it/10 location\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmr/m/it/10 location\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -1960,9 +2005,9 @@ Package xcolor Warning: Incompatible color definition on input line 904.
 
 Overfull \hbox (11.30234pt too wide) in paragraph at lines 904--905
 [][]$\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmr/m/it/10 location\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmr/m/it/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmr/m/it/10 location\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -1981,7 +2026,7 @@ Overfull \hbox (121.5532pt too wide) in paragraph at lines 908--909
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 location \OMS
 /cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 
 (\OT1/cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 location\OT1/cmr/m/
-n/10 ) \OMS/cmsy/m/n/10  $
+n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -2043,7 +2088,7 @@ Overfull \hbox (121.5532pt too wide) in paragraph at lines 929--930
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 location \OMS
 /cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 
 (\OT1/cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 location\OT1/cmr/m/
-n/10 ) +$
+n/10 ) +
  []
 
 
@@ -2583,7 +2628,7 @@ Overfull \hbox (84.02106pt too wide) in paragraph at lines 1127--1128
 \OT1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Floor \OMS/cmsy/m/n/10 
 7! \OT1/cmtt/m/n/10 floor\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy
 /m/n/10 7! \OT1/cmtt/m/n/10 backroom\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehou
-se \OMS/cmsy/m/n/10 7!$
+se \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -2695,7 +2740,7 @@ Overfull \hbox (68.2712pt too wide) in paragraph at lines 1157--1158
 1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Floor \OMS/cmsy/m/n/10 7! 
 \OT1/cmtt/m/n/10 floor\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy/m/
 n/10 7! \OT1/cmtt/m/n/10 backroom\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse 
-\OMS/cmsy/m/n/10 7!$
+\OMS/cmsy/m/n/10 7!
  []
 
 
@@ -2741,9 +2786,9 @@ Package xcolor Warning: Incompatible color definition on input line 1174.
 Overfull \hbox (109.35448pt too wide) in paragraph at lines 1174--1175
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -2755,9 +2800,9 @@ Package xcolor Warning: Incompatible color definition on input line 1175.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 1175--1176
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -2769,9 +2814,9 @@ Package xcolor Warning: Incompatible color definition on input line 1176.
 
 Overfull \hbox (20.54947pt too wide) in paragraph at lines 1176--1177
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U \OT
+1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr
+/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -2797,12 +2842,12 @@ Package xcolor Warning: Incompatible color definition on input line 1182.
 
 
 Overfull \hbox (115.08241pt too wide) in paragraph at lines 1182--1183
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt
-/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OM
-S/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10
- (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m
-/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt/
+m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS
+/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 
+(\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/
+n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -2850,8 +2895,8 @@ Overfull \hbox (119.85439pt too wide) in paragraph at lines 1199--1200
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
 \OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
-  \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
+^^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\
+OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -2863,9 +2908,9 @@ Package xcolor Warning: Incompatible color definition on input line 1200.
 
 Overfull \hbox (70.3269pt too wide) in paragraph at lines 1200--1201
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \
-OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/c
-mr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
+ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
+/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -2877,9 +2922,9 @@ Package xcolor Warning: Incompatible color definition on input line 1201.
 
 Overfull \hbox (52.0492pt too wide) in paragraph at lines 1201--1202
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -2908,17 +2953,17 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 1207--1208
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Backroom \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
 Overfull \hbox (141.33218pt too wide) in paragraph at lines 1207--1208
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/c
-mtt/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse
- \OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/
-n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/
-cmr/m/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/cm
+tt/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse 
+\OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n
+/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/c
+mr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -2967,9 +3012,9 @@ Package xcolor Warning: Incompatible color definition on input line 1225.
 Overfull \hbox (109.35448pt too wide) in paragraph at lines 1225--1226
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -2987,9 +3032,9 @@ Package xcolor Warning: Incompatible color definition on input line 1227.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 1227--1228
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -3015,7 +3060,7 @@ Overfull \hbox (0.7102pt too wide) in paragraph at lines 1230--1231
 [][]$\OT1/cmr/m/it/10 userPrivileges\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 user\OT1/
 cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 f\OT1/cmr/m/it/10 Stock[]Control\OML/cmm/m/it/1
 0 ; \OT1/cmr/m/it/10 Manager\OML/cmm/m/it/10 ; \OT1/cmr/m/it/10 Owner\OMS/cmsy/
-m/n/10 g ) \OT1/cmr/m/it/10 location \OMS/cmsy/m/n/10 2$
+m/n/10 g ) \OT1/cmr/m/it/10 location \OMS/cmsy/m/n/10 2
  []
 
 
@@ -3032,7 +3077,7 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 1234--1235
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 location \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
@@ -3116,7 +3161,7 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 1260--1261
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 location \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
@@ -3321,7 +3366,7 @@ Overfull \hbox (34.00609pt too wide) in paragraph at lines 1336--1337
 ]p \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 activeProducts \OMS/cmsy/m/n/10 ^ \OT1/c
 mr/m/it/10 l \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 STOCK[]LOCATION \OMS/cmsy/m/n/
 10 ) \OT1/cmr/m/it/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 p\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 l\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 $
+1/cmr/m/n/10 )(\OT1/cmr/m/it/10 l\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
  []
 
 
@@ -3456,9 +3501,9 @@ Package xcolor Warning: Incompatible color definition on input line 1374.
 
 Overfull \hbox (30.23553pt too wide) in paragraph at lines 1374--1375
 [][]$\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -3489,9 +3534,9 @@ Package xcolor Warning: Incompatible color definition on input line 1378.
 
 Overfull \hbox (1.1375pt too wide) in paragraph at lines 1378--1379
 [][]$\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmr/m/it/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T \OT
+1/cmr/m/it/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -3519,7 +3564,7 @@ Overfull \hbox (101.23848pt too wide) in paragraph at lines 1386--1387
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 Floor \OMS/cm
 sy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\O
 T1/cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 )
- +$
+ +
  []
 
 
@@ -3561,9 +3606,9 @@ Package xcolor Warning: Incompatible color definition on input line 1402.
 
 Overfull \hbox (39.6818pt too wide) in paragraph at lines 1402--1403
 [][]$\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \
-OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/c
-mr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
+ \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1
+/cmr/m/n/10 )(\OT1/cmr/m/it/10 Warehouse\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -3575,9 +3620,9 @@ Package xcolor Warning: Incompatible color definition on input line 1403.
 
 Overfull \hbox (22.45773pt too wide) in paragraph at lines 1403--1404
 [][]$\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -3601,9 +3646,9 @@ Package xcolor Warning: Incompatible color definition on input line 1406.
 
 Overfull \hbox (40.38542pt too wide) in paragraph at lines 1406--1407
 [][]$\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmr/m/it/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T 
+\OT1/cmr/m/it/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -3631,7 +3676,7 @@ Overfull \hbox (140.4864pt too wide) in paragraph at lines 1414--1415
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 Backroom \OMS
 /cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 
 (\OT1/cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Backroom\OT1/cmr/m/
-n/10 ) +$
+n/10 ) +
  []
 
 
@@ -3702,7 +3747,7 @@ Overfull \hbox (36.61998pt too wide) in paragraph at lines 1437--1438
 [][]$\OT1/cmr/m/it/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 prod
 uct\OT1/cmr/m/n/10 ) := \OT1/cmr/m/it/10 productmaxthreshold\OT1/cmr/m/n/10 (\O
 T1/cmr/m/it/10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 l
-ocation \OMS/cmsy/m/n/10 7!$
+ocation \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -4447,7 +4492,7 @@ Overfull \hbox (84.02106pt too wide) in paragraph at lines 1699--1700
 \OT1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Floor \OMS/cmsy/m/n/10 
 7! \OT1/cmtt/m/n/10 floor\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy
 /m/n/10 7! \OT1/cmtt/m/n/10 backroom\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehou
-se \OMS/cmsy/m/n/10 7!$
+se \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -4559,7 +4604,7 @@ Overfull \hbox (68.2712pt too wide) in paragraph at lines 1729--1730
 1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Floor \OMS/cmsy/m/n/10 7! 
 \OT1/cmtt/m/n/10 floor\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy/m/
 n/10 7! \OT1/cmtt/m/n/10 backroom\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse 
-\OMS/cmsy/m/n/10 7!$
+\OMS/cmsy/m/n/10 7!
  []
 
 
@@ -4605,9 +4650,9 @@ Package xcolor Warning: Incompatible color definition on input line 1746.
 Overfull \hbox (109.35448pt too wide) in paragraph at lines 1746--1747
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -4619,9 +4664,9 @@ Package xcolor Warning: Incompatible color definition on input line 1747.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 1747--1748
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -4633,9 +4678,9 @@ Package xcolor Warning: Incompatible color definition on input line 1748.
 
 Overfull \hbox (20.54947pt too wide) in paragraph at lines 1748--1749
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U \OT
+1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr
+/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -4662,12 +4707,12 @@ Package xcolor Warning: Incompatible color definition on input line 1754.
 
 
 Overfull \hbox (115.08241pt too wide) in paragraph at lines 1754--1755
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt
-/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OM
-S/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10
- (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m
-/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt/
+m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS
+/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 
+(\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/
+n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -4714,8 +4759,8 @@ Overfull \hbox (119.85439pt too wide) in paragraph at lines 1771--1772
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
 \OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
-  \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
+^^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\
+OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -4727,9 +4772,9 @@ Package xcolor Warning: Incompatible color definition on input line 1772.
 
 Overfull \hbox (70.3269pt too wide) in paragraph at lines 1772--1773
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \
-OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/c
-mr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
+ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
+/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -4741,9 +4786,9 @@ Package xcolor Warning: Incompatible color definition on input line 1773.
 
 Overfull \hbox (52.0492pt too wide) in paragraph at lines 1773--1774
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -4772,17 +4817,17 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 1779--1780
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Backroom \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
 Overfull \hbox (141.33218pt too wide) in paragraph at lines 1779--1780
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/c
-mtt/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse
- \OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/
-n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/
-cmr/m/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/cm
+tt/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse 
+\OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n
+/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/c
+mr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -4831,9 +4876,9 @@ Package xcolor Warning: Incompatible color definition on input line 1797.
 Overfull \hbox (109.35448pt too wide) in paragraph at lines 1797--1798
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -4851,9 +4896,9 @@ Package xcolor Warning: Incompatible color definition on input line 1799.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 1799--1800
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -4879,7 +4924,7 @@ Overfull \hbox (22.28836pt too wide) in paragraph at lines 1802--1803
 [][]$\OT1/cmtt/m/n/10 userPrivileges\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 user\OT1/
 cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 f\OT1/cmtt/m/n/10 Stock[]Control\OML/cmm/m/it/1
 0 ; \OT1/cmtt/m/n/10 Manager\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Owner\OMS/cmsy/
-m/n/10 g ) \OT1/cmtt/m/n/10 location \OMS/cmsy/m/n/10 2$
+m/n/10 g ) \OT1/cmtt/m/n/10 location \OMS/cmsy/m/n/10 2
  []
 
 
@@ -4896,7 +4941,7 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 1806--1807
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 location \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
@@ -4980,7 +5025,7 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 1832--1833
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 location \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
@@ -5632,7 +5677,7 @@ Overfull \hbox (101.23848pt too wide) in paragraph at lines 2055--2056
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 Floor \OMS/cm
 sy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\O
 T1/cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 )
- +$
+ +
  []
 
 
@@ -5676,7 +5721,7 @@ Overfull \hbox (13.77252pt too wide) in paragraph at lines 2070--2071
 [][]$\OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -5723,7 +5768,7 @@ Overfull \hbox (13.77252pt too wide) in paragraph at lines 2088--2089
 [][]$\OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -5844,8 +5889,8 @@ Overfull \hbox (115.13834pt too wide) in paragraph at lines 2131--2132
 /10 )(\OT1/cmr/m/it/10 product\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OT1/cmr/m/i
 t/10 1 [] \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/
 cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 ) \O
-MS/cmsy/m/n/10   \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/i
-t/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 ))$[] 
+MS/cmsy/m/n/10 ^^@ \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m
+/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -5913,7 +5958,7 @@ Overfull \hbox (19.02248pt too wide) in paragraph at lines 2141--2142
 [][]$\OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -5947,7 +5992,7 @@ Overfull \hbox (101.23848pt too wide) in paragraph at lines 2150--2151
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 Floor \OMS/cm
 sy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\O
 T1/cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 )
- \OMS/cmsy/m/n/10  $
+ \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -5960,9 +6005,9 @@ Package xcolor Warning: Incompatible color definition on input line 2151.
 Overfull \hbox (20.48892pt too wide) in paragraph at lines 2151--2152
 [][]$\OT1/cmr/m/it/10 cartTotal\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr
 /m/n/10 ) := ((\OT1/cmr/m/it/10 productprice\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 p
-roduct\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/cmr/m/it/10 carts\OT1/cmr/m/n/1
-0 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 product\OT1/cmr/m/
-n/10 )) +$
+roduct\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/it/10 carts\OT1/cmr/m/n
+/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 product\OT1/cmr/
+m/n/10 )) +
  []
 
 
@@ -6034,7 +6079,7 @@ Overfull \hbox (13.77252pt too wide) in paragraph at lines 2171--2172
 [][]$\OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -6053,7 +6098,7 @@ msy/m/n/10 f\OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 7! \OT1/cmr/m/it/10 carts\
 OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\
 OT1/cmr/m/it/10 product \OMS/cmsy/m/n/10 7! \OT1/cmr/m/it/10 carts\OT1/cmr/m/n/
 10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 product\OT1/cmr/m
-/n/10 ) +$
+/n/10 ) +
  []
 
 
@@ -6178,7 +6223,7 @@ Overfull \hbox (19.02248pt too wide) in paragraph at lines 2216--2217
 [][]$\OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -6344,9 +6389,9 @@ Package xcolor Warning: Incompatible color definition on input line 2268.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 2268--2269
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -6358,9 +6403,9 @@ Package xcolor Warning: Incompatible color definition on input line 2269.
 
 Overfull \hbox (20.54947pt too wide) in paragraph at lines 2269--2270
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U \OT
+1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr
+/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -6384,9 +6429,9 @@ Package xcolor Warning: Incompatible color definition on input line 2272.
 
 Overfull \hbox (36.29933pt too wide) in paragraph at lines 2272--2273
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T \OT
+1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -6400,12 +6445,12 @@ Package xcolor Warning: Incompatible color definition on input line 2276.
 
 
 Overfull \hbox (88.83264pt too wide) in paragraph at lines 2276--2277
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt
-/m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cms
-y/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT
-1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10
- ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt/
+m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy
+/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1
+/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 
+) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -6447,9 +6492,9 @@ Package xcolor Warning: Incompatible color definition on input line 2292.
 
 Overfull \hbox (70.3269pt too wide) in paragraph at lines 2292--2293
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \
-OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/c
-mr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
+ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
+/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -6461,9 +6506,9 @@ Package xcolor Warning: Incompatible color definition on input line 2293.
 
 Overfull \hbox (52.0492pt too wide) in paragraph at lines 2293--2294
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -6487,9 +6532,9 @@ Package xcolor Warning: Incompatible color definition on input line 2296.
 
 Overfull \hbox (67.79906pt too wide) in paragraph at lines 2296--2297
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T 
+\OT1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -6506,17 +6551,17 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 2300--2301
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Backroom \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
 Overfull \hbox (115.08241pt too wide) in paragraph at lines 2300--2301
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/c
-mtt/m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse \OMS
-/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 
-(\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m
-/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/cm
+tt/m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse \OMS/
+cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (
+\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/
+n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 [49]
@@ -6590,7 +6635,7 @@ Package xcolor Warning: Incompatible color definition on input line 2324.
 Overfull \hbox (13.07742pt too wide) in paragraph at lines 2324--2325
 [][]$\OT1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 prod
 uct\OT1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\O
-T1/cmtt/m/n/10 product\OT1/cmr/m/n/10 ) []$
+T1/cmtt/m/n/10 product\OT1/cmr/m/n/10 ) []
  []
 
 
@@ -6899,7 +6944,7 @@ Overfull \hbox (15.1053pt too wide) in paragraph at lines 2437--2438
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Warehouse \OM
-S/cmsy/m/n/10 7!$
+S/cmsy/m/n/10 7!
  []
 
 
@@ -7348,7 +7393,7 @@ Overfull \hbox (84.02106pt too wide) in paragraph at lines 2587--2588
 \OT1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Floor \OMS/cmsy/m/n/10 
 7! \OT1/cmtt/m/n/10 floor\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy
 /m/n/10 7! \OT1/cmtt/m/n/10 backroom\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehou
-se \OMS/cmsy/m/n/10 7!$
+se \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -7461,7 +7506,7 @@ Overfull \hbox (68.2712pt too wide) in paragraph at lines 2617--2618
 1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Floor \OMS/cmsy/m/n/10 7! 
 \OT1/cmtt/m/n/10 floor\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy/m/
 n/10 7! \OT1/cmtt/m/n/10 backroom\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse 
-\OMS/cmsy/m/n/10 7!$
+\OMS/cmsy/m/n/10 7!
  []
 
 
@@ -7507,9 +7552,9 @@ Package xcolor Warning: Incompatible color definition on input line 2634.
 Overfull \hbox (109.35448pt too wide) in paragraph at lines 2634--2635
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -7521,9 +7566,9 @@ Package xcolor Warning: Incompatible color definition on input line 2635.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 2635--2636
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -7535,9 +7580,9 @@ Package xcolor Warning: Incompatible color definition on input line 2636.
 
 Overfull \hbox (20.54947pt too wide) in paragraph at lines 2636--2637
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U \OT
+1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr
+/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -7563,12 +7608,12 @@ Package xcolor Warning: Incompatible color definition on input line 2642.
 
 
 Overfull \hbox (115.08241pt too wide) in paragraph at lines 2642--2643
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt
-/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OM
-S/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10
- (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m
-/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt/
+m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS
+/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 
+(\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/
+n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -7615,8 +7660,8 @@ Overfull \hbox (119.85439pt too wide) in paragraph at lines 2659--2660
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
 \OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
-  \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
+^^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\
+OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -7628,9 +7673,9 @@ Package xcolor Warning: Incompatible color definition on input line 2660.
 
 Overfull \hbox (70.3269pt too wide) in paragraph at lines 2660--2661
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \
-OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/c
-mr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
+ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
+/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -7642,9 +7687,9 @@ Package xcolor Warning: Incompatible color definition on input line 2661.
 
 Overfull \hbox (52.0492pt too wide) in paragraph at lines 2661--2662
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -7674,17 +7719,17 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 2667--2668
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Backroom \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
 Overfull \hbox (141.33218pt too wide) in paragraph at lines 2667--2668
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/c
-mtt/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse
- \OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/
-n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/
-cmr/m/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/cm
+tt/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse 
+\OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n
+/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/c
+mr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -7733,9 +7778,9 @@ Package xcolor Warning: Incompatible color definition on input line 2685.
 Overfull \hbox (109.35448pt too wide) in paragraph at lines 2685--2686
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -7753,9 +7798,9 @@ Package xcolor Warning: Incompatible color definition on input line 2687.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 2687--2688
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -7781,7 +7826,7 @@ Overfull \hbox (22.28836pt too wide) in paragraph at lines 2690--2691
 [][]$\OT1/cmtt/m/n/10 userPrivileges\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 user\OT1/
 cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 f\OT1/cmtt/m/n/10 Stock[]Control\OML/cmm/m/it/1
 0 ; \OT1/cmtt/m/n/10 Manager\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Owner\OMS/cmsy/
-m/n/10 g ) \OT1/cmtt/m/n/10 location \OMS/cmsy/m/n/10 2$
+m/n/10 g ) \OT1/cmtt/m/n/10 location \OMS/cmsy/m/n/10 2
  []
 
 
@@ -7798,7 +7843,7 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 2694--2695
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 location \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
@@ -7881,7 +7926,7 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 2720--2721
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 location \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
@@ -8138,16 +8183,16 @@ Overfull \hbox (13.67995pt too wide) in paragraph at lines 2810--2811
 cmr/m/it/10 dom\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 discountedCartTotal\OT1/cmr/m/
 n/10 ) \OMS/cmsy/m/n/10 ) \OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 2 \OT1/cmr/m
 /it/10 dom\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 cartTotal\OT1/cmr/m/n/10 ) \OMS/cms
-y/m/n/10 ^$
+y/m/n/10 ^
  []
 
 
 Overfull \hbox (47.7998pt too wide) in paragraph at lines 2810--2811
-$\OT1/cmr/m/it/10 cartTotal\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n
-/10 ) \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 memberDiscounts\OT1/
-cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 =\OT1/cmr
-/m/it/10 100 \OT1/cmr/m/n/10 = \OT1/cmr/m/it/10 discountedCartTotal\OT1/cmr/m/n
-/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )$[] 
+\OT1/cmr/m/it/10 cartTotal\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/
+10 ) \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 memberDiscounts\OT1
+/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 =\OT1/cm
+r/m/it/10 100 \OT1/cmr/m/n/10 = \OT1/cmr/m/it/10 discountedCartTotal\OT1/cmr/m/
+n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -8449,7 +8494,7 @@ Overfull \hbox (101.23848pt too wide) in paragraph at lines 2891--2892
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 Floor \OMS/cm
 sy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\O
 T1/cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 )
- +$
+ +
  []
 
 
@@ -8735,7 +8780,7 @@ Overfull \hbox (31.60486pt too wide) in paragraph at lines 3008--3009
 [][]$\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -8797,7 +8842,7 @@ Overfull \hbox (13.77252pt too wide) in paragraph at lines 3029--3030
 [][]$\OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -8942,15 +8987,15 @@ Overfull \hbox (115.13834pt too wide) in paragraph at lines 3076--3078
 /10 )(\OT1/cmr/m/it/10 product\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OT1/cmr/m/i
 t/10 1 [] \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\OT1/
 cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 ) \O
-MS/cmsy/m/n/10   \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m/i
-t/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 ))$[]
+MS/cmsy/m/n/10 ^^@ \OT1/cmr/m/it/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmr/m
+/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 ))$[]
  []
 
 
 Overfull \hbox (41.41965pt too wide) in paragraph at lines 3076--3078
 []\OT1/cmr/m/n/10 amount $\OMS/cmsy/m/n/10 2$ \OT1/cmr/m/n/10 1$[]$ (pro-ductle
-vels(product)(Floor) $\OMS/cmsy/m/n/10  $ \OT1/cmr/m/n/10 pro-duct-thresh-old(p
-roduct)(Floor))
+vels(product)(Floor) $\OMS/cmsy/m/n/10 ^^@$ \OT1/cmr/m/n/10 pro-duct-thresh-old
+(product)(Floor))
  []
 
 
@@ -9018,7 +9063,7 @@ Overfull \hbox (19.02248pt too wide) in paragraph at lines 3087--3088
 [][]$\OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -9043,7 +9088,7 @@ Overfull \hbox (101.23848pt too wide) in paragraph at lines 3092--3093
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmr/m/it/10 Floor \OMS/cm
 sy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 productlevels\OT1/cmr/m/n/10 (\O
 T1/cmr/m/it/10 product\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 Floor\OT1/cmr/m/n/10 )
- \OMS/cmsy/m/n/10  $
+ \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -9056,9 +9101,9 @@ Package xcolor Warning: Incompatible color definition on input line 3093.
 Overfull \hbox (61.86636pt too wide) in paragraph at lines 3093--3094
 [][]$\OT1/cmr/m/it/10 discountedCartTotal\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 memb
 er\OT1/cmr/m/n/10 ) := ((\OT1/cmr/m/it/10 productprice\OT1/cmr/m/n/10 (\OT1/cmr
-/m/it/10 product\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/cmr/m/it/10 carts\OT1
-/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 product\
-OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 $
+/m/it/10 product\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/it/10 carts\O
+T1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )(\OT1/cmr/m/it/10 produc
+t\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^C
  []
 
 
@@ -9147,7 +9192,7 @@ Overfull \hbox (31.60486pt too wide) in paragraph at lines 3115--3116
 [][]$\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -9166,7 +9211,7 @@ msy/m/n/10 f\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 7! \OT1/cmtt/m/n/10 carts\
 OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\
 OT1/cmtt/m/n/10 product \OMS/cmsy/m/n/10 7! \OT1/cmtt/m/n/10 carts\OT1/cmr/m/n/
 10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 ) +$
+/n/10 ) +
  []
 
 
@@ -9291,7 +9336,7 @@ Overfull \hbox (19.02248pt too wide) in paragraph at lines 3161--3162
 [][]$\OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -9308,10 +9353,10 @@ Package xcolor Warning: Incompatible color definition on input line 3163.
 
 
 Overfull \hbox (31.08867pt too wide) in paragraph at lines 3163--3164
-[][]$\OT1/cmr/m/it/10 payment \OMS/cmsy/m/n/10  \OT1/cmr/m/it/10 memberDiscoun
-ts\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =\O
-T1/cmr/m/it/10 100 \OMS/cmsy/m/n/10  \OT1/cmr/m/it/10 discountedCartTotal\OT1/
-cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )$[] 
+[][]$\OT1/cmr/m/it/10 payment \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/it/10 memberDisco
+unts\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =
+\OT1/cmr/m/it/10 100 \OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/it/10 discountedCartTotal\
+OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -9452,7 +9497,7 @@ Overfull \hbox (6.93895pt too wide) in paragraph at lines 3201--3202
 [][]$\OT1/cmtt/m/n/10 reciepts \OT1/cmr/m/n/10 := \OT1/cmtt/m/n/10 reciepts [] 
 \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 7! \OT1/cmtt/m/n/10 
 reciepts\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 ) [] \OMS/cmsy/
-m/n/10 f\OT1/cmtt/m/n/10 product \OMS/cmsy/m/n/10 7!$
+m/n/10 f\OT1/cmtt/m/n/10 product \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -9500,9 +9545,9 @@ Package xcolor Warning: Incompatible color definition on input line 3218.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 3218--3219
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -9514,9 +9559,9 @@ Package xcolor Warning: Incompatible color definition on input line 3219.
 
 Overfull \hbox (20.54947pt too wide) in paragraph at lines 3219--3220
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U \OT
+1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr
+/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -9540,9 +9585,9 @@ Package xcolor Warning: Incompatible color definition on input line 3222.
 
 Overfull \hbox (36.29933pt too wide) in paragraph at lines 3222--3223
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T \OT
+1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -9556,12 +9601,12 @@ Package xcolor Warning: Incompatible color definition on input line 3226.
 
 
 Overfull \hbox (88.83264pt too wide) in paragraph at lines 3226--3227
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt
-/m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cms
-y/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT
-1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10
- ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt/
+m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy
+/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1
+/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 
+) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -9603,9 +9648,9 @@ Package xcolor Warning: Incompatible color definition on input line 3242.
 
 Overfull \hbox (70.3269pt too wide) in paragraph at lines 3242--3243
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \
-OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/c
-mr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
+ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
+/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -9617,9 +9662,9 @@ Package xcolor Warning: Incompatible color definition on input line 3243.
 
 Overfull \hbox (52.0492pt too wide) in paragraph at lines 3243--3244
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -9643,9 +9688,9 @@ Package xcolor Warning: Incompatible color definition on input line 3246.
 
 Overfull \hbox (67.79906pt too wide) in paragraph at lines 3246--3247
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T 
+\OT1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 [63]
@@ -9663,17 +9708,17 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 3250--3251
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Backroom \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
 Overfull \hbox (115.08241pt too wide) in paragraph at lines 3250--3251
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/c
-mtt/m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse \OMS
-/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 
-(\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m
-/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/cm
+tt/m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse \OMS/
+cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (
+\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/
+n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -9746,7 +9791,7 @@ Package xcolor Warning: Incompatible color definition on input line 3274.
 Overfull \hbox (13.07742pt too wide) in paragraph at lines 3274--3275
 [][]$\OT1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 prod
 uct\OT1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\O
-T1/cmtt/m/n/10 product\OT1/cmr/m/n/10 ) []$
+T1/cmtt/m/n/10 product\OT1/cmr/m/n/10 ) []
  []
 
 
@@ -10055,7 +10100,7 @@ Overfull \hbox (15.1053pt too wide) in paragraph at lines 3387--3388
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Warehouse \OM
-S/cmsy/m/n/10 7!$
+S/cmsy/m/n/10 7!
  []
 
 
@@ -10504,7 +10549,7 @@ Overfull \hbox (84.02106pt too wide) in paragraph at lines 3537--3538
 \OT1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Floor \OMS/cmsy/m/n/10 
 7! \OT1/cmtt/m/n/10 floor\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy
 /m/n/10 7! \OT1/cmtt/m/n/10 backroom\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehou
-se \OMS/cmsy/m/n/10 7!$
+se \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -10617,7 +10662,7 @@ Overfull \hbox (68.2712pt too wide) in paragraph at lines 3567--3568
 1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Floor \OMS/cmsy/m/n/10 7! 
 \OT1/cmtt/m/n/10 floor\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy/m/
 n/10 7! \OT1/cmtt/m/n/10 backroom\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse 
-\OMS/cmsy/m/n/10 7!$
+\OMS/cmsy/m/n/10 7!
  []
 
 
@@ -10663,9 +10708,9 @@ Package xcolor Warning: Incompatible color definition on input line 3584.
 Overfull \hbox (109.35448pt too wide) in paragraph at lines 3584--3585
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -10677,9 +10722,9 @@ Package xcolor Warning: Incompatible color definition on input line 3585.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 3585--3586
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -10691,9 +10736,9 @@ Package xcolor Warning: Incompatible color definition on input line 3586.
 
 Overfull \hbox (20.54947pt too wide) in paragraph at lines 3586--3587
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U \OT
+1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr
+/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -10719,12 +10764,12 @@ Package xcolor Warning: Incompatible color definition on input line 3592.
 
 
 Overfull \hbox (115.08241pt too wide) in paragraph at lines 3592--3593
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt
-/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OM
-S/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10
- (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m
-/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt/
+m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS
+/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 
+(\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/
+n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -10771,8 +10816,8 @@ Overfull \hbox (119.85439pt too wide) in paragraph at lines 3609--3610
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
 \OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
-  \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
+^^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\
+OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -10784,9 +10829,9 @@ Package xcolor Warning: Incompatible color definition on input line 3610.
 
 Overfull \hbox (70.3269pt too wide) in paragraph at lines 3610--3611
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \
-OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/c
-mr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
+ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
+/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -10798,9 +10843,9 @@ Package xcolor Warning: Incompatible color definition on input line 3611.
 
 Overfull \hbox (52.0492pt too wide) in paragraph at lines 3611--3612
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 [68]
@@ -10830,17 +10875,17 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 3617--3618
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Backroom \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
 Overfull \hbox (141.33218pt too wide) in paragraph at lines 3617--3618
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/c
-mtt/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse
- \OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/
-n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/
-cmr/m/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/cm
+tt/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse 
+\OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n
+/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/c
+mr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -10889,9 +10934,9 @@ Package xcolor Warning: Incompatible color definition on input line 3635.
 Overfull \hbox (109.35448pt too wide) in paragraph at lines 3635--3636
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -10909,9 +10954,9 @@ Package xcolor Warning: Incompatible color definition on input line 3637.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 3637--3638
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -10937,7 +10982,7 @@ Overfull \hbox (22.28836pt too wide) in paragraph at lines 3640--3641
 [][]$\OT1/cmtt/m/n/10 userPrivileges\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 user\OT1/
 cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 f\OT1/cmtt/m/n/10 Stock[]Control\OML/cmm/m/it/1
 0 ; \OT1/cmtt/m/n/10 Manager\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Owner\OMS/cmsy/
-m/n/10 g ) \OT1/cmtt/m/n/10 location \OMS/cmsy/m/n/10 2$
+m/n/10 g ) \OT1/cmtt/m/n/10 location \OMS/cmsy/m/n/10 2
  []
 
 
@@ -10954,7 +10999,7 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 3644--3645
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 location \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
@@ -11037,7 +11082,7 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 3670--3671
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 location \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
@@ -11522,7 +11567,7 @@ Overfull \hbox (19.02248pt too wide) in paragraph at lines 3816--3817
 [][]$\OT1/cmr/m/it/10 member \OMS/cmsy/m/n/10 2 \OT1/cmr/m/it/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmr/m/it/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -11539,10 +11584,10 @@ Package xcolor Warning: Incompatible color definition on input line 3818.
 
 
 Overfull \hbox (47.46637pt too wide) in paragraph at lines 3818--3819
-[][]$\OT1/cmr/m/it/10 paidAmount \OMS/cmsy/m/n/10  \OT1/cmr/m/it/10 memberDisc
-ounts\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-=\OT1/cmr/m/it/10 100 \OMS/cmsy/m/n/10  \OT1/cmr/m/it/10 discountedCartTotal\O
-T1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )$[] 
+[][]$\OT1/cmr/m/it/10 paidAmount \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m/it/10 memberDi
+scounts\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )\OML/cmm/m/it/1
+0 =\OT1/cmr/m/it/10 100 \OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/it/10 discountedCartTot
+al\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 member\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -11662,7 +11707,7 @@ Overfull \hbox (36.85481pt too wide) in paragraph at lines 3852--3853
 [][]$\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -11679,10 +11724,10 @@ Package xcolor Warning: Incompatible color definition on input line 3854.
 
 
 Overfull \hbox (35.99371pt too wide) in paragraph at lines 3854--3855
-[][]$\OT1/cmtt/m/n/10 payment \OMS/cmsy/m/n/10  \OT1/cmtt/m/n/10 memberDiscoun
-ts\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =\O
-T1/cmtt/m/n/10 100 \OMS/cmsy/m/n/10  \OT1/cmtt/m/n/10 discountedCartTotal\OT1/
-cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 )$[] 
+[][]$\OT1/cmtt/m/n/10 payment \OMS/cmsy/m/n/10 ^^C \OT1/cmtt/m/n/10 memberDisco
+unts\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =
+\OT1/cmtt/m/n/10 100 \OMS/cmsy/m/n/10 ^^U \OT1/cmtt/m/n/10 discountedCartTotal\
+OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -12223,7 +12268,7 @@ Overfull \hbox (31.60486pt too wide) in paragraph at lines 4061--4062
 [][]$\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -12310,7 +12355,7 @@ Overfull \hbox (31.60486pt too wide) in paragraph at lines 4086--4087
 [][]$\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -12451,8 +12496,8 @@ Package xcolor Warning: Incompatible color definition on input line 4134.
 
 Overfull \hbox (41.41965pt too wide) in paragraph at lines 4133--4135
 []\OT1/cmr/m/n/10 amount $\OMS/cmsy/m/n/10 2$ \OT1/cmr/m/n/10 1$[]$ (pro-ductle
-vels(product)(Floor) $\OMS/cmsy/m/n/10  $ \OT1/cmr/m/n/10 pro-duct-thresh-old(p
-roduct)(Floor))
+vels(product)(Floor) $\OMS/cmsy/m/n/10 ^^@$ \OT1/cmr/m/n/10 pro-duct-thresh-old
+(product)(Floor))
  []
 
 
@@ -12464,9 +12509,9 @@ Package xcolor Warning: Incompatible color definition on input line 4135.
 
 Overfull \hbox (28.32727pt too wide) in paragraph at lines 4135--4136
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U \OT
+1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr
+/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -12529,7 +12574,7 @@ Overfull \hbox (36.85481pt too wide) in paragraph at lines 4144--4145
 [][]$\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -12557,9 +12602,9 @@ Package xcolor Warning: Incompatible color definition on input line 4150.
 Overfull \hbox (88.35468pt too wide) in paragraph at lines 4150--4151
 [][]$\OT1/cmtt/m/n/10 discountedCartTotal\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 memb
 er\OT1/cmr/m/n/10 ) := ((\OT1/cmtt/m/n/10 productprice\OT1/cmr/m/n/10 (\OT1/cmt
-t/m/n/10 product\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/cmtt/m/n/10 carts\OT1
-/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 product\
-OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 $
+t/m/n/10 product\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^C \OT1/cmtt/m/n/10 carts\O
+T1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 produc
+t\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^C
  []
 
 
@@ -12573,7 +12618,7 @@ Overfull \hbox (6.93895pt too wide) in paragraph at lines 4151--4152
 [][]$\OT1/cmtt/m/n/10 reciepts \OT1/cmr/m/n/10 := \OT1/cmtt/m/n/10 reciepts [] 
 \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 7! \OT1/cmtt/m/n/10 
 reciepts\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 ) [] \OMS/cmsy/
-m/n/10 f\OT1/cmtt/m/n/10 product \OMS/cmsy/m/n/10 7!$
+m/n/10 f\OT1/cmtt/m/n/10 product \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -12655,7 +12700,7 @@ Overfull \hbox (31.60486pt too wide) in paragraph at lines 4172--4173
 [][]$\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 dom\OT1/cmr/m/
 n/10 (\OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
  \OT1/cmtt/m/n/10 transactionInProcess\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\
-OT1/cmr/m/n/10 ) =$
+OT1/cmr/m/n/10 ) =
  []
 
 
@@ -12674,7 +12719,7 @@ msy/m/n/10 f\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 7! \OT1/cmtt/m/n/10 carts\
 OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\
 OT1/cmtt/m/n/10 product \OMS/cmsy/m/n/10 7! \OT1/cmtt/m/n/10 carts\OT1/cmr/m/n/
 10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 ) +$
+/n/10 ) +
  []
 
 
@@ -12842,7 +12887,7 @@ Overfull \hbox (6.93895pt too wide) in paragraph at lines 4228--4229
 [][]$\OT1/cmtt/m/n/10 reciepts \OT1/cmr/m/n/10 := \OT1/cmtt/m/n/10 reciepts [] 
 \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 member \OMS/cmsy/m/n/10 7! \OT1/cmtt/m/n/10 
 reciepts\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 member\OT1/cmr/m/n/10 ) [] \OMS/cmsy/
-m/n/10 f\OT1/cmtt/m/n/10 product \OMS/cmsy/m/n/10 7!$
+m/n/10 f\OT1/cmtt/m/n/10 product \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -12890,9 +12935,9 @@ Package xcolor Warning: Incompatible color definition on input line 4245.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 4245--4246
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -12904,9 +12949,9 @@ Package xcolor Warning: Incompatible color definition on input line 4246.
 
 Overfull \hbox (20.54947pt too wide) in paragraph at lines 4246--4247
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U \OT
+1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr
+/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -12930,9 +12975,9 @@ Package xcolor Warning: Incompatible color definition on input line 4249.
 
 Overfull \hbox (36.29933pt too wide) in paragraph at lines 4249--4250
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T \OT
+1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -12946,12 +12991,12 @@ Package xcolor Warning: Incompatible color definition on input line 4253.
 
 
 Overfull \hbox (88.83264pt too wide) in paragraph at lines 4253--4254
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt
-/m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cms
-y/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT
-1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10
- ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt/
+m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy
+/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1
+/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 
+) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -12993,9 +13038,9 @@ Package xcolor Warning: Incompatible color definition on input line 4269.
 
 Overfull \hbox (70.3269pt too wide) in paragraph at lines 4269--4270
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \
-OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/c
-mr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
+ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
+/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +
  []
 
 [78]
@@ -13008,9 +13053,9 @@ Package xcolor Warning: Incompatible color definition on input line 4270.
 
 Overfull \hbox (52.0492pt too wide) in paragraph at lines 4270--4271
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -13034,9 +13079,9 @@ Package xcolor Warning: Incompatible color definition on input line 4273.
 
 Overfull \hbox (67.79906pt too wide) in paragraph at lines 4273--4274
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T 
+\OT1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -13053,17 +13098,17 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 4277--4278
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Backroom \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
 Overfull \hbox (115.08241pt too wide) in paragraph at lines 4277--4278
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/c
-mtt/m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse \OMS
-/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 
-(\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m
-/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/cm
+tt/m/n/10 1\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse \OMS/
+cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (
+\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/
+n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -13136,7 +13181,7 @@ Package xcolor Warning: Incompatible color definition on input line 4301.
 Overfull \hbox (13.07742pt too wide) in paragraph at lines 4301--4302
 [][]$\OT1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 prod
 uct\OT1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productmaxthreshold\OT1/cmr/m/n/10 (\O
-T1/cmtt/m/n/10 product\OT1/cmr/m/n/10 ) []$
+T1/cmtt/m/n/10 product\OT1/cmr/m/n/10 ) []
  []
 
 
@@ -13445,7 +13490,7 @@ Overfull \hbox (15.1053pt too wide) in paragraph at lines 4414--4415
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Warehouse \OM
-S/cmsy/m/n/10 7!$
+S/cmsy/m/n/10 7!
  []
 
 
@@ -13894,7 +13939,7 @@ Overfull \hbox (84.02106pt too wide) in paragraph at lines 4564--4565
 \OT1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Floor \OMS/cmsy/m/n/10 
 7! \OT1/cmtt/m/n/10 floor\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy
 /m/n/10 7! \OT1/cmtt/m/n/10 backroom\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehou
-se \OMS/cmsy/m/n/10 7!$
+se \OMS/cmsy/m/n/10 7!
  []
 
 
@@ -14007,7 +14052,7 @@ Overfull \hbox (68.2712pt too wide) in paragraph at lines 4594--4595
 1/cmr/m/n/10 ) := \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Floor \OMS/cmsy/m/n/10 7! 
 \OT1/cmtt/m/n/10 floor\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS/cmsy/m/
 n/10 7! \OT1/cmtt/m/n/10 backroom\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse 
-\OMS/cmsy/m/n/10 7!$
+\OMS/cmsy/m/n/10 7!
  []
 
 
@@ -14053,9 +14098,9 @@ Package xcolor Warning: Incompatible color definition on input line 4611.
 Overfull \hbox (109.35448pt too wide) in paragraph at lines 4611--4612
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -14067,9 +14112,9 @@ Package xcolor Warning: Incompatible color definition on input line 4612.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 4612--4613
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -14081,9 +14126,9 @@ Package xcolor Warning: Incompatible color definition on input line 4613.
 
 Overfull \hbox (20.54947pt too wide) in paragraph at lines 4613--4614
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/
-cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m
-/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U \OT
+1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr
+/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -14109,12 +14154,12 @@ Package xcolor Warning: Incompatible color definition on input line 4619.
 
 
 Overfull \hbox (115.08241pt too wide) in paragraph at lines 4619--4620
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt
-/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OM
-S/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10
- (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m
-/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Floor\OT1/cmr/m/n/10 ) + \OT1/cmtt/
+m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Backroom \OMS
+/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 
+(\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/
+n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -14162,8 +14207,8 @@ Overfull \hbox (119.85439pt too wide) in paragraph at lines 4636--4637
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
 \OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
-  \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
+^^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\
+OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -14175,9 +14220,9 @@ Package xcolor Warning: Incompatible color definition on input line 4637.
 
 Overfull \hbox (70.3269pt too wide) in paragraph at lines 4637--4638
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \
-OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/c
-mr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U
+ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
+/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -14189,9 +14234,9 @@ Package xcolor Warning: Incompatible color definition on input line 4638.
 
 Overfull \hbox (52.0492pt too wide) in paragraph at lines 4638--4639
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 )$[] 
  []
 
 
@@ -14220,17 +14265,17 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 4644--4645
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 Backroom \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
 Overfull \hbox (141.33218pt too wide) in paragraph at lines 4644--4645
-$\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
-10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/c
-mtt/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse
- \OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/
-n/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/
-cmr/m/n/10 ) \OMS/cmsy/m/n/10  $
+\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/1
+0 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Backroom\OT1/cmr/m/n/10 ) + \OT1/cm
+tt/m/n/10 amount\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Warehouse 
+\OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n
+/10 (\OT1/cmtt/m/n/10 product\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 Warehouse\OT1/c
+mr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
  []
 
 
@@ -14279,9 +14324,9 @@ Package xcolor Warning: Incompatible color definition on input line 4662.
 Overfull \hbox (109.35448pt too wide) in paragraph at lines 4662--4663
 [][]$\OT1/cmtt/m/n/10 amount \OMS/cmsy/m/n/10 2 \OT1/cmtt/m/n/10 1 [] \OT1/cmr/
 m/n/10 (\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product
-\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1
-/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ))$[] 
+\OT1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\O
+T1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ))$[] 
  []
 
 
@@ -14299,9 +14344,9 @@ Package xcolor Warning: Incompatible color definition on input line 4664.
 
 Overfull \hbox (59.827pt too wide) in paragraph at lines 4664--4665
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
-1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \O
-T1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/cm
-r/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) +$
+1/cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^U 
+\OT1/cmtt/m/n/10 productthreshold\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT1/
+cmr/m/n/10 )(\OT1/cmtt/m/n/10 location\OT1/cmr/m/n/10 ) +
  []
 
 
@@ -14327,7 +14372,7 @@ Overfull \hbox (22.28836pt too wide) in paragraph at lines 4667--4668
 [][]$\OT1/cmtt/m/n/10 userPrivileges\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 user\OT1/
 cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 f\OT1/cmtt/m/n/10 Stock[]Control\OML/cmm/m/it/1
 0 ; \OT1/cmtt/m/n/10 Manager\OML/cmm/m/it/10 ; \OT1/cmtt/m/n/10 Owner\OMS/cmsy/
-m/n/10 g ) \OT1/cmtt/m/n/10 location \OMS/cmsy/m/n/10 2$
+m/n/10 g ) \OT1/cmtt/m/n/10 location \OMS/cmsy/m/n/10 2
  []
 
 
@@ -14344,7 +14389,7 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 4671--4672
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 location \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
@@ -14428,7 +14473,7 @@ Overfull \hbox (9.85535pt too wide) in paragraph at lines 4697--4698
 [][]$\OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/10 product\OT
 1/cmr/m/n/10 ) := \OT1/cmtt/m/n/10 productlevels\OT1/cmr/m/n/10 (\OT1/cmtt/m/n/
 10 product\OT1/cmr/m/n/10 ) [] \OMS/cmsy/m/n/10 f\OT1/cmtt/m/n/10 location \OMS
-/cmsy/m/n/10 7!$
+/cmsy/m/n/10 7!
  []
 
 
@@ -16105,32 +16150,32 @@ Overfull \hbox (76.04814pt too wide) in paragraph at lines 8246--8246
 ', 'Cashier', 'Default'] %>[] 
  []
 
-[152]
-("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\Group06 final re
-port.aux") ) 
+[152] (./Group06 final report.aux) ) 
 Here is how much of TeX's memory you used:
- 3701 strings out of 494045
- 53427 string characters out of 3145964
- 148572 words of memory out of 3000000
- 6951 multiletter control sequences out of 15000+200000
+ 4048 strings out of 493488
+ 58852 string characters out of 3141326
+ 158306 words of memory out of 3000000
+ 7287 multiletter control sequences out of 15000+200000
  9652 words of font info for 38 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 27i,8n,35p,1134b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Group06 final report.pdf" (160 pages, 612274 bytes).
+ 957 hyphenation exceptions out of 8191
+ 38i,8n,35p,1135b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmti7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msam10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msbm10.pfb>
+Output written on "Group06 final report.pdf" (160 pages, 558969 bytes).
 PDF statistics:
- 566 PDF objects out of 1000 (max. 8388607)
+ 571 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
