@@ -1,0 +1,1562 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.2.4)  21 OCT 2012 22:23
+entering extended mode
+**Group06*final*report.tex
+
+("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\Group06 final re
+port.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip43
+\LTright=\skip44
+\LTpre=\skip45
+\LTpost=\skip46
+\LTchunksize=\count90
+\LTcapwidth=\dimen111
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count91
+\LT@rows=\count92
+\c@LT@tables=\count93
+\c@LT@chunks=\count94
+\LT@p@ftn=\toks16
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count95
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks17
+\float@box=\box30
+\@float@everytoks=\toks18
+\@floatcapt=\box31
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\bsymb.sty"
+Package: bsymb 2006/02/06 v1.7 Symbols for the B language
+)
+("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\b2latex.sty")
+("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\Group06 final re
+port.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 380.69788pt, 108.405pt)
+* v-part:(T,H,B)=(108.405pt, 628.23685pt, 108.405pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=380.69788pt
+* \textheight=628.23685pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-0.86499pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count97
+\scratchdimen=\dimen114
+\scratchbox=\box32
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen115
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks21
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [1]
+("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\Group06 final re
+port.toc"
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+)
+\tf@toc=\write3
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 84--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--96
+
+ []
+
+
+Overfull \hbox (1.50966pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/bx/n/10 EB| 
+ []
+
+
+Overfull \hbox (3.02354pt too wide) in paragraph at lines 109--110
+[]|\OT1/cmr/bx/n/10 RR| 
+ []
+
+
+Overfull \hbox (82.33357pt too wide) in alignment at lines 102--111
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (82.33357pt too wide) in alignment at lines 111--120
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (82.33357pt too wide) in alignment at lines 120--123
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (82.33357pt too wide) in alignment at lines 123--125
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (82.33357pt too wide) in alignment at lines 125--135
+ [] [] [] [] [] 
+ []
+
+[1]
+Overfull \hbox (1.50966pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/bx/n/10 EB| 
+ []
+
+
+Overfull \hbox (3.02354pt too wide) in paragraph at lines 147--148
+[]|\OT1/cmr/bx/n/10 RR| 
+ []
+
+
+Overfull \hbox (82.33357pt too wide) in alignment at lines 140--149
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (82.33357pt too wide) in alignment at lines 149--158
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (82.33357pt too wide) in alignment at lines 158--161
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (82.33357pt too wide) in alignment at lines 161--163
+ [] [] [] [] [] 
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Underfull \hbox (badness 1412) in paragraph at lines 173--173
+[]|\OT1/cmr/m/n/10 The sys-tem must be able to
+ []
+
+
+Overfull \hbox (82.33357pt too wide) in alignment at lines 163--187
+ [] [] [] [] [] 
+ []
+
+[2] [3]
+Overfull \hbox (1.50966pt too wide) in paragraph at lines 198--198
+[]|\OT1/cmr/bx/n/10 EB| 
+ []
+
+
+Overfull \hbox (3.02354pt too wide) in paragraph at lines 199--200
+[]|\OT1/cmr/bx/n/10 RR| 
+ []
+
+
+Overfull \hbox (87.52135pt too wide) in alignment at lines 192--201
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (87.52135pt too wide) in alignment at lines 201--210
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (87.52135pt too wide) in alignment at lines 210--213
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (87.52135pt too wide) in alignment at lines 213--215
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 5119) in paragraph at lines 217--217
+[]|\OT1/cmr/m/n/10 Ability to add/remove stock
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]|\OT1/cmr/m/n/10 Add new prod-ucts to the
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 230--230
+[]|\OT1/cmr/m/n/10 Ability to re-quest stock from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
+[]|\OT1/cmr/bx/n/10 [Core] \OT1/cmr/m/n/10 Stock lo-ca-tion's name,threshold
+ []
+
+
+Overfull \hbox (87.52135pt too wide) in alignment at lines 215--243
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 245--245
+[]|\OT1/cmr/m/n/10 Refund pro-vi-sion for re-turned
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Underfull \hbox (badness 4995) in paragraph at lines 259--259
+[]|\OT1/cmr/m/n/10 The sys-tem al-lows re-port-ing
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 268--268
+[]|\OT1/cmr/m/n/10 User Au-then-ti-ca-tion and cre-
+ []
+
+
+Overfull \hbox (87.52135pt too wide) in alignment at lines 243--270
+ [] [] [] [] [] 
+ []
+
+[4]
+Underfull \hbox (badness 5316) in paragraph at lines 270--270
+[]|\OT1/cmr/m/n/10 Allow mod-i-fi-ca-tion of ac-cess
+ []
+
+
+Overfull \hbox (87.52135pt too wide) in alignment at lines 270--274
+ [] [] [] [] [] 
+ []
+
+[5] [6] [7]
+Overfull \hbox (1.50966pt too wide) in paragraph at lines 288--288
+[]|\OT1/cmr/bx/n/10 EB| 
+ []
+
+
+Overfull \hbox (3.02354pt too wide) in paragraph at lines 289--290
+[]|\OT1/cmr/bx/n/10 RR| 
+ []
+
+
+Overfull \hbox (94.60469pt too wide) in alignment at lines 282--291
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (94.60469pt too wide) in alignment at lines 291--300
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (94.60469pt too wide) in alignment at lines 300--303
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (94.60469pt too wide) in alignment at lines 303--305
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (94.60469pt too wide) in alignment at lines 305--313
+ [] [] [] [] [] 
+ []
+
+[8] [9] [10] [11] [12] [13] [14]
+Overfull \hbox (128.54768pt too wide) in paragraph at lines 391--391
+[]  \OT1/cmtt/m/n/10 attr_accessible :cost, :description, :name, :price, :barco
+de, :supplier, :brand, :size, :active[] 
+ []
+
+
+Overfull \hbox (144.29755pt too wide) in paragraph at lines 391--391
+[]  \OT1/cmtt/m/n/10 validates :name, :description, :price,:brand, :size, :cost
+, :barcode, :supplier, :presence => true[] 
+ []
+
+
+Overfull \hbox (18.29865pt too wide) in paragraph at lines 391--391
+[]  \OT1/cmtt/m/n/10 validates :price, :cost, :numericality => {:greater_than_o
+r_equal_to => 0}[] 
+ []
+
+
+Overfull \hbox (60.29828pt too wide) in paragraph at lines 391--391
+[]    \OT1/cmtt/m/n/10 supplier_stock_orders.where(:status => ['Created', 'Proc
+essed']).sum(&:quantity)[] 
+ []
+
+[15]
+Overfull \hbox (380.54549pt too wide) in paragraph at lines 419--419
+[]      \OT1/cmtt/m/n/10 errors.add(:quantity, "of item return is too high. The
+re are only #{@quantity_available} item(s) of this product available to be retu
+rned")[] 
+ []
+
+
+Overfull \hbox (28.79855pt too wide) in paragraph at lines 471--471
+[]    \OT1/cmtt/m/n/10 attr_accessible :customer, :checkout_user, :discount, :s
+tatus, :updated_at[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‡ in font cmtt10!
+Missing character: There is no ¸ in font cmtt10!
+
+Overfull \hbox (76.04814pt too wide) in paragraph at lines 471--471
+[]    \OT1/cmtt/m/n/10 #         axm3: partition(TRANSACTIONTYPE, {ADDINGTOCART
+},{CHECKINGOUT},{FINISHED})[] 
+ []
+
+
+Overfull \hbox (34.04851pt too wide) in paragraph at lines 471--471
+[]       \OT1/cmtt/m/n/10 :inclusion  => { :in => [ 'Adding to Cart', 'Checking
+ Out', 'Finished'],[] 
+ []
+
+[16]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‡ in font cmtt10!
+Missing character: There is no ¸ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no „ in font cmtt10!
+Missing character: There is no • in font cmtt10!
+
+Overfull \hbox (249.29663pt too wide) in paragraph at lines 517--517
+[]      \OT1/cmtt/m/n/10 @stock_level = StockLevel.find_by_product_id_and_stock
+_location_id(product, StockLocation.where(:name => 'Floor'))[] 
+ []
+
+[17]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ’ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ’ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no „ in font cmtt10!
+Missing character: There is no • in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ’ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ’ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no „ in font cmtt10!
+Missing character: There is no • in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no Â in font cmtt10!
+Missing character: There is no · in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no § in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‡ in font cmtt10!
+Missing character: There is no ’ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ¥ in font cmtt10!
+
+Overfull \hbox (165.29736pt too wide) in paragraph at lines 574--574
+[]  \OT1/cmtt/m/n/10 # Event-B: p,l  p activeProducts  l  STOCK_LOCATION  produ
+ctmaxthreshold(p)(l)  productthreshold(p)(l)[] 
+ []
+
+
+Overfull \hbox (238.79672pt too wide) in paragraph at lines 574--574
+[]  \OT1/cmtt/m/n/10 # Validate that stock_level is above miniumum threshold, a
+nd automatically reorder if quantity falls below threshold[] 
+ []
+
+
+Overfull \hbox (60.29828pt too wide) in paragraph at lines 574--574
+[]  \OT1/cmtt/m/n/10 validates :quantity, :threshold, :numericality => {:greate
+r_than_or_equal_to => 0}[] 
+ []
+
+
+Overfull \hbox (280.79636pt too wide) in paragraph at lines 574--574
+[]        \OT1/cmtt/m/n/10 exsting_transfer = StockTransfer.find_by_product_id_
+and_stock_location_id_and_complete(product, stock_location, false)[] 
+ []
+
+[18]
+Overfull \hbox (107.54787pt too wide) in paragraph at lines 574--574
+[]        \OT1/cmtt/m/n/10 existing_order = SupplierStockOrder.find_by_product_
+id_and_status(product, 'Created')[] 
+ []
+
+[19]
+Overfull \hbox (128.54768pt too wide) in paragraph at lines 655--655
+[]   \OT1/cmtt/m/n/10 :inclusion => {:in => [0.05, 0.10, 0.20, 0.50, 1.00, 2.00
+, 5.00, 10.00, 20.00, 50.00, 100.00]}[] 
+ []
+
+
+Overfull \hbox (7.79874pt too wide) in paragraph at lines 713--713
+[]  \OT1/cmtt/m/n/10 devise :database_authenticatable, :token_authenticatable, 
+:registerable,[] 
+ []
+
+[20]
+Overfull \hbox (18.29865pt too wide) in paragraph at lines 713--713
+[]         \OT1/cmtt/m/n/10 :recoverable, :rememberable, :trackable, :timeoutab
+le, :validatable[] 
+ []
+
+
+Overfull \hbox (65.54823pt too wide) in paragraph at lines 713--713
+[]  \OT1/cmtt/m/n/10 has_many :sales_checkout, :class_name => 'Sale', :foreign_
+key => "checkout_user_id"[] 
+ []
+
+
+Overfull \hbox (39.29846pt too wide) in paragraph at lines 713--713
+[]  \OT1/cmtt/m/n/10 has_many :sales_customer, :class_name => 'Sale', :foreign_
+key => "customer_id"[] 
+ []
+
+
+Overfull \hbox (307.04613pt too wide) in paragraph at lines 713--713
+[]  \OT1/cmtt/m/n/10 attr_accessible :role, :name, :postcode, :discount, :membe
+rship, :active, :email, :password, :password_confirmation, :remember_me[] 
+ []
+
+
+Overfull \hbox (154.79745pt too wide) in paragraph at lines 713--713
+[]  \OT1/cmtt/m/n/10 #Event-B: {Stock_ctx_R0} axm2: partition(USER_PRIVILEGE,{C
+ashier},{Stock_Control},{Manager},{Owner})[] 
+ []
+
+
+Overfull \hbox (7.79874pt too wide) in paragraph at lines 713--713
+[]  \OT1/cmtt/m/n/10 #Comment: Default was added as a result of merging the use
+rs and members[] 
+ []
+
+
+Overfull \hbox (86.54805pt too wide) in paragraph at lines 713--713
+[]    \OT1/cmtt/m/n/10 :inclusion  => { :in => [ 'Owner', 'Manager', 'Stock Con
+trol', 'Cashier', 'Default'],[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+
+Overfull \hbox (128.54768pt too wide) in paragraph at lines 713--713
+[]  \OT1/cmtt/m/n/10 #Event-B: {StockControl_R4} grd: userPrivileges(user)  {St
+ock_Control, Manager, Owner, Cashier}[] 
+ []
+
+
+Overfull \hbox (76.04814pt too wide) in paragraph at lines 713--713
+[]    \OT1/cmtt/m/n/10 role == "Owner" or role == "Manager" or role == "Stock C
+ontrol" or role =="Cashier"[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+
+Overfull \hbox (81.2981pt too wide) in paragraph at lines 713--713
+[]  \OT1/cmtt/m/n/10 #Event-B: {StockControl_R4} grd: userPrivileges(user)  {St
+ock_Control, Manager, Owner}[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 713--713
+[]  \OT1/cmtt/m/n/10 #Event-B: {StockControl_R4} grd: userPrivileges(user)  {Ma
+nager, Owner}[] 
+ []
+
+[21] [22]
+Overfull \hbox (81.2981pt too wide) in paragraph at lines 896--896
+[]      \OT1/cmtt/m/n/10 if !StockLevel.exists?(:product_id => params[:id].to_i
+, :stock_location_id =>s.id)[] 
+ []
+
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 896--896
+[]    \OT1/cmtt/m/n/10 @supplier = Supplier.find_by_id(Integer(params[:product]
+[:supplier]))[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no – in font cmtt10!
+
+Overfull \hbox (359.54567pt too wide) in paragraph at lines 896--896
+[]      \OT1/cmtt/m/n/10 @product.stock_levels.build(:stock_location => StockLo
+cation.find(sl_id.to_i), :quantity =>sl[:quantity], :threshold => sl[:threshold
+])[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ª in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+
+Overfull \hbox (86.54805pt too wide) in paragraph at lines 896--896
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @product, notice: 'Product
+ was successfully created.' }[] 
+ []
+
+
+Overfull \hbox (55.04832pt too wide) in paragraph at lines 896--896
+[]        \OT1/cmtt/m/n/10 format.json { render json: @product, status: :create
+d, location: @product }[] 
+ []
+
+
+Overfull \hbox (55.04832pt too wide) in paragraph at lines 896--896
+[]        \OT1/cmtt/m/n/10 format.json { render json: @product.errors, status: 
+:unprocessable_entity }[] 
+ []
+
+[23]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+
+Overfull \hbox (270.29645pt too wide) in paragraph at lines 896--896
+[]      \OT1/cmtt/m/n/10 @stock_id = StockLevel.find(:first, :conditions => {:p
+roduct_id => params[:id].to_i, :stock_location_id =>sl_id.to_i})[] 
+ []
+
+
+Overfull \hbox (165.29736pt too wide) in paragraph at lines 896--896
+[]        \OT1/cmtt/m/n/10 @product.stock_levels.update(@stock_id, :quantity =>
+sl[:quantity], :threshold => sl[:threshold])[] 
+ []
+
+
+Overfull \hbox (370.04558pt too wide) in paragraph at lines 896--896
+[]        \OT1/cmtt/m/n/10 @product.stock_levels.build(:stock_location => Stock
+Location.find(sl_id.to_i), :quantity =>sl[:quantity], :threshold => sl[:thresho
+ld])[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+
+Overfull \hbox (86.54805pt too wide) in paragraph at lines 896--896
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @product, notice: 'Product
+ was successfully updated.' }[] 
+ []
+
+
+Overfull \hbox (55.04832pt too wide) in paragraph at lines 896--896
+[]        \OT1/cmtt/m/n/10 format.json { render json: @product.errors, status: 
+:unprocessable_entity }[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ª in font cmtt10!
+[24]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ª in font cmtt10!
+ [25]
+Overfull \hbox (128.54768pt too wide) in paragraph at lines 1012--1012
+[]    \OT1/cmtt/m/n/10 @refund.total = (@refund.sale_item.sub_total / @refund.s
+ale_item.quantity) * @refund.quantity[] 
+ []
+
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 1012--1012
+[]    \OT1/cmtt/m/n/10 @stock_location = StockLocation.where("previous_location
+_id is NULL")[] 
+ []
+
+
+Overfull \hbox (144.29755pt too wide) in paragraph at lines 1012--1012
+[]    \OT1/cmtt/m/n/10 @stock_level = @refund.sale_item.product.stock_levels.fi
+nd_by_stock_location_id(@stock_location)[] 
+ []
+
+
+Overfull \hbox (76.04814pt too wide) in paragraph at lines 1012--1012
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @refund, notice: 'Refund w
+as successfully created.' }[] 
+ []
+
+
+Overfull \hbox (44.54842pt too wide) in paragraph at lines 1012--1012
+[]        \OT1/cmtt/m/n/10 format.json { render json: @refund, status: :created
+, location: @refund }[] 
+ []
+
+
+Overfull \hbox (49.79837pt too wide) in paragraph at lines 1012--1012
+[]        \OT1/cmtt/m/n/10 format.json { render json: @refund.errors, status: :
+unprocessable_entity }[] 
+ []
+
+
+Overfull \hbox (207.297pt too wide) in paragraph at lines 1012--1012
+[]    \OT1/cmtt/m/n/10 @refund.total = (@refund.sale_item.sub_total / @refund.s
+ale_item.quantity) * params[:refund][:quantity].to_i[] 
+ []
+
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 1012--1012
+[]    \OT1/cmtt/m/n/10 @stock_location = StockLocation.where("previous_location
+_id is NULL")[] 
+ []
+
+[26]
+Overfull \hbox (65.54823pt too wide) in paragraph at lines 1012--1012
+[]    \OT1/cmtt/m/n/10 @stock_level = @refund.sale_item.product.stock_levels.fi
+nd_by_id(@stock_location)[] 
+ []
+
+
+Overfull \hbox (76.04814pt too wide) in paragraph at lines 1012--1012
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @refund, notice: 'Refund w
+as successfully updated.' }[] 
+ []
+
+
+Overfull \hbox (49.79837pt too wide) in paragraph at lines 1012--1012
+[]        \OT1/cmtt/m/n/10 format.json { render json: @refund.errors, status: :
+unprocessable_entity }[] 
+ []
+
+[27]
+Overfull \hbox (286.04631pt too wide) in paragraph at lines 1093--1093
+[]      \OT1/cmtt/m/n/10 f.options[:xAxis] = { :title=>{:text=>"Date"}, :type =
+> 'datetime',:dateTimeLabelFormats=>{:month=>'%e. %b',:year=>'%b'}}[] 
+ []
+
+
+Overfull \hbox (433.04503pt too wide) in paragraph at lines 1093--1093
+[]          \OT1/cmtt/m/n/10 :data=>u.sales_customer.where(:status =>"Finished"
+).pluck(:updated_at).zip(u.sales_customer.where(:status =>"Finished").map(&:tot
+al).map(&:to_f))[] 
+ []
+
+
+Overfull \hbox (212.54695pt too wide) in paragraph at lines 1093--1093
+[]        \OT1/cmtt/m/n/10 #User.find(4).sales_customer.pluck(:updated_at).zip(
+User.find(4).sales_customer.map(&:total).map(&:to_f))[] 
+ []
+
+
+Overfull \hbox (55.04832pt too wide) in paragraph at lines 1093--1093
+[]    \OT1/cmtt/m/n/10 @users = User.where(:role => [ 'Owner', 'Manager', 'Stoc
+k Control', 'Cashier'])[] 
+ []
+
+[28]
+Overfull \hbox (238.79672pt too wide) in paragraph at lines 1237--1237
+[]    \OT1/cmtt/m/n/10 @current_sales = Sale.find_all_by_checkout_user_id_and_s
+tatus(current_user.id, ['Adding to Cart', 'Checking Out'])[] 
+ []
+
+
+Overfull \hbox (60.29828pt too wide) in paragraph at lines 1237--1237
+[]      \OT1/cmtt/m/n/10 @sale = Sale.new(:checkout_user  => current_user, :sta
+tus => 'Adding to Cart')[] 
+ []
+
+[29]
+Overfull \hbox (7.79874pt too wide) in paragraph at lines 1237--1237
+[]      \OT1/cmtt/m/n/10 redirect_to sale_path(@sale), :error => "Can't edit a 
+finished sale"[] 
+ []
+
+
+Overfull \hbox (49.79837pt too wide) in paragraph at lines 1237--1237
+[]    \OT1/cmtt/m/n/10 @sale = Sale.new(:checkout_user  => current_user, :statu
+s => 'Adding to Cart')[] 
+ []
+
+
+Overfull \hbox (139.04759pt too wide) in paragraph at lines 1237--1237
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to edit_sale_path(@sale), not
+ice: 'Sale was successfully updated.' }[] 
+ []
+
+
+Overfull \hbox (39.29846pt too wide) in paragraph at lines 1237--1237
+[]        \OT1/cmtt/m/n/10 format.json { render json: @sale.errors, status: :un
+processable_entity }[] 
+ []
+
+[30]
+Overfull \hbox (91.798pt too wide) in paragraph at lines 1237--1237
+[]      \OT1/cmtt/m/n/10 redirect_to sales_path, alert: 'You can only proceed t
+o payment from adding to cart'[] 
+ []
+
+
+Overfull \hbox (49.79837pt too wide) in paragraph at lines 1237--1237
+[]      \OT1/cmtt/m/n/10 redirect_to sales_path, alert: 'You can only finish a 
+sale during checkout.'[] 
+ []
+
+
+Overfull \hbox (139.04759pt too wide) in paragraph at lines 1237--1237
+[]      \OT1/cmtt/m/n/10 redirect_to edit_sale_path(@sale), alert: 'You must fi
+nish payment before completing a sale.'[] 
+ []
+
+[31] [32]
+Overfull \hbox (34.04851pt too wide) in paragraph at lines 1338--1338
+[]    \OT1/cmtt/m/n/10 @sale_item = SaleItem.find_by_sale_id_and_product_id(@sa
+le.id, @product.id)[] 
+ []
+
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 1338--1338
+[]    \OT1/cmtt/m/n/10 @sale_item.sub_total = @sale_item.quantity * @sale_item.
+product.price[] 
+ []
+
+
+Overfull \hbox (65.54823pt too wide) in paragraph at lines 1338--1338
+[]        \OT1/cmtt/m/n/10 format.json { render json: @sale_item.errors, status
+: :unprocessable_entity }[] 
+ []
+
+
+Overfull \hbox (249.29663pt too wide) in paragraph at lines 1338--1338
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to sale_sale_items_path(@sale
+_item.sale), notice: 'Sale item was successfully updated.' }[] 
+ []
+
+
+Overfull \hbox (65.54823pt too wide) in paragraph at lines 1338--1338
+[]        \OT1/cmtt/m/n/10 format.json { render json: @sale_item.errors, status
+: :unprocessable_entity }[] 
+ []
+
+[33]
+Overfull \hbox (81.2981pt too wide) in paragraph at lines 1435--1435
+[]    \OT1/cmtt/m/n/10 @stock_location = StockLocation.find(Integer(params[:sto
+ck_level][:stock_location]))[] 
+ []
+
+[34]
+Overfull \hbox (128.54768pt too wide) in paragraph at lines 1435--1435
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @stock_level, notice: 'Sto
+ck level was successfully created.' }[] 
+ []
+
+
+Overfull \hbox (97.04796pt too wide) in paragraph at lines 1435--1435
+[]        \OT1/cmtt/m/n/10 format.json { render json: @stock_level, status: :cr
+eated, location: @stock_level }[] 
+ []
+
+
+Overfull \hbox (76.04814pt too wide) in paragraph at lines 1435--1435
+[]        \OT1/cmtt/m/n/10 format.json { render json: @stock_level.errors, stat
+us: :unprocessable_entity }[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+
+Overfull \hbox (144.29755pt too wide) in paragraph at lines 1435--1435
+[]      \OT1/cmtt/m/n/10 #Event-b: act1: productlevels(product)  {Floor  floor,
+Backroom  backroom,Warehouse  warehouse}[] 
+ []
+
+
+Overfull \hbox (128.54768pt too wide) in paragraph at lines 1435--1435
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @stock_level, notice: 'Sto
+ck level was successfully updated.' }[] 
+ []
+
+
+Overfull \hbox (76.04814pt too wide) in paragraph at lines 1435--1435
+[]        \OT1/cmtt/m/n/10 format.json { render json: @stock_level.errors, stat
+us: :unprocessable_entity }[] 
+ []
+
+[35]
+Overfull \hbox (154.79745pt too wide) in paragraph at lines 1541--1541
+[]      \OT1/cmtt/m/n/10 @previous_location = StockLocation.find(Integer(params
+[:stock_location][:previous_location_id]))[] 
+ []
+
+[36]
+Overfull \hbox (186.29718pt too wide) in paragraph at lines 1541--1541
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to stock_locations_path, noti
+ce: 'Stock location was successfully created.' }[] 
+ []
+
+
+Overfull \hbox (128.54768pt too wide) in paragraph at lines 1541--1541
+[]        \OT1/cmtt/m/n/10 format.json { render json: @stock_location, status: 
+:created, location: @stock_location }[] 
+ []
+
+
+Overfull \hbox (91.798pt too wide) in paragraph at lines 1541--1541
+[]        \OT1/cmtt/m/n/10 format.json { render json: @stock_location.errors, s
+tatus: :unprocessable_entity }[] 
+ []
+
+
+Overfull \hbox (154.79745pt too wide) in paragraph at lines 1541--1541
+[]      \OT1/cmtt/m/n/10 @previous_location = StockLocation.find(Integer(params
+[:stock_location][:previous_location_id]))[] 
+ []
+
+
+Overfull \hbox (186.29718pt too wide) in paragraph at lines 1541--1541
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to stock_locations_path, noti
+ce: 'Stock location was successfully updated.' }[] 
+ []
+
+
+Overfull \hbox (91.798pt too wide) in paragraph at lines 1541--1541
+[]        \OT1/cmtt/m/n/10 format.json { render json: @stock_location.errors, s
+tatus: :unprocessable_entity }[] 
+ []
+
+[37]
+Overfull \hbox (97.04796pt too wide) in paragraph at lines 1676--1676
+[]    \OT1/cmtt/m/n/10 @stock_location = StockLocation.find(Integer(params[:sto
+ck_transfer][:stock_location]))[] 
+ []
+
+[38]
+Overfull \hbox (186.29718pt too wide) in paragraph at lines 1676--1676
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to stock_transfers_path, noti
+ce: 'Stock transfer was successfully created.' }[] 
+ []
+
+
+Overfull \hbox (128.54768pt too wide) in paragraph at lines 1676--1676
+[]        \OT1/cmtt/m/n/10 format.json { render json: @stock_transfer, status: 
+:created, location: @stock_transfer }[] 
+ []
+
+
+Overfull \hbox (91.798pt too wide) in paragraph at lines 1676--1676
+[]        \OT1/cmtt/m/n/10 format.json { render json: @stock_transfer.errors, s
+tatus: :unprocessable_entity }[] 
+ []
+
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 1676--1676
+[]      \OT1/cmtt/m/n/10 @product = Product.find(Integer(params[:stock_transfer
+][:product]))[] 
+ []
+
+
+Overfull \hbox (107.54787pt too wide) in paragraph at lines 1676--1676
+[]      \OT1/cmtt/m/n/10 @stock_location = StockLocation.find(Integer(params[:s
+tock_transfer][:stock_location]))[] 
+ []
+
+
+Overfull \hbox (186.29718pt too wide) in paragraph at lines 1676--1676
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to stock_transfers_path, noti
+ce: 'Stock transfer was successfully updated.' }[] 
+ []
+
+
+Overfull \hbox (91.798pt too wide) in paragraph at lines 1676--1676
+[]        \OT1/cmtt/m/n/10 format.json { render json: @stock_transfer.errors, s
+tatus: :unprocessable_entity }[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+[39]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ’ in font cmtt10!
+
+Overfull \hbox (527.5442pt too wide) in paragraph at lines 1676--1676
+[]    \OT1/cmtt/m/n/10 #Event-b : act1: productlevels(product)  productlevels(p
+roduct) <+ {Floor  (productlevels(product)(Floor) + amount),Backroom  (productl
+evels(product)(Backroom)  amount)}[] 
+ []
+
+
+Overfull \hbox (118.04778pt too wide) in paragraph at lines 1676--1676
+[]    \OT1/cmtt/m/n/10 @stock_level_to = StockLevel.find_by_product_id_and_stoc
+k_location_id(@product,@locationto)[] 
+ []
+
+
+Overfull \hbox (154.79745pt too wide) in paragraph at lines 1676--1676
+[]    \OT1/cmtt/m/n/10 @stock_level_to.update_attribute(:quantity, (@stock_leve
+l_to.quantity + @stock_transfer.quantity))[] 
+ []
+
+
+Overfull \hbox (139.04759pt too wide) in paragraph at lines 1676--1676
+[]    \OT1/cmtt/m/n/10 @stock_level_from = StockLevel.find_by_product_id_and_st
+ock_location_id(@product,@locationfrom)[] 
+ []
+
+
+Overfull \hbox (175.79727pt too wide) in paragraph at lines 1676--1676
+[]    \OT1/cmtt/m/n/10 @stock_level_from.update_attribute(:quantity, (@stock_le
+vel_from.quantity - @stock_transfer.quantity))[] 
+ []
+
+[40]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ª in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no º in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ª in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+
+Overfull \hbox (44.54842pt too wide) in paragraph at lines 1827--1827
+[]    \OT1/cmtt/m/n/10 @supplier_stock_order = SupplierStockOrder.new(params[:s
+upplier_stock_order])[] 
+ []
+
+
+Overfull \hbox (223.04686pt too wide) in paragraph at lines 1827--1827
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @supplier_stock_order, not
+ice: 'Supplier stock order was successfully created.' }[] 
+ []
+
+
+Overfull \hbox (191.54713pt too wide) in paragraph at lines 1827--1827
+[]        \OT1/cmtt/m/n/10 format.json { render json: @supplier_stock_order, st
+atus: :created, location: @supplier_stock_order }[] 
+ []
+
+
+Overfull \hbox (123.29773pt too wide) in paragraph at lines 1827--1827
+[]        \OT1/cmtt/m/n/10 format.json { render json: @supplier_stock_order.err
+ors, status: :unprocessable_entity }[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+Missing character: There is no ˆ in font cmtt10!
+[41]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+
+Overfull \hbox (34.04851pt too wide) in paragraph at lines 1827--1827
+[]      \OT1/cmtt/m/n/10 if @supplier_stock_order.update_attributes(params[:sup
+plier_stock_order])[] 
+ []
+
+
+Overfull \hbox (223.04686pt too wide) in paragraph at lines 1827--1827
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @supplier_stock_order, not
+ice: 'Supplier stock order was successfully updated.' }[] 
+ []
+
+
+Overfull \hbox (123.29773pt too wide) in paragraph at lines 1827--1827
+[]        \OT1/cmtt/m/n/10 format.json { render json: @supplier_stock_order.err
+ors, status: :unprocessable_entity }[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 1827--1827
+[]    \OT1/cmtt/m/n/10 @stock_location = StockLocation.where("previous_location
+_id is NULL")[] 
+ []
+
+[42]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no ‰ in font cmtt10!
+Missing character: There is no ” in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no † in font cmtt10!
+Missing character: There is no ¦ in font cmtt10!
+
+Overfull \hbox (301.79617pt too wide) in paragraph at lines 1827--1827
+[]    \OT1/cmtt/m/n/10 #Event-b: productlevels(product)  productlevels(product)
+ <+ {Warehouse  (productlevels(product)(Warehouse) + orders(product))}[] 
+ []
+
+
+Overfull \hbox (123.29773pt too wide) in paragraph at lines 1827--1827
+[]    \OT1/cmtt/m/n/10 @stock_level = StockLevel.find_by_product_id_and_stock_l
+ocation_id(@product,@stock_location)[] 
+ []
+
+
+Overfull \hbox (154.79745pt too wide) in paragraph at lines 1827--1827
+[]    \OT1/cmtt/m/n/10 @stock_level.update_attribute(:quantity, (@stock_level.q
+uantity + @supplier_stock_order.quantity))[] 
+ []
+
+[43]
+Overfull \hbox (97.04796pt too wide) in paragraph at lines 1914--1914
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @supplier, notice: 'Suppli
+er was successfully created.' }[] 
+ []
+
+
+Overfull \hbox (65.54823pt too wide) in paragraph at lines 1914--1914
+[]        \OT1/cmtt/m/n/10 format.json { render json: @supplier, status: :creat
+ed, location: @supplier }[] 
+ []
+
+
+Overfull \hbox (60.29828pt too wide) in paragraph at lines 1914--1914
+[]        \OT1/cmtt/m/n/10 format.json { render json: @supplier.errors, status:
+ :unprocessable_entity }[] 
+ []
+
+
+Overfull \hbox (97.04796pt too wide) in paragraph at lines 1914--1914
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @supplier, notice: 'Suppli
+er was successfully updated.' }[] 
+ []
+
+
+Overfull \hbox (60.29828pt too wide) in paragraph at lines 1914--1914
+[]        \OT1/cmtt/m/n/10 format.json { render json: @supplier.errors, status:
+ :unprocessable_entity }[] 
+ []
+
+[44] [45]
+Overfull \hbox (238.79672pt too wide) in paragraph at lines 2003--2003
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to edit_sale_path(@transactio
+n.sale), notice: 'Transaction was successfully created.' }[] 
+ []
+
+
+Overfull \hbox (97.04796pt too wide) in paragraph at lines 2003--2003
+[]        \OT1/cmtt/m/n/10 format.json { render json: @transaction, status: :cr
+eated, location: @transaction }[] 
+ []
+
+
+Overfull \hbox (76.04814pt too wide) in paragraph at lines 2003--2003
+[]        \OT1/cmtt/m/n/10 format.json { render json: @transaction.errors, stat
+us: :unprocessable_entity }[] 
+ []
+
+
+Overfull \hbox (128.54768pt too wide) in paragraph at lines 2003--2003
+[]        \OT1/cmtt/m/n/10 format.html { redirect_to @transaction, notice: 'Tra
+nsaction was successfully updated.' }[] 
+ []
+
+
+Overfull \hbox (76.04814pt too wide) in paragraph at lines 2003--2003
+[]        \OT1/cmtt/m/n/10 format.json { render json: @transaction.errors, stat
+us: :unprocessable_entity }[] 
+ []
+
+[46]
+Overfull \hbox (55.04832pt too wide) in paragraph at lines 2052--2052
+[]    \OT1/cmtt/m/n/10 @users = User.where(:role  => ['Owner', 'Manager', 'Stoc
+k Control', 'Cashier'])[] 
+ []
+
+Missing character: There is no â in font cmbx10!
+Missing character: There is no € in font cmbx10!
+Missing character: There is no ¢ in font cmbx10!
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 2216--2216
+[]   \OT1/cmtt/m/n/10 <meta name="viewport" content="width=device-width, initia
+l-scale=1.0">[] 
+ []
+
+[47]
+Overfull \hbox (23.5486pt too wide) in paragraph at lines 2216--2216
+[]   \OT1/cmtt/m/n/10 <script src="http://html5shim.googlecode.com/svn/trunk/ht
+ml5.js"></script>[] 
+ []
+
+
+Overfull \hbox (86.54805pt too wide) in paragraph at lines 2216--2216
+[]            \OT1/cmtt/m/n/10 <a class="btn btn-navbar" data-toggle="collapse"
+ data-target=".nav-collapse">[] 
+ []
+
+
+Overfull \hbox (28.79855pt too wide) in paragraph at lines 2216--2216
+[]               \OT1/cmtt/m/n/10 <a class="btn dropdown-toggle" data-toggle="d
+ropdown" href="#">[] 
+ []
+
+
+Overfull \hbox (23.5486pt too wide) in paragraph at lines 2216--2216
+[]               \OT1/cmtt/m/n/10 <ul class="dropdown-menu no-collapse" style="
+margin-top:8px;">[] 
+ []
+
+
+Overfull \hbox (28.79855pt too wide) in paragraph at lines 2216--2216
+[]               \OT1/cmtt/m/n/10 <a class="btn dropdown-toggle" data-toggle="d
+ropdown" href="#">[] 
+ []
+
+
+Overfull \hbox (202.04704pt too wide) in paragraph at lines 2216--2216
+[]               \OT1/cmtt/m/n/10 <div class="dropdown-menu no-collapse" style=
+"padding: 15px;padding-bottom:0px;margin-top:8px;">[] 
+ []
+
+
+Overfull \hbox (23.5486pt too wide) in paragraph at lines 2216--2216
+[]                  \OT1/cmtt/m/n/10 <form action="/login" method="post" accept
+-charset="UTF-8">[] 
+ []
+
+
+Overfull \hbox (322.79599pt too wide) in paragraph at lines 2216--2216
+[]                     \OT1/cmtt/m/n/10 <input id="username" style="margin-bott
+om: 15px;" type="text" name="username" placeholder="username" size="30" />[] 
+ []
+
+
+Overfull \hbox (343.7958pt too wide) in paragraph at lines 2216--2216
+[]                     \OT1/cmtt/m/n/10 <input id="password" style="margin-bott
+om: 15px;" type="password" name="password" placeholder="password" size="30" />[
+] 
+ []
+
+[48]
+Overfull \hbox (422.54512pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <input class="btn btn-primary" style
+="width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" valu
+e="Sign In" />[] 
+ []
+
+
+Overfull \hbox (196.79709pt too wide) in paragraph at lines 2216--2216
+[]                     \OT1/cmtt/m/n/10 <a href="#" class="dropdown-toggle" dat
+a-toggle="dropdown">Sales<b class="caret"></b></a>[] 
+ []
+
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><%= link_to 'New Sale', new_sale
+_path %></li>[] 
+ []
+
+
+Overfull \hbox (18.29865pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><%= link_to 'Previous Sales', sa
+les_path %></li>[] 
+ []
+
+
+Overfull \hbox (238.79672pt too wide) in paragraph at lines 2216--2216
+[]                     \OT1/cmtt/m/n/10 <a href="#" class="dropdown-toggle" dat
+a-toggle="dropdown">Stock Control<b class="caret"></b></a>[] 
+ []
+
+
+Overfull \hbox (44.54842pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><%= link_to "Stock Levels", stoc
+k_levels_path %></li>[] 
+ []
+
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><%= link_to "Products", products
+_path %></li>[] 
+ []
+
+
+Overfull \hbox (13.04869pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><%= link_to "Suppliers", supplie
+rs_path %></li>[] 
+ []
+
+
+Overfull \hbox (76.04814pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><%= link_to "Stock Locations", s
+tock_locations_path %></li>[] 
+ []
+
+
+Overfull \hbox (76.04814pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><%= link_to "Stock Transfers", s
+tock_transfers_path %></li>[] 
+ []
+
+
+Overfull \hbox (139.04759pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><%= link_to "Supplier Stock Orde
+rs", supplier_stock_orders_path %></li>[] 
+ []
+
+
+Overfull \hbox (207.297pt too wide) in paragraph at lines 2216--2216
+[]                     \OT1/cmtt/m/n/10 <a href="#" class="dropdown-toggle" dat
+a-toggle="dropdown">Reports<b class="caret"></b></a>[] 
+ []
+
+
+Overfull \hbox (7.79874pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><a href="/reports/supplier">Supp
+liers</a></li>[] 
+ []
+
+
+Overfull \hbox (13.04869pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><a href="/reports/financial">Fin
+ancial</a></li>[] 
+ []
+
+
+Overfull \hbox (2.54878pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><a href="/reports/customer">Cust
+omer</a></li>[] 
+ []
+
+[49]
+Overfull \hbox (249.29663pt too wide) in paragraph at lines 2216--2216
+[]                     \OT1/cmtt/m/n/10 <a href="#" class="dropdown-toggle" dat
+a-toggle="dropdown">User Management<b class="caret"></b></a>[] 
+ []
+
+
+Overfull \hbox (18.29865pt too wide) in paragraph at lines 2216--2216
+[]                        \OT1/cmtt/m/n/10 <li><a href="/members">Customer Memb
+erships</a></li>[] 
+ []
+
+
+Overfull \hbox (70.79819pt too wide) in paragraph at lines 2216--2216
+[]               \OT1/cmtt/m/n/10 <div class="alert alert-info"><h1>Notice</h1>
+<p><%= notice %></p></div>[] 
+ []
+
+
+Overfull \hbox (65.54823pt too wide) in paragraph at lines 2216--2216
+[]               \OT1/cmtt/m/n/10 <div class="alert alert-error"><h1>Error</h1>
+<p><%= alert %></p></div>[] 
+ []
+
+[50]
+("C:\Users\Vincent\Documents\GitHub\SENG-POS\docs\Final Report\Group06 final re
+port.aux") ) 
+Here is how much of TeX's memory you used:
+ 2419 strings out of 494045
+ 32819 string characters out of 3145964
+ 129699 words of memory out of 3000000
+ 5698 multiletter control sequences out of 15000+200000
+ 8618 words of font info for 34 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 27i,6n,32p,681b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "Group06 final report.pdf" (54 pages, 182426 bytes).
+PDF statistics:
+ 204 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
