@@ -385,11 +385,11 @@ This requirement describes our systems ability to handle various functions in re
 \\\\
 Ordering from suppliers is ordering new stock from external entities, modelled this in event b with a few events. One is new order which creates a new stock order. It contains a few guards which checks if the product is active, then it checks if the user have privilege for the stock order and then it checks if there is an existing stock order for this product. Then it adds the amount which needs to order into the order set of mapping and change the order status to created. 
 \\\\
-This can be seen in the event-b appendix on page QQpage with new orders. This is again directly implemented in our code as we have a the same validation which are our guards and invariants and method of creation is identical as well. 
+This can be seen in the event-b appendix on page 37 with new orders. This is again directly implemented in our code as we have a the same validation which are our guards and invariants and method of creation is identical as well. 
 \\\\
 The next few events in EventB is the ability to modify the order status to delivery and completed. This simply contains guards to check the product activation status, user validation and the order status and it changes the order status corresponding to what stage the order is at. This again follows the same approach in our implementation. 
 \\\\
-Then we have the event complete order which indicates when the orders have arrived. This events check to see the order status of the order is complete, then proceed to add the amount of product into the warehouse. After this the order status and order is taken out of the corresponding sets. This again is similar in our code as after the order is complete, stock is added to the product’s warehouse quantity. This can be seen in the event-b appendix on page QQpage with complete orders. 
+Then we have the event complete order which indicates when the orders have arrived. This events check to see the order status of the order is complete, then proceed to add the amount of product into the warehouse. After this the order status and order is taken out of the corresponding sets. This again is similar in our code as after the order is complete, stock is added to the product’s warehouse quantity. This can be seen in the event-b appendix on page 38 with complete orders. 
 \\\\
 The next set of events are various events which are functions to move stock from one location to another, such as from warehouse to backroom, and from backroom to floor. Both events are identical besides the location transferring from and to. The guards build in will check if the amount the user want to transfer will lead to an overstock in the next location if it is above its stock location. It also makes sure there are sufficient amount of stock available to be transferred from one location to the other. This is again directly implemented in our code. 
 \\\\
@@ -398,7 +398,7 @@ The next set of events are various events which are functions to move stock from
 \\\\
 This requirements means the system must be able to handle multiple stock locations as goods can be spread across these locations. In event b this is shown as a set which contains floor, back room and frontend. This is directly mapped to our ruby implementation which we also have set of locations and each product will have a certain integer amount in each location. 
 \\\\
-This can be seen in the event-b code of Stockctx. In the code we used a model to represent the stock locations and prepopulated it with the correct values, this can be seen in appendix on page QQpage
+This can be seen in the event-b code of Stockctx. In the code we used a model to represent the stock locations and prepopulated it with the correct values, this can be seen in appendix on page 25
 \\\\
 \textbf{DN-2.1 Must support Orders and Sales throughout the system.}
 \\\\
@@ -418,7 +418,7 @@ Transactions is a core requirement to the purchasing section of our POS system. 
 \\\\
 The member accounts were core to the purchasing part of our system an allowed members to get discounts. this was once again modeled in our Event-B through the use of a set too signify the members. With other functions which took members and returned their respective discounts.
 \\\\
-The code for this was quite simple and just consisted of an extension of the systems user accounts to add the discount attributes to them so that they could be used as members.  This can be seen in the appendix on page QQpage. 
+The code for this was quite simple and just consisted of an extension of the systems user accounts to add the discount attributes to them so that they could be used as members.  This can be seen in the appendix on page 91. 
 \\\\
 \textbf{DN-3.1 Include the ability to report on stocks}
 \\\\
@@ -426,16 +426,16 @@ This domain level requirement  was all about letting the staff within the store 
 \\\
 Unfortunately due to restrictions in Event-B this was not fully able to be modelled, as it was just used to represent data. 
 \\\\
-With this we did not really have a guideline to go against while we begun coding a solution. This meant that we worked thoroughly on the product requirements of this requirement so that we had a program which meet the solution. The code for this can be seen in the appendix on page QQpage  this produced the following output of the sample data. QQscreenshot 
+With this we did not really have a guideline to go against while we begun coding a solution. This meant that we worked thoroughly on the product requirements of this requirement so that we had a program which meet the solution. The code for this can be seen in the appendix on page 93  this produced the following output of the sample data. QQscreenshot 
 \\\\
 \textbf{DN-3.2 The system must have the ability to provide sales reports for management.}
 \\\\
-This requirement is important as it can shows the performance of the stores/ business using an automated system. This is important because of the complexity of business these days, the system provides great benefit by automatically tracking various types of sales data. The reports produced includes Sales and financial reports. Due to this being a metadata based requirement it was unable to be modelled in event b and hence we had to rely greatly on the requirements description when we were programming for this part of the system. Our financial report also follows standard accounting standards by using a perpetual first in first out approach in managing our inventory costs. The code for the sales and financial report can been seen in the appendix on page QQpage and it fulfils the requirement as we requested as seen in the screenshot below: QQscreenshot
+This requirement is important as it can shows the performance of the stores/ business using an automated system. This is important because of the complexity of business these days, the system provides great benefit by automatically tracking various types of sales data. The reports produced includes Sales and financial reports. Due to this being a metadata based requirement it was unable to be modelled in event b and hence we had to rely greatly on the requirements description when we were programming for this part of the system. Our financial report also follows standard accounting standards by using a perpetual first in first out approach in managing our inventory costs. The code for the sales and financial report can been seen in the appendix on page 98 and it fulfils the requirement as we requested as seen in the screenshot below: QQscreenshot
 \\\\
 
 \textbf{DN-3.3 The system must have the ability to report on system users.}
 \\\\
-the requirement above as useful in assuring that our system had the ability to track the staff within the system. Due to this being a metadata based requirement it was unable to be modelled in event b and hence we had to rely greatly on the requirements description when we were programming for this part of the system. This mainly consisted of being ability to least the amount and number of sales for each of the system users. The code for this can be seen in the appendix on page QQpage and it fulfils the requirement as we requested as seen in the screenshot below. QQscreenshot
+the requirement above as useful in assuring that our system had the ability to track the staff within the system. Due to this being a metadata based requirement it was unable to be modelled in event b and hence we had to rely greatly on the requirements description when we were programming for this part of the system. This mainly consisted of being ability to least the amount and number of sales for each of the system users. The code for this can be seen in the appendix on page 98 and it fulfils the requirement as we requested as seen in the screenshot below. QQscreenshot
 \\\\
 \textbf{DN-4.1 Support user authentication and multiple levels of authorisation}
 \\\\
@@ -451,7 +451,7 @@ Since this is a surprisingly common occurrence in the industry, there are severa
 \\\\
 Since we modelled the requirements so accurately, we were able to proceed from there onwards with little reference to the requirements directly. Due to the lack of natural language, the model was much more suitable to turning directly into a software solution, and as such was the next logical step. 
 \\\\
-After reexamining the model for this purpose, we determined that it was far to large to be turned into a sustainable software solution. As such, we began decomposing the large monolithic model into a set of smaller, much more manageable components. We displayed such components and the relationships (including dependencies) between them in the somewhat abstract class diagram we presented in our design report. A copy of this is available in appendix (page ). 
+After reexamining the model for this purpose, we determined that it was far to large to be turned into a sustainable software solution. As such, we began decomposing the large monolithic model into a set of smaller, much more manageable components. We displayed such components and the relationships (including dependencies) between them in the somewhat abstract class diagram we presented in our design report. A copy of this is available in appendix(page 24) . 
 \\\\
 Now that we had our components, their responsibilities and relationships between them, we had to determine the most effective way of turning them into code. This included our choice of paradigm, language, framework and so forth.
 \\\\
