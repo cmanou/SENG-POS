@@ -1,42 +1,95 @@
 \contentsline {section}{\numberline {1}Executive Summary}{1}
-\contentsline {section}{\numberline {2}Requirements}{1}
-\contentsline {subsection}{\numberline {2.1}Goal-Level Requirements}{1}
-\contentsline {subsection}{\numberline {2.2}Domain-Level Requirements}{2}
-\contentsline {subsection}{\numberline {2.3}Product-Level Requirements}{4}
-\contentsline {subsection}{\numberline {2.4}Design-Level Requirements}{8}
-\contentsline {section}{\numberline {3}Specification}{9}
-\contentsline {section}{\numberline {4}Design}{9}
-\contentsline {section}{\numberline {5}Review and Assessment of prototype implementation}{9}
-\contentsline {section}{\numberline {6}Discussion of possible physical deployment}{10}
-\contentsline {section}{\numberline {7}Assessment of development process}{11}
-\contentsline {section}{\numberline {8}Project management}{12}
-\contentsline {section}{\numberline {9}Special features}{13}
-\contentsline {section}{\numberline {10}Reflections and Introspection}{14}
-\contentsline {section}{\numberline {11}Appendix}{15}
-\contentsline {subsection}{\numberline {11.1}Ruby on Rails code}{15}
-\contentsline {subsubsection}{\numberline {11.1.1}Product Model}{15}
-\contentsline {subsubsection}{\numberline {11.1.2}Refund Model}{15}
-\contentsline {subsubsection}{\numberline {11.1.3}Sales Model}{16}
-\contentsline {subsubsection}{\numberline {11.1.4}SaleItem Model}{17}
-\contentsline {subsubsection}{\numberline {11.1.5}StockLevel Model}{18}
-\contentsline {subsubsection}{\numberline {11.1.6}StockLocation Model}{19}
-\contentsline {subsubsection}{\numberline {11.1.7}StockTransfer Model}{19}
-\contentsline {subsubsection}{\numberline {11.1.8}Supplier Model}{19}
-\contentsline {subsubsection}{\numberline {11.1.9}SupplierStockOrder Model}{20}
-\contentsline {subsubsection}{\numberline {11.1.10}Transaction Model}{20}
-\contentsline {subsubsection}{\numberline {11.1.11}User Model}{20}
-\contentsline {subsubsection}{\numberline {11.1.12}ApplicationController}{22}
-\contentsline {subsubsection}{\numberline {11.1.13}HomeController}{22}
-\contentsline {subsubsection}{\numberline {11.1.14}ProductsController}{22}
-\contentsline {subsubsection}{\numberline {11.1.15}RefundsController}{25}
-\contentsline {subsubsection}{\numberline {11.1.16}ReportsController}{27}
-\contentsline {subsubsection}{\numberline {11.1.17}SalesController}{29}
-\contentsline {subsubsection}{\numberline {11.1.18}SaleItemsController}{32}
-\contentsline {subsubsection}{\numberline {11.1.19}StockLevelsController}{34}
-\contentsline {subsubsection}{\numberline {11.1.20}StockLocationsController}{35}
-\contentsline {subsubsection}{\numberline {11.1.21}StockTransfersController}{37}
-\contentsline {subsubsection}{\numberline {11.1.22}SupplierStockOrdersController}{40}
-\contentsline {subsubsection}{\numberline {11.1.23}SuppliersController}{43}
-\contentsline {subsubsection}{\numberline {11.1.24}TransactionsController}{45}
-\contentsline {subsubsection}{\numberline {11.1.25}UsersController}{46}
-\contentsline {subsubsection}{\numberline {11.1.26}•}{47}
+\contentsline {section}{\numberline {2}Requirements}{3}
+\contentsline {subsection}{\numberline {2.1}Goal-Level Requirements}{3}
+\contentsline {subsection}{\numberline {2.2}Domain-Level Requirements}{4}
+\contentsline {subsection}{\numberline {2.3}Product-Level Requirements}{6}
+\contentsline {subsection}{\numberline {2.4}Design-Level Requirements}{10}
+\contentsline {section}{\numberline {3}Requirements Tracing}{11}
+\contentsline {section}{\numberline {4}Design}{14}
+\contentsline {subsection}{\numberline {4.1}Implementation}{16}
+\contentsline {section}{\numberline {5}Review and Assessment of prototype implementation}{17}
+\contentsline {section}{\numberline {6}Discussion of possible physical deployment}{18}
+\contentsline {section}{\numberline {7}Assessment of development process}{19}
+\contentsline {section}{\numberline {8}Project management}{20}
+\contentsline {section}{\numberline {9}Special features}{22}
+\contentsline {section}{\numberline {10}Reflections and Introspection}{23}
+\contentsline {section}{\numberline {11}Appendix}{24}
+\contentsline {subsection}{\numberline {11.1}Class Diagram}{24}
+\contentsline {subsection}{\numberline {11.2}Event-B Model}{25}
+\contentsline {subsubsection}{\numberline {11.2.1}Stock\_ctx}{25}
+\contentsline {subsubsection}{\numberline {11.2.2}Stock\_ctx\_R0}{25}
+\contentsline {subsubsection}{\numberline {11.2.3}Stock\_ctx\_R1}{26}
+\contentsline {subsubsection}{\numberline {11.2.4}Stock\_ctx\_R2}{26}
+\contentsline {subsubsection}{\numberline {11.2.5}StockControl}{27}
+\contentsline {subsubsection}{\numberline {11.2.6}StockControl\_R0}{31}
+\contentsline {subsubsection}{\numberline {11.2.7}StockControl\_R1}{36}
+\contentsline {subsubsection}{\numberline {11.2.8}StockControl\_R2}{44}
+\contentsline {subsubsection}{\numberline {11.2.9}StockControl\_R3}{57}
+\contentsline {subsubsection}{\numberline {11.2.10}StockControl\_R4}{71}
+\contentsline {subsection}{\numberline {11.3}Ruby on Rails code}{86}
+\contentsline {subsubsection}{\numberline {11.3.1}Product Model}{86}
+\contentsline {subsubsection}{\numberline {11.3.2}Refund Model}{86}
+\contentsline {subsubsection}{\numberline {11.3.3}Sales Model}{87}
+\contentsline {subsubsection}{\numberline {11.3.4}SaleItem Model}{88}
+\contentsline {subsubsection}{\numberline {11.3.5}StockLevel Model}{89}
+\contentsline {subsubsection}{\numberline {11.3.6}StockLocation Model}{90}
+\contentsline {subsubsection}{\numberline {11.3.7}StockTransfer Model}{90}
+\contentsline {subsubsection}{\numberline {11.3.8}Supplier Model}{90}
+\contentsline {subsubsection}{\numberline {11.3.9}SupplierStockOrder Model}{91}
+\contentsline {subsubsection}{\numberline {11.3.10}Transaction Model}{91}
+\contentsline {subsubsection}{\numberline {11.3.11}User Model}{91}
+\contentsline {subsubsection}{\numberline {11.3.12}ApplicationController}{93}
+\contentsline {subsubsection}{\numberline {11.3.13}HomeController}{93}
+\contentsline {subsubsection}{\numberline {11.3.14}ProductsController}{93}
+\contentsline {subsubsection}{\numberline {11.3.15}RefundsController}{96}
+\contentsline {subsubsection}{\numberline {11.3.16}ReportsController}{98}
+\contentsline {subsubsection}{\numberline {11.3.17}SalesController}{100}
+\contentsline {subsubsection}{\numberline {11.3.18}SaleItemsController}{103}
+\contentsline {subsubsection}{\numberline {11.3.19}StockLevelsController}{105}
+\contentsline {subsubsection}{\numberline {11.3.20}StockLocationsController}{106}
+\contentsline {subsubsection}{\numberline {11.3.21}StockTransfersController}{108}
+\contentsline {subsubsection}{\numberline {11.3.22}SupplierStockOrdersController}{111}
+\contentsline {subsubsection}{\numberline {11.3.23}SuppliersController}{114}
+\contentsline {subsubsection}{\numberline {11.3.24}TransactionsController}{116}
+\contentsline {subsubsection}{\numberline {11.3.25}UsersController}{117}
+\contentsline {subsubsection}{\numberline {11.3.26}Layouts Application View}{118}
+\contentsline {subsubsection}{\numberline {11.3.27}Home Index View}{121}
+\contentsline {subsubsection}{\numberline {11.3.28}Home Help View}{122}
+\contentsline {subsubsection}{\numberline {11.3.29}Product Show View}{123}
+\contentsline {subsubsection}{\numberline {11.3.30}Product Form View}{125}
+\contentsline {subsubsection}{\numberline {11.3.31}Product Index View}{127}
+\contentsline {subsubsection}{\numberline {11.3.32}Refund Show View}{128}
+\contentsline {subsubsection}{\numberline {11.3.33}Refund Form View}{129}
+\contentsline {subsubsection}{\numberline {11.3.34}Refund Index View}{130}
+\contentsline {subsubsection}{\numberline {11.3.35}Report Index View}{131}
+\contentsline {subsubsection}{\numberline {11.3.36}Report Financial View}{131}
+\contentsline {subsubsection}{\numberline {11.3.37}Report Sales View}{132}
+\contentsline {subsubsection}{\numberline {11.3.38}Report Staff View}{133}
+\contentsline {subsubsection}{\numberline {11.3.39}Report Customer View}{133}
+\contentsline {subsubsection}{\numberline {11.3.40}Report Supplier View}{134}
+\contentsline {subsubsection}{\numberline {11.3.41}Report Stock View}{134}
+\contentsline {subsubsection}{\numberline {11.3.42}SaleItem Show View}{134}
+\contentsline {subsubsection}{\numberline {11.3.43}Sale Show View}{135}
+\contentsline {subsubsection}{\numberline {11.3.44}Sale Index View}{136}
+\contentsline {subsubsection}{\numberline {11.3.45}Sale List View}{136}
+\contentsline {subsubsection}{\numberline {11.3.46}Stocklevels Show View}{137}
+\contentsline {subsubsection}{\numberline {11.3.47}Stocklevels Form View}{137}
+\contentsline {subsubsection}{\numberline {11.3.48}Stocklevels Index View}{138}
+\contentsline {subsubsection}{\numberline {11.3.49}Stocklocation Show View}{139}
+\contentsline {subsubsection}{\numberline {11.3.50}Stocklocation Form View}{139}
+\contentsline {subsubsection}{\numberline {11.3.51}Stocklocation Index View}{140}
+\contentsline {subsubsection}{\numberline {11.3.52}Stocktransfer Show View}{140}
+\contentsline {subsubsection}{\numberline {11.3.53}Stocktransfer Index View}{141}
+\contentsline {subsubsection}{\numberline {11.3.54}Stocktransfer Form View}{142}
+\contentsline {subsubsection}{\numberline {11.3.55}SupplyStockOrder Show View}{142}
+\contentsline {subsubsection}{\numberline {11.3.56}SupplyStockOrder Index View}{144}
+\contentsline {subsubsection}{\numberline {11.3.57}SupplyStockOrder Form View}{145}
+\contentsline {subsubsection}{\numberline {11.3.58}Suppliers Show View}{146}
+\contentsline {subsubsection}{\numberline {11.3.59}Suppliers Index View}{147}
+\contentsline {subsubsection}{\numberline {11.3.60}Suppliers Form View}{147}
+\contentsline {subsubsection}{\numberline {11.3.61}Transaction Show View}{148}
+\contentsline {subsubsection}{\numberline {11.3.62}Transaction Index View}{149}
+\contentsline {subsubsection}{\numberline {11.3.63}Transaction Form View}{149}
+\contentsline {subsubsection}{\numberline {11.3.64}User Staff Index View}{150}
+\contentsline {subsubsection}{\numberline {11.3.65}User Member Index View}{150}
+\contentsline {subsubsection}{\numberline {11.3.66}User Edit View}{151}
