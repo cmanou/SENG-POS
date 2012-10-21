@@ -13,6 +13,10 @@
 \usepackage{amssymb}
 \usepackage[usenames,dvipsnames]{color}
 \RequirePackage{bsymb,b2latex}
+\usepackage{xcolor}
+\usepackage{fix-cm}
+\usepackage{url}
+\usepackage{fancyvrb}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOCUMENT MACROS -- DO NOT DELETE
 
@@ -68,7 +72,10 @@
 
 \tableofcontents
 \pagebreak
-
+\listoffigures     %% delete if not required
+\pagebreak         %% delete if there is no list of figures
+\listoftables      %% delete if not required
+\pagebreak         %% delete if there is no list of tables
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% MAIN DOCUMENT
@@ -79,16 +86,41 @@
 
 \section{Executive Summary}
 
+The Point of Sale/Warehouse System (PosWare) is designed to be a simple yet sophisticated system that provides extensive sales and logistics management functionality to all kinds of businesses from large to small.
+\\\\
+The system will be a distributed system which has various terminals and user interfaces designed for a variety of user roles.  enables multiple actors at different locations within the store to use the system concurrently. It will also be scalable to suit the needs of different sizes of business, as it can handle the complexity of large chain businesses, while remaining cost effective for small independent stores. The system will incorporate 3 different terminal and user interface designs. This includes the cashier UI, the stock controllers UI and manager UI. They all provide specific layout designed to maximise the efficiency and ease of use for the targeted actor. We have chosen to utilise a prototyping approach in the design of our UI as we constantly release and refine previews of the system based on user feedback.
+\\\\
+As the system is designed to suit different businesses, the clients will have an option of
+choosing their ideal combination of servers and terminals to suite their budgetary needs. They will also be able to opt in for various data redundancy programs such as offsite backups and automatic archiving as they see fit.
+\\\\
+The majority  of the functionality  has been modelled using EventB. The backend will stick as close to the model as possible since we understood that  the model was constructed to meet the customers requirements, and is internally consistent. The transition is a reasonably straightforward process as outlined in detail later on this document.
+\\\\
+After we finished with the Automated Theorem Proving, with the assistance of EventB’s theorem provers. We soon discover the model is far too large to be turned into a sustainable software solution hence we decomposed it into smaller, manageable components. 
+\\\\
+The implementation method we have chosen is by using a web application, which is to have a backend server containing a close implementation of our model, and a front end in a client’s web browser to perform all the inquiry services. Ruby on Rails was the language chosen for implementation due to its suitability of the rapid prototyping approach we are taking. 
+\\\\
+Components created from our modelling were translated into an instance of MVC, 
+This essentially meant turning each of those components into an instance of MVC. The models were responsible for dealing with all persistent data in an abstract manner The controllers carried out all the operations on this data, corresponding to events in the EventB model. And the views simply had to present the data in natural format to the user.
+\\\\
+Having finish the development of our core system according to the requirements we set out, we went on to implement a few extensions and special features which we have chosen. The first one being the reporting system and the interactive graphs. Then we implemented the new interface for various classes of users. 
+\\\\
+Overall the development process was done very smoothly, we implemented small, individual components before combining them into one. As the project being a long term waterfall approach, a large amount of time is spent on analyses and design of the system (seng1031 and seng 2010). Then we uses a prototyping approach during our implementation stage where quickly release working prototypes for feedback from mentors. 
+\\\\
+Project management also contributed to the success of this system, as we utilised a range of online project management tools, communication tools and revision control software which seem to be very beneficial to the overall working of the group. 
+\\\\
+In conclusion, we believe that prototype has achieved what we set out to complete initially. We are confident in our systems ability to provide simple and efficient stock management capabilities to all kinds of users. 
+
+\pagebreak
 
 \section{Requirements}
 Our requirements reflect on the core business scope we set for this project: to develop a point of sale system which has functionality that will assist businesses in managing the logistics
 involved in selling their products or services. 
 \\\\
-This is broken down into 4 main core functionality of the system;  Accurate Stock Control management, Instantaneous Customer Services, Sales and inventory reporting and lastly, a Safe and encrypted system . This is reflected in our goal requirements and is largely unchanged since the initial requirements report. 
+This is broken down into 4 main core functionality of the system;  Accurate Stock Control management, Instantaneous Customer Services, Sales and inventory reporting and lastly, a Safe and encrypted system. This is reflected in our goal requirements and is largely unchanged since the initial requirements report. 
 \\\\
-However, many domain level and product level requirements were revised over the course of this project. The main reason is to include more detail into our requirements to better reflect our system, and secondly to add in new and innovative feature to our system for a more enjoyable experience for our stakeholders while using our system. 
+However many domain level and product level requirements were revised over the course of this project. The primary reason for this has been to include more detail into our requirements as our understanding of the system has developed. However we have also made revisions to add in new and innovative features to our system for a more enjoyable experience for our stakeholders while using our system. 
 \\\\
-In the requirements listed below, the number colour show if it is a functional requirement \textcolor{black}{(Black)} or a non functional requirement \textcolor{blue} {(Blue)}. There are also brackets next to the description to label the requirement to be either a core part of the system ([core]) or an extension of a system ([extension]). In the given prototype, all extensions have been implemented, but clients have an option to opt out various extension functionality and the core part of the system will still work without omission. Following that is the page number link to the event-B code and the Ruby on Rails code in the appendix.
+In the requirements listed below, colours indicate functional (black) and a non functional requirements (blue). There are also brackets next to the description to label the requirement as either a core function of the system ([core]) or an extension of a system ([extension]). In the given prototype, all extensions have been implemented, but clients have an option to opt out from various functionality extensions while still maintaining the systems core functionality.
 \\\\
 \textbf{Key:}\\
 \textcolor{black}{black} = Functional Requirements\\
@@ -322,23 +354,148 @@ leading and trailing product sales and profitability, total sales based on locat
 \section{Specification}
 
 \section{Design}
+The goal of our design was to enable the development of a solution that satisfies the the client’s requirements. This was achiveved in a series of steps, some of which were already outlined in detail in other parts of this document.
+\\\\
+After a concrete and suitable set of requirements were established, the next most pertinent step verified them for internal consistency. This was vital to the success of the overall project, as it would have been locally impossible to meet two (or more) requirements that were contradictory to each other. If any such contradictions existed, they would surely have been discovered at some stage of the design (or worse, implementation) stage of the project. However by that time, valuable resources could have been wasted developing a partial solution that could not possibly meet all the requirements.
+\\\\
+Since this is a surprisingly common occurrence in the industry, there are several techniques called formal methods to avoid such a disaster. While there are several to choose from depending on project needs, we used Model Checking. A method of Automated Theorem Proving, with the assistance of EventB’s theorem provers. As such we created a model, that modelled the requirements closely and correctly/accurately as possible within the confines of EventB. This is discussed in detail in the specification section  of this document. While the requirements had to be revised several times during the development of the model, it adequately proved that all parts of the requirements were internally consistent.
+\\\\
+Since we modelled the requirements so accurately, we were able to proceed from there onwards with little reference to the requirements directly. Due to the lack of natural language, the model was much more suitable to turning directly into a software solution, and as such was the next logical step. 
+\\\\
+After reexamining the model for this purpose, we determined that it was far to large to be turned into a sustainable software solution. As such, we began decomposing the large monolithic model into a set of smaller, much more manageable components. We displayed such components and the relationships (including dependencies) between them in the somewhat abstract class diagram we presented in our design report. A copy of this is available in appendix (page ). 
+\\\\
+Now that we had our components, their responsibilities and relationships between them, we had to determine the most effective way of turning them into code. This included our choice of paradigm, language, framework and so forth.
+\\\\
+For ease of development and (more importantly) deployment, we chose to make our solution a ‘web app’. That is,  to have a backend server containing a close implementation of our model, and a front end in a client’s web browser to perform all the inquiry services. Next came the choice of programing language and framework. We opted for ruby on rails, partially due to the advice of our mentors, and because it is a very successful tool in the industry, especially with regards to startups. This is because of the increased developer productivity due to the easy learning curve of Ruby, and the advanced nfoisjure of rails.
+\\\\
+This essentially meant turning each of those components (or classes, in the class diagram) into an instance of MVC. The models were responsible for dealing with all persistent data (corresponding to variables in the EventB model) in an abstract manner while reals put them to a postgreSQL database. The controllers carried out all the operations on this data, corresponding to events in the EventB model. And the views simply had to present the data in natural format to the user.
+\\\\
+While we originally intended to design the user interface up front, we decided then that it was best done iteratively, as we built the solution. In a sense we employed a rapid-prototyping approach. For example, the initial interface for checking out a basket involved 3 pages. One for selecting a customer (for record keeping purposes), one for adding products individually, and one for payment. 
+\\\\
+
+%%[[screenshot of /sales/new from branch sale_item_2]].
+%%[[screenshot of /sales/:id/sale_items from branch sale_item_2]].
+
+
+It was later decided that it would be tedious to have to make sure the customer was selected before a sale could began as well as having to select a product to add from a list. So this was then redesigned to be a much more streamlined approach, where clicking ‘New Sale’ would take the user directly to the page for scanning products,
+%%[[screenshot of /sales/new from master branch ]]$$
+\\\\
+and the customer (if they were a member) could be selected at a later stage, during payment.
+
+\subsection{Implementation}
+
+Next up, came actually turning the components into a functional solution i.e. ‘writing the code’. During this stage we employed a slightly modified version of the agile approach, implementing on a component by component basis.
+\\\
+We began by determining the component with the least dependencies such as User, and built it. This involved being able to create, login and edit users. We built this functionality and tested it extensively before proceeding, verifying that it produced the output corresponding exactly to those of the methods in EventB.
+We then picked components have no dependencies or depended only on components that are already complete and built them, one at a time. They were also tested rigorously not only to ensure correctness of the overall system, but also to make sure that the components that depend on it won’t have un-explainable bugs. 
+
+\pagebreak
 \section{Review and Assessment of prototype implementation}
 \pagebreak
 \section{Discussion of possible physical deployment}
+While designing the point of sale system, we have always kept the idea of physical deployment in mind. As we try to develop a product which will suit the real world needs by utilizing exisiting technology that the world currently offers. 
+\\\\
+Our point of sales system is made to be easily deployed in various kinds of stores/warehouses. This is due to the ease of setting up and the system’s ability to adapt to a wide range of situations. 
+\\\\
+For small business the pos system is capable of running on a laptop or even a tablet, with an attaching barcode scanner. While on larger businesses such as supermarkets and warehouses the system can support multiple transaction registers at a time. 
+\\\\
+The system is also designed to be used with touch input device as the layout of the system is constructed such that buttons and features of the system is well laid out and easily accessible for touch input. 
+\\\\
+We also had plans during the development stage to include a separate online store for the POS point of sale system. But as we focused more on the core part of the system the online extension was dropped, however it would not take much effort to include such extension as more stores now also offers online purchasing. 
+\\\\
+Although our system is capable of working with legacy systems, it is highly recommended just to switch over to the new system overall as having both new parts and old parts of the system running concurrently can be problematic. It is also easier to just transfer the historic data over to the new system using the data import method built into the point of sales system. 
+\\\\
+Our system should also provide frequent updates such that the system can keep up to date with the most advance technology. Updates could be be a built in feature such that the system will automatically check for updates and download + install update components. 
+\\\\
+A feature which we have implemented in our prototype is the idea of a web based app using cloud computing instead of the classical in store machine and database mix. Firstly this will lead a very fast deployment because instead of installing the software on every single system, clients can just access the application online leading to a faster switch over time between systems. As new stores open they can just connect straight to the application online and the store is up and running. Another great feature about cloud is cheaper maintenance costs as Upgrades are needed less frequently and are typically managed by data centres. This also saves costs in hiring a dedicated IT team each store which contribute to large expenditure for any company. 
+\\\\
+Overall, the physical deployment of our system will continue to follow one of our core goals: fast, simple and increase efficiency of a business. 
 \pagebreak
 \section{Assessment of development process}
+The development process we took was quite modular it was a long term waterfall development process. the requirements and design stages mainly took place in the previous two semesters. With the implementation and somewhat testing stage taking place this  semester.  Overall the process as a whole functioned correctly and was the most suitable for this time of semi structured and long term project. 
+\\\\
+In the actual implementation section of the process, we focused on different parts of a system before combining them to work as a whole. This allowed us to easily view our progress, throughout the development period. Generally the process we took worked well it allowed us to create the prototype in a timely manner with minnor issues.
+\\\\
+As we worked on the different sections we begun most times creating the model  and then adjusting the controller as needed to be able to do all the functions requireed before finally adjusting the views so that there was a usable interface. In some cases when the sections were tightly coupled we were required to work on  both models to gether so that they could be integrated correctly. 
 \pagebreak
 \section{Project management}
+Project management forms a big part of the success or failure of a system design. No matter how great each person in your team is, if the team is unorganised the output of the team will always be unsatisfactory.
+\\\\
+Hence why it is very important to define a clear scope and goal for our design. As Deming’s 15/85 rule point out, if the first 15 "\%" is done correctly, 85"\%" of the desire outcome can achieved. That first drop of water that disturbs the surface of the pool is your first 15"\%". The resulting ripples, right or wrong, all have their origins in that single drop. Our scope and goal was determined since day one and we have set with it ever since.
+\\\\
+From the requirements design stage to now, we have maintained a proper schedule on the set tasks and the completion date. This was first done using a simple gnatt chart, then we uses a online project management tool mijura, and recently we switched to using another online project management tool - mavenlink. The idea of a project management tool is that it provides tools for scheduling, resource allocation, monitoring and  communication tools between the team members. 
+\\\\
+Throughout the semesters we have utilized the approach where we get together and discuss what needs to be completed and how to compete such task. The tasks are then posted up on the project management tools online with the due date and comments regarding how we want to achieve the tasks, the tasks are also allocated to the team member(s) elected to complete the tasks. Which we then all all separate and complete the task according to what was defined and within  time allocated to the task. 
+\\\\
+Communications is also an important aspect in project management. Our teams have various communication channels which we have used. The most common being email, online chats (face book), online project management tools and video conference (skype, google+). We also have weekly meetings to plan out what each of us are allocated according to the schedule we have set. Meetings and video conferencing is a much prefered communication in our team because of it will require immediate response unlike emails which in some case certain team members would ignore. However, there are rarely times when all team members are free for face to face meeting hence why email remain our main form of contact.
+\\\\
+ Most of the allocation of tasks are done during the meetings.We bring up the task which is scheduled for the upcoming weeks in the meetings, then the team will discuss what needs to be changed and if there is any tasks which needs priority over others. Our team is particularly good in team work as we often negotiate and have conflict (good ones!) between team member which leads to us not entering into groupthink. Team members also often share new ideas and improvement for the project while voluntarily sharing tasks and responsibilities between team members.
+\\\\
+Time management is also another important part of project management. As mentioned before with the use of an online project management tool, it minimises the complication of time management and scheduling. Each tasks we have scheduled more than enough time to complete as we understand team members also have other events/ projects they have to attend. However we always require team member to submit their allocated task on time. We have also added padding between our time allocation such that if one person fails to submit a task on time the rest of the team would not get halted since we are missing a component. Mavenlink provides great features such as calendar integration and email reminders close to due date to make sure team members remember the tasks they have to complete. It also makes it easier for project leader as it gives an overview on the tasks which are completed or not completed and to determine if there is a need in the change of scheduling.  Overall our team have worked very well using mavenlink as we rarely have any late night rushing on due dates because of unfinished tasks.
+ \\\\
+Github was also used throughout the stages to manage our code and ended up being extremely useful as it allowed us all to work simultaneously on the code and we would not have many errors when the code was merged. Also this allows us to revert back changes we made if we found bugs in our system which was very helpful. 
+\\\\
+During this semester's implementation stage, the way which we used ruby on rails allowed us to split up the work very well with each of us focusing on different modules and later on joining it. This was useful in managing the project as it allowed us to work independently for as long as possible without breaking the whole system. 
+\\\\
+Overall the combination of tools and decisions during the planning stage allowed us to complete all of the core functionality of the project on time and in the required timeframe. Optimally we would have managed a time a little better and planned more time at the end to add extensions to our projects, as it would have given our project a leading edge. However our project was still done with a very high quality much due to the project management style we utilized since the beginning of project development.
+
 \pagebreak
 \section{Special features}
+Our project had a variety of different features, that we considered to be special, these were mainly due to our extensions. 
+\\\\
+One of the key special features in our system was that of the reporting section, the requirement required our system to have a way of providing the managers with a report on different statistics within the system. We decided to add the extra feature of interactive graphs in the sales reports. Which gave our system an easy way to visualise customer sales per customer and as a whole how sales on different dates  to visualise trends. we believe this will be greatly beneficial for users as graphs are a lot easier to understand data than just raw data. 
+
+\begin{figure}[h]
+\centering
+  \includegraphics[scale=0.01]{Class diagram.png}
+	\caption{Reporting section}
+\end{figure}
+
+Another special feature we have included is the way our user interface works. Our system was required to provide a user interface, which was simple and easy to use. We outdone ourselves  with a very simplistic frontend based on the twitter bootstrap. Our user interface also changes according to the current users privileges meaning that what they needed was always less than a click away. This is a particular good feature as the features which are not avliable to the users due to the authorisation status is simply not shown. We have also included a help system was a click away and even though it was not complete it was one of the special features which set our system apart from the other POS developed.
+
+
+\begin{figure}[h]
+\centering
+  \includegraphics[scale=0.01]{Class diagram.png}
+	\caption{User interface}
+\end{figure}
+
+Our sales section also features special features which include automatically saving of unfinished transactions. As transactions is only considered complete when its paid for some unforeseen reason the system disconnected, if it then was reconnected it will ask if the user want to continue with their unfinished checkout. Another special features is the overview screen of sales. It shows all the sales currently happening in the store in one page. It categorise by if products are being scanned, they are checking out or completed. This way the store wont get hold up by customers as it can just save their transaction and serve the next customer before going back to the original customer (for example if a customer wants price check)  
+ 
 \pagebreak
+
 \section{Reflections and Introspection}
+
+
+Although our project ran quite smoothly there were a few areas which we think we could improve on, firstly being the implementation of extra features. As we did schedule a time for our extensions but we had a lot more extensions than we initially thought we had. Extensions which are not implemented yet includes qr code scanning, product details importation and online stores. I believe we could have changed our timetable such that we have sufficient time to finish all the set extensions.
+\\\\
+We also could have tried to improve on our code, most it worked however there are patches from quick fixes which are not the best way of implementation. There are also some areas which have bugs and we didn't have time to fix. This is again due to poor time allocation between different tasks as testing took up a lot more time than we initially thought it would take. 
+\\\\
+If we could have spent more on the project we could have found a solution to see if we could simultaneously edit the database without any overwrite issues. We had a few ideas during the implementation however most of them we either don't know or were too complex to implement into our system. 
+\\\\
+A definite problem we have in this project is the lack of communication between team members, as team members does not reply to email at times and wanting to do parts which they are not assigned. This leads to overwriting of codes where one person finish a section, and another person just came in with their own version and overwrites everything the last person wrote. A way to improve this will be better communications between team members as the team members can both work together on the same section for the best outcome.
+\\\\
+Another improvement we could have made is by testing with 3rd party, for example our payment system so far just assumes the card transaction is always approved, however we could have tested with 3rd party applications to see the various kinds of interaction and if there are any areas which becomes problematic. 
+\\\\
+On the whole, the code was done with a high standard, though we could have improved in some areas by not  relying on the scaffolding as much as we did, but given the short time frame we had this was probably the best solution. 
+\\\\
+At times we also strayed away from our requirements, as we found new ways and ideas for our system. This could have improved by creating a better set of requirements at the beginning as it is clear we haven't thought of everything, but also could have been improved if we constantly made comparisons of our current solution with the requirements to make sure we our code is compliant to what we set out. This is an indication of the importance of design as our initial design werent the best, which leads to our project being problematic during implementation. Although we still manage to solve the problems we had, it will be much easier if we have had a better design at the beginning. 
+\\\\
+Overall, I think we did well as a team. Our implementation works and we also implemented a few extra features. Although there are still a few bugs in our system and our team had minor problems at times, we did well as a team overall. As teams without conflicts are not an efficient team and conflict is a natural result of teamwork.  All of us learnt a lot regarding design as we finally see the importance of both the requirements and event-b modelling during the implementation stage. 
 \pagebreak
 
 
 \section{Appendix}
 
+\subsection{Class Diagram}
 
+\begin{figure}[h]
+\centering
+  \includegraphics[scale=0.2]{Class diagram.png}
+	\caption{Class Diagram for our POS system}
+\end{figure}
+
+\pagebreak
 \subsection{Event-B Model}
 
 %% Note
@@ -4506,10 +4663,6 @@ leading and trailing product sales and profitability, total sales based on locat
 
 \pagebreak
 
-
-
-
-
 \subsection{Ruby on Rails code}
 
 \subsubsection{Product Model}
@@ -6217,39 +6370,1799 @@ class UsersController < ApplicationController
 end
 
 \end{verbatim}
-\subsubsection{•}
+
+
+\subsubsection{Layouts Application View}
 \begin{verbatim}
-\end{verbatim}\\
-\subsubsection{•}
-\begin{verbatim}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>POS - <%= yield(:title) %></title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+   <!-- Le styles -->
+   <%= stylesheet_link_tag "bootstrap.min" %>
+   <%= stylesheet_link_tag "bootstrap-responsive.min" %>
+   <%= stylesheet_link_tag "main" %>
+
+
+   <%= csrf_meta_tags %>
+
+   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+   <!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+   <![endif]-->
+
+   <!-- Le fav and touch icons -->
+   <link rel="shortcut icon" href="/assets/favicon.ico">
+   <link href="/assets/icon.png" rel="icon" type="image/png"/>
+</head>
+
+<body>
+
+   <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+         <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="/">POS</a>
+
+
+            <% if user_signed_in? %>
+            <div class="btn-group pull-right">
+               <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                  <i class="icon-user"></i> <%= current_user.email %>
+                  <i class="caret"></i>
+               </a>
+               <ul class="dropdown-menu no-collapse" style="margin-top:8px;">
+                  <li><a href="/users/edit">My Account</a></li>
+                  <li><a href="#">My Purchase History</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/logout">Sign Out</a></li>
+               </ul>
+            </div>
+            <% else %>
+            <div class="btn-group pull-right">
+               <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                  Sign In
+                  <i class="caret"></i>
+               </a>
+               <div class="dropdown-menu no-collapse" style="padding: 15px;padding-bottom:0px;margin-top:8px;">
+                  <form action="/login" method="post" accept-charset="UTF-8">
+                     <input id="username" style="margin-bottom: 15px;" type="text" name="username" placeholder="username" size="30" />
+                     <input id="password" style="margin-bottom: 15px;" type="password" name="password" placeholder="password" size="30" />
+                     <div class="btn-group">
+                        <input class="btn btn-primary" style="width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <% end %>
+
+
+            <div class="nav-collapse">
+               <ul class="nav">
+                  <li>
+                     <a href="/">Home</a>
+                  </li>
+                  <% if user_signed_in? %>
+                  <% if current_user.can_checkout %>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sales<b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><%= link_to 'New Sale', new_sale_path %></li>
+                        <li><%= link_to 'Previous Sales', sales_path %></li>
+                        <li><%= link_to 'Refunds', refunds_path %></li>
+                     </ul>
+                  </li>
+                  <% end %>
+                  <% if current_user.can_manage_stock %>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Stock Control<b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+
+                        <li><%= link_to "Stock Levels", stock_levels_path %></li>
+                        <li><%= link_to "Products", products_path %></li>
+                        <li><%= link_to "Suppliers", suppliers_path %></li>
+                        <li><%= link_to "Stock Locations", stock_locations_path %></li>
+                        <li><%= link_to "Stock Transfers", stock_transfers_path %></li>
+                        <li><%= link_to "Supplier Stock Orders", supplier_stock_orders_path %></li>
+                     </ul>
+                  </li>
+                  <% end %>
+                  <% if current_user.can_report %>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports<b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="/reports">Index</a></li>
+                        <li><a href="/reports/sale">Sales</a></li>
+                        <li><a href="/reports/supplier">Suppliers</a></li>
+                        <li><a href="/reports/staff">Staff</a></li>
+                        <li><a href="/reports/stock">Stock</a></li>
+                        <li><a href="/reports/financial">Financial</a></li>
+                        <li><a href="/reports/customer">Customer</a></li>
+                     </ul>
+                  </li>
+                  <% end %>
+                  <% if current_user.can_checkout %>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Management<b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="/members">Customer Memberships</a></li>
+                        <li><a href="/staff">Staff Management</a></li>
+                     </ul>
+                  </li>
+                  <% end %>
+                  <% end %>
+                  <li>
+                     <a href="/help">Help</a>
+                  </li>
+               </ul>
+            </div><!--/.nav-collapse -->
+         </div>
+      </div>
+   </div>
+
+   <div class="wrapper">
+      <div class="container">
+         <center>
+            <div class="global-flash">
+               <% if notice %>
+               <div class="alert alert-info"><h1>Notice</h1><p><%= notice %></p></div>
+               <% end %>
+               <% if alert %>
+               <div class="alert alert-error"><h1>Error</h1><p><%= alert %></p></div>
+               <% end %>
+            </div>
+         </center>
+         <%= yield %>
+      </div>
+      <div class="push"><!--//--></div>
+   </div><!-- /container -->
+
+   <!-- Le javascript
+   ================================================== -->
+   <!-- Placed at the end of the document so the pages load faster -->
+   <%= javascript_include_tag "application" %>
+
+
+</body>
+</html>
+
 \end{verbatim}
-\subsubsection{•}
+
+
+\subsubsection{Home Index View}
 \begin{verbatim}
-\end{verbatim}\\
-\subsubsection{•}
-\begin{verbatim}
+
+<% title "Home" %>
+
+<h1>Welcome To POSSIE</h1>
+
+<center>
+  <div class="row-fluid">
+    <div class="span8 offset2">
+      <div class="well">
+        <% if user_signed_in? %>
+        <% if current_user.can_checkout %>
+        <%= link_to "Cash Register", new_sale_path, :class => 'btn btn-super' %>
+        <% end %>
+        <% if current_user.can_manage_stock %>
+        <%= link_to "Stock Control", stock_levels_path, :class => 'btn btn-super' %>
+        <% end %>
+        <% if current_user.can_report %>
+        <%= link_to "Reporting", reports_path, :class => 'btn btn-super' %>
+        <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</center>
 \end{verbatim}
-\subsubsection{•}
+\subsubsection{Home Help View}
 \begin{verbatim}
-\end{verbatim}\\
-\subsubsection{•}
-\begin{verbatim}
+<!-- 
+<center>
+<FORM method=GET class="form-inline" action="http://www.google.com/search">
+<input type=hidden name=ie value=UTF-8>
+<input type=hidden name=oe value=UTF-8>
+<TABLE bgcolor="#FFFFFF"><tr><td>
+<A HREF="http://www.google.com/">
+<IMG SRC="http://www.google.com/logos/Logo_40wht.gif"
+border="0" ALT="Google" align="absmiddle"></A>
+<INPUT TYPE=text name=q size=25 maxlength=255 value="">
+<INPUT type=submit class="btn" name=btnG VALUE="Google Search">
+</td></tr></TABLE>
+</FORM>
+</center>
+Search Google 
+
+<iframe src="http://lmgtfy.com/?q=how+to+pos" frameBorder="0" scrolling="no"
+  style="width:100%;height:100%;min-height:480px;"></iframe>
+
+<script type="text/javascript">
+  window.setTimeout(function () { window.location = "https://www.google.com/search?btnG=1&pws=0&q=how+to+pos" }, 10000);
+</script> -->
+
+<%= title "User Manual" %>
+
+<h3>FAQ</h3>
+
+<h4>BASIC TASKS</h4>
+
+1. How to log in
+
+<p>To log in simply hit the login button located on the top right corner. Type the email address and password you have set, then click Login!
+Alternatly you can select the home page and it should bring you to the login screen.
+ If you havnt register before, please see 'How Do I Register'. 
+</p>
+
+2. How do I register
+<p>
+Select Home page from the top menu bar. It should bring you to the log in screen. Under the password field there should be a green button saying "Sign up". Select that button and it will bring you to the sign in screen.
+</p>
+<p>
+Under the sign up screen, fill in the correct details in each of the textboxes. Your will only be a default as you need staff with higher perminssion level to change your role. Then simply hit sign up and you will be registered! 
+</p>
+3. How to get to cash register view
+
+<p>After logging in (if having trouble see "How to log in"), </p>
 \end{verbatim}
-\subsubsection{•}
+\subsubsection{Product Show View}
 \begin{verbatim}
-\end{verbatim}\\
-\subsubsection{•}
-\begin{verbatim}
+<%= title "Product Details" %>
+
+
+
+<div class="form-horizontal">
+
+<legend>Attributes</legend>
+
+  <div class="control-group">
+    <label class="control-label">Supplier:</label>
+    <div class="controls">
+    <%= @product.supplier.name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Barcode:</label>
+    <div class="controls">
+    <%= @product.barcode %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Name:</label>
+    <div class="controls">
+    <%= @product.name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Brand:</label>
+    <div class="controls">
+    <%= @product.brand %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Size:</label>
+    <div class="controls">
+    <%= @product.size %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Description:</label>
+    <div class="controls">
+    <%= @product.description %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Active:</label>
+    <div class="controls">
+    <% if @product.active=='t' %>
+      <i class="icon-ok"></i>
+      <% else %>
+      <i class="icon-remove"></i>
+      <% end %>
+    </div>
+  </div>
+
+<legend>Pricing</legend>
+  <div class="control-group">
+    <label class="control-label">Cost:</label>
+    <div class="controls">
+          <%= number_to_currency(@product.cost) %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Price:</label>
+    <div class="controls">
+      <%= number_to_currency(@product.price) %>
+    </div>
+  </div>
+
+  <% @product.stock_levels.each do |s| %>
+    <legend>Stock Levels - <%= s.stock_location.name %></legend>
+      <div class="control-group">
+        <label class="control-label">Quantity:</label>
+        <div class="controls">
+          <%= s.quantity %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Threshold:</label>
+        <div class="controls">
+          <%= s.threshold %>
+        </div>
+      </div>
+  <% end %>
+
+  <div class="form-actions">
+    <%= link_to 'Edit', edit_product_path(@product), :class=>"btn btn-success"%>
+    <%= link_to 'Back', products_path, :class => "btn" %>
+  </div>
+</div>
 \end{verbatim}
-\subsubsection{•}
+\subsubsection{Product Form View}
 \begin{verbatim}
-\end{verbatim}\\
-\subsubsection{•}
-\begin{verbatim}
+<% if @product.errors.any? %>
+  <div class="global-flash">
+    <div class="alert alert-error"><h1>Error</h1>
+      <ul>
+        <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<%= form_for @product, :html => {:class => "form-horizontal"} do |f| %>
+
+<legend>Attributes</legend>
+
+  <div class="control-group">
+    <%= f.label :supplier, :class => "control-label" %>
+    <div class="controls">
+    <%= f.collection_select :supplier, Supplier.all, :id, :name, {:prompt => 'Select Supplier'}%>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :barcode, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :barcode %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :name, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :brand, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :brand %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :size, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :size %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :description, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_area :description,:rows => "5" %>
+    </div>
+  </div>
+
+<legend>Pricing</legend>
+  <div class="control-group">
+   <%= f.label :cost, :class => "control-label" %>
+    <div class="controls">
+      <div class="input-prepend">
+        <span class="add-on">$</span><%= f.text_field number_with_precision(:cost, :precision => 2) %>
+        </div>
+    </div>
+  </div>
+
+  <div class="control-group">
+   <%= f.label :price, :class => "control-label" %>
+    <div class="controls">
+      <div class="input-prepend">
+        <span class="add-on">$</span><%= f.text_field number_with_precision(:price, :precision => 2) %>
+        </div>
+    </div>
+  </div>
+
+  <% @product.stock_levels.each do |s| %>
+    <%= fields_for "stock_level[#{s.stock_location.id}]", s do |builder| %>
+    <legend>Stock Levels - <%= s.stock_location.name %></legend>
+      <div class="control-group">
+        <%= builder.label :quantity, :class => "control-label" %>
+        <div class="controls">
+        <%= builder.number_field :quantity%>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= builder.label :threshold, :class => "control-label" %>
+        <div class="controls">
+        <%= builder.number_field :threshold%>
+        </div>
+      </div>
+
+     <% end %>
+  <% end %>
+
+ 
+
+<%= f.hidden_field :active, :default=>false %></td>
+
+  <div class="form-actions">
+    <%= f.submit :class=>"btn btn-primary"%>
+    <% if @product.id %>
+    <%= link_to 'Show', @product, :class => "btn btn-success" %>
+    <% end %>
+    <%= link_to 'Back', products_path, :class => "btn" %>
+  </div>
+<% end %>
+
 \end{verbatim}
-\subsubsection{•}
+\subsubsection{Product Index View}
 \begin{verbatim}
+<%= title "Product Listing" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Cost Price</th>
+    <th>Retail Price</th>
+    <% StockLocation.order("id").each do |s| %>
+      <th><%= s.name %></th>
+    <% end %>
+    <th>Supplier</th>
+    <th>Active</th>
+    <th>Tools</th>
+
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.name %></td>
+    <td><%= number_to_currency(product.cost) %></td>
+    <td><%= number_to_currency(product.price) %></td>
+
+      <% product.stock_levels.order("stock_location_id").each do |s| %>
+      <td>
+          Quantity: <%= s.quantity %><br>
+          Threshold: <%= s.threshold %><br><br>
+      </td>
+      <% end %>
+      <td><%= product.supplier.name %></td>
+      <td>
+      <% if product.active=='t' %>
+      <i class="icon-ok"></i>
+      <% else %>
+      <i class="icon-remove"></i>
+      <% end %>
+    </td>
+    <td class="btn-group">
+      <%= link_to 'Show', product, :class=>"btn btn-success"%>
+      <%= link_to 'Edit', edit_product_path(product), :class=>"btn btn-warning" %>
+
+      <% if product.active == 't' %>
+        <%= link_to 'Deactivate', deactivate_product_path(product), :class=>"btn btn-danger" %>
+      <% else %>
+        <%= link_to raw('&nbsp;&nbsp;Activate&nbsp;&nbsp;'), activate_product_path(product), :class=>"btn btn-primary" %>
+      <% end %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'New Product', new_product_path, :class=>"btn btn-primary" %>
+
 \end{verbatim}
+\subsubsection{Refund Show View}
+\begin{verbatim}
+<%= title "Showing Refund" %>
+
+<div class ="form-horizontal">
+<legend>Attributes</legend>
+
+<div class="control-group">
+   <label class = "control-label">Sale item:</label>
+    <div class="controls">
+  <%= @refund.sale_item.product.name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+   <label class = "control-label">Checkout user:</label>
+    <div class="controls">
+  <%= @refund.checkout_user.name %>
+    </div>
+  </div>
+
+
+  <div class="control-group">
+   <label class = "control-label">Quantity:</label>
+    <div class="controls">
+    <%= @refund.quantity %>
+    </div>
+  </div>
+
+  <div class="control-group">
+   <label class = "control-label">Reason:</label>
+    <div class="controls">
+    <%= @refund.reason %>
+    </div>
+  </div>
+
+  <div class="control-group">
+   <label class = "control-label">Total:</label>
+    <div class="controls">
+    <%= @refund.total %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= link_to 'Sale', sale_path(@refund.sale_item.sale), :class=>"btn btn-primary" %>
+    <%= link_to 'Edit', edit_refund_path(@refund), :class=>"btn btn-success" %>
+    <%= link_to 'Back', refunds_path, :class => "btn" %>
+  </div>
+</div>
+\end{verbatim}
+\subsubsection{Refund Form View}
+\begin{verbatim}
+<h3>Refund for <%= @refund.sale_item.product.name %> in Sale #<%= @refund.sale_item.sale.id %></h3>
+
+  <% if @refund.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@refund.errors.count, "error") %> prohibited this refund from being saved:</h2>
+
+      <ul>
+      <% @refund.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<%= form_for @refund,  :html => {:class => "form-horizontal"} do |f| %>
+<legend>Attributes</legend>
+
+    <input type="hidden" name="sale_item_id" value="<%= @refund.sale_item.id %>">
+
+  <div class="control-group">
+   <%= f.label :quantity, :class => "control-label" %>
+    <div class="controls">
+    <%= f.number_field :quantity %>
+    </div>
+  </div>
+
+  <div class="control-group">
+   <%= f.label :reason, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_area :reason, :rows => 5 %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit :class=>"btn btn-primary"%>
+    <%= link_to 'Back', refunds_path, :class => "btn" %>
+  </div>
+<% end %>
+
+\end{verbatim}
+\subsubsection{Refund Index View}
+\begin{verbatim}
+<%= form_tag 'refunds/search', :class => "form-inline pull-right" do %>
+  <%= text_field_tag 'sale_id', '', :placeholder => "Enter Recipt No. (Sale ID)" %>
+  <%= submit_tag 'New Refund', :class => "btn btn-success" %>
+<% end %>
+
+<h2>Listing refunds</h2>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Sale item</th>
+    <th>Checkout user</th>
+    <th>Quantity</th>
+    <th>Reason</th>
+    <th>Total</th>
+    <th>Tools</th>
+  </tr>
+
+<% @refunds.each do |refund| %>
+  <tr>
+    <td><%= refund.sale_item.product.name %></td>
+    <td><%= refund.checkout_user.name %></td>
+    <td><%= refund.quantity %></td>
+    <td><%= refund.reason %></td>
+    <td><%= refund.total %></td>
+    <td><%= link_to 'Show', refund, :class => "btn btn-success" %></td>
+<!--     <td><%= link_to 'Edit', edit_refund_path(refund) %></td> -->
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+\end{verbatim}
+\subsubsection{Report Index View}
+\begin{verbatim}
+
+<h1>Welcome To Reporting Center</h1>
+
+<div class="row-fluid">
+  <div class="span12">
+    <div class="well btn-group" style="text-align:center;">
+      <a class="btn btn-large" href="/reports/sale">Sales</a>
+      <a class="btn btn-large" href="/reports/supplier">Suppliers</a>
+  	  <a class="btn btn-large" href="/reports/staff">Staff</a>
+  	  <a class="btn btn-large" href="/reports/stock">Stock</a>
+  	  <a class="btn btn-large" href="/reports/financial">Financial</a>
+  	  <a class="btn btn-large" href="/reports/customer">Customer</a>
+    </div>
+  </div>
+</div>
+\end{verbatim}
+\subsubsection{Report Financial View}
+\begin{verbatim}
+<%= title "Financial Report" %>
+
+<div class="row-fluid">
+<div class="span8">
+<table class="table table-bordered table-striped">
+  <tr>
+  	<th>Product</th>
+  	<th>Purchase Price</th>
+  	<th>Sold Price</th>
+	<th>Amount Sold</th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+  	<td><%= product.name %></td>
+  	<td><%= number_to_currency(product.cost) %></td>
+  	<td><%= number_to_currency(product.price) %></td>
+	<td><%= product.total_sold %></td>
+
+  </tr>
+<% end %>
+</table>
+</div>
+
+<div class="span4">
+<table class="table table-bordered table-striped">
+
+  <tr>
+  	<th>Revenue</th>
+  	<td><%= number_to_currency(@revenue) %></td>
+  </tr>
+  <tr>
+  	<th>Cost of good sold</th>
+  	<td><%= number_to_currency(@cost) %></td>
+  </tr>
+  <tr>
+  	<th>Gross Profit</th>
+  	<td><%= number_to_currency(@profit) %></td>
+  </tr>
+
+</table>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th colspan="2">
+TAX
+</th>
+	<tr>
+  <tr>
+  	<th>GST</th>
+  	<td><%= number_to_currency(@gst) %></td>
+  </tr>
+  <tr>
+  	<th>Corporate Tax</th>
+  	<td><%= number_to_currency(@tax) %></td>
+  </tr>
+  <tr>
+  	<th>Net Income</th>
+  	<td><%= number_to_currency(@income) %></td>
+  </tr>
+
+</table>
+
+
+
+
+</div></div>
+\end{verbatim}
+\subsubsection{Report Sales View}
+\begin{verbatim}
+<%= title "Sales Report" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Date</th>
+    <th>Employee</th>
+    <th>Customer</th>
+    <th>Amount</th>
+  </tr>
+
+<% @sales.each do |sale| %>
+  <tr>
+    <td><%= sale.updated_at.localtime.to_formatted_s(:short) %></td>
+    <td><%= sale.checkout_user.name %></td><!--should be changed to name -->
+    <td><%= sale.customer.name %></td>
+    <td><%= number_to_currency(sale.total) %>
+  </tr>
+<% end %>
+</table>
+
+<%= high_chart("my_id", @h) %>
+
+\end{verbatim}
+\subsubsection{Report Staff View}
+\begin{verbatim}
+<%= title "Staff Report" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Employee</th>
+    <th>Role</th>
+    <th>Number of Sales</th>
+    <th>Total of Sales</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.role %></td>
+    <td><%= user.num_sales %></td>
+    <td><%= number_to_currency(user.total_sales) %></td>
+  </tr>
+<% end %>
+</table>
+
+\end{verbatim}
+\subsubsection{Report Customer View}
+\begin{verbatim}
+<%= title "Customer Report" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Customer</th>
+    <th>Number of Purchases</th>
+    <th>Total of Purchases</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.num_purchases %></td>
+    <td><%= number_to_currency(user.total_purchases) %></td>
+  </tr>
+<% end %>
+
+</table>
+
+\end{verbatim}
+\subsubsection{Report Supplier View}
+\begin{verbatim}
+<%= title "Supplier Report" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+  	<th>Supplier</th>
+    <th>Date</th>
+    <th>Product</th>
+    <th>QTY</th>
+    <th>Cost</th>
+  </tr>
+
+<% @supplier_stock_orders.each do |supplier_stock_order| %>
+  <tr>
+  	<td><%= supplier_stock_order.product.supplier.name %></td>
+    <td><%= supplier_stock_order.updated_at.localtime.to_formatted_s(:short) %></td>
+    <td><%= supplier_stock_order.product.name %></td>
+    <td><%= supplier_stock_order.quantity %></td>
+    <td><%= number_to_currency(supplier_stock_order.total) %></td>
+  </tr>
+<% end %>
+</table>
+
+\end{verbatim}
+\subsubsection{Report Stock View}
+\begin{verbatim}
+<%= title "Stock Report" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+  	<th>Product</th>
+  	<th>Total Stock Remaining</th>
+  	<th>Total Sold</th>
+	<th>Total On Order</th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+  	<td><%= product.name %></td>
+  	<td><%= product.total_stock %></td>
+  	<td><%= product.total_sold %></td>
+	<td><%= product.total_on_order %></td>
+
+  </tr>
+<% end %>
+</table>
+
+
+\end{verbatim}
+\subsubsection{SaleItem Show View}
+\begin{verbatim}
+json.id @sale_item.id
+
+json.name @sale_item.product.name
+json.product_size @sale_item.product.size
+json.price number_to_currency(@sale_item.product.price)
+json.quantity @sale_item.quantity
+json.sub_total number_to_currency(@sale_item.sub_total)
+
+json.num_items @sale_item.sale.products.sum(:quantity)
+json.total number_to_currency(@sale_item.sale.total)
+
+
+\end{verbatim}
+\subsubsection{Sale Show View}
+\begin{verbatim}
+<%= title "Reciept" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Checkout User:</th>
+    <td><%= @sale.checkout_user.email %></td>
+  </tr>
+  <tr>
+    <th>Total:</th>
+    <td><%= number_to_currency(@sale.total) %></td>
+  </tr>
+  <tr>
+    <th>Discount:</th>
+    <td><%= @sale.discount %>%</td>
+  </tr>
+  <tr>
+    <th>Amount Paid:</th>
+    <td><%= number_to_currency(@sale.total) %></td>
+  </tr>
+  <tr>
+    <th>Change Given:</th>
+    <td><%= @sale.change_given == 0 ? 'Exact' : number_to_currency(@sale.change_given) %></td>
+  <tr>
+    <th>Sale Date:</th>
+    <td><%= @sale.created_at %></td>
+  </tr>
+</table>
+
+<h2>Items</h2>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Sub Total</th>
+    <th></th>
+  </tr>
+
+<% @sale_items.each do |sale_item| %>
+  <tr>
+    <td>
+      <%= sale_item.product.name %>
+    </td>
+    <td>
+      <%= sale_item.quantity %>
+    </td>
+    <td>
+      <%= number_to_currency(sale_item.sub_total) %>
+    </td>
+    <td>
+      <%= link_to "Refund Item", new_refund_path(:sale_item => sale_item.id), :class => 'btn btn-danger  ' %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Back', sales_path %>
+
+\end{verbatim}
+\subsubsection{Sale Index View}
+\begin{verbatim}
+<% title "Sales Listing" %>
+
+<%= link_to 'New Sale', new_sale_path, :class  => 'btn btn-large' %>
+
+<%= render :partial => 'sales/list', :locals => { :sales => @sales } %>
+
+\end{verbatim} 
+\subsubsection{Sale List View}
+\begin{verbatim}
+
+<% sales.sort{|a,b| a.status <=> b.status}.group_by(&:status).each do |status, sales| %>
+  <h2><%= status %></h2>
+
+  <table class="table table-bordered table-striped">
+    <tr>
+      <th>Date</th>
+      <th>Total Price</th>
+      <th>Checkout User</th>
+      <th>Tools</th>
+    </tr>
+
+    <% sales.each do |sale| %>
+      <tr>
+        <td><%= sale.created_at.localtime.to_formatted_s(:short) %></td>
+        <td><%= number_to_currency(sale.total) %></td>
+        <td><%= sale.checkout_user.email %></td>
+        <td class="btn-group">
+          <% if status == 'Finished' %>
+            <%= link_to 'Show', sale, :class=>"btn btn-success"%>
+          <% else %>
+            <%= link_to 'Continue', edit_sale_path(sale), :class=>"btn btn-warning" %>
+            <%= link_to 'Cancel', sale, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+
+\end{verbatim}
+\subsubsection{Stocklevels Show View}
+\begin{verbatim}
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product:</b>
+  <%= @stock_level.product.name %>
+</p>
+
+<p>
+  <b>Stock location:</b>
+  <%= @stock_level.stock_location.name %>
+</p>
+
+<p>
+  <b>quantity:</b>
+  <%= @stock_level.quantity %>
+</p>
+
+<p>
+  <b>Threshold:</b>
+  <%= @stock_level.threshold %>
+</p>
+
+
+<%= link_to 'Edit', edit_stock_level_path(@stock_level) %> |
+<%= link_to 'Back', stock_levels_path %>
+
+\end{verbatim}
+\subsubsection{Stocklevels Form View}
+\begin{verbatim}
+<%= form_for(@stock_level) do |f| %>
+  <% if @stock_level.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stock_level.errors.count, "error") %> prohibited this stock_level from being saved:</h2>
+
+      <ul>
+      <% @stock_level.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :quantity %><br />
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :threshold %><br />
+    <%= f.number_field :threshold %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+\end{verbatim}
+\subsubsection{Stocklevels Index View}
+\begin{verbatim}
+<% title "Stock Control" %>
+
+<h1>Welcome To Stock Control</h1>
+
+<div class="row-fluid">
+  <div class="span12">
+    <div class="well btn-group" style="text-align:center;">
+      <a class="btn btn-large" href="/products">Products</a>
+      <a class="btn btn-large" href="/suppliers">Suppliers</a>
+      <a class="btn btn-large" href="/stock_locations">Stock Locations</a>
+      <a class="btn btn-large" href="/stock_transfers">Stock Transfers</a>
+      <a class="btn btn-large" href="/supplier_stock_orders">Supplier Stock Orders</a>
+    </div>
+  </div>
+</div>
+
+<table class="table table-bordered">
+  <tr>
+    <th>Product</th>
+    <th>Stock location</th>
+    <th>quantity</th>
+    <th>Threshold</th>
+  </tr>
+
+<% @stock_levels.each do |stock_level| %>
+  <tr <%= "style=background:#f2dede;" if stock_level.below %>>
+    <td><%= stock_level.product.name %></td>
+    <td><%= stock_level.stock_location.name %></td>
+    <td><%= stock_level.quantity %></td>
+    <td><%= stock_level.threshold %></td>
+    </tr>
+<% end %>
+</table>
+\end{verbatim}
+\subsubsection{Stocklocation Show View}
+\begin{verbatim}
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @stock_location.name %>
+</p>
+
+<p>
+  <b>Previous Location:</b>
+  <%= @stock_location.previous_location ? @stock_location.previous_location.name : "No Previous Location" %>
+</p>
+
+
+<%= link_to 'Edit', edit_stock_location_path(@stock_location) %> |
+<%= link_to 'Back', stock_locations_path %>
+
+\end{verbatim}
+\subsubsection{Stocklocation Form View}
+\begin{verbatim}
+  <% if @stock_location.errors.any? %>
+    <div class="global-flash">
+    <div class="alert alert-error">
+      <h2><%= pluralize(@stock_location.errors.count, "error") %> prohibited this stock_location from being saved:</h2>
+
+      <ul>
+      <% @stock_location.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+  <% end %>
+
+<%= form_for @stock_location, :html => {:class => "form-horizontal"}  do |f| %>
+<legend>Attributes</legend>
+  <div class="control-group">
+   <%= f.label :name, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :name %>
+    </div>
+  </div>
+
+
+  <div class="control-group">
+   <%= f.label :previous_location_id, :class => "control-label" %>
+    <div class="controls">
+    <%= f.collection_select(:previous_location_id, StockLocation.all, :id, :name, {:include_blank => "None"}) %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit :class=>"btn btn-primary"%>
+    <%= link_to 'Back', stock_locations_path, :class => "btn" %>
+  </div>
+<% end %>
+
+\end{verbatim}
+\subsubsection{Stocklocation Index View}
+\begin{verbatim}
+<%= title "Listing Stock Locations" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Previous Location</th>
+    <th></th>
+  </tr>
+
+<% @stock_locations.each do |stock_location| %>
+  <tr>
+    <td><%= stock_location.name %></td>
+    <td><%= stock_location.previous_location ? stock_location.previous_location.name : "No Previous Location" %></td>
+   <td class="btn-group">
+      <%= link_to 'Edit', edit_stock_location_path(stock_location), :class=>"btn btn-warning" %>
+      <%= link_to 'Destroy', stock_location, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'New Stock location', new_stock_location_path, :class=>"btn btn-primary" %>
+
+\end{verbatim}
+\subsubsection{Stocktransfer Show View}
+\begin{verbatim}
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product:</b>
+  <%= @stock_transfer.product.name %>
+</p>
+
+<p>
+  <b>Stock location:</b>
+  <%= @stock_transfer.stock_location.name %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @stock_transfer.quantity %>
+</p>
+
+
+<%= link_to 'Edit', edit_stock_transfer_path(@stock_transfer) %> |
+<%= link_to 'Back', stock_transfers_path %>
+
+\end{verbatim}
+\subsubsection{Stocktransfer Index View}
+\begin{verbatim}
+<%= title "Listing Stock Transfers" %>
+
+
+<% @stock_transfers.group_by(&:complete).each do |complete, stock_transfers| %>
+  <h2><%= complete ? "Complete" : "In Progress" %></h2>
+
+
+<% if stock_transfers.size > 0 %>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Product</th>
+    <th>Transfer To</th>
+    <th>Quantity</th>
+    <th>Created On</th>
+    <th>Last Updated</th>
+
+    <%= raw("<th></th>") if !complete %>
+
+  </tr>
+
+<% stock_transfers.each do |stock_transfer| %>
+  <tr>
+    <td><%= stock_transfer.product.name %></td>
+    <td><%= stock_transfer.stock_location.name %></td>
+    <td><%= stock_transfer.quantity %></td>
+
+    <td><%= stock_transfer.created_at.localtime.to_formatted_s(:short)   %></td>
+    <td><%= stock_transfer.updated_at.localtime.to_formatted_s(:short)   %></td>
+
+    <% if  not complete %>
+    <td class="btn-group"><%= link_to 'Complete', complete_stock_transfer_path(stock_transfer), :class=>"btn btn-primary", data: { confirm: 'Are you sure?' }%>
+      <%= link_to 'Adjust Quantity', edit_stock_transfer_path(stock_transfer), :class=>"btn btn-warning" %>
+      <%= link_to 'Cancel', stock_transfer, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+<% else %>
+<p>No Stock Transfers</p>
+<% end %>
+<% end %>
+
+<%= link_to 'New Stock transfer', new_stock_transfer_path, :class=>"btn btn-primary" %>
+
+\end{verbatim}
+\subsubsection{Stocktransfer Form View}
+\begin{verbatim}
+  <% if @stock_transfer.errors.any? %>
+  <div class="global-flash">
+    <div class="alert alert-error">
+      <h2><%= pluralize(@stock_transfer.errors.count, "error") %> prohibited this stock_transfer from being saved:</h2>
+
+      <ul>
+      <% @stock_transfer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+  <% end %>
+
+<%= form_for @stock_transfer , :html => {:class => "form-horizontal"} do |f| %>
+<legend>Attributes</legend>
+  <div class="control-group">
+    <%= f.label :product, :class => "control-label" %>
+    <div class="controls">
+    <%= f.collection_select :product, Product.all, :id, :name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+   <%= f.label :stock_location, "Transfer To", :class => "control-label" %>
+    <div class="controls">
+    <%= f.collection_select :stock_location, StockLocation.where("previous_location_id is NOT NULL"), :id, :name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+   <%= f.label :quantity, :class => "control-label" %>
+    <div class="controls">
+    <%= f.number_field :quantity, :value=> 1%>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit :class=>"btn btn-primary"%>
+    <%= link_to 'Back', stock_transfers_path, :class => "btn" %>
+
+  </div>
+<% end %>
+
+\end{verbatim}
+\subsubsection{SupplyStockOrder Show View}
+\begin{verbatim}
+<p id="notice"><%= notice %></p>
+
+<%= title "Purchase Order" %>
+<div class="row-fluid">
+<div class="span6">
+To:
+<div class="well">
+  <%= @supplier_stock_order.product.supplier.name %>
+</div>
+</div>
+
+<div class="span6">
+
+
+</div>
+</div>
+
+<div class="row-fluid">
+<div class="span6">
+Ship To:
+<div class="well">
+</div>
+</div>
+
+<div class="span6">
+
+
+</div>
+</div>
+
+<div class="row-fluid">
+<div class="span4">
+<div class="well">
+<b>Order #:</b>
+<%= @supplier_stock_order.id %>
+</div>
+</div>
+
+<div class="span4">
+<div class="well">
+<b>Delivery Via:</b>
+
+</div>
+</div>
+
+<div class="span4">
+<div class="well">
+<b>Routing:</b>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="row-fluid">
+Please Ship the following items as specified
+<div class="span12">
+	<div class="well">
+<table class="table table-bordered">
+<thead>
+	<tr>
+
+<th>Item</th>
+<th>Quantity</th>
+<th>Description</th>
+<th>Unit Count</th>
+<th>Unit Price</th>
+<th>Total Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><%= @supplier_stock_order.product.name %></td>
+<td><%= @supplier_stock_order.quantity %></td>
+<td><%= @supplier_stock_order.product.description %></td>
+<td><%= @supplier_stock_order.product.size %></td>
+<td><%= number_to_currency(@supplier_stock_order.product.cost) %></td>
+<td><%= number_to_currency(@supplier_stock_order.total) %></td>
+
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+  <div class="form-actions">
+	<%= link_to 'Back', supplier_stock_orders_path, :class => "btn" %>
+
+  </div>
+\end{verbatim}
+\subsubsection{SupplyStockOrder Index View}
+\begin{verbatim}
+<%= title "Listing Supplier Stock Orders" %>
+
+<% @supplier_stock_orders.group_by(&:status).each do |status, supplier_stock_orders| %>
+  <h2><%= status %></h2>
+
+  <table class="table table-bordered table-striped">
+    <tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Created On</th>
+    <th>Last Updated</th>
+    <th>Tools</th>
+  </tr>
+
+    <% supplier_stock_orders.each do |supplier_stock_order| %>
+      <tr>
+    <td><%= supplier_stock_order.product.name %></td>
+    <td><%= supplier_stock_order.quantity %></td>
+    <td><%= supplier_stock_order.created_at.localtime.to_formatted_s(:short)   %></td>
+    <td><%= supplier_stock_order.updated_at.localtime.to_formatted_s(:short)   %></td>
+    <td class="btn-group"><%= link_to 'View Purchase Order', supplier_stock_order, :class => "btn btn-success" %>
+
+      <% if status=="Created" %>
+      <%= link_to 'Adjust Quantity', edit_supplier_stock_order_path(supplier_stock_order), :class => "btn btn-warning" %>
+      <%= link_to 'Process', process_order_supplier_stock_order_path(supplier_stock_order), :class => "btn btn-primary" %><%= link_to 'Cancel', supplier_stock_order, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"btn btn-danger" %>
+     <% elsif status=="Processed" %>
+        <%= link_to 'Complete', complete_supplier_stock_order_path(supplier_stock_order), :class => "btn btn-primary" %>
+
+      <% end %>
+
+    </td>
+
+  </tr>
+    <% end %>
+  </table>
+<% end %>
+
+<%= link_to 'New Order', new_supplier_stock_order_path, :class=>"btn btn-primary" %>
+
+\end{verbatim} 
+\subsubsection{SupplyStockOrder Form View}
+\begin{verbatim}
+  <% if @supplier_stock_order.errors.any? %>
+        <div class="global-flash">
+    <div class="alert alert-error">
+      <h2><%= pluralize(@supplier_stock_order.errors.count, "error") %> prohibited this supplier_stock_order from being saved:</h2>
+
+      <ul>
+      <% @supplier_stock_order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+  <% end %>
+
+<%= form_for @supplier_stock_order , :html => {:class => "form-horizontal"} do |f| %>
+<legend>Attributes</legend>
+  <div class="control-group">
+    <%= f.label :product, :class => "control-label" %>
+    <div class="controls">
+    <%= f.collection_select :product, Product.all, :id, :name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :quantity, :class => "control-label" %>
+    <div class="controls">
+    <%= f.number_field :quantity, :value=> 1 %>
+    </div>
+  </div>
+
+  <%= f.hidden_field :status, :value => "Created"%>
+
+  <div class="form-actions">
+    <%= f.submit :class => "btn btn-primary"%>
+    <%= link_to 'Cancel', supplier_stock_orders_path, :class => "btn" %>
+
+  </div>
+
+<% end %>
+
+\end{verbatim}
+\subsubsection{Suppliers Show View}
+\begin{verbatim}
+<%= title("Showing Supplier") %>
+
+<div class="form-horizontal">
+
+<legend>Attributes</legend>
+
+<div class="control-group">
+<label class="control-label">Name:</label>
+<div class="controls">
+<%= @supplier.name %>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">Contact person:</label>
+<div class="controls">
+<%= @supplier.contact_person %>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">Contact number:</label>
+<div class="controls">
+<%= @supplier.contact_number %>
+</div>
+</div>
+
+<div class="form-actions">
+	<%= link_to 'Edit', edit_supplier_path(@supplier), :class => "btn btn-primary"  %>
+	<%= link_to 'Back', suppliers_path, :class => "btn"  %>
+</div>
+</div>
+\end{verbatim} 
+\subsubsection{Suppliers Index View}
+\begin{verbatim}
+<%= title "Listing Suppliers" %>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Contact person</th>
+    <th>Contact number</th>
+    <th>Tools</th>
+
+  </tr>
+
+<% @suppliers.each do |supplier| %>
+  <tr>
+    <td><%= supplier.name %></td>
+    <td><%= supplier.contact_person %></td>
+    <td><%= supplier.contact_number %></td>
+    <td class="btn-group"><%= link_to 'Show', supplier, :class=>"btn btn-success"%>
+      <%= link_to 'Edit', edit_supplier_path(supplier), :class=>"btn btn-warning" %>
+      <%= link_to 'Destroy', supplier, :class=>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
+  </tr>
+<% end %>
+</table>
+<%= link_to 'New Supplier', new_supplier_path , :class=>"btn btn-primary" %>
+
+\end{verbatim}
+\subsubsection{Suppliers Form View}
+\begin{verbatim}
+<% if @supplier.errors.any? %>
+    <div class="global-flash">
+    <div class="alert alert-error">
+      <h2><%= pluralize(@supplier.errors.count, "error") %> prohibited this supplier from being saved:</h2>
+
+      <ul>
+      <% @supplier.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+  <% end %>
+
+<%= form_for @supplier , :html => {:class => "form-horizontal"} do |f|%>
+<legend>Attributes</legend>
+  <div class="control-group">
+    <%= f.label :name, :class => "control-label" %>
+    <div class="controls">
+      <%= f.text_field :name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :contact_person, :class => "control-label" %>
+    <div class="controls">
+      <%= f.text_field :contact_person %>
+    </div>
+  </div>
+
+   <div class="control-group">
+    <%= f.label :contact_number, :class => "control-label" %>
+    <div class="controls">
+      <%= f.text_field :contact_number %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit :class => "btn btn-primary"%>
+    <% if @supplier.id %>
+    <%= link_to 'Show', @supplier, :class => "btn btn-success" %>
+    <% end %>
+    <%= link_to 'Cancel', suppliers_path, :class => "btn" %>
+
+  </div>
+<% end %>
+
+\end{verbatim}
+\subsubsection{Transaction Show View}
+\begin{verbatim}
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Sale:</b>
+  <%= @transaction.sale %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @transaction.amount %>
+</p>
+
+<p>
+  <b>Method:</b>
+  <%= @transaction.method %>
+</p>
+
+<p>
+  <b>Approved:</b>
+  <%= @transaction.approved %>
+</p>
+
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>
+
+\end{verbatim}
+\subsubsection{Transaction Index View}
+\begin{verbatim}
+<h1>Listing transactions</h1>
+
+<table>
+  <tr>
+    <th>Sale</th>
+    <th>Amount</th>
+    <th>Method</th>
+    <th>Approved</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @transactions.each do |transaction| %>
+  <tr>
+    <td><%= transaction.sale %></td>
+    <td><%= transaction.amount %></td>
+    <td><%= transaction.method %></td>
+    <td><%= transaction.approved %></td>
+    <td><%= link_to 'Show', transaction %></td>
+    <td><%= link_to edit_transaction_path(transaction), 'Edit' %></td>
+    <td><%= link_to 'Destroy', transaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Transaction', new_transaction_path %>
+
+\end{verbatim}
+\subsubsection{Transaction Form View}
+\begin{verbatim}
+<%= form_for(@transaction) do |f| %>
+  <% if @transaction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+      <% @transaction.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sale %><br />
+    <%= f.text_field :sale %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :method %><br />
+    <%= f.text_field :method %>
+  </div>
+  <div class="field">
+    <%= f.label :approved %><br />
+    <%= f.check_box :approved %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+\end{verbatim}
+\subsubsection{User Staff Index View}
+\begin{verbatim}
+<h1>List of Staff</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Role</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.role %></td>
+    <td><%= link_to "Edit", edit_user_path(user) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Membership' %>
+
+\end{verbatim}
+\subsubsection{User Member Index View}
+\begin{verbatim}
+<h1>List of Members</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Membership Number</th>
+    <th>Discount</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.membership %></td>
+    <td><%= user.discount %></td>
+    <td><%= link_to "Edit", edit_user_path(user) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Membership' %>
+
+\end{verbatim}
+\subsubsection{User Edit View}
+\begin{verbatim}
+<%= title "Edit User" %>
+<% if @user.errors.any? %>
+  <div class="global-flash">
+    <div class="alert alert-error"><h1>Error</h1>
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+<%= form_for(@user, :as => 'Users' , :html => { :method => :put, :class => "form-horizontal" }) do |f| %>
+  
+<legend>User Details</legend>
+<div class="control-group">
+    <%= f.label :name, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :name %>
+  </div>
+</div>
+
+<div class="control-group">
+    <%= f.label :email, :class => "control-label" %>
+    <div class="controls">
+    <%= f.email_field :email, :disabled => true %>
+  </div>
+</div>
+
+<div class="control-group">
+    <%= f.label :role, :class => "control-label" %>
+    <div class="controls">
+    <%= f.select :role, [ 'Owner', 'Manager', 'Stock Control', 'Cashier', 'Default'] %>
+  </div>
+</div>
+
+<% if current_user.can_checkout %>
+<div class="control-group">
+    <%= f.label :discount, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :discount %>
+  </div>
+</div>
+
+<div class="control-group">
+    <%= f.label :membership, :class => "control-label" %>
+    <div class="controls">
+    <%= f.text_field :membership %>
+  </div>
+</div>
+<% end %>
+
+  <div class="form-actions">
+  <%= f.submit "Update" , :class=>"btn btn-primary"%>
+
+
+<%= link_to "Back", :back,:class=>"btn" %>
+
+  </div>
+
+<% end %>
+
+
+
+\end{verbatim}
+
+
+
+
+
+
+
+
 
 \end{document}
 
