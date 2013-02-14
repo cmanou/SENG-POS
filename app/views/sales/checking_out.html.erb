@@ -49,8 +49,8 @@
 
             <tr id="totals">
               <td></td>
-              <td><b>Amount Due</b></td>
-              <td><b id="total-top"><%= number_to_currency(@sale.total - @sale.discount - @sale.amount_paid) %></b></td>
+              <td><b><% if @sale.change_given %>Change <% else %> Amount <% end %> Due</b></td>
+              <td><b id="total-top"><%= number_to_currency((@sale.total - @sale.discount - @sale.amount_paid).abs) %></b></td>
             </tr>
           </tbody>
         </table>
@@ -157,7 +157,9 @@
       </tr>
 
       </table>
-      <b>Due  : <%= number_to_currency(@sale.total - @sale.discount - @sale.amount_paid) %></b><br />
+      <b><% if @sale.change_given %>Change <% else %> Amount <% end %> Due : 
+          <%= number_to_currency((@sale.total - @sale.discount - @sale.amount_paid).abs) %>
+      </b><br />
     </div>
 
     <%= link_to 'Finish', complete_sale_path(@sale), :class => "btn btn-success" %>
