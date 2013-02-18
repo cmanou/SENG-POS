@@ -17,6 +17,15 @@ class UsersController < ApplicationController
       format.json { render json: @users }
     end
   end
+
+  def purchases
+    @past_sales = Sale.find_all_by_checkout_user_id_and_status(current_user.id, ['Finished'])
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @past_sales }
+    end
+  end
   
   def edit
     @user = User.find(params[:id])
