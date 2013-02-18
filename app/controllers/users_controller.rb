@@ -28,12 +28,9 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    @user.role = params[:role]
-    @user.discount = params[:discount]
-    @user.membership = params[:membership]
 
     respond_to do |format|
-      if @user.save     
+      if @user.update_attributes(params[:user])    
         format.html { 
           flash[:notice] = 'User was successfully updated.'
           render :edit

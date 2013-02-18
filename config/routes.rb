@@ -53,7 +53,7 @@ Pos::Application.routes.draw do
   match 'members' => 'users#members_index', :via => :get
   match 'staff' => 'users#staff_index', :via => :get
   match 'members/:id' => 'users#edit', :via => :get, :as => :edit_user
-  match 'members/:id' => 'users#update', :via => :put, :as => :user
+  match 'members/:id' => 'users#update', :via => :put, :as => :edit_user
 
   root :to => "home#index"
 
