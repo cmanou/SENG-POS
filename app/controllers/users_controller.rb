@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   def members_index
-    @users = User.all
+    #since default isn't a real customer
+    @users = User.where("email != 'default@pos.com'")
+
     respond_to do |format|
       format.html
       format.json { render json: @users }
