@@ -1,6 +1,11 @@
+
+<form class="form-inline pull-right">
+  <input type="text" onkeyup="filter_products(this)" placeholder="Search Products...">
+</form>
+
 <%= title "Product Listing" %>
 
-<table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped" id="product_table">
   <tr>
     <th>Name</th>
     <th>Cost Price</th>
@@ -49,3 +54,19 @@
 </table>
 
 <%= link_to 'New Product', new_product_path, :class=>"btn btn-primary" %>
+
+<script type="text/javascript">
+  function filter_products (term){
+      var query = term.value.toLowerCase();
+      var table = document.getElementById('product_table');
+      var elm;
+      for (var r = 1; r < table.rows.length; r++){
+          elm = table.rows[r].cells[0].innerHTML.replace(/<[^>]+>/g,"");
+          if (elm.toLowerCase().indexOf(query)>=0 ) {
+              table.rows[r].style.display = '';
+          } else {
+              table.rows[r].style.display = 'none';
+          }
+      }
+  }
+</script>
