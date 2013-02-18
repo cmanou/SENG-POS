@@ -6,7 +6,7 @@ class Sale < ActiveRecord::Base
     belongs_to :customer, :class_name => 'User'
     belongs_to :checkout_user, :class_name => 'User'
 
-    before_save :check_customer
+    after_initialize :check_customer
 
     attr_accessible :customer, :checkout_user, :discount, :status, :updated_at
 
@@ -41,8 +41,8 @@ class Sale < ActiveRecord::Base
     end
 
     def check_customer
-      if customer.nil?
-        customer = User.find_by_email('default@pos.com')
+      if self.customer.nil?
+        self.customer = User.find_by_email('default@pos.com')
       end
     end
 end
