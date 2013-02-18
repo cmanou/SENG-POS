@@ -52,3 +52,18 @@ $(document).ready(function() {
 
 
 });
+
+
+function filter_products (term, table_id){
+    var query = term.value.toLowerCase();
+    var table = document.getElementById(table_id);
+    var elm;
+    for (var r = 1; r < table.rows.length; r++){
+        elm = table.rows[r].cells[0].innerHTML.replace(/<[^>]+>/g,"");
+        if (elm.toLowerCase().indexOf(query)>=0 ) {
+            table.rows[r].style.display = '';
+        } else {
+            table.rows[r].style.display = 'none';
+        }
+    }
+}
