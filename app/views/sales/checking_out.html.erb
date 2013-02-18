@@ -112,12 +112,11 @@
     </div>
   </div>
 
-
   <div class="span4">
     <div class="well">
       <%= form_for @sale do |ff| %>
         <%= ff.label :customer, 'Select Customer' %>
-        <%= ff.collection_select :customer, User.all, :id, :email %>
+        <%= ff.collection_select :customer, User.all, :id, :email, :selected=>@sale.customer.id %>
         <%= ff.submit 'Calculate Discount', :class => "btn btn-success" %>
       <% end %>
     </div>
