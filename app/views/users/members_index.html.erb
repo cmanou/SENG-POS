@@ -1,27 +1,6 @@
+
+<%= link_to 'New Membership', '#', :class => "btn btn-success pull-right" %>
+
 <h1>List of Members</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Membership Number</th>
-    <th>Discount</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.name %></td>
-    <td><%= user.email %></td>
-    <td><%= user.membership %></td>
-    <td><%= user.discount %></td>
-    <td><%= link_to "Edit", edit_user_path(user) %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Membership' %>
+<%= render 'user_list' %>
