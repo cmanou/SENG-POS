@@ -28,86 +28,84 @@
 
 <div class="row">
   <div class="span8">
-    <div class="row">
-      <div class="well">
-        <table class="table table-hover" id="sale_items">
-          <thead>
+    <div class="well">
+      <table class="table table-hover" id="sale_items">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Amount</th>
+            <th>Approved</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @sale.transactions.each do |tr| %>
             <tr>
-              <th>Method</th>
-              <th>Amount</th>
-              <th>Approved</th>
+              <td><%= tr.method %></td>
+              <td><%= number_to_currency(tr.amount) %></td>
+              <td><%= tr.approved %></td>
             </tr>
-          </thead>
-          <tbody>
-            <% @sale.transactions.each do |tr| %>
-              <tr>
-                <td><%= tr.method %></td>
-                <td><%= number_to_currency(tr.amount) %></td>
-                <td><%= tr.approved %></td>
-              </tr>
-            <% end %>
+          <% end %>
 
-            <tr id="totals">
-              <td></td>
-              <td><b><% if @sale.change_given %>Change <% else %> Amount <% end %> Due</b></td>
-              <td><b id="total-top"><%= number_to_currency((@sale.total - @sale.discount - @sale.amount_paid).abs) %></b></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="row">
-        <div class="span8">
+          <tr id="totals">
+            <td></td>
+            <td><b><% if @sale.change_given %>Change <% else %> Amount <% end %> Due</b></td>
+            <td><b id="total-top"><%= number_to_currency((@sale.total - @sale.discount - @sale.amount_paid).abs) %></b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <div class="span8">
 
-          <ul class="nav nav-tabs">
-            <li <%= 'class=active' if @transaction.method == 'Cash' %>><a href="#payment-cash" data-toggle="tab">Cash Payment</a></li>
-            <li <%= 'class=active' if @transaction.method == 'Other' %>><a href="#payment-other" data-toggle="tab">Other Payment</a></li>
-          </ul>
+        <ul class="nav nav-tabs">
+          <li <%= 'class=active' if @transaction.method == 'Cash' %>><a href="#payment-cash" data-toggle="tab">Cash Payment</a></li>
+          <li <%= 'class=active' if @transaction.method == 'Other' %>><a href="#payment-other" data-toggle="tab">Other Payment</a></li>
+        </ul>
 
-          <div class="tab-content">
-            <div class="tab-pane <%= 'active' if @transaction.method == 'Cash' %>" id="payment-cash">
-              <%= form_for @transaction do |tr| %>
-                <%= tr.hidden_field :sale, :value => @sale.id %>
-                <%= tr.hidden_field :method, :value => 'Cash' %>
-                <%= tr.hidden_field :approved, :value => 1 %>
+        <div class="tab-content">
+          <div class="tab-pane <%= 'active' if @transaction.method == 'Cash' %>" id="payment-cash">
+            <%= form_for @transaction do |tr| %>
+              <%= tr.hidden_field :sale, :value => @sale.id %>
+              <%= tr.hidden_field :method, :value => 'Cash' %>
+              <%= tr.hidden_field :approved, :value => 1 %>
 
-                <div class="field">
-                  <%= tr.label :amount %>
-                  <%= tr.select :amount, [0.05, 0.10, 0.20, 0.50, 1.00, 2.00, 5.00, 10.00, 20.00, 50.00, 100.00] %>
-                </div>
-                <% if @sale.change_given > 0 %>
-                  <br />
-                  <b>Change Due: <%= @sale.change_given %></b>
-                <% end %>
-                <div class="actions">
-                  <%= tr.submit 'Pay Cash', :class => "btn btn-success" %>
-                </div>
-              <% end %>
-            </div>
-
-            <div class="tab-pane <%= 'active' if @transaction.method == 'Other' %>" id="payment-other">
-              <%= form_for @transaction do |tr| %>
-                <%= tr.hidden_field :sale, :value => @sale.id %>
-                <%= tr.hidden_field :method, :value => 'Other' %>
-
-                <div class="field">
-                  <%= tr.label :amount %>
-                  <%= tr.text_field :amount %>
-                </div>
-                <div class="field">
-                  <%= tr.label :approved do %>
-                    <%= tr.check_box :approved %>
-                    Approved
-                  <% end %>
-                </div>
+              <div class="field">
+                <%= tr.label :amount %>
+                <%= tr.select :amount, [0.05, 0.10, 0.20, 0.50, 1.00, 2.00, 5.00, 10.00, 20.00, 50.00, 100.00] %>
+              </div>
+              <% if @sale.change_given > 0 %>
                 <br />
-                <div class="actions">
-                  <%= tr.submit 'Pay Other', :class => "btn btn-success" %>
-                </div>
+                <b>Change Due: <%= @sale.change_given %></b>
               <% end %>
-            </div>
+              <div class="actions">
+                <%= tr.submit 'Pay Cash', :class => "btn btn-success" %>
+              </div>
+            <% end %>
           </div>
 
+          <div class="tab-pane <%= 'active' if @transaction.method == 'Other' %>" id="payment-other">
+            <%= form_for @transaction do |tr| %>
+              <%= tr.hidden_field :sale, :value => @sale.id %>
+              <%= tr.hidden_field :method, :value => 'Other' %>
+
+              <div class="field">
+                <%= tr.label :amount %>
+                <%= tr.text_field :amount %>
+              </div>
+              <div class="field">
+                <%= tr.label :approved do %>
+                  <%= tr.check_box :approved %>
+                  Approved
+                <% end %>
+              </div>
+              <br />
+              <div class="actions">
+                <%= tr.submit 'Pay Other', :class => "btn btn-success" %>
+              </div>
+            <% end %>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
