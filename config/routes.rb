@@ -50,11 +50,10 @@ Pos::Application.routes.draw do
     get 'logout' => 'devise/sessions#destroy', :as => :destroy_user_session
     get 'signup', :to => 'devise/registrations#new', :as => :new_user_registration
   end
-  match 'members' => 'users#members_index', :via => :get
+  resources :members, :as => "users", :controller => :users
   match 'staff' => 'users#staff_index', :via => :get
-  match 'members/:id' => 'users#edit', :via => :get, :as => :edit_user
-  match 'members/:id' => 'users#update', :via => :put, :as => :edit_user
   match 'users/purchases'=> 'users#purchases', :via=>:get
+
   root :to => "home#index"
 
 end
