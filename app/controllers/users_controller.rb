@@ -52,7 +52,7 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new(:role => 'Default', :email => params[:email])
+    @user = User.new(:role => 'Default')
 
     respond_to do |format|
       format.html # new.html.erb
