@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     @users = User.where("email != 'default@pos.com'")
 
     respond_to do |format|
-      format.html { render 'staff_index' }
+      format.html { render 'members_index' }
       format.json { render json: @users }
     end
   end
