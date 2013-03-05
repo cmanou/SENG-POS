@@ -1,5 +1,9 @@
 <% title "Stock Control" %>
 
+<form class="form-inline pull-right">
+  <input type="text" onkeyup="filter_products(this, 'stock_levels_table')" placeholder="Enter Product Name...">
+</form>
+
 <h1>Welcome To Stock Control</h1>
 
 <div class="row-fluid">
@@ -14,7 +18,7 @@
   </div>
 </div>
 
-<table class="table table-bordered">
+<table id="stock_levels_table" class="table table-bordered">
   <tr>
     <th>Product</th>
     <th>Stock location</th>

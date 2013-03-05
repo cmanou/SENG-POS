@@ -1,25 +1,6 @@
 <h1>List of Staff</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Role</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<%= render 'user_list' %>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.name %></td>
-    <td><%= user.email %></td>
-    <td><%= user.role %></td>
-    <td><%= link_to "Edit", edit_user_path(user) %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Membership' %>
+<!--  staff should use the 'sign up' page -->
+<!-- <%= link_to 'New Membership' %> -->

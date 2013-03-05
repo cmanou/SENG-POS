@@ -39,7 +39,7 @@ User.create([{
   :role => 'Cashier',
   :active => true
 },{
-  :name => 'Mr Normal',
+  :name => 'Unknown Customer',
   :email => 'default@pos.com',
   :password => '123123',
   :password_confirmation => '123123',

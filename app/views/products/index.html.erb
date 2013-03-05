@@ -1,6 +1,11 @@
+
+<form class="form-inline pull-right">
+  <input type="text" onkeyup="filter_products(this, 'product_table')" placeholder="Search Products...">
+</form>
+
 <%= title "Product Listing" %>
 
-<table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped" id="product_table">
   <tr>
     <th>Name</th>
     <th>Cost Price</th>

@@ -1,0 +1,45 @@
+<style>
+.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+}
+
+.thumbnail.right-caption {
+    float: left;
+}
+
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+}
+</style>
+
+<ul class="thumbnails">
+<% @users.each do |user| %>
+  <li class="thumbnail right-caption span6">
+    <img src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png"
+          style="height: 160px;" />
+    <div class="caption">
+      <h4>
+      <%= user.name %>
+      <small></br><%= user.email %></small>
+      </h4>
+      <% if user.role == 'Default' %>
+        Customer
+      <% else %>
+        <%= user.role %>
+      <% end %>
+      <p>
+        <b>Discount : </b>
+        <% if user.discount %>
+          <%= user.discount %>
+        <% else %>
+          0
+        <% end %>%
+      </p>
+      <%= link_to 'Edit', edit_user_path(user), :class => 'btn btn-primary' %>
+    </div>
+  </li>
+<% end %>
+</ul>
+
+<br />

@@ -48,7 +48,7 @@ class RefundsController < ApplicationController
 
     # Update stock levels
     @stock_location = StockLocation.where("previous_location_id is NULL")
-    @stock_level = @refund.sale_item.product.stock_levels.find_by_id(@stock_location)
+    @stock_level = @refund.sale_item.product.stock_levels.find_by_stock_location_id(@stock_location)
     @stock_level.quantity += @refund.quantity
 
     respond_to do |format|
