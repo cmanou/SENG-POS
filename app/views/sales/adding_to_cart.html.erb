@@ -50,7 +50,7 @@
   <div class="span4">
     <div class="well">
       <%= form_for(@sale_item, :remote => true) do |ff| %>
-        <%= ff.text_field :product, :placeholder => "Scan a product" %>
+        <%= ff.text_field :product, :placeholder => "Scan a product", :autocomplete=>"off" %>
         <%= ff.hidden_field :sale, :value => @sale.id %>
         <%= ff.number_field :quantity, :value => 1%>
 

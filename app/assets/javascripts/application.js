@@ -47,8 +47,16 @@ $(document).ready(function() {
       $("#total-bottom").html(Mustache.render("Total: {{total}}",data))
       $("#total-top").html(Mustache.render("{{total}}",data))
       $("#num_items").html(Mustache.render("{{num_items}} item(s)",data))
+
+      $("#sale_item_product").val("");
    });
 
+   $("#new_sale_item").bind("ajax:error", function(e, data, xhr) {
+      $("#sale_item_product").val("");
+   });
+
+  $("#sale_item_product").focus();
+  $("#sale_item_product").select();
 
 
 });
