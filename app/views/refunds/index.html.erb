@@ -7,6 +7,7 @@
 
 <table class="table table-bordered table-striped">
   <tr>
+    <th>Recipt ID</th>
     <th>Sale item</th>
     <th>Checkout user</th>
     <th>Quantity</th>
@@ -17,6 +18,7 @@
 
 <% @refunds.each do |refund| %>
   <tr>
+    <td><%= refund.sale.id %></td>
     <td><%= refund.sale_item.product.name %></td>
     <td><%= refund.checkout_user.name %></td>
     <td><%= refund.quantity %></td>
