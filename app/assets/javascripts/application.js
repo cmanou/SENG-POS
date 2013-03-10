@@ -3,6 +3,7 @@
 //= require bootstrap.min
 //= require mustache
 //= require highcharts
+//= require qrcode
 
 $(document).ready(function() {
    $('.global-flash .alert').click(function() {
@@ -75,3 +76,10 @@ function filter_products (term, table_id){
         }
     }
 }
+
+function create_qrcode(text, typeNumber, errorCorrectLevel, table) {
+	var qr = qrcode(typeNumber || 4, errorCorrectLevel || 'M');
+	qr.addData(text);
+	qr.make();
+	return qr.createImgTag();
+};
