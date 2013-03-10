@@ -172,11 +172,11 @@ Product.create([{
 },{
     :name => 'Coca Cola',
     :cost => 0.48,
-    :size => '600g',
+    :size => '375 mL',
     :price => 1.70,
     :brand => 'Coca Cola',
-    :active => false,
-    :barcode => 'MRJ26ZGF3YL',
+    :active => true,
+    :barcode => '9300675001410',
     :supplier => Supplier.last,
     :description => 'Coca cola medium bottle'
 },{
@@ -192,11 +192,11 @@ Product.create([{
 },{
     :name => 'Fanta',
     :cost => 0.48,
-    :size => '600g',
+    :size => '375 mL',
     :price => 1.70,
     :brand => 'Coca Cola',
     :active => true,
-    :barcode => 'QZP13DWG3RR',
+    :barcode => '9300675003414',
     :supplier => Supplier.first,
     :description => 'Fanta medium bottle'
 },{

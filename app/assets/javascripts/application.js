@@ -50,9 +50,18 @@ $(document).ready(function() {
       $("#num_items").html(Mustache.render("{{num_items}} item(s)",data))
 
       $("#sale_item_product").val("");
+      $('#nsi-error').remove();
+
    });
 
    $("#new_sale_item").bind("ajax:error", function(e, data, xhr) {
+      console.log(data);
+      $('#nsi-error').remove();
+      if(jQuery.parseJSON(data.responseText).quantity) {
+        $("#new_sale_item").find('.btn').after('<p id="nsi-error">Error: '+jQuery.parseJSON(data.responseText).quantity+'</p>');
+      } else if(jQuery.parseJSON(data.responseText).errors) {
+        $("#new_sale_item").find('.btn').after('<p id="nsi-error">Error: '+jQuery.parseJSON(data.responseText).errors+'</p>');
+      }
       $("#sale_item_product").val("");
    });
 

@@ -41,25 +41,30 @@ class SaleItemsController < ApplicationController
   # POST /sale_items.json
   def create
     @product = Product.find_by_barcode(params[:sale_item][:product])
-    params[:sale_item][:product] = @product;
-
-    @sale = Sale.find(params[:sale_item][:sale])
-    params[:sale_item][:sale] = @sale;
-
-    @sale_item = SaleItem.find_by_sale_id_and_product_id(@sale.id, @product.id)
-    if @sale_item.nil?
-      @sale_item = SaleItem.new(params[:sale_item])
+    if @product.nil?
+      render :json => {:errors => "This product doesn't exist"}, :status=>422
     else
-      @sale_item.quantity += params[:sale_item][:quantity].to_i
-    end
 
-    @sale_item.sub_total = @sale_item.quantity * @sale_item.product.price
+      params[:sale_item][:product] = @product;
 
-    respond_to do |format|
-      if @sale_item.save
-        format.json { render :show }
+      @sale = Sale.find(params[:sale_item][:sale])
+      params[:sale_item][:sale] = @sale;
+
+      @sale_item = SaleItem.find_by_sale_id_and_product_id(@sale.id, @product.id)
+      if @sale_item.nil?
+        @sale_item = SaleItem.new(params[:sale_item])
       else
-        format.json { render json: @sale_item.errors, status: :unprocessable_entity }
+        @sale_item.quantity += params[:sale_item][:quantity].to_i
+      end
+
+      @sale_item.sub_total = @sale_item.quantity * @sale_item.product.price
+
+      respond_to do |format|
+        if @sale_item.save
+          format.json { render :show }
+        else
+          format.json { render json: @sale_item.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
